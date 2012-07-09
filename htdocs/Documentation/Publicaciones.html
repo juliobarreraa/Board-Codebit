@@ -1,0 +1,47 @@
+Nombre 				|  Agregar publicación
+Actores				|  Usuario
+Descripción			|  Permitir agregar nuevas publicaciones a la linea de tiempo.
+Disparador			|  Desea dar a conocer algun tema, conversar o expresar su opinión mediante imágenes, texto, video, música, vínculos, etc.
+Precondiciones		|  1. Debe estar identificado en el sistema,
+					|  2. No debe ser un usuario banneado.
+					|
+Postcondiciones		|  1. Se crea la nueva publicación.
+					|  2. Se informa a sus amigos sobre la misma.
+					|  3. Se le muestra al usuario su publicación una vez realizada.
+					|  4. Si hubo personas etiquetadas se les envia un correo electrónico notificando el hecho.
+					|
+Flujo Normal		|  1. El usuario solicita dar de alta una nueva publicación.
+					|  2. El sistema muestra los campos a ser llenados.
+					|	  a) Campo de publicación.
+					|  3. Se validan los datos (E1)
+					|  4. Si el usuario introdujo un vinculo en la caja de publicación se hace un scanneo del enlace y se muestra.
+					|  5. Si el usuario introdujo un vinculo de youtube se embebe el video.
+					|  6. Si se etiqueto un usuario se marca con un enlace a su perfil del mismo.
+					|
+Flujo alternativo	|  1. Si el usuario desea cancelar la operación 
+					|     a) Se le pregunta si esta seguro.
+					|     b) En caso de estar seguro se borra el contenido de la caja de texto junto con las etiquetas creadas.
+					|  2. Si se introduce un vinculo y este no existe se omite este enlace.
+					|  3. Si se inserta una imagen y ocurre un error se le informa al usuario y se omite la misma.
+					|
+Excepciones			|  E.1 No se cargo ningún texto.
+					|  E.1.1 El sistema informa que no hay ninguna información a publicar.
+					|  E.1.2 El sistema vuelve al paso 2 pudiendo el usuario cancelar la operación en cualquier momento.
+					|
+Prioridad			|  Alta
+					|
+Frecuencia de uso	|  Alta
+					|
+Reglas de negocio	|  Al crear una publicación solo se muestra la misma a los amigos del publicador.
+					|
+Requerimientos 		|
+especiales			|
+					|
+Suposiciones		|
+Notas y preguntas	|
+
+
+Lang:
+
+poststatus_attachment
+poststatus_submit
