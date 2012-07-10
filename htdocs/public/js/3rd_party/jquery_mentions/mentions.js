@@ -14,6 +14,7 @@ _mentions.prototype.mentions = (function() {
         // provided
         options = options || {};
         options.mentionObj = options.mentionObj || 'textarea.mention';
+        options.url =  options.url || 'app=portal&module=ajax&section=status&do=getfriends';
         return {
         	setup: function() {
         		  //Unbind
@@ -21,23 +22,48 @@ _mentions.prototype.mentions = (function() {
         		  	jQuery(options.mentionObj).unbind();
         		  	
 				  jQuery(options.mentionObj).mentionsInput({
-				    onDataRequest:function (mode, query, callback) {
-				      var data = [
-				        { id:1, name:'Kenneth Auchenberg', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:2, name:'Jon Froda', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:3, name:'Anders Pollas', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:4, name:'Kasper Hulthin', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:5, name:'Andreas Haugstrup', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:6, name:'Pete Lacey', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:7, name:'kenneth@auchenberg.dk', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:8, name:'Pete Awesome Lacey', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' },
-				        { id:9, name:'Kenneth Hulthin', 'avatar':'http://cdn0.4dots.com/i/customavatars/avatar7112_1.gif', 'type':'contact' }
-				      ];
-				
-				      data = _.filter(data, function(item) { return item.name.toLowerCase().indexOf(query.toLowerCase()) > -1 });
-				
-				      callback.call(this, data);
-				    }
+    				    onDataRequest:function (mode, query, callback) {
+                            new Ajax.Request( ipb.vars['base_url'] + options.url + '&md5check=' + ipb.vars['secure_hash'],
+                			{
+                    				method: 'get',
+                    				evalJSON: 'force',
+                    				onSuccess: function(t)
+                    				{
+                    					if( Object.isUndefined( t.responseJSON ) )
+                    					{
+                    						// Well, this is bad.
+                    						Debug.error("Invalid response returned from the server");
+                    						return;
+                    					}
+                    					
+                    					if( t.responseJSON['error'] )
+                    					{
+                    						switch( t.responseJSON['error'] )
+                    						{
+                    							case 'requestTooShort':
+                    								Debug.warn("Server said request was too short, skipping...");
+                    							break;
+                    							default:
+                    								Debug.error("Server returned an error: " + t.responseJSON['error']);
+                    								alert("Server returned an error: " + t.responseJSON['error'])
+                    							break;
+                    						}
+                    						
+                    						return false;
+                    					}
+                    					if( t.responseJSON['status'] == 'success' ) {
+                        					  try {
+                            					  data = t.responseJSON['friends'];
+                                   				  data = _.filter(data, function(item) { return item.name.toLowerCase().indexOf(query.toLowerCase()) > -1 });
+                                				  callback.call(this, data);
+                        					  } catch( err ) {
+                            					  Debug.error( err );
+                        					  }
+                    					}
+                    					
+                				}
+            				});
+    				    }
 				  });
         	},
         	post: function() {

@@ -457,4 +457,5 @@ $lang = array(
 '_stopwords_' => "about,all,and,been,can,cant,for,has,here,just,me,new,next,not,old,out,our,said,saw,that,thats,the,their,then,theyll,this,was,were,well,will,with,what,whats,when,where,why,you",
 'poststatus_submit' => 'Publicar',
 'poststatus_attachment' => 'Adjuntar',
+'post_status_guest' => 'No se ha identificado', 
  ); 
