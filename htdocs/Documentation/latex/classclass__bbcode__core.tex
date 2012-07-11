@@ -1,0 +1,739 @@
+\hypertarget{classclass__bbcode__core}{\section{class\-\_\-bbcode\-\_\-core Class Reference}
+\label{classclass__bbcode__core}\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}}
+}
+Inheritance diagram for class\-\_\-bbcode\-\_\-core\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclass__bbcode__core}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classclass__bbcode__core_a178c3a93e57e75dd87a5d39112af0b07}{\-\_\-\-\_\-construct} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classclass__bbcode__core_a52d18ae76a46598ee7da83bb73c848a8}{init\-Our\-Bbcodes} ()
+\item 
+\hyperlink{classclass__bbcode__core_a9d93724d48cbdd221c0bf9a7d8e6a160}{reset\-Per\-Post} ()
+\item 
+\hyperlink{classclass__bbcode__core_ae6b04d2901a9521709b77ab1e610827e}{check\-Xss} (\$txt='', \$fix\-Script=false, \$tag='')
+\item 
+\hyperlink{classclass__bbcode__core_a3c1450b996765a2c9791d59e543043af}{bad\-Words} (\$text='')
+\item 
+\hyperlink{classclass__bbcode__core_acc647870f282d982a13c31a065b9fbf2}{check\-Blacklist\-Urls} (\$t)
+\item 
+\hyperlink{classclass__bbcode__core_a5f6600d91d480e9d4cb41638af91129a}{make\-Quote\-Safe} (\$txt='')
+\item 
+\hyperlink{classclass__bbcode__core_a26a7bf3ee2c80161c1d154c7cb4e1ca1}{strip\-Bbcode} (\$tag, \$txt)
+\item 
+\hyperlink{classclass__bbcode__core_ad3cacd4e2b0fe215a49b5bbca7f3a565}{strip\-All\-Tags} (\$txt, \$pre\-\_\-edit\-\_\-parse=true)
+\item 
+\hyperlink{classclass__bbcode__core_a774298b1c6ee1b64ecd80f9913208fe7}{convert\-For\-R\-T\-E} (\$t=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__core_a045622830087c0e3df475d390a07afdc}{strip\-Emoticons} (\$txt)
+\item 
+\hyperlink{classclass__bbcode__core_aea1919f4d4d425b66d1a63314da38aaf}{pre\-Db\-Parse} (\$txt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__core_abbb08647886418bf857c94e5f4262423}{pre\-Display\-Parse} (\$txt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__core_ad3d23bc194e2cb81f6387acb027597cd}{pre\-Edit\-Parse} (\$txt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__core_a1e9f54bbc296353c541a17ea46a9176b}{parse\-Bbcode} (\$txt, \$cur\-\_\-method='db', \$\-\_\-code=null)
+\item 
+\hyperlink{classclass__bbcode__core_ad5ee998ebedefee5fac1f67c5c1f81a2}{parse\-Emoticons} (\$txt)
+\item 
+\hyperlink{classclass__bbcode__core_aafe52fec14b9fd3cdf3404a115ad9ac3}{finish\-Non\-Parsed} (\$txt, \$cur\-\_\-method='db')
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclass__bbcode__core_a52f491c29cb715d2819554f651712ea1}{{\bfseries \$parse\-\_\-smilies} = true}\label{classclass__bbcode__core_a52f491c29cb715d2819554f651712ea1}
+
+\item 
+\hypertarget{classclass__bbcode__core_aa5217370dbb91037cc21fe082d24f8d5}{{\bfseries \$parse\-\_\-html} = false}\label{classclass__bbcode__core_aa5217370dbb91037cc21fe082d24f8d5}
+
+\item 
+\hypertarget{classclass__bbcode__core_a3bcde1c72c96276255dce1de07d38efe}{{\bfseries \$parse\-\_\-bbcode} = true}\label{classclass__bbcode__core_a3bcde1c72c96276255dce1de07d38efe}
+
+\item 
+\hypertarget{classclass__bbcode__core_a04b14a849b6f17bd0c6c28e1edcf4aae}{{\bfseries \$strip\-\_\-quotes} = false}\label{classclass__bbcode__core_a04b14a849b6f17bd0c6c28e1edcf4aae}
+
+\item 
+\hypertarget{classclass__bbcode__core_a95654c88fcd324d99e3f56bbf8c0c2e3}{{\bfseries \$parse\-\_\-nl2br} = true}\label{classclass__bbcode__core_a95654c88fcd324d99e3f56bbf8c0c2e3}
+
+\item 
+\hypertarget{classclass__bbcode__core_a5a061b89617fe8a64ef2e929ff1686fa}{{\bfseries \$bypass\-\_\-badwords} = false}\label{classclass__bbcode__core_a5a061b89617fe8a64ef2e929ff1686fa}
+
+\item 
+\hypertarget{classclass__bbcode__core_ae0924ad585070ec917b65352ed6d1ee8}{{\bfseries \$parsing\-\_\-section} = 'post'}\label{classclass__bbcode__core_ae0924ad585070ec917b65352ed6d1ee8}
+
+\item 
+\hypertarget{classclass__bbcode__core_abdd5cdaeec1c6c62997e7162495aab2e}{{\bfseries \$parsing\-\_\-mgroup} = 0}\label{classclass__bbcode__core_abdd5cdaeec1c6c62997e7162495aab2e}
+
+\item 
+\hypertarget{classclass__bbcode__core_a7e25df9d5390e7783ce61426c3661964}{{\bfseries \$parsing\-\_\-mgroup\-\_\-others} = ''}\label{classclass__bbcode__core_a7e25df9d5390e7783ce61426c3661964}
+
+\item 
+\hypertarget{classclass__bbcode__core_a7ac2970dd06938b0a8a8d828b53e25c0}{{\bfseries \$allow\-\_\-unicode} = false}\label{classclass__bbcode__core_a7ac2970dd06938b0a8a8d828b53e25c0}
+
+\item 
+\hypertarget{classclass__bbcode__core_a63318fce071e8319db76848d5f7e352c}{{\bfseries \$max\-\_\-embed\-\_\-quotes} = 15}\label{classclass__bbcode__core_a63318fce071e8319db76848d5f7e352c}
+
+\item 
+\hypertarget{classclass__bbcode__core_aeba2ab722cedda53dbb7ec1a59f45550}{{\bfseries \$error} = ''}\label{classclass__bbcode__core_aeba2ab722cedda53dbb7ec1a59f45550}
+
+\item 
+\hypertarget{classclass__bbcode__core_a39415d3b695b34f34c5693c1828d803a}{{\bfseries \$warning} = ''}\label{classclass__bbcode__core_a39415d3b695b34f34c5693c1828d803a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classclass__bbcode__core_a30545653920382c47dfe48bc5317b5ed}{\-\_\-reset\-Pointers} ()
+\item 
+\hyperlink{classclass__bbcode__core_a6c1e0b248c05cf3f5d1bab31e90d4b72}{\-\_\-bash\-Session} (\$matches=array())
+\item 
+\hyperlink{classclass__bbcode__core_a2b6830013ef023c94df94e8a1d4b79e1}{remove\-Lightbox\-Spans} (\$matches)
+\item 
+\hyperlink{classclass__bbcode__core_af3f973c17c9f1a83a126d3c6ed61df01}{\-\_\-bbcode\-To\-Html} (\$\-\_\-bbcode, \$option='', \$content='')
+\item 
+\hyperlink{classclass__bbcode__core_acc9c3f49b1e5346c6d184baf8af4ebc3}{\-\_\-parse\-Html} (\$txt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__core_a7ca561caf17196f29ac05ea894a98281}{\-\_\-store\-Non\-Parsed} (\$txt, \$cur\-\_\-method='db')
+\item 
+\hyperlink{classclass__bbcode__core_ae4400a9b7144cf7c8ef01d801d0d8a3e}{\-\_\-parse\-Non\-Parsed} (\$txt, \$cur\-\_\-method='db')
+\item 
+\hyperlink{classclass__bbcode__core_a10f5c5713f0a8ec8856e09de5f6d46f1}{\-\_\-auto\-Parse\-Urls} (\$matches)
+\item 
+\hyperlink{classclass__bbcode__core_a74f3b1858d91b3b6f0bf4bc17c4aafbb}{\-\_\-retrieve\-Smiley} (\$\-\_\-emo\-Code, \$\-\_\-emo\-Image)
+\item 
+\hyperlink{classclass__bbcode__core_ab875bfd7c4a1437f7b972735d87affdb}{\-\_\-sort\-Smilies} ()
+\item 
+\hyperlink{classclass__bbcode__core_a77bbb51e2b0daf75170982d58d3a8b41}{\-\_\-check\-For\-Embedded\-Code} (\$matches)
+\item 
+\hyperlink{classclass__bbcode__core_a3080e333c96958c5061014890b2f5867}{\-\_\-get\-Embedded\-Positions} (\$txt, \$tag)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classclass__bbcode__core_ab1192aa3289f02bfed172c3f3d9e9df8}{\-\_\-this\-Usort} (\$a, \$b)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclass__bbcode__core_a010b8467561191e260690825f5197fea}{{\bfseries \$image\-\_\-count} = 0}\label{classclass__bbcode__core_a010b8467561191e260690825f5197fea}
+
+\item 
+\hypertarget{classclass__bbcode__core_a6098025092f59f3af21dec9b6b4425e3}{{\bfseries \$emoticon\-\_\-count} = 0}\label{classclass__bbcode__core_a6098025092f59f3af21dec9b6b4425e3}
+
+\item 
+\hypertarget{classclass__bbcode__core_a8b0f6642c53902d1d178a81551b4f56f}{{\bfseries \$emoticon\-\_\-alts} = array()}\label{classclass__bbcode__core_a8b0f6642c53902d1d178a81551b4f56f}
+
+\item 
+\hypertarget{classclass__bbcode__core_a531e4a386aaa7f3e06d3642dc38d7e80}{{\bfseries \$registry}}\label{classclass__bbcode__core_a531e4a386aaa7f3e06d3642dc38d7e80}
+
+\item 
+\hypertarget{classclass__bbcode__core_a7dc56dc8b18ad37272b56fa7395bedef}{{\bfseries \$\-D\-B}}\label{classclass__bbcode__core_a7dc56dc8b18ad37272b56fa7395bedef}
+
+\item 
+\hypertarget{classclass__bbcode__core_ac7c3353107070daa85f641882931b358}{{\bfseries \$settings}}\label{classclass__bbcode__core_ac7c3353107070daa85f641882931b358}
+
+\item 
+\hypertarget{classclass__bbcode__core_abb35c8495a232b510389fa6d7b15d38a}{{\bfseries \$request}}\label{classclass__bbcode__core_abb35c8495a232b510389fa6d7b15d38a}
+
+\item 
+\hypertarget{classclass__bbcode__core_a7714b111b644017933931ec69a154102}{{\bfseries \$lang}}\label{classclass__bbcode__core_a7714b111b644017933931ec69a154102}
+
+\item 
+\hypertarget{classclass__bbcode__core_a5e1c849c6148a8732eee400fcee0d044}{{\bfseries \$member}}\label{classclass__bbcode__core_a5e1c849c6148a8732eee400fcee0d044}
+
+\item 
+\hypertarget{classclass__bbcode__core_ae9d848ba2cf6eee63bdc060e2dfcf95a}{{\bfseries \$member\-Data}}\label{classclass__bbcode__core_ae9d848ba2cf6eee63bdc060e2dfcf95a}
+
+\item 
+\hypertarget{classclass__bbcode__core_ac2dc76d756ec398393d4b1d23659276c}{{\bfseries \$cache}}\label{classclass__bbcode__core_ac2dc76d756ec398393d4b1d23659276c}
+
+\item 
+\hypertarget{classclass__bbcode__core_a0334a912b7c2d39a9bc71177578d782e}{{\bfseries \$caches}}\label{classclass__bbcode__core_a0334a912b7c2d39a9bc71177578d782e}
+
+\item 
+\hypertarget{classclass__bbcode__core_a7d8b93a31031d9881de96885bb2ecc0f}{{\bfseries \$\-\_\-bbcodes} = array()}\label{classclass__bbcode__core_a7d8b93a31031d9881de96885bb2ecc0f}
+
+\item 
+\hypertarget{classclass__bbcode__core_a4ab51386acb82cd0a0066eac2567b2bd}{{\bfseries \$plugins} = array()}\label{classclass__bbcode__core_a4ab51386acb82cd0a0066eac2567b2bd}
+
+\item 
+\hypertarget{classclass__bbcode__core_a837d56bf71a642a81e9dadb143a1f640}{{\bfseries \$cur\-\_\-pos} = 0}\label{classclass__bbcode__core_a837d56bf71a642a81e9dadb143a1f640}
+
+\item 
+\hypertarget{classclass__bbcode__core_a9e5e63d3ec5e5eeaa3a2265efcea0731}{{\bfseries \$no\-Parse\-Storage} = array()}\label{classclass__bbcode__core_a9e5e63d3ec5e5eeaa3a2265efcea0731}
+
+\item 
+\hypertarget{classclass__bbcode__core_a52c147c631fe0a68bf781b47931ba128}{{\bfseries \$\-\_\-stored\-No\-Parsing} = 0}\label{classclass__bbcode__core_a52c147c631fe0a68bf781b47931ba128}
+
+\item 
+\hypertarget{classclass__bbcode__core_a4a6fecac09b7d9e03992bb0e2570ff4c}{{\bfseries \$\-\_\-emo\-Code} = ''}\label{classclass__bbcode__core_a4a6fecac09b7d9e03992bb0e2570ff4c}
+
+\item 
+\hypertarget{classclass__bbcode__core_a57294b6025a038b53b1fdc00f4f03ee4}{{\bfseries \$\-\_\-emo\-Image} = ''}\label{classclass__bbcode__core_a57294b6025a038b53b1fdc00f4f03ee4}
+
+\item 
+\hypertarget{classclass__bbcode__core_aff1d70a770ffefa8487b9ece1c8e4361}{{\bfseries \$\-\_\-media\-Url\-Converted} = array()}\label{classclass__bbcode__core_aff1d70a770ffefa8487b9ece1c8e4361}
+
+\item 
+\hypertarget{classclass__bbcode__core_a1bd3181b5cae48113f72ee165b62d040}{{\bfseries \$\-\_\-sorted\-Smilies} = array()}\label{classclass__bbcode__core_a1bd3181b5cae48113f72ee165b62d040}
+
+\item 
+\hypertarget{classclass__bbcode__core_a0c5b9485c24f6a528d4f0f17437b40a6}{{\bfseries \$\-\_\-is\-Converting\-For\-Editor} = null}\label{classclass__bbcode__core_a0c5b9485c24f6a528d4f0f17437b40a6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classclass__bbcode__core_a178c3a93e57e75dd87a5d39112af0b07}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a178c3a93e57e75dd87a5d39112af0b07}
+Constructor
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em object} & Registry object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classclass__bbcode__legacy_a178c3a93e57e75dd87a5d39112af0b07}{class\-\_\-bbcode\-\_\-legacy}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classclass__bbcode__core_a10f5c5713f0a8ec8856e09de5f6d46f1}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-auto\-Parse\-Urls@{\-\_\-auto\-Parse\-Urls}}
+\index{\-\_\-auto\-Parse\-Urls@{\-\_\-auto\-Parse\-Urls}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-auto\-Parse\-Urls}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-auto\-Parse\-Urls (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a10f5c5713f0a8ec8856e09de5f6d46f1}
+Callback to auto-\/parse urls
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em array} & Matches from the regular expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a6c1e0b248c05cf3f5d1bab31e90d4b72}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-bash\-Session@{\-\_\-bash\-Session}}
+\index{\-\_\-bash\-Session@{\-\_\-bash\-Session}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-bash\-Session}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-bash\-Session (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a6c1e0b248c05cf3f5d1bab31e90d4b72}
+Remove session keys from U\-R\-Ls
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of matches \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_af3f973c17c9f1a83a126d3c6ed61df01}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-bbcode\-To\-Html@{\-\_\-bbcode\-To\-Html}}
+\index{\-\_\-bbcode\-To\-Html@{\-\_\-bbcode\-To\-Html}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-bbcode\-To\-Html}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-bbcode\-To\-Html (
+\begin{DoxyParamCaption}
+\item[{}]{\$\-\_\-bbcode, }
+\item[{}]{\$option = {\ttfamily ''}, }
+\item[{}]{\$content = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_af3f973c17c9f1a83a126d3c6ed61df01}
+Does the actual bbcode replacement
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & Current bbcode to parse \\
+\hline
+{\em string} & \mbox{[}Optional\mbox{]} Option text \\
+\hline
+{\em string} & \mbox{[}Optional for single tag bbcodes\mbox{]} Content text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a77bbb51e2b0daf75170982d58d3a8b41}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-check\-For\-Embedded\-Code@{\-\_\-check\-For\-Embedded\-Code}}
+\index{\-\_\-check\-For\-Embedded\-Code@{\-\_\-check\-For\-Embedded\-Code}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-check\-For\-Embedded\-Code}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-check\-For\-Embedded\-Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a77bbb51e2b0daf75170982d58d3a8b41}
+Check and make safe embedded codes 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$matches} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classclass__bbcode__core_a3080e333c96958c5061014890b2f5867}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-get\-Embedded\-Positions@{\-\_\-get\-Embedded\-Positions}}
+\index{\-\_\-get\-Embedded\-Positions@{\-\_\-get\-Embedded\-Positions}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-get\-Embedded\-Positions}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-get\-Embedded\-Positions (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt, }
+\item[{}]{\$tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a3080e333c96958c5061014890b2f5867}
+Return paired opening and closing positions. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & \\
+\hline
+string & {\em \$tag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_acc9c3f49b1e5346c6d184baf8af4ebc3}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-parse\-Html@{\-\_\-parse\-Html}}
+\index{\-\_\-parse\-Html@{\-\_\-parse\-Html}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-parse\-Html}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-parse\-Html (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_acc9c3f49b1e5346c6d184baf8af4ebc3}
+Parse escaped H\-T\-M\-L for display
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & Current text to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_ae4400a9b7144cf7c8ef01d801d0d8a3e}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-parse\-Non\-Parsed@{\-\_\-parse\-Non\-Parsed}}
+\index{\-\_\-parse\-Non\-Parsed@{\-\_\-parse\-Non\-Parsed}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-parse\-Non\-Parsed}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-parse\-Non\-Parsed (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt, }
+\item[{}]{\$cur\-\_\-method = {\ttfamily 'db'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_ae4400a9b7144cf7c8ef01d801d0d8a3e}
+Parse the stored non-\/inner parsed bbcode
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & Current text \\
+\hline
+{\em string} & \mbox{[}db$|$display\mbox{]} Current method to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a30545653920382c47dfe48bc5317b5ed}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-reset\-Pointers@{\-\_\-reset\-Pointers}}
+\index{\-\_\-reset\-Pointers@{\-\_\-reset\-Pointers}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-reset\-Pointers}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-reset\-Pointers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a30545653920382c47dfe48bc5317b5ed}
+Reset bbcode internal pointers
+
+protected \begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a74f3b1858d91b3b6f0bf4bc17c4aafbb}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-retrieve\-Smiley@{\-\_\-retrieve\-Smiley}}
+\index{\-\_\-retrieve\-Smiley@{\-\_\-retrieve\-Smiley}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-retrieve\-Smiley}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-retrieve\-Smiley (
+\begin{DoxyParamCaption}
+\item[{}]{\$\-\_\-emo\-Code, }
+\item[{}]{\$\-\_\-emo\-Image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a74f3b1858d91b3b6f0bf4bc17c4aafbb}
+Retrieve the proper emoticon image code
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & Emoticon code we are replacing (i.\-e. \-:D) \\
+\hline
+{\em string} & Emoticon image to display (i.\-e. 'biggrin.\-png') \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_ab875bfd7c4a1437f7b972735d87affdb}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-sort\-Smilies@{\-\_\-sort\-Smilies}}
+\index{\-\_\-sort\-Smilies@{\-\_\-sort\-Smilies}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-sort\-Smilies}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-sort\-Smilies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_ab875bfd7c4a1437f7b972735d87affdb}
+Sort the smilies nicely in order of length. \hypertarget{classclass__bbcode__core_a7ca561caf17196f29ac05ea894a98281}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-store\-Non\-Parsed@{\-\_\-store\-Non\-Parsed}}
+\index{\-\_\-store\-Non\-Parsed@{\-\_\-store\-Non\-Parsed}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-store\-Non\-Parsed}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-store\-Non\-Parsed (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt, }
+\item[{}]{\$cur\-\_\-method = {\ttfamily 'db'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a7ca561caf17196f29ac05ea894a98281}
+Store the bbcode content that should not have inner content parsed
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & Current text \\
+\hline
+{\em string} & \mbox{[}db$|$display\mbox{]} Current method to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_ab1192aa3289f02bfed172c3f3d9e9df8}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!\-\_\-this\-Usort@{\-\_\-this\-Usort}}
+\index{\-\_\-this\-Usort@{\-\_\-this\-Usort}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{\-\_\-this\-Usort}]{\setlength{\rightskip}{0pt plus 5cm}static \-\_\-this\-Usort (
+\begin{DoxyParamCaption}
+\item[{}]{\$a, }
+\item[{}]{\$b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classclass__bbcode__core_ab1192aa3289f02bfed172c3f3d9e9df8}
+Custom sort operation
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & A \\
+\hline
+{\em string} & B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a3c1450b996765a2c9791d59e543043af}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!bad\-Words@{bad\-Words}}
+\index{bad\-Words@{bad\-Words}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{bad\-Words}]{\setlength{\rightskip}{0pt plus 5cm}bad\-Words (
+\begin{DoxyParamCaption}
+\item[{}]{\$text = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a3c1450b996765a2c9791d59e543043af}
+Replace bad words
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_acc647870f282d982a13c31a065b9fbf2}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!check\-Blacklist\-Urls@{check\-Blacklist\-Urls}}
+\index{check\-Blacklist\-Urls@{check\-Blacklist\-Urls}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{check\-Blacklist\-Urls}]{\setlength{\rightskip}{0pt plus 5cm}check\-Blacklist\-Urls (
+\begin{DoxyParamCaption}
+\item[{}]{\$t}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_acc647870f282d982a13c31a065b9fbf2}
+Check against blacklisted U\-R\-Ls
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw posted text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool False if blacklisted url present, otherwise true 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_ae6b04d2901a9521709b77ab1e610827e}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!check\-Xss@{check\-Xss}}
+\index{check\-Xss@{check\-Xss}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{check\-Xss}]{\setlength{\rightskip}{0pt plus 5cm}check\-Xss (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily ''}, }
+\item[{}]{\$fix\-Script = {\ttfamily false}, }
+\item[{}]{\$tag = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_ae6b04d2901a9521709b77ab1e610827e}
+Check against X\-S\-S
+
+N\-O\-T\-E\-: When this function is updated, please also update class\-Incoming\-Email\-::clean\-Message()
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Original string \\
+\hline
+{\em boolean} & Fix script H\-T\-M\-L tags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \char`\"{}\-Cleaned\char`\"{} text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a774298b1c6ee1b64ecd80f9913208fe7}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!convert\-For\-R\-T\-E@{convert\-For\-R\-T\-E}}
+\index{convert\-For\-R\-T\-E@{convert\-For\-R\-T\-E}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{convert\-For\-R\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}convert\-For\-R\-T\-E (
+\begin{DoxyParamCaption}
+\item[{}]{\$t = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a774298b1c6ee1b64ecd80f9913208fe7}
+Convert special I\-P\-B H\-T\-M\-L to normal H\-T\-M\-L
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_aafe52fec14b9fd3cdf3404a115ad9ac3}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!finish\-Non\-Parsed@{finish\-Non\-Parsed}}
+\index{finish\-Non\-Parsed@{finish\-Non\-Parsed}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{finish\-Non\-Parsed}]{\setlength{\rightskip}{0pt plus 5cm}finish\-Non\-Parsed (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt, }
+\item[{}]{\$cur\-\_\-method = {\ttfamily 'db'}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_aafe52fec14b9fd3cdf3404a115ad9ac3}
+This is a utility function to finish parsing the \char`\"{}non-\/parsed\char`\"{} items, such as image and code tags, when we are only parsing one tag at a time. For instance, see the parse\-Poll\-Tags method of han\-\_\-parse\-\_\-bbcode.\-php
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classparse_bbcode_ab6aaa91deb5806f7b479947290249f21}{parse\-Bbcode\-::parse\-Poll\-Tags()}  public 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & B\-B\-Code with non-\/parse markers \\
+\hline
+{\em string} & Current method \\
+\hline
+{\em string} & B\-B\-Code with non-\/parse markers replaced \\
+\hline
+\end{DoxyParams}
+\hypertarget{classclass__bbcode__core_a52d18ae76a46598ee7da83bb73c848a8}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!init\-Our\-Bbcodes@{init\-Our\-Bbcodes}}
+\index{init\-Our\-Bbcodes@{init\-Our\-Bbcodes}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{init\-Our\-Bbcodes}]{\setlength{\rightskip}{0pt plus 5cm}init\-Our\-Bbcodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a52d18ae76a46598ee7da83bb73c848a8}
+Initialize our bbcodes
+
+public \begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a5f6600d91d480e9d4cb41638af91129a}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!make\-Quote\-Safe@{make\-Quote\-Safe}}
+\index{make\-Quote\-Safe@{make\-Quote\-Safe}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{make\-Quote\-Safe}]{\setlength{\rightskip}{0pt plus 5cm}make\-Quote\-Safe (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a5f6600d91d480e9d4cb41638af91129a}
+Makes data for quote strings \char`\"{}safe\char`\"{}
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a1e9f54bbc296353c541a17ea46a9176b}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!parse\-Bbcode@{parse\-Bbcode}}
+\index{parse\-Bbcode@{parse\-Bbcode}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{parse\-Bbcode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parse\-Bbcode} (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt, }
+\item[{}]{\$cur\-\_\-method = {\ttfamily 'db'}, }
+\item[{}]{\$\-\_\-code = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a1e9f54bbc296353c541a17ea46a9176b}
+Loop over the bbcode and make replacements as necessary
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Current text \\
+\hline
+{\em string} & \mbox{[}db$|$display\mbox{]} Current method to parse \\
+\hline
+{\em mixed} & \mbox{[}optional\mbox{]} Only parse the selected code(s) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hyperlink{}{I had to add the /u modifier to correct this. Previously, the first byte sequence of the word was matching .  \href{http://community.invisionpower.com/tracker/issue-24684-posts-are-blankmissing/}{\tt http\-://community.\-invisionpower.\-com/tracker/issue-\/24684-\/posts-\/are-\/blankmissing/} Reverting this fix as it's breaking in some environments -\/ not really sure what we can do about this at this point }\hypertarget{classclass__bbcode__core_ad5ee998ebedefee5fac1f67c5c1f81a2}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!parse\-Emoticons@{parse\-Emoticons}}
+\index{parse\-Emoticons@{parse\-Emoticons}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{parse\-Emoticons}]{\setlength{\rightskip}{0pt plus 5cm}parse\-Emoticons (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_ad5ee998ebedefee5fac1f67c5c1f81a2}
+Parse emoticons in text 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \$txt 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_aea1919f4d4d425b66d1a63314da38aaf}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!pre\-Db\-Parse@{pre\-Db\-Parse}}
+\index{pre\-Db\-Parse@{pre\-Db\-Parse}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{pre\-Db\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Db\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_aea1919f4d4d425b66d1a63314da38aaf}
+Parse the post to store in the database
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classclass__bbcode__legacy_aea1919f4d4d425b66d1a63314da38aaf}{class\-\_\-bbcode\-\_\-legacy}.
+
+\hypertarget{classclass__bbcode__core_abbb08647886418bf857c94e5f4262423}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!pre\-Display\-Parse@{pre\-Display\-Parse}}
+\index{pre\-Display\-Parse@{pre\-Display\-Parse}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{pre\-Display\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Display\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_abbb08647886418bf857c94e5f4262423}
+This function processes the D\-B post before printing as output
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classclass__bbcode__legacy_abbb08647886418bf857c94e5f4262423}{class\-\_\-bbcode\-\_\-legacy}.
+
+\hypertarget{classclass__bbcode__core_ad3d23bc194e2cb81f6387acb027597cd}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!pre\-Edit\-Parse@{pre\-Edit\-Parse}}
+\index{pre\-Edit\-Parse@{pre\-Edit\-Parse}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{pre\-Edit\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Edit\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_ad3d23bc194e2cb81f6387acb027597cd}
+This function processes the text before showing for editing, etc
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classclass__bbcode__legacy_ad3d23bc194e2cb81f6387acb027597cd}{class\-\_\-bbcode\-\_\-legacy}.
+
+\hypertarget{classclass__bbcode__core_a2b6830013ef023c94df94e8a1d4b79e1}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!remove\-Lightbox\-Spans@{remove\-Lightbox\-Spans}}
+\index{remove\-Lightbox\-Spans@{remove\-Lightbox\-Spans}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{remove\-Lightbox\-Spans}]{\setlength{\rightskip}{0pt plus 5cm}remove\-Lightbox\-Spans (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__core_a2b6830013ef023c94df94e8a1d4b79e1}
+Remove $<$span rel=\textbackslash{}'lightbox\textbackslash{}'$>$ tags
+
+\begin{DoxySeeAlso}{See also}
+\href{http://community.invisionpower.com/tracker/issue-34619-two-images-wrapped-by-a-link-causes-weird-stuff-in-ie78}{\tt http\-://community.\-invisionpower.\-com/tracker/issue-\/34619-\/two-\/images-\/wrapped-\/by-\/a-\/link-\/causes-\/weird-\/stuff-\/in-\/ie78} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Regex matches \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a9d93724d48cbdd221c0bf9a7d8e6a160}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!reset\-Per\-Post@{reset\-Per\-Post}}
+\index{reset\-Per\-Post@{reset\-Per\-Post}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{reset\-Per\-Post}]{\setlength{\rightskip}{0pt plus 5cm}reset\-Per\-Post (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a9d93724d48cbdd221c0bf9a7d8e6a160}
+Reset function to call to trigger \char`\"{}new post\char`\"{} for non-\/parsed content
+
+public \begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_ad3cacd4e2b0fe215a49b5bbca7f3a565}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!strip\-All\-Tags@{strip\-All\-Tags}}
+\index{strip\-All\-Tags@{strip\-All\-Tags}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{strip\-All\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}strip\-All\-Tags (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt, }
+\item[{}]{\$pre\-\_\-edit\-\_\-parse = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_ad3cacd4e2b0fe215a49b5bbca7f3a565}
+Remove A\-L\-L tags
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+{\em boolean} & Whether or not to run through pre-\/edit-\/parse first \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a26a7bf3ee2c80161c1d154c7cb4e1ca1}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!strip\-Bbcode@{strip\-Bbcode}}
+\index{strip\-Bbcode@{strip\-Bbcode}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{strip\-Bbcode}]{\setlength{\rightskip}{0pt plus 5cm}strip\-Bbcode (
+\begin{DoxyParamCaption}
+\item[{}]{\$tag, }
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a26a7bf3ee2c80161c1d154c7cb4e1ca1}
+Removes bbcode tag + contents within the tag
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Tag to strip \\
+\hline
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__core_a045622830087c0e3df475d390a07afdc}{\index{class\-\_\-bbcode\-\_\-core@{class\-\_\-bbcode\-\_\-core}!strip\-Emoticons@{strip\-Emoticons}}
+\index{strip\-Emoticons@{strip\-Emoticons}!class_bbcode_core@{class\-\_\-bbcode\-\_\-core}}
+\subsubsection[{strip\-Emoticons}]{\setlength{\rightskip}{0pt plus 5cm}strip\-Emoticons (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__core_a045622830087c0e3df475d390a07afdc}
+Remove raw smilies
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Text with smiley codes removed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/classes/bbcode/core.\-php\end{DoxyCompactItemize}

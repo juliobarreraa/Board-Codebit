@@ -32,6 +32,7 @@ class Members {
         $this->registry = $registry;
         $this->DB = ipsRegistry::DB();
         $this->memberData =& $this->registry->member()->fetchMemberData();
+        $this->settings = & $this->registry->fetchSettings(); //Get settings timeline_max_status
     }
     
     function getListfriends($member_id = 0) {
@@ -78,5 +79,28 @@ class Members {
             );
         }
         return $members;
+    }
+    
+    function getOnlineUsers() {
+		$cut_off = $this->settings['au_cutoff'] * 60;
+		$time    = time() - $cut_off;
+		
+		$this->DB->build( array('select' => 'member_id',
+								'from'   => 'sessions',
+								'where'  => "running_time > {$time}" )	);
+		$this->DB->execute();
+		
+		//-----------------------------------------
+		// FETCH...
+		//-----------------------------------------
+		
+		while ( $r = $this->DB->fetch() )
+		{
+			$rows[ $r['running_time'].'.'.$r['id'] ] = $r;
+		}
+		
+		krsort( $rows );
+		
+		return $rows;
     }
 }

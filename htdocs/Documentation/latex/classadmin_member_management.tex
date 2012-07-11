@@ -1,0 +1,337 @@
+\hypertarget{classadmin_member_management}{\section{admin\-Member\-Management Class Reference}
+\label{classadmin_member_management}\index{admin\-Member\-Management@{admin\-Member\-Management}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin_member_management_a178c3a93e57e75dd87a5d39112af0b07}{\-\_\-\-\_\-construct} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classadmin_member_management_a1a1b38e07b553b60b718186b7d3d3c49}{delete\-Members} (\$ids, \$lang='')
+\item 
+\hyperlink{classadmin_member_management_a4713fb8a1175c7a9d45da4fd76e3a2a3}{deny\-Members} (\$ids)
+\item 
+\hyperlink{classadmin_member_management_af66281c1a7a67f4161ce430dd7cbd403}{ban\-Members} (\$ids)
+\item 
+\hyperlink{classadmin_member_management_ae5499ce7aac15287656405d156567d36}{unban\-Members} (\$ids)
+\item 
+\hyperlink{classadmin_member_management_a9b780e18e0074755dbb3fae2fcaf5e71}{mark\-Members\-As\-Spam} (\$ids)
+\item 
+\hyperlink{classadmin_member_management_ab4a5f6f3c0b73b24bad982626e52ff66}{unmark\-Members\-As\-Spam} (\$ids, \$unmark\-Posts=false)
+\item 
+\hyperlink{classadmin_member_management_a4e32f72b2f1a9e61658b0a8eb8a527a3}{ban\-Spammers} (\$ids, \$blacklist=false)
+\item 
+\hyperlink{classadmin_member_management_ab54604eaa27c028cd4893fa730a70fd0}{unlock\-Members} (\$ids)
+\item 
+\hyperlink{classadmin_member_management_a33392a30a01d41bd542b1c852881e80b}{finalize\-Members} (\$ids)
+\item 
+\hyperlink{classadmin_member_management_addb03e36d674cc803f5e01ff5b635537}{unapprove\-Email\-Change} (\$id)
+\item 
+\hyperlink{classadmin_member_management_a56416851b40a2778473998f8792563b8}{approve\-Members} (\$ids)
+\item 
+\hyperlink{classadmin_member_management_aa10afb18fe2345dee64c189a049aabd0}{resend\-Validation\-Emails} (\$ids)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin_member_management_a531e4a386aaa7f3e06d3642dc38d7e80}{{\bfseries \$registry}}\label{classadmin_member_management_a531e4a386aaa7f3e06d3642dc38d7e80}
+
+\item 
+\hypertarget{classadmin_member_management_a7dc56dc8b18ad37272b56fa7395bedef}{{\bfseries \$\-D\-B}}\label{classadmin_member_management_a7dc56dc8b18ad37272b56fa7395bedef}
+
+\item 
+\hypertarget{classadmin_member_management_ac7c3353107070daa85f641882931b358}{{\bfseries \$settings}}\label{classadmin_member_management_ac7c3353107070daa85f641882931b358}
+
+\item 
+\hypertarget{classadmin_member_management_abb35c8495a232b510389fa6d7b15d38a}{{\bfseries \$request}}\label{classadmin_member_management_abb35c8495a232b510389fa6d7b15d38a}
+
+\item 
+\hypertarget{classadmin_member_management_a5e1c849c6148a8732eee400fcee0d044}{{\bfseries \$member}}\label{classadmin_member_management_a5e1c849c6148a8732eee400fcee0d044}
+
+\item 
+\hypertarget{classadmin_member_management_ae9d848ba2cf6eee63bdc060e2dfcf95a}{{\bfseries \$member\-Data}}\label{classadmin_member_management_ae9d848ba2cf6eee63bdc060e2dfcf95a}
+
+\item 
+\hypertarget{classadmin_member_management_ac2dc76d756ec398393d4b1d23659276c}{{\bfseries \$cache}}\label{classadmin_member_management_ac2dc76d756ec398393d4b1d23659276c}
+
+\item 
+\hypertarget{classadmin_member_management_a0334a912b7c2d39a9bc71177578d782e}{{\bfseries \$caches}}\label{classadmin_member_management_a0334a912b7c2d39a9bc71177578d782e}
+
+\item 
+\hypertarget{classadmin_member_management_a7714b111b644017933931ec69a154102}{{\bfseries \$lang}}\label{classadmin_member_management_a7714b111b644017933931ec69a154102}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classadmin_member_management_a178c3a93e57e75dd87a5d39112af0b07}{\index{admin\-Member\-Management@{admin\-Member\-Management}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_a178c3a93e57e75dd87a5d39112af0b07}
+\#@-\/ Constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$registry} & Registry object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin_member_management_a56416851b40a2778473998f8792563b8}{\index{admin\-Member\-Management@{admin\-Member\-Management}!approve\-Members@{approve\-Members}}
+\index{approve\-Members@{approve\-Members}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{approve\-Members}]{\setlength{\rightskip}{0pt plus 5cm}approve\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_a56416851b40a2778473998f8792563b8}
+Approve member(s)
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_af66281c1a7a67f4161ce430dd7cbd403}{\index{admin\-Member\-Management@{admin\-Member\-Management}!ban\-Members@{ban\-Members}}
+\index{ban\-Members@{ban\-Members}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{ban\-Members}]{\setlength{\rightskip}{0pt plus 5cm}ban\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_af66281c1a7a67f4161ce430dd7cbd403}
+Ban member(s)
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_a4e32f72b2f1a9e61658b0a8eb8a527a3}{\index{admin\-Member\-Management@{admin\-Member\-Management}!ban\-Spammers@{ban\-Spammers}}
+\index{ban\-Spammers@{ban\-Spammers}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{ban\-Spammers}]{\setlength{\rightskip}{0pt plus 5cm}ban\-Spammers (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids, }
+\item[{}]{\$blacklist = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_a4e32f72b2f1a9e61658b0a8eb8a527a3}
+Bans spammers and optionally blacklists their data
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+{\em bool} & Blacklist additionally \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_a1a1b38e07b553b60b718186b7d3d3c49}{\index{admin\-Member\-Management@{admin\-Member\-Management}!delete\-Members@{delete\-Members}}
+\index{delete\-Members@{delete\-Members}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{delete\-Members}]{\setlength{\rightskip}{0pt plus 5cm}delete\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids, }
+\item[{}]{\$lang = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_a1a1b38e07b553b60b718186b7d3d3c49}
+Delete member(s)
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+{\em string} & Alternate language key to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_a4713fb8a1175c7a9d45da4fd76e3a2a3}{\index{admin\-Member\-Management@{admin\-Member\-Management}!deny\-Members@{deny\-Members}}
+\index{deny\-Members@{deny\-Members}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{deny\-Members}]{\setlength{\rightskip}{0pt plus 5cm}deny\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_a4713fb8a1175c7a9d45da4fd76e3a2a3}
+Deny member(s) registrations
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_a33392a30a01d41bd542b1c852881e80b}{\index{admin\-Member\-Management@{admin\-Member\-Management}!finalize\-Members@{finalize\-Members}}
+\index{finalize\-Members@{finalize\-Members}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{finalize\-Members}]{\setlength{\rightskip}{0pt plus 5cm}finalize\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_a33392a30a01d41bd542b1c852881e80b}
+Finalize member(s)
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_a9b780e18e0074755dbb3fae2fcaf5e71}{\index{admin\-Member\-Management@{admin\-Member\-Management}!mark\-Members\-As\-Spam@{mark\-Members\-As\-Spam}}
+\index{mark\-Members\-As\-Spam@{mark\-Members\-As\-Spam}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{mark\-Members\-As\-Spam}]{\setlength{\rightskip}{0pt plus 5cm}mark\-Members\-As\-Spam (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_a9b780e18e0074755dbb3fae2fcaf5e71}
+Marks member(s) as spam
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+Update member group and then flag as spammer, we're removing them from the validating queue anyway
+
+We must run this query here before they're flagged as spammer because the 'on\-Profile\-Update' member sync call could edit further their group\hypertarget{classadmin_member_management_aa10afb18fe2345dee64c189a049aabd0}{\index{admin\-Member\-Management@{admin\-Member\-Management}!resend\-Validation\-Emails@{resend\-Validation\-Emails}}
+\index{resend\-Validation\-Emails@{resend\-Validation\-Emails}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{resend\-Validation\-Emails}]{\setlength{\rightskip}{0pt plus 5cm}resend\-Validation\-Emails (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_aa10afb18fe2345dee64c189a049aabd0}
+Resend member validation emails
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_addb03e36d674cc803f5e01ff5b635537}{\index{admin\-Member\-Management@{admin\-Member\-Management}!unapprove\-Email\-Change@{unapprove\-Email\-Change}}
+\index{unapprove\-Email\-Change@{unapprove\-Email\-Change}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{unapprove\-Email\-Change}]{\setlength{\rightskip}{0pt plus 5cm}unapprove\-Email\-Change (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_addb03e36d674cc803f5e01ff5b635537}
+Unapprove member email change
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & Member I\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em N\-O\-\_\-\-V\-A\-L\-I\-D\-A\-T\-I\-N\-G\-\_\-\-M\-E\-M\-B\-E\-R} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classadmin_member_management_ae5499ce7aac15287656405d156567d36}{\index{admin\-Member\-Management@{admin\-Member\-Management}!unban\-Members@{unban\-Members}}
+\index{unban\-Members@{unban\-Members}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{unban\-Members}]{\setlength{\rightskip}{0pt plus 5cm}unban\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_ae5499ce7aac15287656405d156567d36}
+Unban member(s)
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_ab54604eaa27c028cd4893fa730a70fd0}{\index{admin\-Member\-Management@{admin\-Member\-Management}!unlock\-Members@{unlock\-Members}}
+\index{unlock\-Members@{unlock\-Members}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{unlock\-Members}]{\setlength{\rightskip}{0pt plus 5cm}unlock\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_ab54604eaa27c028cd4893fa730a70fd0}
+Unlock member(s)
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+\hypertarget{classadmin_member_management_ab4a5f6f3c0b73b24bad982626e52ff66}{\index{admin\-Member\-Management@{admin\-Member\-Management}!unmark\-Members\-As\-Spam@{unmark\-Members\-As\-Spam}}
+\index{unmark\-Members\-As\-Spam@{unmark\-Members\-As\-Spam}!adminMemberManagement@{admin\-Member\-Management}}
+\subsubsection[{unmark\-Members\-As\-Spam}]{\setlength{\rightskip}{0pt plus 5cm}unmark\-Members\-As\-Spam (
+\begin{DoxyParamCaption}
+\item[{}]{\$ids, }
+\item[{}]{\$unmark\-Posts = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_member_management_ab4a5f6f3c0b73b24bad982626e52ff66}
+Unmarks member(s) as spam
+
+\begin{DoxyNote}{Note}
+Exceptions C\-A\-N bubble up, so you should still capture exceptions from calls to this method 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of member ids \\
+\hline
+{\em bool} & Unmark posts additionally \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Confirmation message 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/applications/members/sources/admin\-Manage.\-php\end{DoxyCompactItemize}

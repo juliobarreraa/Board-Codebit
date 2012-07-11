@@ -1,0 +1,259 @@
+\hypertarget{classadmin__core__system__taskmanager}{\section{admin\-\_\-core\-\_\-system\-\_\-taskmanager Class Reference}
+\label{classadmin__core__system__taskmanager}\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+}
+
+
+Task manager.  
+
+
+Inheritance diagram for admin\-\_\-core\-\_\-system\-\_\-taskmanager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classadmin__core__system__taskmanager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__core__system__taskmanager_afbc4e912a0604b94d47d66744c64d8ba}{do\-Execute} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classadmin__core__system__taskmanager_af635d048914f5484716551e8bbe02754}{task\-Import} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_a2e4c91521705e61858aa21dce14db8c0}{task\-Delete} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_abcc2a3a7414c10e2ed6b2460d611f558}{task\-Manager\-Unlock\-Task} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_ac48171bc6f11e758121e3f6ddd0b50f0}{task\-Manager\-Run\-Task} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_a53041c2f45cc45acf2265ddcabfa5e6d}{task\-Manager\-Save} (\$type='add')
+\item 
+\hyperlink{classadmin__core__system__taskmanager_a4fa135d1f29c886abc89a41114b37b1d}{task\-Manager\-Form} (\$type='add')
+\item 
+\hyperlink{classadmin__core__system__taskmanager_a59e80d2bb4500340c62d8373bc657c6c}{task\-Manager\-Overview} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_af269985471776bb28c2b013ef4b765a0}{show\-Cron\-Page} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_aa78e37952d71f38874473ba62d219d24}{tasks\-Import\-From\-X\-M\-L} (\$file='', \$no\-\_\-return=false)
+\item 
+\hyperlink{classadmin__core__system__taskmanager_a5770fa6f761568a59ea4f1c606439310}{tasks\-Import\-All\-Apps} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_ab7a337bd5180605a3fa1c0e1b31428fb}{task\-Export} ()
+\item 
+\hyperlink{classadmin__core__system__taskmanager_ad9e2d671f8f9013d02f11a555dda9f63}{tasks\-Export\-To\-X\-M\-L} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__core__system__taskmanager_a6f96e7fc92441776c9d1cd3386663b40}{\$html}
+\item 
+\hyperlink{classadmin__core__system__taskmanager_af28aee726fa3eb6c355d08a2ab655e03}{\$form\-\_\-code} = ''
+\item 
+\hyperlink{classadmin__core__system__taskmanager_ac68fe8a02a2efd63c3271179f4b4fbb7}{\$form\-\_\-code\-\_\-js} = ''
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Task manager. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin__core__system__taskmanager_afbc4e912a0604b94d47d66744c64d8ba}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!do\-Execute@{do\-Execute}}
+\index{do\-Execute@{do\-Execute}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{do\-Execute}]{\setlength{\rightskip}{0pt plus 5cm}do\-Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_afbc4e912a0604b94d47d66744c64d8ba}
+Main function executed automatically by the controller
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$registry} & Registry object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classips_command_afbc4e912a0604b94d47d66744c64d8ba}{ips\-Command}.
+
+\hypertarget{classadmin__core__system__taskmanager_af269985471776bb28c2b013ef4b765a0}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!show\-Cron\-Page@{show\-Cron\-Page}}
+\index{show\-Cron\-Page@{show\-Cron\-Page}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{show\-Cron\-Page}]{\setlength{\rightskip}{0pt plus 5cm}show\-Cron\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_af269985471776bb28c2b013ef4b765a0}
+Shows the cron information screen
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_a2e4c91521705e61858aa21dce14db8c0}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Delete@{task\-Delete}}
+\index{task\-Delete@{task\-Delete}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}task\-Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_a2e4c91521705e61858aa21dce14db8c0}
+Delete a task
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_ab7a337bd5180605a3fa1c0e1b31428fb}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Export@{task\-Export}}
+\index{task\-Export@{task\-Export}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Export}]{\setlength{\rightskip}{0pt plus 5cm}task\-Export (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_ab7a337bd5180605a3fa1c0e1b31428fb}
+Export a single task
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_af635d048914f5484716551e8bbe02754}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Import@{task\-Import}}
+\index{task\-Import@{task\-Import}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Import}]{\setlength{\rightskip}{0pt plus 5cm}task\-Import (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_af635d048914f5484716551e8bbe02754}
+Perform the tasks import
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_a4fa135d1f29c886abc89a41114b37b1d}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Manager\-Form@{task\-Manager\-Form}}
+\index{task\-Manager\-Form@{task\-Manager\-Form}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Manager\-Form}]{\setlength{\rightskip}{0pt plus 5cm}task\-Manager\-Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'add'}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_a4fa135d1f29c886abc89a41114b37b1d}
+Builds the add/edit task form
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & Either add or edit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_a59e80d2bb4500340c62d8373bc657c6c}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Manager\-Overview@{task\-Manager\-Overview}}
+\index{task\-Manager\-Overview@{task\-Manager\-Overview}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Manager\-Overview}]{\setlength{\rightskip}{0pt plus 5cm}task\-Manager\-Overview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_a59e80d2bb4500340c62d8373bc657c6c}
+Builds the task mananger overview screen
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_ac48171bc6f11e758121e3f6ddd0b50f0}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Manager\-Run\-Task@{task\-Manager\-Run\-Task}}
+\index{task\-Manager\-Run\-Task@{task\-Manager\-Run\-Task}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Manager\-Run\-Task}]{\setlength{\rightskip}{0pt plus 5cm}task\-Manager\-Run\-Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_ac48171bc6f11e758121e3f6ddd0b50f0}
+Runs the selected task
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_a53041c2f45cc45acf2265ddcabfa5e6d}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Manager\-Save@{task\-Manager\-Save}}
+\index{task\-Manager\-Save@{task\-Manager\-Save}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Manager\-Save}]{\setlength{\rightskip}{0pt plus 5cm}task\-Manager\-Save (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'add'}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_a53041c2f45cc45acf2265ddcabfa5e6d}
+Save the add/edit task form
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & Either add or edit data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_abcc2a3a7414c10e2ed6b2460d611f558}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!task\-Manager\-Unlock\-Task@{task\-Manager\-Unlock\-Task}}
+\index{task\-Manager\-Unlock\-Task@{task\-Manager\-Unlock\-Task}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{task\-Manager\-Unlock\-Task}]{\setlength{\rightskip}{0pt plus 5cm}task\-Manager\-Unlock\-Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_abcc2a3a7414c10e2ed6b2460d611f558}
+Unlock a task
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_ad9e2d671f8f9013d02f11a555dda9f63}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!tasks\-Export\-To\-X\-M\-L@{tasks\-Export\-To\-X\-M\-L}}
+\index{tasks\-Export\-To\-X\-M\-L@{tasks\-Export\-To\-X\-M\-L}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{tasks\-Export\-To\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}tasks\-Export\-To\-X\-M\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_ad9e2d671f8f9013d02f11a555dda9f63}
+Export tasks to X\-M\-L
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_a5770fa6f761568a59ea4f1c606439310}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!tasks\-Import\-All\-Apps@{tasks\-Import\-All\-Apps}}
+\index{tasks\-Import\-All\-Apps@{tasks\-Import\-All\-Apps}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{tasks\-Import\-All\-Apps}]{\setlength{\rightskip}{0pt plus 5cm}tasks\-Import\-All\-Apps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_a5770fa6f761568a59ea4f1c606439310}
+Import all tasks from X\-M\-L
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__system__taskmanager_aa78e37952d71f38874473ba62d219d24}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!tasks\-Import\-From\-X\-M\-L@{tasks\-Import\-From\-X\-M\-L}}
+\index{tasks\-Import\-From\-X\-M\-L@{tasks\-Import\-From\-X\-M\-L}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{tasks\-Import\-From\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}tasks\-Import\-From\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{}]{\$file = {\ttfamily ''}, }
+\item[{}]{\$no\-\_\-return = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__system__taskmanager_aa78e37952d71f38874473ba62d219d24}
+Imports tasks from X\-M\-L
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & Filename to import tasks from \\
+\hline
+boolean & {\em \$no\-\_\-return} & Set to return true/false, instead of displaying results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape mixed} True if \$no\-\_\-return is enabled, otherwise void 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{classadmin__core__system__taskmanager_af28aee726fa3eb6c355d08a2ab655e03}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!\$form\-\_\-code@{\$form\-\_\-code}}
+\index{\$form\-\_\-code@{\$form\-\_\-code}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{\$form\-\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}\$form\-\_\-code = ''}}\label{classadmin__core__system__taskmanager_af28aee726fa3eb6c355d08a2ab655e03}
+String for the screen url bit \hypertarget{classadmin__core__system__taskmanager_ac68fe8a02a2efd63c3271179f4b4fbb7}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!\$form\-\_\-code\-\_\-js@{\$form\-\_\-code\-\_\-js}}
+\index{\$form\-\_\-code\-\_\-js@{\$form\-\_\-code\-\_\-js}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{\$form\-\_\-code\-\_\-js}]{\setlength{\rightskip}{0pt plus 5cm}\$form\-\_\-code\-\_\-js = ''}}\label{classadmin__core__system__taskmanager_ac68fe8a02a2efd63c3271179f4b4fbb7}
+String for the J\-S url bit \hypertarget{classadmin__core__system__taskmanager_a6f96e7fc92441776c9d1cd3386663b40}{\index{admin\-\_\-core\-\_\-system\-\_\-taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}!\$html@{\$html}}
+\index{\$html@{\$html}!admin_core_system_taskmanager@{admin\-\_\-core\-\_\-system\-\_\-taskmanager}}
+\subsubsection[{\$html}]{\setlength{\rightskip}{0pt plus 5cm}\$html}}\label{classadmin__core__system__taskmanager_a6f96e7fc92441776c9d1cd3386663b40}
+Skin object shortcut 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/applications/core/modules\-\_\-admin/system/\hyperlink{taskmanager_8php}{taskmanager.\-php}\end{DoxyCompactItemize}

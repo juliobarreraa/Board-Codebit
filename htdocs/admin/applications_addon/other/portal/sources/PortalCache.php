@@ -36,13 +36,14 @@ class PortalCache {
 	}
 	
 	/* 
-	 *
+	 * Si solo se desea cachear un usuario en particular no se pasa parámetro alguno en otro caso se pasa false
 	 *
 	 */
-	public function getfriends() {
-		if( ! $this->cache->getCache( 'portalfriends_' . (int)$this->memberData['member_id'] ) ) {
-			$this->setFriends();
-		}
+	public function getfriends( ) {
+	   
+    	if( ! $this->cache->getCache( 'portalfriends_' . (int)$this->memberData['member_id'] ) ) {
+    			$this->setFriends();
+    	}
 		
 		return $this->cache->getCache( 'portalfriends_' . (int)$this->memberData['member_id'] );
 	}
@@ -51,15 +52,18 @@ class PortalCache {
 	 *
 	 *
 	 */
-	public function setfriends() {
-        $members = $this->registry->members->getListfriends();
-        
+	public function setfriends( $member_id = 0 ) {
+        $members = $this->registry->members->getListfriends( $member_id );
         if( ! is_array( $members ) ) {
             return $members;
         }
         
-		$this->cache->setCache( 'portalfriends_' . (int)$this->memberData['member_id'], $members,  array( 'array' => 1, 'donow' => 1 ) );
-		$this->cache->rebuildCache( 'portalfriends_' . (int)$this->memberData['member_id'], 'portal' );
+        if( ! $member_id ) {
+            $member_id = (int)$member_id | (int)$this->memberData['member_id'];
+        }
+        
+		$this->cache->setCache( 'portalfriends_' . $member_id, $members,  array( 'array' => 1, 'donow' => 1 ) );
+		$this->cache->rebuildCache( 'portalfriends_' . $member_id, 'portal' );
 	}
 	
 }

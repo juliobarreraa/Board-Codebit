@@ -1,0 +1,303 @@
+\hypertarget{classauth__sha256}{\section{auth\-\_\-sha256 Class Reference}
+\label{classauth__sha256}\index{auth\-\_\-sha256@{auth\-\_\-sha256}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classauth__sha256_a31a5a620114fe9436435eac3854bc836}{S\-H\-A256} (\$s\-Message)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classauth__sha256_a1d366b9a160ce952ae7e3a0e9795a184}{L\-Shift} (\$l\-Value, \$i\-Shift\-Bits)
+\item 
+\hyperlink{classauth__sha256_a251423e114a652ecd22623d9cacd5e71}{R\-Shift} (\$l\-Value, \$i\-Shift\-Bits)
+\item 
+\hyperlink{classauth__sha256_ac95c0d52fbb6f6ba6742b46e32603c62}{Add\-Unsigned} (\$l\-X, \$l\-Y)
+\item 
+\hyperlink{classauth__sha256_ac3d425093bc89e2740ca350fd575b579}{Ch} (\$x, \$y, \$z)
+\item 
+\hyperlink{classauth__sha256_a9049c35d488d99b319cbf558fb23be2e}{Maj} (\$x, \$y, \$z)
+\item 
+\hyperlink{classauth__sha256_a7d983ab24acf3fdb494befd08318a7d9}{S} (\$x, \$n)
+\item 
+\hyperlink{classauth__sha256_a78fac55a7fa827fef394c8676fce098e}{R} (\$x, \$n)
+\item 
+\hyperlink{classauth__sha256_a00aca1a8683481d7e1add5e8dbd3eb3f}{Sigma0} (\$x)
+\item 
+\hyperlink{classauth__sha256_a913ed4860d2e35ed11736d2d5adf6219}{Sigma1} (\$x)
+\item 
+\hyperlink{classauth__sha256_a05d6559aa379f6a2b41097373e06d42f}{Gamma0} (\$x)
+\item 
+\hyperlink{classauth__sha256_ab3a795e0c8c653875480cf5ba510edbe}{Gamma1} (\$x)
+\item 
+\hyperlink{classauth__sha256_a71e9010664f0c5083e0248c9ff93f514}{Convert\-To\-Word\-Array} (\$s\-Message)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classauth__sha256_acf67c7a84fe59f779e61f6a595d7cd85}{{\bfseries \$m\-\_\-l\-On\-Bits} = array(1,3,7,15,31,63,127,255,511,1023,2047,4095,8191,16383,32767,65535,131071,262143,524287,1048575,2097151,4194303,8388607,16777215,33554431,67108863,134217727,268435455,536870911,1073741823,2147483647)}\label{classauth__sha256_acf67c7a84fe59f779e61f6a595d7cd85}
+
+\item 
+\hypertarget{classauth__sha256_a3f031de215acf09a4ba9b581f623f685}{{\bfseries \$m\-\_\-l2\-Power} = array(1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072,262144,524288,1048576,2097152,4194304,8388608,16777216,33554432,67108864,134217728,268435456,536870912,1073741824)}\label{classauth__sha256_a3f031de215acf09a4ba9b581f623f685}
+
+\item 
+\hypertarget{classauth__sha256_ade6f5d04b2c270bc1de4a5e00cebd7ff}{{\bfseries \$\-K} = array(0x428\-A2\-F98,0x71374491,0x\-B5\-C0\-F\-B\-C\-F,0x\-E9\-B5\-D\-B\-A5,0x3956\-C25\-B,0x59\-F111\-F1,0x923\-F82\-A4,0x\-A\-B1\-C5\-E\-D5,0x\-D807\-A\-A98,0x12835\-B01,0x243185\-B\-E,0x550\-C7\-D\-C3,0x72\-B\-E5\-D74,0x80\-D\-E\-B1\-F\-E,0x9\-B\-D\-C06\-A7,0x\-C19\-B\-F174,0x\-E49\-B69\-C1,0x\-E\-F\-B\-E4786,0x\-F\-C19\-D\-C6,0x240\-C\-A1\-C\-C,0x2\-D\-E92\-C6\-F,0x4\-A7484\-A\-A,0x5\-C\-B0\-A9\-D\-C,0x76\-F988\-D\-A,0x983\-E5152,0x\-A831\-C66\-D,0x\-B00327\-C8,0x\-B\-F597\-F\-C7,0x\-C6\-E00\-B\-F3,0x\-D5\-A79147,0x6\-C\-A6351,0x14292967,0x27\-B70\-A85,0x2\-E1\-B2138,0x4\-D2\-C6\-D\-F\-C,0x53380\-D13,0x650\-A7354,0x766\-A0\-A\-B\-B,0x81\-C2\-C92\-E,0x92722\-C85,0x\-A2\-B\-F\-E8\-A1,0x\-A81\-A664\-B,0x\-C24\-B8\-B70,0x\-C76\-C51\-A3,0x\-D192\-E819,0x\-D6990624,0x\-F40\-E3585,0x106\-A\-A070,0x19\-A4\-C116,0x1\-E376\-C08,0x2748774\-C,0x34\-B0\-B\-C\-B5,0x391\-C0\-C\-B3,0x4\-E\-D8\-A\-A4\-A,0x5\-B9\-C\-C\-A4\-F,0x682\-E6\-F\-F3,0x748\-F82\-E\-E,0x78\-A5636\-F,0x84\-C87814,0x8\-C\-C70208,0x90\-B\-E\-F\-F\-F\-A,0x\-A4506\-C\-E\-B,0x\-B\-E\-F9\-A3\-F7,0x\-C67178\-F2)}\label{classauth__sha256_ade6f5d04b2c270bc1de4a5e00cebd7ff}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classauth__sha256_ac95c0d52fbb6f6ba6742b46e32603c62}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Add\-Unsigned@{Add\-Unsigned}}
+\index{Add\-Unsigned@{Add\-Unsigned}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Add\-Unsigned}]{\setlength{\rightskip}{0pt plus 5cm}Add\-Unsigned (
+\begin{DoxyParamCaption}
+\item[{}]{\$l\-X, }
+\item[{}]{\$l\-Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_ac95c0d52fbb6f6ba6742b46e32603c62}
+Add unsigned
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em integer} & Number \\
+\hline
+{\em integer} & Number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Added unsigned integer 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_ac3d425093bc89e2740ca350fd575b579}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Ch@{Ch}}
+\index{Ch@{Ch}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Ch}]{\setlength{\rightskip}{0pt plus 5cm}Ch (
+\begin{DoxyParamCaption}
+\item[{}]{\$x, }
+\item[{}]{\$y, }
+\item[{}]{\$z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_ac3d425093bc89e2740ca350fd575b579}
+Ch
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+integer & {\em \$y} & \\
+\hline
+integer & {\em \$z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a71e9010664f0c5083e0248c9ff93f514}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Convert\-To\-Word\-Array@{Convert\-To\-Word\-Array}}
+\index{Convert\-To\-Word\-Array@{Convert\-To\-Word\-Array}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Convert\-To\-Word\-Array}]{\setlength{\rightskip}{0pt plus 5cm}Convert\-To\-Word\-Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$s\-Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a71e9010664f0c5083e0248c9ff93f514}
+Convert to a word array
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & Word to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Word array 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a05d6559aa379f6a2b41097373e06d42f}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Gamma0@{Gamma0}}
+\index{Gamma0@{Gamma0}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Gamma0}]{\setlength{\rightskip}{0pt plus 5cm}Gamma0 (
+\begin{DoxyParamCaption}
+\item[{}]{\$x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a05d6559aa379f6a2b41097373e06d42f}
+Gamma0
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_ab3a795e0c8c653875480cf5ba510edbe}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Gamma1@{Gamma1}}
+\index{Gamma1@{Gamma1}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Gamma1}]{\setlength{\rightskip}{0pt plus 5cm}Gamma1 (
+\begin{DoxyParamCaption}
+\item[{}]{\$x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_ab3a795e0c8c653875480cf5ba510edbe}
+Gamma1
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a1d366b9a160ce952ae7e3a0e9795a184}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!L\-Shift@{L\-Shift}}
+\index{L\-Shift@{L\-Shift}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{L\-Shift}]{\setlength{\rightskip}{0pt plus 5cm}L\-Shift (
+\begin{DoxyParamCaption}
+\item[{}]{\$l\-Value, }
+\item[{}]{\$i\-Shift\-Bits}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a1d366b9a160ce952ae7e3a0e9795a184}
+Left shift a value x bits
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & String to shift \\
+\hline
+{\em integer} & Number of bits to shift \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Shifted string 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a9049c35d488d99b319cbf558fb23be2e}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Maj@{Maj}}
+\index{Maj@{Maj}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Maj}]{\setlength{\rightskip}{0pt plus 5cm}Maj (
+\begin{DoxyParamCaption}
+\item[{}]{\$x, }
+\item[{}]{\$y, }
+\item[{}]{\$z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a9049c35d488d99b319cbf558fb23be2e}
+Maj
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+integer & {\em \$y} & \\
+\hline
+integer & {\em \$z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a78fac55a7fa827fef394c8676fce098e}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!R@{R}}
+\index{R@{R}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{R}]{\setlength{\rightskip}{0pt plus 5cm}R (
+\begin{DoxyParamCaption}
+\item[{}]{\$x, }
+\item[{}]{\$n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a78fac55a7fa827fef394c8676fce098e}
+R
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+integer & {\em \$n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a251423e114a652ecd22623d9cacd5e71}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!R\-Shift@{R\-Shift}}
+\index{R\-Shift@{R\-Shift}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{R\-Shift}]{\setlength{\rightskip}{0pt plus 5cm}R\-Shift (
+\begin{DoxyParamCaption}
+\item[{}]{\$l\-Value, }
+\item[{}]{\$i\-Shift\-Bits}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a251423e114a652ecd22623d9cacd5e71}
+Right shift a value x bits
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & String to shift \\
+\hline
+{\em integer} & Number of bits to shift \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Shifted string 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a7d983ab24acf3fdb494befd08318a7d9}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!S@{S}}
+\index{S@{S}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{S}]{\setlength{\rightskip}{0pt plus 5cm}S (
+\begin{DoxyParamCaption}
+\item[{}]{\$x, }
+\item[{}]{\$n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a7d983ab24acf3fdb494befd08318a7d9}
+S
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+integer & {\em \$n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a31a5a620114fe9436435eac3854bc836}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!S\-H\-A256@{S\-H\-A256}}
+\index{S\-H\-A256@{S\-H\-A256}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{S\-H\-A256}]{\setlength{\rightskip}{0pt plus 5cm}S\-H\-A256 (
+\begin{DoxyParamCaption}
+\item[{}]{\$s\-Message}
+\end{DoxyParamCaption}
+)}}\label{classauth__sha256_a31a5a620114fe9436435eac3854bc836}
+Perform S\-H\-A256 encoding
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & String to encode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Encoded string 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a00aca1a8683481d7e1add5e8dbd3eb3f}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Sigma0@{Sigma0}}
+\index{Sigma0@{Sigma0}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Sigma0}]{\setlength{\rightskip}{0pt plus 5cm}Sigma0 (
+\begin{DoxyParamCaption}
+\item[{}]{\$x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a00aca1a8683481d7e1add5e8dbd3eb3f}
+Sigma0
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+\hypertarget{classauth__sha256_a913ed4860d2e35ed11736d2d5adf6219}{\index{auth\-\_\-sha256@{auth\-\_\-sha256}!Sigma1@{Sigma1}}
+\index{Sigma1@{Sigma1}!auth_sha256@{auth\-\_\-sha256}}
+\subsubsection[{Sigma1}]{\setlength{\rightskip}{0pt plus 5cm}Sigma1 (
+\begin{DoxyParamCaption}
+\item[{}]{\$x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classauth__sha256_a913ed4860d2e35ed11736d2d5adf6219}
+Sigma1
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed No idea... 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/loginauth/convert/auth\-\_\-sha256.\-php\end{DoxyCompactItemize}

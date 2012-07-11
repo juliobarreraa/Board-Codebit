@@ -1,0 +1,245 @@
+\hypertarget{classadmin_functions}{\section{admin\-Functions Class Reference}
+\label{classadmin_functions}\index{admin\-Functions@{admin\-Functions}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin_functions_a178c3a93e57e75dd87a5d39112af0b07}{\-\_\-\-\_\-construct} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classadmin_functions_a6218bab0c4b7fd19de8c8220aced1aad}{fetch\-Mod\-Rewrite} ()
+\item 
+\hyperlink{classadmin_functions_ae1759cda7170352c709c2f7bc35a7018}{staff\-Get\-Cookie} (\$key, \$id=0)
+\item 
+\hyperlink{classadmin_functions_a7e4299ba07179dad57e91d68ede34479}{staff\-Save\-Cookie} (\$key, \$data, \$id=0)
+\item 
+\hyperlink{classadmin_functions_a39059b317a35e22636a885f3750efa15}{generate\-Secure\-Hash} ()
+\item 
+\hyperlink{classadmin_functions_a7c8727b196d21c49772e8a9b379b0e6b}{get\-Security\-Key} ()
+\item 
+\hyperlink{classadmin_functions_a8afd1d389f058d161def7860f3c59184}{check\-Security\-Key} (\$auth\-\_\-key='', \$return\-\_\-and\-\_\-not\-\_\-die=false)
+\item 
+\hyperlink{classadmin_functions_a61da5c0f970321c640d0d35b10283941}{save\-Admin\-Log} (\$action=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classadmin_functions_a235c2e270a15609af4bda7136f59a7cd}{import\-Xml} (\$location='')
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin_functions_a5fe0f6158857fdb3c2f290ec8cc09045}{{\bfseries \$generated\-\_\-acp\-\_\-hash}}\label{classadmin_functions_a5fe0f6158857fdb3c2f290ec8cc09045}
+
+\item 
+\hypertarget{classadmin_functions_a66d7ddef16312a6e9f6d04b97cef8a30}{{\bfseries \$\-\_\-admin\-\_\-auth\-\_\-key}}\label{classadmin_functions_a66d7ddef16312a6e9f6d04b97cef8a30}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin_functions_a531e4a386aaa7f3e06d3642dc38d7e80}{{\bfseries \$registry}}\label{classadmin_functions_a531e4a386aaa7f3e06d3642dc38d7e80}
+
+\item 
+\hypertarget{classadmin_functions_a7dc56dc8b18ad37272b56fa7395bedef}{{\bfseries \$\-D\-B}}\label{classadmin_functions_a7dc56dc8b18ad37272b56fa7395bedef}
+
+\item 
+\hypertarget{classadmin_functions_ac7c3353107070daa85f641882931b358}{{\bfseries \$settings}}\label{classadmin_functions_ac7c3353107070daa85f641882931b358}
+
+\item 
+\hypertarget{classadmin_functions_abb35c8495a232b510389fa6d7b15d38a}{{\bfseries \$request}}\label{classadmin_functions_abb35c8495a232b510389fa6d7b15d38a}
+
+\item 
+\hypertarget{classadmin_functions_a7714b111b644017933931ec69a154102}{{\bfseries \$lang}}\label{classadmin_functions_a7714b111b644017933931ec69a154102}
+
+\item 
+\hypertarget{classadmin_functions_a5e1c849c6148a8732eee400fcee0d044}{{\bfseries \$member}}\label{classadmin_functions_a5e1c849c6148a8732eee400fcee0d044}
+
+\item 
+\hypertarget{classadmin_functions_ae9d848ba2cf6eee63bdc060e2dfcf95a}{{\bfseries \$member\-Data}}\label{classadmin_functions_ae9d848ba2cf6eee63bdc060e2dfcf95a}
+
+\item 
+\hypertarget{classadmin_functions_ac2dc76d756ec398393d4b1d23659276c}{{\bfseries \$cache}}\label{classadmin_functions_ac2dc76d756ec398393d4b1d23659276c}
+
+\item 
+\hypertarget{classadmin_functions_a0334a912b7c2d39a9bc71177578d782e}{{\bfseries \$caches}}\label{classadmin_functions_a0334a912b7c2d39a9bc71177578d782e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classadmin_functions_a178c3a93e57e75dd87a5d39112af0b07}{\index{admin\-Functions@{admin\-Functions}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!adminFunctions@{admin\-Functions}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a178c3a93e57e75dd87a5d39112af0b07}
+\#@-\/ Constructor
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em object} & \hyperlink{classips_registry}{ips\-Registry} reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin_functions_a8afd1d389f058d161def7860f3c59184}{\index{admin\-Functions@{admin\-Functions}!check\-Security\-Key@{check\-Security\-Key}}
+\index{check\-Security\-Key@{check\-Security\-Key}!adminFunctions@{admin\-Functions}}
+\subsubsection[{check\-Security\-Key}]{\setlength{\rightskip}{0pt plus 5cm}check\-Security\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$auth\-\_\-key = {\ttfamily ''}, }
+\item[{}]{\$return\-\_\-and\-\_\-not\-\_\-die = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a8afd1d389f058d161def7860f3c59184}
+Checks the security key
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & md5 auth key \mbox{[}defaults to \$\-\_\-\-P\-O\-S\-T\mbox{[}'\-\_\-admin\-\_\-auth\-\_\-key'\mbox{]}\mbox{]} \\
+\hline
+{\em boolean} & return and not die? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed boolean false or outputs error on failure, else true 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classadmin_functions_a7c8727b196d21c49772e8a9b379b0e6b}{get\-Security\-Key()} 
+\end{DoxySeeAlso}
+\hypertarget{classadmin_functions_a6218bab0c4b7fd19de8c8220aced1aad}{\index{admin\-Functions@{admin\-Functions}!fetch\-Mod\-Rewrite@{fetch\-Mod\-Rewrite}}
+\index{fetch\-Mod\-Rewrite@{fetch\-Mod\-Rewrite}!adminFunctions@{admin\-Functions}}
+\subsubsection[{fetch\-Mod\-Rewrite}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Mod\-Rewrite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a6218bab0c4b7fd19de8c8220aced1aad}
+Fetch mod\-\_\-rewrite rules
+
+public \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classadmin_functions_a39059b317a35e22636a885f3750efa15}{\index{admin\-Functions@{admin\-Functions}!generate\-Secure\-Hash@{generate\-Secure\-Hash}}
+\index{generate\-Secure\-Hash@{generate\-Secure\-Hash}!adminFunctions@{admin\-Functions}}
+\subsubsection[{generate\-Secure\-Hash}]{\setlength{\rightskip}{0pt plus 5cm}generate\-Secure\-Hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a39059b317a35e22636a885f3750efa15}
+Generate a md5 hash, used for authenticating forms
+
+public \begin{DoxyReturn}{Returns}
+string M\-D5 secure hash 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classadmin_functions_a7c8727b196d21c49772e8a9b379b0e6b}{get\-Security\-Key()} 
+\end{DoxySeeAlso}
+\hypertarget{classadmin_functions_a7c8727b196d21c49772e8a9b379b0e6b}{\index{admin\-Functions@{admin\-Functions}!get\-Security\-Key@{get\-Security\-Key}}
+\index{get\-Security\-Key@{get\-Security\-Key}!adminFunctions@{admin\-Functions}}
+\subsubsection[{get\-Security\-Key}]{\setlength{\rightskip}{0pt plus 5cm}get\-Security\-Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a7c8727b196d21c49772e8a9b379b0e6b}
+Generate a md5 hash, used for authenticating forms
+
+public \begin{DoxyReturn}{Returns}
+string M\-D5 secure hash 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classadmin_functions_a8afd1d389f058d161def7860f3c59184}{check\-Security\-Key()} 
+
+\hyperlink{classadmin_functions_a7c8727b196d21c49772e8a9b379b0e6b}{get\-Security\-Key()} 
+\end{DoxySeeAlso}
+\hypertarget{classadmin_functions_a235c2e270a15609af4bda7136f59a7cd}{\index{admin\-Functions@{admin\-Functions}!import\-Xml@{import\-Xml}}
+\index{import\-Xml@{import\-Xml}!adminFunctions@{admin\-Functions}}
+\subsubsection[{import\-Xml}]{\setlength{\rightskip}{0pt plus 5cm}import\-Xml (
+\begin{DoxyParamCaption}
+\item[{}]{\$location = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a235c2e270a15609af4bda7136f59a7cd}
+Import an X\-M\-L file either from a fixed server location or via the upload fields. Upload fields are checked first
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & File location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string X\-M\-L contents 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Throws Exception gz\-\_\-not\-\_\-available if the zlib extension is not installed \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Note}
+This function is not restricted to X\-M\-L. It will return the contents of the uploaded file regardless of file type. 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000017}{Todo}]\mbox{[}Future\mbox{]} We should rename this function to something more generic. It is not restricted to 'xml' so the name is misleading. \end{DoxyRefDesc}
+\hypertarget{classadmin_functions_a61da5c0f970321c640d0d35b10283941}{\index{admin\-Functions@{admin\-Functions}!save\-Admin\-Log@{save\-Admin\-Log}}
+\index{save\-Admin\-Log@{save\-Admin\-Log}!adminFunctions@{admin\-Functions}}
+\subsubsection[{save\-Admin\-Log}]{\setlength{\rightskip}{0pt plus 5cm}save\-Admin\-Log (
+\begin{DoxyParamCaption}
+\item[{}]{\$action = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a61da5c0f970321c640d0d35b10283941}
+Save an entry to the admin logs
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Action \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classadmin_functions_ae1759cda7170352c709c2f7bc35a7018}{\index{admin\-Functions@{admin\-Functions}!staff\-Get\-Cookie@{staff\-Get\-Cookie}}
+\index{staff\-Get\-Cookie@{staff\-Get\-Cookie}!adminFunctions@{admin\-Functions}}
+\subsubsection[{staff\-Get\-Cookie}]{\setlength{\rightskip}{0pt plus 5cm}staff\-Get\-Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_ae1759cda7170352c709c2f7bc35a7018}
+Get the staff member's \char`\"{}cookie\char`\"{}
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Key \\
+\hline
+{\em integer} & Member I\-D \mbox{[}defaults to current member\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Stored cookie 
+\end{DoxyReturn}
+\hypertarget{classadmin_functions_a7e4299ba07179dad57e91d68ede34479}{\index{admin\-Functions@{admin\-Functions}!staff\-Save\-Cookie@{staff\-Save\-Cookie}}
+\index{staff\-Save\-Cookie@{staff\-Save\-Cookie}!adminFunctions@{admin\-Functions}}
+\subsubsection[{staff\-Save\-Cookie}]{\setlength{\rightskip}{0pt plus 5cm}staff\-Save\-Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$data, }
+\item[{}]{\$id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_functions_a7e4299ba07179dad57e91d68ede34479}
+Update the member's \char`\"{}cookie\char`\"{}
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Key \\
+\hline
+{\em mixed} & Data \\
+\hline
+{\em integer} & Member id \mbox{[}defaults to current member\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/classes/class\-\_\-admin\-\_\-functions.\-php\end{DoxyCompactItemize}

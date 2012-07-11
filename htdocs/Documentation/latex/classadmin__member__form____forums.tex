@@ -1,0 +1,102 @@
+\hypertarget{classadmin__member__form____forums}{\section{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums Class Reference}
+\label{classadmin__member__form____forums}\index{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums@{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}}
+}
+Inheritance diagram for admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classadmin__member__form____forums}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__member__form____forums_aa06c25b69a518bbb6eaaaf6a84047f04}{get\-Sidebar\-Links} (\$member=array())
+\item 
+\hyperlink{classadmin__member__form____forums_af3da842ede1e6d212629fd0eda2bfbcc}{get\-Display\-Content} (\$member=array(), \$tabs\-Used=5)
+\item 
+\hyperlink{classadmin__member__form____forums_aa584200e117d7f02d4fabc05b109e51f}{get\-For\-Save} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin__member__form____forums_a924f0502d852ff2259cef00e4fa12d94}{{\bfseries \$tab\-\_\-name} = \char`\"{}\char`\"{}}\label{classadmin__member__form____forums_a924f0502d852ff2259cef00e4fa12d94}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin__member__form____forums_af3da842ede1e6d212629fd0eda2bfbcc}{\index{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums@{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}!get\-Display\-Content@{get\-Display\-Content}}
+\index{get\-Display\-Content@{get\-Display\-Content}!admin_member_form__forums@{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}}
+\subsubsection[{get\-Display\-Content}]{\setlength{\rightskip}{0pt plus 5cm}get\-Display\-Content (
+\begin{DoxyParamCaption}
+\item[{}]{\$member = {\ttfamily array()}, }
+\item[{}]{\$tabs\-Used = {\ttfamily 5}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__member__form____forums_af3da842ede1e6d212629fd0eda2bfbcc}
+Returns content for the page.
+
+\begin{DoxyAuthor}{Author}
+Matt Mecham 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Member data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array of tabs, content 
+\end{DoxyReturn}
+\hypertarget{classadmin__member__form____forums_aa584200e117d7f02d4fabc05b109e51f}{\index{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums@{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}!get\-For\-Save@{get\-For\-Save}}
+\index{get\-For\-Save@{get\-For\-Save}!admin_member_form__forums@{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}}
+\subsubsection[{get\-For\-Save}]{\setlength{\rightskip}{0pt plus 5cm}get\-For\-Save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__member__form____forums_aa584200e117d7f02d4fabc05b109e51f}
+Process the entries for saving and return
+
+\begin{DoxyAuthor}{Author}
+Brandon Farber 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+array Multi-\/dimensional array (core, extended\-Profile) for saving 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceadmin__member__form_aa584200e117d7f02d4fabc05b109e51f}{admin\-\_\-member\-\_\-form}.
+
+\hypertarget{classadmin__member__form____forums_aa06c25b69a518bbb6eaaaf6a84047f04}{\index{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums@{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}!get\-Sidebar\-Links@{get\-Sidebar\-Links}}
+\index{get\-Sidebar\-Links@{get\-Sidebar\-Links}!admin_member_form__forums@{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}}
+\subsubsection[{get\-Sidebar\-Links}]{\setlength{\rightskip}{0pt plus 5cm}get\-Sidebar\-Links (
+\begin{DoxyParamCaption}
+\item[{}]{\$member = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__member__form____forums_aa06c25b69a518bbb6eaaaf6a84047f04}
+Returns sidebar links for this tab You may return an empty array or F\-A\-L\-S\-E to not have any links show in the sidebar for this block.
+
+The links must have 'section=xxxxx\&module=xxxxx\mbox{[}\&do=xxxxxx\mbox{]}'. The rest of the U\-R\-L is added automatically.
+
+The image must be a full U\-R\-L or blank to use a default image.
+
+Use the format\-: \$array\mbox{[}\mbox{]} = array( 'img' =$>$ '', 'url' =$>$ '', 'title' =$>$ '' );
+
+\begin{DoxyAuthor}{Author}
+Matt Mecham 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Member data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array of links 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceadmin__member__form_aa06c25b69a518bbb6eaaaf6a84047f04}{admin\-\_\-member\-\_\-form}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/applications/forums/extensions/admin/member\-\_\-form.\-php\end{DoxyCompactItemize}

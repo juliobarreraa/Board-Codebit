@@ -1,0 +1,126 @@
+\hypertarget{classadmin_sessions}{\section{admin\-Sessions Class Reference}
+\label{classadmin_sessions}\index{admin\-Sessions@{admin\-Sessions}}
+}
+Inheritance diagram for admin\-Sessions\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classadmin_sessions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin_sessions_a095c5d389db211932136b53f25f39685}{\-\_\-\-\_\-construct} ()
+\item 
+\hyperlink{classadmin_sessions_a9d21636071f529e2154051d3ea6e5921}{get\-Status} ()
+\item 
+\hyperlink{classadmin_sessions_a0b0e611236742aac18ba1936d03ba89a}{get\-Message} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin_sessions_a1324f1ade589758dd04b3adb2bf0e8f0}{\-\_\-process\-User\-Agent} ()
+\item 
+\hyperlink{classadmin_sessions_acdf1a0cbdbd400b82b38b392a35e19af}{\-\_\-response} (\$validated, \$message, \$user\-Agent\-Data=array())
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin_sessions_a3a08925cfa93a2860009310cb9c28187}{{\bfseries \$session\-\_\-data} = array()}\label{classadmin_sessions_a3a08925cfa93a2860009310cb9c28187}
+
+\item 
+\hypertarget{classadmin_sessions_ab9c2331ecec659acbb457e151d7362cf}{{\bfseries \$\-\_\-time\-\_\-out\-\_\-mins} = 120}\label{classadmin_sessions_ab9c2331ecec659acbb457e151d7362cf}
+
+\item 
+\hypertarget{classadmin_sessions_abd3ad4fc9e120b4d165f7168849333b8}{{\bfseries \$\-\_\-adsess} = ''}\label{classadmin_sessions_abd3ad4fc9e120b4d165f7168849333b8}
+
+\item 
+\hypertarget{classadmin_sessions_a17ce32c4ee8ca027181d82903fa74592}{{\bfseries \$\-\_\-validated} = false}\label{classadmin_sessions_a17ce32c4ee8ca027181d82903fa74592}
+
+\item 
+\hypertarget{classadmin_sessions_a5aa69aa9837e33d90b23e70bca1f1d18}{{\bfseries \$\-\_\-message} = ''}\label{classadmin_sessions_a5aa69aa9837e33d90b23e70bca1f1d18}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classadmin_sessions_a095c5d389db211932136b53f25f39685}{\index{admin\-Sessions@{admin\-Sessions}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!adminSessions@{admin\-Sessions}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_sessions_a095c5d389db211932136b53f25f39685}
+Authorize
+
+public \begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin_sessions_a1324f1ade589758dd04b3adb2bf0e8f0}{\index{admin\-Sessions@{admin\-Sessions}!\-\_\-process\-User\-Agent@{\-\_\-process\-User\-Agent}}
+\index{\-\_\-process\-User\-Agent@{\-\_\-process\-User\-Agent}!adminSessions@{admin\-Sessions}}
+\subsubsection[{\-\_\-process\-User\-Agent}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-process\-User\-Agent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin_sessions_a1324f1ade589758dd04b3adb2bf0e8f0}
+Grab the user agent from the D\-B if required
+
+protected \begin{DoxyReturn}{Returns}
+array Array of user agent info from the D\-B 
+\end{DoxyReturn}
+\hypertarget{classadmin_sessions_acdf1a0cbdbd400b82b38b392a35e19af}{\index{admin\-Sessions@{admin\-Sessions}!\-\_\-response@{\-\_\-response}}
+\index{\-\_\-response@{\-\_\-response}!adminSessions@{admin\-Sessions}}
+\subsubsection[{\-\_\-response}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-response (
+\begin{DoxyParamCaption}
+\item[{}]{\$validated, }
+\item[{}]{\$message, }
+\item[{}]{\$user\-Agent\-Data = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin_sessions_acdf1a0cbdbd400b82b38b392a35e19af}
+Set the response
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em bool} & Authenticated or not \\
+\hline
+{\em string} & Message \\
+\hline
+{\em array} & Array of user agent data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_sessions_a0b0e611236742aac18ba1936d03ba89a}{\index{admin\-Sessions@{admin\-Sessions}!get\-Message@{get\-Message}}
+\index{get\-Message@{get\-Message}!adminSessions@{admin\-Sessions}}
+\subsubsection[{get\-Message}]{\setlength{\rightskip}{0pt plus 5cm}get\-Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_sessions_a0b0e611236742aac18ba1936d03ba89a}
+Get the validation message
+
+public \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classadmin_sessions_a9d21636071f529e2154051d3ea6e5921}{\index{admin\-Sessions@{admin\-Sessions}!get\-Status@{get\-Status}}
+\index{get\-Status@{get\-Status}!adminSessions@{admin\-Sessions}}
+\subsubsection[{get\-Status}]{\setlength{\rightskip}{0pt plus 5cm}get\-Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_sessions_a9d21636071f529e2154051d3ea6e5921}
+Get the validation status
+
+public \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/classes/session/admin\-Sessions.\-php\end{DoxyCompactItemize}

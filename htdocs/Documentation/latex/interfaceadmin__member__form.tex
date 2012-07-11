@@ -1,0 +1,94 @@
+\hypertarget{interfaceadmin__member__form}{\section{admin\-\_\-member\-\_\-form Interface Reference}
+\label{interfaceadmin__member__form}\index{admin\-\_\-member\-\_\-form@{admin\-\_\-member\-\_\-form}}
+}
+
+
+Member form plugin interface.  
+
+
+Inheritance diagram for admin\-\_\-member\-\_\-form\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.866667cm]{interfaceadmin__member__form}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceadmin__member__form_aa06c25b69a518bbb6eaaaf6a84047f04}{get\-Sidebar\-Links} (\$member=array())
+\item 
+\hyperlink{interfaceadmin__member__form_a748f574b3f1acd04443c274221ad547d}{get\-Display\-Content} (\$member=array())
+\item 
+\hyperlink{interfaceadmin__member__form_aa584200e117d7f02d4fabc05b109e51f}{get\-For\-Save} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Member form plugin interface. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceadmin__member__form_a748f574b3f1acd04443c274221ad547d}{\index{admin\-\_\-member\-\_\-form@{admin\-\_\-member\-\_\-form}!get\-Display\-Content@{get\-Display\-Content}}
+\index{get\-Display\-Content@{get\-Display\-Content}!admin_member_form@{admin\-\_\-member\-\_\-form}}
+\subsubsection[{get\-Display\-Content}]{\setlength{\rightskip}{0pt plus 5cm}get\-Display\-Content (
+\begin{DoxyParamCaption}
+\item[{}]{\$member = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{interfaceadmin__member__form_a748f574b3f1acd04443c274221ad547d}
+Returns H\-T\-M\-L tabs content for the page
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$member} & Member data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape array} Array of 'tabs' (H\-T\-M\-L for the tabs), 'content' (H\-T\-M\-L for the content) 
+\end{DoxyReturn}
+\hypertarget{interfaceadmin__member__form_aa584200e117d7f02d4fabc05b109e51f}{\index{admin\-\_\-member\-\_\-form@{admin\-\_\-member\-\_\-form}!get\-For\-Save@{get\-For\-Save}}
+\index{get\-For\-Save@{get\-For\-Save}!admin_member_form@{admin\-\_\-member\-\_\-form}}
+\subsubsection[{get\-For\-Save}]{\setlength{\rightskip}{0pt plus 5cm}get\-For\-Save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceadmin__member__form_aa584200e117d7f02d4fabc05b109e51f}
+Process the entries for saving and return
+
+\begin{DoxyReturn}{Returns}
+{\itshape array} Multi-\/dimensional array (core, extended\-Profile) for saving 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classadmin__member__form____members_aa584200e117d7f02d4fabc05b109e51f}{admin\-\_\-member\-\_\-form\-\_\-\-\_\-members}, \hyperlink{classadmin__member__form____forums_aa584200e117d7f02d4fabc05b109e51f}{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}, and \hyperlink{classadmin__member__form____core_aa584200e117d7f02d4fabc05b109e51f}{admin\-\_\-member\-\_\-form\-\_\-\-\_\-core}.
+
+\hypertarget{interfaceadmin__member__form_aa06c25b69a518bbb6eaaaf6a84047f04}{\index{admin\-\_\-member\-\_\-form@{admin\-\_\-member\-\_\-form}!get\-Sidebar\-Links@{get\-Sidebar\-Links}}
+\index{get\-Sidebar\-Links@{get\-Sidebar\-Links}!admin_member_form@{admin\-\_\-member\-\_\-form}}
+\subsubsection[{get\-Sidebar\-Links}]{\setlength{\rightskip}{0pt plus 5cm}get\-Sidebar\-Links (
+\begin{DoxyParamCaption}
+\item[{}]{\$member = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{interfaceadmin__member__form_aa06c25b69a518bbb6eaaaf6a84047f04}
+Returns sidebar links for a tab You may return an empty array or F\-A\-L\-S\-E to not have any links show in the sidebar for this block.
+
+The links must have 'section=xxxxx\&module=xxxxx\mbox{[}\&do=xxxxxx\mbox{]}'. The rest of the U\-R\-L is added automatically. member\-\_\-id will contain the Member I\-D
+
+The image must be a full U\-R\-L or blank to use a default image.
+
+Use the format\-: \$array\mbox{[}\mbox{]} = array( 'img' =$>$ '', 'url' =$>$ '', 'title' =$>$ '' );
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$member} & Member data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape array} Array of links 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classadmin__member__form____core_aa06c25b69a518bbb6eaaaf6a84047f04}{admin\-\_\-member\-\_\-form\-\_\-\-\_\-core}, \hyperlink{classadmin__member__form____members_aa06c25b69a518bbb6eaaaf6a84047f04}{admin\-\_\-member\-\_\-form\-\_\-\-\_\-members}, and \hyperlink{classadmin__member__form____forums_aa06c25b69a518bbb6eaaaf6a84047f04}{admin\-\_\-member\-\_\-form\-\_\-\-\_\-forums}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/interfaces/admin/member\-\_\-form.\-php\end{DoxyCompactItemize}

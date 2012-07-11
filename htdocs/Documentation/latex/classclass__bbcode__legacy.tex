@@ -1,0 +1,265 @@
+\hypertarget{classclass__bbcode__legacy}{\section{class\-\_\-bbcode\-\_\-legacy Class Reference}
+\label{classclass__bbcode__legacy}\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}}
+}
+Inheritance diagram for class\-\_\-bbcode\-\_\-legacy\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclass__bbcode__legacy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classclass__bbcode__legacy_a178c3a93e57e75dd87a5d39112af0b07}{\-\_\-\-\_\-construct} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classclass__bbcode__legacy_aea1919f4d4d425b66d1a63314da38aaf}{pre\-Db\-Parse} (\$txt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__legacy_abbb08647886418bf857c94e5f4262423}{pre\-Display\-Parse} (\$txt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__legacy_ad3d23bc194e2cb81f6387acb027597cd}{pre\-Edit\-Parse} (\$txt=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classclass__bbcode__legacy_aa0bb5ecf5c1779f89a9f9ae51493848e}{\-\_\-parse\-\_\-new\-\_\-quote} (\$matches=array())
+\item 
+\hyperlink{classclass__bbcode__legacy_a134c91f65e8a33d5e38fc11a76727cd2}{unconvert\-\_\-size} (\$matches=array())
+\item 
+\hyperlink{classclass__bbcode__legacy_a9a82c8fb6662f58c9b6a5cb3f66aecb7}{unconvert\-\_\-flash} (\$matches=array())
+\item 
+\hyperlink{classclass__bbcode__legacy_a2c013a11f15ac8164e9e82b59487a314}{unconvert\-\_\-sql} (\$matches=array())
+\item 
+\hyperlink{classclass__bbcode__legacy_a05f0bd15db0837ce09fa2970ce5573e5}{unconvert\-\_\-htm} (\$matches=array())
+\item 
+\hyperlink{classclass__bbcode__legacy_a9c4b01369673a15fd10df6ab0f13d043}{post\-\_\-db\-\_\-unparse\-\_\-bbcode} (\$t=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classclass__bbcode__legacy_a933df323c5e9ac999b390fdf3574dfd3}{parse\-\_\-simple\-\_\-tag\-\_\-recursively} (\$tag\-\_\-name, \$convert\-\_\-name, \$bbcode, \$text)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classclass__bbcode__legacy_a178c3a93e57e75dd87a5d39112af0b07}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__legacy_a178c3a93e57e75dd87a5d39112af0b07}
+Constructor
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em object} & Registry object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classclass__bbcode__core_a178c3a93e57e75dd87a5d39112af0b07}{class\-\_\-bbcode\-\_\-core}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classclass__bbcode__legacy_aa0bb5ecf5c1779f89a9f9ae51493848e}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!\-\_\-parse\-\_\-new\-\_\-quote@{\-\_\-parse\-\_\-new\-\_\-quote}}
+\index{\-\_\-parse\-\_\-new\-\_\-quote@{\-\_\-parse\-\_\-new\-\_\-quote}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{\-\_\-parse\-\_\-new\-\_\-quote}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-parse\-\_\-new\-\_\-quote (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__legacy_aa0bb5ecf5c1779f89a9f9ae51493848e}
+Parse new quotes
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & Quote data \\
+\hline
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__legacy_a933df323c5e9ac999b390fdf3574dfd3}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!parse\-\_\-simple\-\_\-tag\-\_\-recursively@{parse\-\_\-simple\-\_\-tag\-\_\-recursively}}
+\index{parse\-\_\-simple\-\_\-tag\-\_\-recursively@{parse\-\_\-simple\-\_\-tag\-\_\-recursively}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{parse\-\_\-simple\-\_\-tag\-\_\-recursively}]{\setlength{\rightskip}{0pt plus 5cm}parse\-\_\-simple\-\_\-tag\-\_\-recursively (
+\begin{DoxyParamCaption}
+\item[{}]{\$tag\-\_\-name, }
+\item[{}]{\$convert\-\_\-name, }
+\item[{}]{\$bbcode, }
+\item[{}]{\$text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__legacy_a933df323c5e9ac999b390fdf3574dfd3}
+Recursively parse a simple tag
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Tag name (ie \char`\"{}b\char`\"{}, \char`\"{}i\char`\"{}, \char`\"{}s\char`\"{}) \\
+\hline
+{\em string} & Convert tag (ie \char`\"{}b\char`\"{}, \char`\"{}i\char`\"{}, \char`\"{}strike\char`\"{} ) \\
+\hline
+{\em int} & To B\-Bcode \\
+\hline
+{\em string} & H\-T\-M\-L to search in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Parsed H\-T\-M\-L; 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__legacy_a9c4b01369673a15fd10df6ab0f13d043}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!post\-\_\-db\-\_\-unparse\-\_\-bbcode@{post\-\_\-db\-\_\-unparse\-\_\-bbcode}}
+\index{post\-\_\-db\-\_\-unparse\-\_\-bbcode@{post\-\_\-db\-\_\-unparse\-\_\-bbcode}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{post\-\_\-db\-\_\-unparse\-\_\-bbcode}]{\setlength{\rightskip}{0pt plus 5cm}post\-\_\-db\-\_\-unparse\-\_\-bbcode (
+\begin{DoxyParamCaption}
+\item[{}]{\$t = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__legacy_a9c4b01369673a15fd10df6ab0f13d043}
+Pre-\/edit unparse custom B\-B\-Code
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Converted text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Raw text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__legacy_aea1919f4d4d425b66d1a63314da38aaf}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!pre\-Db\-Parse@{pre\-Db\-Parse}}
+\index{pre\-Db\-Parse@{pre\-Db\-Parse}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{pre\-Db\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Db\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__legacy_aea1919f4d4d425b66d1a63314da38aaf}
+Parse before saving (not used in legacy parser)
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Parsed text 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classclass__bbcode__core_aea1919f4d4d425b66d1a63314da38aaf}{class\-\_\-bbcode\-\_\-core}.
+
+\hypertarget{classclass__bbcode__legacy_abbb08647886418bf857c94e5f4262423}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!pre\-Display\-Parse@{pre\-Display\-Parse}}
+\index{pre\-Display\-Parse@{pre\-Display\-Parse}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{pre\-Display\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Display\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__legacy_abbb08647886418bf857c94e5f4262423}
+Parse before displaying (not used in legacy parser)
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Parsed text 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classclass__bbcode__core_abbb08647886418bf857c94e5f4262423}{class\-\_\-bbcode\-\_\-core}.
+
+\hypertarget{classclass__bbcode__legacy_ad3d23bc194e2cb81f6387acb027597cd}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!pre\-Edit\-Parse@{pre\-Edit\-Parse}}
+\index{pre\-Edit\-Parse@{pre\-Edit\-Parse}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{pre\-Edit\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Edit\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classclass__bbcode__legacy_ad3d23bc194e2cb81f6387acb027597cd}
+This function processes the text before showing for editing, etc Used for rebuilding after upgrade to 3.\-0
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classclass__bbcode__core_ad3d23bc194e2cb81f6387acb027597cd}{class\-\_\-bbcode\-\_\-core}.
+
+\hypertarget{classclass__bbcode__legacy_a9a82c8fb6662f58c9b6a5cb3f66aecb7}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!unconvert\-\_\-flash@{unconvert\-\_\-flash}}
+\index{unconvert\-\_\-flash@{unconvert\-\_\-flash}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{unconvert\-\_\-flash}]{\setlength{\rightskip}{0pt plus 5cm}unconvert\-\_\-flash (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__legacy_a9a82c8fb6662f58c9b6a5cb3f66aecb7}
+Convert flash H\-T\-M\-L back into B\-B\-Code
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__legacy_a05f0bd15db0837ce09fa2970ce5573e5}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!unconvert\-\_\-htm@{unconvert\-\_\-htm}}
+\index{unconvert\-\_\-htm@{unconvert\-\_\-htm}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{unconvert\-\_\-htm}]{\setlength{\rightskip}{0pt plus 5cm}unconvert\-\_\-htm (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__legacy_a05f0bd15db0837ce09fa2970ce5573e5}
+Convert H\-T\-M\-L T\-A\-G H\-T\-M\-L back into B\-B\-Code
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__legacy_a134c91f65e8a33d5e38fc11a76727cd2}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!unconvert\-\_\-size@{unconvert\-\_\-size}}
+\index{unconvert\-\_\-size@{unconvert\-\_\-size}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{unconvert\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unconvert\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__legacy_a134c91f65e8a33d5e38fc11a76727cd2}
+Convert font-\/size H\-T\-M\-L back into B\-B\-Code
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & \hyperlink{namespace_core}{Core} size \\
+\hline
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+\hypertarget{classclass__bbcode__legacy_a2c013a11f15ac8164e9e82b59487a314}{\index{class\-\_\-bbcode\-\_\-legacy@{class\-\_\-bbcode\-\_\-legacy}!unconvert\-\_\-sql@{unconvert\-\_\-sql}}
+\index{unconvert\-\_\-sql@{unconvert\-\_\-sql}!class_bbcode_legacy@{class\-\_\-bbcode\-\_\-legacy}}
+\subsubsection[{unconvert\-\_\-sql}]{\setlength{\rightskip}{0pt plus 5cm}unconvert\-\_\-sql (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classclass__bbcode__legacy_a2c013a11f15ac8164e9e82b59487a314}
+Convert S\-Q\-L H\-T\-M\-L back into B\-B\-Code
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Raw text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Converted text 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/classes/bbcode/legacy.\-php\end{DoxyCompactItemize}

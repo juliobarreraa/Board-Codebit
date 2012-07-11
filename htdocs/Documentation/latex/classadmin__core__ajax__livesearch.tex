@@ -1,0 +1,193 @@
+\hypertarget{classadmin__core__ajax__livesearch}{\section{admin\-\_\-core\-\_\-ajax\-\_\-livesearch Class Reference}
+\label{classadmin__core__ajax__livesearch}\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+}
+Inheritance diagram for admin\-\_\-core\-\_\-ajax\-\_\-livesearch\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classadmin__core__ajax__livesearch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_afbc4e912a0604b94d47d66744c64d8ba}{do\-Execute} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_a421fae61281c7b745a46509a23d0088a}{do\-Search\-Request} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_a932822070d1e3eb217afec6114993077}{\-\_\-get\-Members} (\$term, \$results)
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_aa94aa3ddb505c2dcc0654e87559b709e}{\-\_\-check\-Groups} (\$term, \$results)
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_ac096537046295faada13f5479b2907a4}{\-\_\-check\-Forums} (\$term, \$results)
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_ae80a735f63dbc88d6f831bb4a39a57d6}{\-\_\-get\-Settings} (\$term, \$results)
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_aa52465a231d9564ae110202ac6af4dc2}{\-\_\-check\-Nexus} (\$term, \$results)
+\item 
+\hyperlink{classadmin__core__ajax__livesearch_aac855459c7c6c7959bf6d20e4bee1726}{\-\_\-get\-From\-X\-M\-L} (\$term, \$results)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin__core__ajax__livesearch_ac096537046295faada13f5479b2907a4}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!\-\_\-check\-Forums@{\-\_\-check\-Forums}}
+\index{\-\_\-check\-Forums@{\-\_\-check\-Forums}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{\-\_\-check\-Forums}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-check\-Forums (
+\begin{DoxyParamCaption}
+\item[{}]{\$term, }
+\item[{}]{\$results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__ajax__livesearch_ac096537046295faada13f5479b2907a4}
+Check if search term is found in groups language file
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Search term \\
+\hline
+{\em array} & Existing search results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array New search results 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__ajax__livesearch_aa94aa3ddb505c2dcc0654e87559b709e}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!\-\_\-check\-Groups@{\-\_\-check\-Groups}}
+\index{\-\_\-check\-Groups@{\-\_\-check\-Groups}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{\-\_\-check\-Groups}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-check\-Groups (
+\begin{DoxyParamCaption}
+\item[{}]{\$term, }
+\item[{}]{\$results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__ajax__livesearch_aa94aa3ddb505c2dcc0654e87559b709e}
+Check if search term is found in groups language file or in the group\-\_\-cache.\-g\-\_\-title
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Search term \\
+\hline
+{\em array} & Existing search results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array New search results 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__ajax__livesearch_aa52465a231d9564ae110202ac6af4dc2}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!\-\_\-check\-Nexus@{\-\_\-check\-Nexus}}
+\index{\-\_\-check\-Nexus@{\-\_\-check\-Nexus}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{\-\_\-check\-Nexus}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-check\-Nexus (
+\begin{DoxyParamCaption}
+\item[{}]{\$term, }
+\item[{}]{\$results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__ajax__livesearch_aa52465a231d9564ae110202ac6af4dc2}
+Searches Nexus
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Search term \\
+\hline
+{\em array} & Existing search results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array New search results 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__ajax__livesearch_aac855459c7c6c7959bf6d20e4bee1726}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!\-\_\-get\-From\-X\-M\-L@{\-\_\-get\-From\-X\-M\-L}}
+\index{\-\_\-get\-From\-X\-M\-L@{\-\_\-get\-From\-X\-M\-L}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{\-\_\-get\-From\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-get\-From\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{}]{\$term, }
+\item[{}]{\$results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__ajax__livesearch_aac855459c7c6c7959bf6d20e4bee1726}
+Searches the X\-M\-L Files
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Search term \\
+\hline
+{\em array} & Existing search results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array New search results 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__ajax__livesearch_a932822070d1e3eb217afec6114993077}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!\-\_\-get\-Members@{\-\_\-get\-Members}}
+\index{\-\_\-get\-Members@{\-\_\-get\-Members}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{\-\_\-get\-Members}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-get\-Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$term, }
+\item[{}]{\$results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__ajax__livesearch_a932822070d1e3eb217afec6114993077}
+Searches for matching members
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Search term \\
+\hline
+{\em array} & Existing search results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array New search results 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__ajax__livesearch_ae80a735f63dbc88d6f831bb4a39a57d6}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!\-\_\-get\-Settings@{\-\_\-get\-Settings}}
+\index{\-\_\-get\-Settings@{\-\_\-get\-Settings}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{\-\_\-get\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-get\-Settings (
+\begin{DoxyParamCaption}
+\item[{}]{\$term, }
+\item[{}]{\$results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__ajax__livesearch_ae80a735f63dbc88d6f831bb4a39a57d6}
+Searches the settings table
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Search term \\
+\hline
+{\em array} & Existing search results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array New search results 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__ajax__livesearch_afbc4e912a0604b94d47d66744c64d8ba}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!do\-Execute@{do\-Execute}}
+\index{do\-Execute@{do\-Execute}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{do\-Execute}]{\setlength{\rightskip}{0pt plus 5cm}do\-Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__ajax__livesearch_afbc4e912a0604b94d47d66744c64d8ba}
+Class entry point
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Registry reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} \mbox{[}Outputs to screen\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classips_ajax_command_afbc4e912a0604b94d47d66744c64d8ba}{ips\-Ajax\-Command}.
+
+\hypertarget{classadmin__core__ajax__livesearch_a421fae61281c7b745a46509a23d0088a}{\index{admin\-\_\-core\-\_\-ajax\-\_\-livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}!do\-Search\-Request@{do\-Search\-Request}}
+\index{do\-Search\-Request@{do\-Search\-Request}!admin_core_ajax_livesearch@{admin\-\_\-core\-\_\-ajax\-\_\-livesearch}}
+\subsubsection[{do\-Search\-Request}]{\setlength{\rightskip}{0pt plus 5cm}do\-Search\-Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__ajax__livesearch_a421fae61281c7b745a46509a23d0088a}
+Handles the live search
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/applications/core/modules\-\_\-admin/ajax/livesearch.\-php\end{DoxyCompactItemize}

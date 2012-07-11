@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Invision Power Board Install Guide: Welcome</title>
+	<style type='text/css' media='all'>
+		@import url('install.css');
+	</style>
+</head>
+<body>
+
+<h2>File Structure and CHMOD values</h2>
+<br />
+<div class='content-text'>
+	Below is a table showing the file structure and recommended CHMOD values for the file (and in the case of directories, the CHMOD
+	  values for the contents of the directories).<br /><br />
+      The CHMOD values are not needed for Windows based file servers but anything that is CHMOD 0777 normally results in those files/directories needing to have Read/Write permissions for Windows based file servers. <br /><br />
+      The CHMOD values may vary from system to system, if in doubt, CHMOD everything to 0777. If this results in an Internal Server Error 500, please CHMOD everything back to 0755 and follow this CHMOD guide precisely. If that still results in errors, please feel free to open a ticket in your <a href='http://www.invisionpower.com/customer'>Client Area</a><br /><br />
+      Most systems will not need to CHMOD everything to install successfully, use the table below to determine what needs CHMOD'ding for installation, and what can be left until later.<br /><br />
+      <strong>Note:</strong> There are a few folders in the public directory that start with "style_" that will need to be CHMOD 0777 (Read/Write permissions for Windows based file servers) to use the full functionality of the board if you so choose. 
+</div>
+
+<table width='100%' align='center' cellpadding='4' cellspacing='0'>
+ <tr>
+  <td align='center'>
+  <table width='100%' align='center' cellpadding='0' cellspacing='0' bgcolor='#BCBCBC'>
+  <tr>
+   <td>
+    <table width='100%' align='center' cellpadding='4' cellspacing='1'>
+     <tr>
+       <td width='5%' bgcolor='#EEEEEE' style='font-size:10px'>&nbsp;</td>
+       <td width='25%' bgcolor='#EEEEEE' style='font-size:10px'><b>File/Folder Name</b></td>
+       <td width='20%' bgcolor='#EEEEEE' style='font-size:10px' align='center'><b>Item CHMOD Value</b></td>
+       <td width='30%' bgcolor='#EEEEEE' style='font-size:10px' align='center'><b>Recursively (Files/Folders Within)</b></td>
+       <td width='15%' bgcolor='#EEEEEE' style='font-size:10px' align='center'><b>CHMOD For Installation</b></td>
+       <td width='15%' bgcolor='#EEEEEE' style='font-size:10px' align='center'><b>Can CHMOD Later</b></td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='PHP file' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/admin/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0755</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+      </tr>
+      
+       <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/cache/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+            
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/cache/lang_cache</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/cache/lang_cache/1/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder'/></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/cache/skin_cache/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/cache/tmp/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/converge_local/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0755</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+
+       <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/hooks/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+         
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/interface/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0755</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/ips_kernel/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0755</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/lofiversion/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0755</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/public/style_images/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>/public/style_css/</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+
+       <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/folder.gif' border='0' alt='folder' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'><span style='color:blue'>uploads</span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      <tr>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><img src='images/file.gif' border='0' alt='PHP file' /></td>
+       <td align='left' valign='middle' bgcolor='#FFFFFF'>conf_global.php</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>0777</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'><span style='color:red'><b>YES</b></span></td>
+       <td align='center' valign='middle' bgcolor='#FFFFFF'>-</td>
+      </tr>
+      
+      </table>
+    </td>
+   </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+
+</body>
+</html>

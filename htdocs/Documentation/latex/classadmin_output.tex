@@ -1,0 +1,848 @@
+\hypertarget{classadmin_output}{\section{admin\-Output Class Reference}
+\label{classadmin_output}\index{admin\-Output@{admin\-Output}}
+}
+Inheritance diagram for admin\-Output\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classadmin_output}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin_output_a178c3a93e57e75dd87a5d39112af0b07}{\-\_\-\-\_\-construct} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classadmin_output_aee06a81c43dcda7412a06dd2d6b1773e}{set\-Message} (\$message, \$persistent=0)
+\item 
+\hyperlink{classadmin_output_afb5da7b1db3cc7e4f97b8b9cce9ccb44}{load\-Root\-Template} (\$\hyperlink{classoutput_a0b54c9d3801b331b75487ef78d98c06b}{template})
+\item 
+\hyperlink{classadmin_output_a4f98a622c7a96a9abbf065e1a3c02477}{load\-Template} (\$\hyperlink{classoutput_a0b54c9d3801b331b75487ef78d98c06b}{template}, \$app='')
+\item 
+\hyperlink{classadmin_output_ae6e4f228eaee437d7411d164417d24c1}{show\-Download} (\$data, \$name, \$type=\char`\"{}unknown/unknown\char`\"{}, \$compress=true)
+\item 
+\hyperlink{classadmin_output_acc16fde47f5b8de4763968e23e73bdc4}{print\-Popup\-Window} ()
+\item 
+\hyperlink{classadmin_output_ac9934ccaa0bf8f6f0b2d8d5c58d0b5b9}{redirect} (\$url, \$text, \$time=2, \$allow\-Error\-To\-Halt=F\-A\-L\-S\-E, \$force\-Page=F\-A\-L\-S\-E)
+\item 
+\hyperlink{classadmin_output_a9c09b4958fd21a4c3888c1e1e919f709}{silent\-Redirect\-With\-Message} (\$url, \$allow\-Error\-To\-Halt=false)
+\item 
+\hyperlink{classadmin_output_aebd2d564d9d3effe8d44620919cf1938}{multiple\-Redirect\-Init} (\$url)
+\item 
+\hyperlink{classadmin_output_a3b9ee2f7e16bb42634ae55886d3a060d}{multiple\-Redirect\-Hit} (\$url, \$text='', \$time=1)
+\item 
+\hyperlink{classadmin_output_a6f7eddb747aa127fa78b57a9f4b9ef0e}{multiple\-Redirect\-Finish} (\$text='Completed!')
+\item 
+\hyperlink{classadmin_output_a27ca271ae1c1c0a652d1cf894de337ad}{show\-Error} (\$message, \$code=0, \$log\-Error=F\-A\-L\-S\-E, \$log\-Extra='', \$header=500)
+\item 
+\hyperlink{classadmin_output_abbdb824a3f45b51c7c1c38bea393350b}{send\-Output} (\$return=false)
+\item 
+\hyperlink{classadmin_output_ac7f9250b6c30735c742365a4da48d778}{show\-Inside\-Iframe} (\$url=\char`\"{}\char`\"{}, \$html=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classadmin_output_aa90a1765e99972ba09e20216912b5344}{generate\-Group\-Dropdown} (\$form\-Field\-Name, \$selected, \$multiselect=F\-A\-L\-S\-E, \$form\-Field\-I\-D='', \$multiselect\-Size=5)
+\item 
+\hyperlink{classadmin_output_ab91d196557ad72ca2a160ab6346a8506}{generate\-Skin\-Dropdown} (\$skin\-\_\-array=array(), \$parent=0, \$iteration=0)
+\item 
+\hyperlink{classadmin_output_a591fbb68a94b89e40b7a469133db813c}{form\-Upload} (\$name=\char`\"{}F\-I\-L\-E\-\_\-\-U\-P\-L\-O\-A\-D\char`\"{}, \$id='', \$js=\char`\"{}\char`\"{}, \$css=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classadmin_output_aadc8385e22ab19bfc84266cf2d4d91d1}{form\-Input} (\$name, \$value=\char`\"{}\char`\"{}, \$id=\char`\"{}\char`\"{}, \$size=\char`\"{}30\char`\"{}, \$type='text', \$js=\char`\"{}\char`\"{}, \$css=\char`\"{}\char`\"{}, \$max\-Length='')
+\item 
+\hyperlink{classadmin_output_af21572ee928d9163307f076c67a734e0}{form\-Simple\-Input} (\$name, \$value=\char`\"{}\char`\"{}, \$size='5')
+\item 
+\hyperlink{classadmin_output_ac8948f6a37bcdca35c47a7e5ce40ef0c}{form\-Textarea} (\$name, \$value=\char`\"{}\char`\"{}, \$cols='40', \$rows='5', \$id=\char`\"{}\char`\"{}, \$js=\char`\"{}\char`\"{}, \$css=\char`\"{}\char`\"{}, \$wrap='soft')
+\item 
+\hyperlink{classadmin_output_aeffe2ce410c89d3b59c355baaa63c39a}{form\-Dropdown} (\$name, \$list=array(), \$default\-\_\-val=\char`\"{}\char`\"{}, \$id=\char`\"{}\char`\"{}, \$js=\char`\"{}\char`\"{}, \$css=\char`\"{}\char`\"{}, \$optgroups=array())
+\item 
+\hyperlink{classadmin_output_aefc4c762164211ee76a7f90dee84a41e}{form\-Multi\-Dropdown} (\$name, \$list=array(), \$default=array(), \$size=5, \$id=\char`\"{}\char`\"{}, \$js=\char`\"{}\char`\"{}, \$css='')
+\item 
+\hyperlink{classadmin_output_ac5b14169046af69da06d124aa3e475a8}{form\-Yes\-No} (\$name, \$default\-\_\-val=\char`\"{}\char`\"{}, \$id='', \$js=array(), \$css='')
+\item 
+\hyperlink{classadmin_output_a5046f42d4ba41555aa1898dbf30d6521}{form\-Checkbox} (\$name, \$checked=false, \$val=1, \$id='', \$js=\char`\"{}\char`\"{}, \$css='')
+\item 
+\hyperlink{classadmin_output_a329bbab93d8befbc3e5307ec9fac1fcc}{generate\-Pagination} (\$data)
+\item 
+\hyperlink{classadmin_output_ad8e025007efe84fa4c4e86cf6052237d}{fetch\-Fake\-Apps} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin_output_ac4cdd00e16d34c6cc6a732f5fd5118e4}{{\bfseries \$global\-\_\-template} = ''}\label{classadmin_output_ac4cdd00e16d34c6cc6a732f5fd5118e4}
+
+\item 
+\hypertarget{classadmin_output_a6f96e7fc92441776c9d1cd3386663b40}{{\bfseries \$html} = ''}\label{classadmin_output_a6f96e7fc92441776c9d1cd3386663b40}
+
+\item 
+\hypertarget{classadmin_output_a38eee9acff287ea78f0d272017d003f5}{{\bfseries \$html\-\_\-main} = ''}\label{classadmin_output_a38eee9acff287ea78f0d272017d003f5}
+
+\item 
+\hypertarget{classadmin_output_a3d67629f000dbf0eb2df14dbbbec313f}{{\bfseries \$body\-\_\-extra} = ''}\label{classadmin_output_a3d67629f000dbf0eb2df14dbbbec313f}
+
+\item 
+\hypertarget{classadmin_output_a7470243aa9189caa42be52ff3dd93910}{{\bfseries \$cm\-\_\-output} = ''}\label{classadmin_output_a7470243aa9189caa42be52ff3dd93910}
+
+\item 
+\hypertarget{classadmin_output_ad83ddbabe2142bd82df8308effbc32b9}{{\bfseries \$extra\-\_\-nav} = array()}\label{classadmin_output_ad83ddbabe2142bd82df8308effbc32b9}
+
+\item 
+\hypertarget{classadmin_output_aca6e6e046c1d23afb582f627e61b20a5}{{\bfseries \$nav} = array()}\label{classadmin_output_aca6e6e046c1d23afb582f627e61b20a5}
+
+\item 
+\hypertarget{classadmin_output_aa8d574d0664189d397b8ea8dcd07c0de}{{\bfseries \$core\-\_\-nav} = array()}\label{classadmin_output_aa8d574d0664189d397b8ea8dcd07c0de}
+
+\item 
+\hypertarget{classadmin_output_a52486877b5f6db9be2057f19c4eb5341}{{\bfseries \$ignore\-Core\-Nav} = false}\label{classadmin_output_a52486877b5f6db9be2057f19c4eb5341}
+
+\item 
+\hypertarget{classadmin_output_aea62bd6ed6e9fd3b493559fcc775ed1c}{{\bfseries \$extra\-\_\-title} = array()}\label{classadmin_output_aea62bd6ed6e9fd3b493559fcc775ed1c}
+
+\item 
+\hypertarget{classadmin_output_ae914deec2494eb82f15da9f8568da893}{{\bfseries \$global\-\_\-message}}\label{classadmin_output_ae914deec2494eb82f15da9f8568da893}
+
+\item 
+\hypertarget{classadmin_output_a629f37efef65c81e93d59623e5bb10ff}{{\bfseries \$persistent\-\_\-message} = 0}\label{classadmin_output_a629f37efef65c81e93d59623e5bb10ff}
+
+\item 
+\hypertarget{classadmin_output_ad744c69b3f1ea615a356d4e1232cd62e}{{\bfseries \$global\-\_\-error}}\label{classadmin_output_ad744c69b3f1ea615a356d4e1232cd62e}
+
+\item 
+\hypertarget{classadmin_output_aba9dba327673261609498d326e022f2e}{{\bfseries \$sidebar\-\_\-extra} = ''}\label{classadmin_output_aba9dba327673261609498d326e022f2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin_output_a2ec9ff7a0fd15664dea44203df476dad}{\-\_\-send\-Output\-Set\-Up} (\$type)
+\item 
+\hyperlink{classadmin_output_a33db9760905c99fcfa1ad096df6f32ad}{\-\_\-build\-Menu} ()
+\item 
+\hyperlink{classadmin_output_a4a791734b913fa4162f9474c9f3e1a01}{\-\_\-build\-Sub\-Menu} ()
+\item 
+\hyperlink{classadmin_output_ae04fb7af48386521b04f4ac6e7e2648c}{\-\_\-build\-Global\-Sub\-Menu} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin_output_a8091ebfbe735765de8099f4adfe02e69}{{\bfseries \$\-\_\-\-I\-S\-\_\-\-P\-R\-I\-N\-T\-E\-D}}\label{classadmin_output_a8091ebfbe735765de8099f4adfe02e69}
+
+\item 
+\hypertarget{classadmin_output_a2f88bfd5e3922bac4cd227cf52415b60}{{\bfseries \$tab\-Keys} = array( 'core', 'forums', 'members', 'lookfeel', 'support', 'reports', 'other' )}\label{classadmin_output_a2f88bfd5e3922bac4cd227cf52415b60}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classadmin_output_a178c3a93e57e75dd87a5d39112af0b07}{\index{admin\-Output@{admin\-Output}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!adminOutput@{admin\-Output}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a178c3a93e57e75dd87a5d39112af0b07}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & \hyperlink{classips_registry}{ips\-Registry} reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin_output_ae04fb7af48386521b04f4ac6e7e2648c}{\index{admin\-Output@{admin\-Output}!\-\_\-build\-Global\-Sub\-Menu@{\-\_\-build\-Global\-Sub\-Menu}}
+\index{\-\_\-build\-Global\-Sub\-Menu@{\-\_\-build\-Global\-Sub\-Menu}!adminOutput@{admin\-Output}}
+\subsubsection[{\-\_\-build\-Global\-Sub\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-build\-Global\-Sub\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin_output_ae04fb7af48386521b04f4ac6e7e2648c}
+Build the secondary menu globally
+
+\begin{DoxyReturn}{Returns}
+string Menu H\-T\-M\-L 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a33db9760905c99fcfa1ad096df6f32ad}{\index{admin\-Output@{admin\-Output}!\-\_\-build\-Menu@{\-\_\-build\-Menu}}
+\index{\-\_\-build\-Menu@{\-\_\-build\-Menu}!adminOutput@{admin\-Output}}
+\subsubsection[{\-\_\-build\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-build\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin_output_a33db9760905c99fcfa1ad096df6f32ad}
+Build the primary menu
+
+\begin{DoxyReturn}{Returns}
+string Menu H\-T\-M\-L 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a4a791734b913fa4162f9474c9f3e1a01}{\index{admin\-Output@{admin\-Output}!\-\_\-build\-Sub\-Menu@{\-\_\-build\-Sub\-Menu}}
+\index{\-\_\-build\-Sub\-Menu@{\-\_\-build\-Sub\-Menu}!adminOutput@{admin\-Output}}
+\subsubsection[{\-\_\-build\-Sub\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-build\-Sub\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin_output_a4a791734b913fa4162f9474c9f3e1a01}
+Build the secondary menu
+
+\begin{DoxyReturn}{Returns}
+string Menu H\-T\-M\-L 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a2ec9ff7a0fd15664dea44203df476dad}{\index{admin\-Output@{admin\-Output}!\-\_\-send\-Output\-Set\-Up@{\-\_\-send\-Output\-Set\-Up}}
+\index{\-\_\-send\-Output\-Set\-Up@{\-\_\-send\-Output\-Set\-Up}!adminOutput@{admin\-Output}}
+\subsubsection[{\-\_\-send\-Output\-Set\-Up}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-send\-Output\-Set\-Up (
+\begin{DoxyParamCaption}
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin_output_a2ec9ff7a0fd15664dea44203df476dad}
+Global set up stuff Sorts the J\-S module array, calls initiate on the output engine, etc
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Type of output (normal/popup/redirect/error) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classoutput}{output}.
+
+\hypertarget{classadmin_output_ad8e025007efe84fa4c4e86cf6052237d}{\index{admin\-Output@{admin\-Output}!fetch\-Fake\-Apps@{fetch\-Fake\-Apps}}
+\index{fetch\-Fake\-Apps@{fetch\-Fake\-Apps}!adminOutput@{admin\-Output}}
+\subsubsection[{fetch\-Fake\-Apps}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Fake\-Apps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_ad8e025007efe84fa4c4e86cf6052237d}
+Retrieve list of \char`\"{}fake apps\char`\"{} to generate tabs for them in A\-C\-P
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+3.\-0 
+\end{DoxySince}
+\hypertarget{classadmin_output_a5046f42d4ba41555aa1898dbf30d6521}{\index{admin\-Output@{admin\-Output}!form\-Checkbox@{form\-Checkbox}}
+\index{form\-Checkbox@{form\-Checkbox}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Checkbox}]{\setlength{\rightskip}{0pt plus 5cm}form\-Checkbox (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$checked = {\ttfamily false}, }
+\item[{}]{\$val = {\ttfamily 1}, }
+\item[{}]{\$id = {\ttfamily ''}, }
+\item[{}]{\$js = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$css = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a5046f42d4ba41555aa1898dbf30d6521}
+Create a checkbox form field
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em boolean} & Field checked or not \\
+\hline
+{\em string} & Field value \\
+\hline
+{\em string} & H\-T\-M\-L id attribute \mbox{[}defaults to \$name\mbox{]} \\
+\hline
+{\em string} & Javascript to add to the checkbox \\
+\hline
+{\em string} & C\-S\-S class(es) to add to field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Form checkbox field 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_aeffe2ce410c89d3b59c355baaa63c39a}{\index{admin\-Output@{admin\-Output}!form\-Dropdown@{form\-Dropdown}}
+\index{form\-Dropdown@{form\-Dropdown}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Dropdown}]{\setlength{\rightskip}{0pt plus 5cm}form\-Dropdown (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$list = {\ttfamily array()}, }
+\item[{}]{\$default\-\_\-val = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$id = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$js = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$css = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$optgroups = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_aeffe2ce410c89d3b59c355baaa63c39a}
+Create a form dropdown/select list
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em array} & Options. Multidimensional array in format of array( array( 'value', 'display' ), array( 'value', 'display', 'optgroup\-\_\-key' ) ) \\
+\hline
+{\em string} & Default value \\
+\hline
+{\em string} & H\-T\-M\-L id attribute \mbox{[}defaults to \$name\mbox{]} \\
+\hline
+{\em string} & Javascript to add to list \\
+\hline
+{\em string} & C\-S\-S class(es) to add to field \\
+\hline
+{\em array} & Optgroups \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Form dropdown list 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_aadc8385e22ab19bfc84266cf2d4d91d1}{\index{admin\-Output@{admin\-Output}!form\-Input@{form\-Input}}
+\index{form\-Input@{form\-Input}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Input}]{\setlength{\rightskip}{0pt plus 5cm}form\-Input (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$id = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$size = {\ttfamily \char`\"{}30\char`\"{}}, }
+\item[{}]{\$type = {\ttfamily 'text'}, }
+\item[{}]{\$js = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$css = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$max\-Length = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_aadc8385e22ab19bfc84266cf2d4d91d1}
+Create a form text input field
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em string} & Field current value \\
+\hline
+{\em string} & Field I\-D \mbox{[}defaults to value for \$name\mbox{]} \\
+\hline
+{\em integer} & Field size \mbox{[}defaults to 30\mbox{]} \\
+\hline
+{\em string} & Field type \mbox{[}defaults to 'text'\mbox{]} \\
+\hline
+{\em string} & Javascript code to add to field \\
+\hline
+{\em string} & C\-S\-S class(es) to add to field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Form input field 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_aefc4c762164211ee76a7f90dee84a41e}{\index{admin\-Output@{admin\-Output}!form\-Multi\-Dropdown@{form\-Multi\-Dropdown}}
+\index{form\-Multi\-Dropdown@{form\-Multi\-Dropdown}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Multi\-Dropdown}]{\setlength{\rightskip}{0pt plus 5cm}form\-Multi\-Dropdown (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$list = {\ttfamily array()}, }
+\item[{}]{\$default = {\ttfamily array()}, }
+\item[{}]{\$size = {\ttfamily 5}, }
+\item[{}]{\$id = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$js = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$css = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_aefc4c762164211ee76a7f90dee84a41e}
+Create a multiselect form field
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em array} & Options. Multidimensional array in format of array( array( 'value', 'display' ), array( 'value', 'display' ) ) \\
+\hline
+{\em array} & Default values \\
+\hline
+{\em integer} & Number of items to show \mbox{[}defaults to 5\mbox{]} \\
+\hline
+{\em string} & H\-T\-M\-L id attribute \mbox{[}defaults to \$name\mbox{]} \\
+\hline
+{\em string} & Javascript to apply to field \\
+\hline
+{\em string} & C\-S\-S class(es) to add to field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Form multiselect field 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_af21572ee928d9163307f076c67a734e0}{\index{admin\-Output@{admin\-Output}!form\-Simple\-Input@{form\-Simple\-Input}}
+\index{form\-Simple\-Input@{form\-Simple\-Input}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Simple\-Input}]{\setlength{\rightskip}{0pt plus 5cm}form\-Simple\-Input (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$size = {\ttfamily '5'}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_af21572ee928d9163307f076c67a734e0}
+Create a simpl(er) form text input field
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em string} & Field current value \\
+\hline
+{\em integer} & Field size \mbox{[}defaults to 5\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Form input field 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classadmin_output_aadc8385e22ab19bfc84266cf2d4d91d1}{form\-Input()} 
+\end{DoxySeeAlso}
+\hypertarget{classadmin_output_ac8948f6a37bcdca35c47a7e5ce40ef0c}{\index{admin\-Output@{admin\-Output}!form\-Textarea@{form\-Textarea}}
+\index{form\-Textarea@{form\-Textarea}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Textarea}]{\setlength{\rightskip}{0pt plus 5cm}form\-Textarea (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$cols = {\ttfamily '40'}, }
+\item[{}]{\$rows = {\ttfamily '5'}, }
+\item[{}]{\$id = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$js = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$css = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$wrap = {\ttfamily 'soft'}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_ac8948f6a37bcdca35c47a7e5ce40ef0c}
+Create a form textarea field
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em string} & Field current value \\
+\hline
+{\em integer} & Number of columns \mbox{[}defaults to 40\mbox{]} \\
+\hline
+{\em integer} & Number of rows \mbox{[}defaults to 5\mbox{]} \\
+\hline
+{\em string} & H\-T\-M\-L id to assign to field \mbox{[}defaults to \$name\mbox{]} \\
+\hline
+{\em string} & Javascript code to add to field \\
+\hline
+{\em string} & C\-S\-S class(es) to add to field \\
+\hline
+{\em string} & Wrap type \mbox{[}defaults to soft\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Form textarea field 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a591fbb68a94b89e40b7a469133db813c}{\index{admin\-Output@{admin\-Output}!form\-Upload@{form\-Upload}}
+\index{form\-Upload@{form\-Upload}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Upload}]{\setlength{\rightskip}{0pt plus 5cm}form\-Upload (
+\begin{DoxyParamCaption}
+\item[{}]{\$name = {\ttfamily \char`\"{}FILE\-\_\-UPLOAD\char`\"{}}, }
+\item[{}]{\$id = {\ttfamily ''}, }
+\item[{}]{\$js = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$css = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a591fbb68a94b89e40b7a469133db813c}
+Create a form text input field
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em string} & Field I\-D \\
+\hline
+{\em string} & Javascript code to add to field \\
+\hline
+{\em string} & C\-S\-S class(es) to add to field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string H\-T\-M\-L 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_ac5b14169046af69da06d124aa3e475a8}{\index{admin\-Output@{admin\-Output}!form\-Yes\-No@{form\-Yes\-No}}
+\index{form\-Yes\-No@{form\-Yes\-No}!adminOutput@{admin\-Output}}
+\subsubsection[{form\-Yes\-No}]{\setlength{\rightskip}{0pt plus 5cm}form\-Yes\-No (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$default\-\_\-val = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$id = {\ttfamily ''}, }
+\item[{}]{\$js = {\ttfamily array()}, }
+\item[{}]{\$css = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_ac5b14169046af69da06d124aa3e475a8}
+Create yes/no radio buttons
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Field name \\
+\hline
+{\em string} & Default values \\
+\hline
+{\em string} & H\-T\-M\-L id attribute (appended with \char`\"{}\-\_\-yes\char`\"{} and \char`\"{}\-\_\-no\char`\"{} on the respective fields) \mbox{[}defaults to \$name\mbox{]} \\
+\hline
+{\em array} & Javascript to add to the fields. Array keys should be 'yes' and 'no', values being the javascript to add. \\
+\hline
+{\em string} & C\-S\-S class(es) to add to field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Form yes/no radio buttons 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_aa90a1765e99972ba09e20216912b5344}{\index{admin\-Output@{admin\-Output}!generate\-Group\-Dropdown@{generate\-Group\-Dropdown}}
+\index{generate\-Group\-Dropdown@{generate\-Group\-Dropdown}!adminOutput@{admin\-Output}}
+\subsubsection[{generate\-Group\-Dropdown}]{\setlength{\rightskip}{0pt plus 5cm}generate\-Group\-Dropdown (
+\begin{DoxyParamCaption}
+\item[{}]{\$form\-Field\-Name, }
+\item[{}]{\$selected, }
+\item[{}]{\$multiselect = {\ttfamily FALSE}, }
+\item[{}]{\$form\-Field\-I\-D = {\ttfamily ''}, }
+\item[{}]{\$multiselect\-Size = {\ttfamily 5}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_aa90a1765e99972ba09e20216912b5344}
+Generate a drop down list of groups
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Form field name \\
+\hline
+{\em mixed} & Selected I\-D(s) \\
+\hline
+{\em boolean} & Multiselect (T\-R\-U\-E is yes) \\
+\hline
+{\em string} & H\-T\-M\-L id attribute value \\
+\hline
+{\em integer} & Multiselect size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string H\-T\-M\-L dropdown menu 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a329bbab93d8befbc3e5307ec9fac1fcc}{\index{admin\-Output@{admin\-Output}!generate\-Pagination@{generate\-Pagination}}
+\index{generate\-Pagination@{generate\-Pagination}!adminOutput@{admin\-Output}}
+\subsubsection[{generate\-Pagination}]{\setlength{\rightskip}{0pt plus 5cm}generate\-Pagination (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a329bbab93d8befbc3e5307ec9fac1fcc}
+Build up page span links
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Page data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Parsed page links H\-T\-M\-L 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-0 
+\end{DoxySince}
+
+
+Reimplemented from \hyperlink{classoutput_a329bbab93d8befbc3e5307ec9fac1fcc}{output}.
+
+\hypertarget{classadmin_output_ab91d196557ad72ca2a160ab6346a8506}{\index{admin\-Output@{admin\-Output}!generate\-Skin\-Dropdown@{generate\-Skin\-Dropdown}}
+\index{generate\-Skin\-Dropdown@{generate\-Skin\-Dropdown}!adminOutput@{admin\-Output}}
+\subsubsection[{generate\-Skin\-Dropdown}]{\setlength{\rightskip}{0pt plus 5cm}generate\-Skin\-Dropdown (
+\begin{DoxyParamCaption}
+\item[{}]{\$skin\-\_\-array = {\ttfamily array()}, }
+\item[{}]{\$parent = {\ttfamily 0}, }
+\item[{}]{\$iteration = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_ab91d196557ad72ca2a160ab6346a8506}
+Generate a drop down list of skins
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Skin array \\
+\hline
+{\em int} & Parent id \\
+\hline
+{\em int} & Iteration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array of skins to add to dropdown 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_afb5da7b1db3cc7e4f97b8b9cce9ccb44}{\index{admin\-Output@{admin\-Output}!load\-Root\-Template@{load\-Root\-Template}}
+\index{load\-Root\-Template@{load\-Root\-Template}!adminOutput@{admin\-Output}}
+\subsubsection[{load\-Root\-Template}]{\setlength{\rightskip}{0pt plus 5cm}load\-Root\-Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$template}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_afb5da7b1db3cc7e4f97b8b9cce9ccb44}
+Load a root (non-\/application) template
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Template name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a4f98a622c7a96a9abbf065e1a3c02477}{\index{admin\-Output@{admin\-Output}!load\-Template@{load\-Template}}
+\index{load\-Template@{load\-Template}!adminOutput@{admin\-Output}}
+\subsubsection[{load\-Template}]{\setlength{\rightskip}{0pt plus 5cm}load\-Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$template, }
+\item[{}]{\$app = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a4f98a622c7a96a9abbf065e1a3c02477}
+Load a template file
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Template name \\
+\hline
+{\em string} & Application \mbox{[}defaults to current application\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classoutput_abf3703866f3419ad9ada065aeab8291d}{output}.
+
+\hypertarget{classadmin_output_a6f7eddb747aa127fa78b57a9f4b9ef0e}{\index{admin\-Output@{admin\-Output}!multiple\-Redirect\-Finish@{multiple\-Redirect\-Finish}}
+\index{multiple\-Redirect\-Finish@{multiple\-Redirect\-Finish}!adminOutput@{admin\-Output}}
+\subsubsection[{multiple\-Redirect\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}multiple\-Redirect\-Finish (
+\begin{DoxyParamCaption}
+\item[{}]{\$text = {\ttfamily 'Completed!'}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a6f7eddb747aa127fa78b57a9f4b9ef0e}
+Finish a multi-\/redirect session
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a3b9ee2f7e16bb42634ae55886d3a060d}{\index{admin\-Output@{admin\-Output}!multiple\-Redirect\-Hit@{multiple\-Redirect\-Hit}}
+\index{multiple\-Redirect\-Hit@{multiple\-Redirect\-Hit}!adminOutput@{admin\-Output}}
+\subsubsection[{multiple\-Redirect\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}multiple\-Redirect\-Hit (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$text = {\ttfamily ''}, }
+\item[{}]{\$time = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a3b9ee2f7e16bb42634ae55886d3a060d}
+Hit a multi-\/redirect. Uses A\-J\-A\-X or redirect page appropriately
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Url to initialize \\
+\hline
+{\em string} & Text to initialize with \\
+\hline
+{\em boolean} & Add to the text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_aebd2d564d9d3effe8d44620919cf1938}{\index{admin\-Output@{admin\-Output}!multiple\-Redirect\-Init@{multiple\-Redirect\-Init}}
+\index{multiple\-Redirect\-Init@{multiple\-Redirect\-Init}!adminOutput@{admin\-Output}}
+\subsubsection[{multiple\-Redirect\-Init}]{\setlength{\rightskip}{0pt plus 5cm}multiple\-Redirect\-Init (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_aebd2d564d9d3effe8d44620919cf1938}
+Initialize a multi-\/redirect. Creates an iframe that continuously adds the last status to the content of the iframe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Url to initialize \\
+\hline
+{\em string} & Text to initialize with \\
+\hline
+{\em boolean} & Add to the text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_acc16fde47f5b8de4763968e23e73bdc4}{\index{admin\-Output@{admin\-Output}!print\-Popup\-Window@{print\-Popup\-Window}}
+\index{print\-Popup\-Window@{print\-Popup\-Window}!adminOutput@{admin\-Output}}
+\subsubsection[{print\-Popup\-Window}]{\setlength{\rightskip}{0pt plus 5cm}print\-Popup\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_acc16fde47f5b8de4763968e23e73bdc4}
+Print a popup window -\/ wraps H\-T\-M\-L page in minimalized output
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_ac9934ccaa0bf8f6f0b2d8d5c58d0b5b9}{\index{admin\-Output@{admin\-Output}!redirect@{redirect}}
+\index{redirect@{redirect}!adminOutput@{admin\-Output}}
+\subsubsection[{redirect}]{\setlength{\rightskip}{0pt plus 5cm}redirect (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$text, }
+\item[{}]{\$time = {\ttfamily 2}, }
+\item[{}]{\$allow\-Error\-To\-Halt = {\ttfamily FALSE}, }
+\item[{}]{\$force\-Page = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_ac9934ccaa0bf8f6f0b2d8d5c58d0b5b9}
+Redirect user to another page
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Page to redirect to \\
+\hline
+{\em string} & Text to show during redirect \\
+\hline
+{\em integer} & Number of seconds between page loads \\
+\hline
+{\em boolean} & Allow a populated \$this-\/$>$registry to stop the redirect with the option to continue \\
+\hline
+{\em boolean} & Force full redirect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000010}{Deprecated}]Now just redirects to silent\-Redirect\-With\-Message \end{DoxyRefDesc}
+\hypertarget{classadmin_output_abbdb824a3f45b51c7c1c38bea393350b}{\index{admin\-Output@{admin\-Output}!send\-Output@{send\-Output}}
+\index{send\-Output@{send\-Output}!adminOutput@{admin\-Output}}
+\subsubsection[{send\-Output}]{\setlength{\rightskip}{0pt plus 5cm}send\-Output (
+\begin{DoxyParamCaption}
+\item[{}]{\$return = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_abbdb824a3f45b51c7c1c38bea393350b}
+Output the H\-T\-M\-L to the browser
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & Return finished output instead of printing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classoutput_ac8241ad3e4b990ad017dba2ad1dd9840}{output}.
+
+\hypertarget{classadmin_output_aee06a81c43dcda7412a06dd2d6b1773e}{\index{admin\-Output@{admin\-Output}!set\-Message@{set\-Message}}
+\index{set\-Message@{set\-Message}!adminOutput@{admin\-Output}}
+\subsubsection[{set\-Message}]{\setlength{\rightskip}{0pt plus 5cm}set\-Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$message, }
+\item[{}]{\$persistent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_aee06a81c43dcda7412a06dd2d6b1773e}
+Set a global message to be used
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Message to show \\
+\hline
+int & {\em \$persistent} & Whether to show message inline (1) or not (0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_ae6e4f228eaee437d7411d164417d24c1}{\index{admin\-Output@{admin\-Output}!show\-Download@{show\-Download}}
+\index{show\-Download@{show\-Download}!adminOutput@{admin\-Output}}
+\subsubsection[{show\-Download}]{\setlength{\rightskip}{0pt plus 5cm}show\-Download (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$name, }
+\item[{}]{\$type = {\ttfamily \char`\"{}unknown/unknown\char`\"{}}, }
+\item[{}]{\$compress = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_ae6e4f228eaee437d7411d164417d24c1}
+Show a download dialog box
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Data for the download \\
+\hline
+{\em string} & Filename \\
+\hline
+{\em string} & Mime-\/type to send to browser \\
+\hline
+{\em boolean} & Compress the download \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a27ca271ae1c1c0a652d1cf894de337ad}{\index{admin\-Output@{admin\-Output}!show\-Error@{show\-Error}}
+\index{show\-Error@{show\-Error}!adminOutput@{admin\-Output}}
+\subsubsection[{show\-Error}]{\setlength{\rightskip}{0pt plus 5cm}show\-Error (
+\begin{DoxyParamCaption}
+\item[{}]{\$message, }
+\item[{}]{\$code = {\ttfamily 0}, }
+\item[{}]{\$log\-Error = {\ttfamily FALSE}, }
+\item[{}]{\$log\-Extra = {\ttfamily ''}, }
+\item[{}]{\$header = {\ttfamily 500}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a27ca271ae1c1c0a652d1cf894de337ad}
+Display an error page
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to display \\
+\hline
+{\em integer} & Error code \\
+\hline
+{\em boolean} & Log error message \\
+\hline
+{\em string} & Extra log data \\
+\hline
+{\em integer} & Header code to send (ignored for A\-C\-P) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classoutput_a367a3b65b1b28dd154d36403276c38bd}{output}.
+
+\hypertarget{classadmin_output_ac7f9250b6c30735c742365a4da48d778}{\index{admin\-Output@{admin\-Output}!show\-Inside\-Iframe@{show\-Inside\-Iframe}}
+\index{show\-Inside\-Iframe@{show\-Inside\-Iframe}!adminOutput@{admin\-Output}}
+\subsubsection[{show\-Inside\-Iframe}]{\setlength{\rightskip}{0pt plus 5cm}show\-Inside\-Iframe (
+\begin{DoxyParamCaption}
+\item[{}]{\$url = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$html = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_ac7f9250b6c30735c742365a4da48d778}
+Show a page inside an iframe
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & U\-R\-L \\
+\hline
+{\em string} & Optional H\-T\-M\-L to show inside the iframe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin_output_a9c09b4958fd21a4c3888c1e1e919f709}{\index{admin\-Output@{admin\-Output}!silent\-Redirect\-With\-Message@{silent\-Redirect\-With\-Message}}
+\index{silent\-Redirect\-With\-Message@{silent\-Redirect\-With\-Message}!adminOutput@{admin\-Output}}
+\subsubsection[{silent\-Redirect\-With\-Message}]{\setlength{\rightskip}{0pt plus 5cm}silent\-Redirect\-With\-Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$allow\-Error\-To\-Halt = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classadmin_output_a9c09b4958fd21a4c3888c1e1e919f709}
+Redirect user to another page with no intermediary screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Url to send the user to \\
+\hline
+{\em boolean} & Allow a populated \$this-\/$>$registry to stop the redirect with the option to continue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/classes/output/admin\-Output.\-php\end{DoxyCompactItemize}

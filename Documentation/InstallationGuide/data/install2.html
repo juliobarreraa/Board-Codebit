@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+	<title>Invision Power Board Install Guide: Welcome</title>
+	<style type='text/css' media='all'>
+		@import url('install.css');
+	</style>
+</head>
+<body>
+
+
+<h2>Installing: Step 2 - Using the Installer</h2>
+<br />
+<div class='content-text'>
+	  An installer is provided to assist you in entering the information IP.Board needs to connect to your MySQL database and to create your new
+	  administrators account.
+  <br /><br />
+	  -Run the installer file through your web browser by entering the URL to it into your browser address bar (if you have followed our example, type in
+	  <b>http://www.domain.com/forums/admin/install/index.php</b>, naturally subsituting 'domain.com' for your web address.). <br /><br /><strong>Note:</strong> If there are any issues with the server set up, files or CHMOD values of your files, you'll be presented with warnings here to correct those before proceeding. Any issues that are found here will normally require you to correct those before installation can occur.<br /><br />
+	  -Clicking on Next will present you with the IPS/IP.Board EULA form. Read over this and check "I agree to the license agreement" if you agree to proceed with installation. If not, you will not be able to proceed with installation of your IP.Board.<br />
+	  <br />
+      
+      -After agreeing to the EULA and clicking on Next, you'll be directed to a page that will allow you to check which optional IPS Applications are installed with your IP.Board. 
+      <br />
+      <br />
+      -Once you've chosen any optional IPS Applications you'd like to install, click Next and you'll be directed to a simple form asking where you would like your IP.Board installed to. The first is the install directory on your server. This can normally be left the way it is. The second is the address that all of the non user submitted links on your forum will use and the actual address your IP.Board will be installed to. Once you've entered the install directory and address, click Next and you will be directed to the database details page for your IP.Board.<br />
+      <br />
+      -You will need to know your SQL username and password at this point. If you do not know it, please ask your web host - in most
+	  cases it is different from the FTP log in information. <br /><br />The form is very straightfoward, with only the following points needing closer examination. If you do not know what your MySQL "host" is, try "localhost" (without the quotes). if the SQL server
+	  is on the same server as your website (and in most cases it is) this will suffice.
+	  <br />
+	  If you have created a new database for IP.Board, or wish to use an existing database, enter the name of the database in the appropriate field.<br /><br />
+	  Unless you intend to install multiple copies of
+	  IP.Board into the same database, you can leave the "table prefix" blank. If you do not have a MySQL password (if you are installing IP.Board on your local server) this can be left blank.
+<br />
+	  After submitting the form, you will be informed of any errors - if you do get an error similar to "permission denied for user@localhost using password YES" - the chances are you have either your MySQL username, MySQL password
+	  or MySQL database name wrong. Consult with your hosting provider for the correct information and resubmit the form.
+	  <br /><br />
+	  If the information is correct and IP.Board can connect to your database, you will be asked for your administrator login information.  This is the information you will use to login to the board, and the Admin CP area.
+	  <br /><br />
+	  If the installation was successful, you will receive notification to that effect.
+	  <br />
+	  Follow the link to finish off the installation and to log into your newly installed board. When the log in page loads, enter in the information you chose for your administrator account.
+	  <br />
+	  Once you are logged into the board, click on the "Admin CP" link found in the navigation bar to access the Administration Control Panel.
+</div>
+<br /><br />
+<div class='content-next'>
+	<img src='images/bullet_doing.gif' alt='' style='vertical-align:middle' border='0' /> <a href='install3.html'>Next: Installation Step Three</a>
+</div>
+
+</body>
+</html>

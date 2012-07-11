@@ -1,0 +1,72 @@
+\hypertarget{interfaceadmin__group__form}{\section{admin\-\_\-group\-\_\-form Interface Reference}
+\label{interfaceadmin__group__form}\index{admin\-\_\-group\-\_\-form@{admin\-\_\-group\-\_\-form}}
+}
+
+
+Group editing form interface.  
+
+
+Inheritance diagram for admin\-\_\-group\-\_\-form\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceadmin__group__form}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceadmin__group__form_a083de15a97f5e0a0ef60de656f8da320}{get\-Display\-Content} (\$group=array(), \$tabs\-Used=2)
+\item 
+\hyperlink{interfaceadmin__group__form_aa584200e117d7f02d4fabc05b109e51f}{get\-For\-Save} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Group editing form interface. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceadmin__group__form_a083de15a97f5e0a0ef60de656f8da320}{\index{admin\-\_\-group\-\_\-form@{admin\-\_\-group\-\_\-form}!get\-Display\-Content@{get\-Display\-Content}}
+\index{get\-Display\-Content@{get\-Display\-Content}!admin_group_form@{admin\-\_\-group\-\_\-form}}
+\subsubsection[{get\-Display\-Content}]{\setlength{\rightskip}{0pt plus 5cm}get\-Display\-Content (
+\begin{DoxyParamCaption}
+\item[{}]{\$group = {\ttfamily array()}, }
+\item[{}]{\$tabs\-Used = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{interfaceadmin__group__form_a083de15a97f5e0a0ef60de656f8da320}
+Returns H\-T\-M\-L tabs content for the page
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$group} & Group data \\
+\hline
+integer & {\em \$tabs\-Used} & Number of tabs used so far (your ids should be this +1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape array} Array of 'tabs' (H\-T\-M\-L for the tabs), 'content' (H\-T\-M\-L for the content), 'tabs\-Used' (number of tabs you have used) 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classadmin__group__form____core_a083de15a97f5e0a0ef60de656f8da320}{admin\-\_\-group\-\_\-form\-\_\-\-\_\-core}, and \hyperlink{classadmin__group__form____forums_a083de15a97f5e0a0ef60de656f8da320}{admin\-\_\-group\-\_\-form\-\_\-\-\_\-forums}.
+
+\hypertarget{interfaceadmin__group__form_aa584200e117d7f02d4fabc05b109e51f}{\index{admin\-\_\-group\-\_\-form@{admin\-\_\-group\-\_\-form}!get\-For\-Save@{get\-For\-Save}}
+\index{get\-For\-Save@{get\-For\-Save}!admin_group_form@{admin\-\_\-group\-\_\-form}}
+\subsubsection[{get\-For\-Save}]{\setlength{\rightskip}{0pt plus 5cm}get\-For\-Save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceadmin__group__form_aa584200e117d7f02d4fabc05b109e51f}
+Process the entries for saving and return
+
+\begin{DoxyReturn}{Returns}
+{\itshape array} Array of keys =$>$ values for saving 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classadmin__group__form____core_aa584200e117d7f02d4fabc05b109e51f}{admin\-\_\-group\-\_\-form\-\_\-\-\_\-core}, and \hyperlink{classadmin__group__form____forums_aa584200e117d7f02d4fabc05b109e51f}{admin\-\_\-group\-\_\-form\-\_\-\-\_\-forums}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/interfaces/admin/group\-\_\-form.\-php\end{DoxyCompactItemize}

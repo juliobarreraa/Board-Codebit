@@ -1,0 +1,197 @@
+\hypertarget{classadmin__core__posts__media}{\section{admin\-\_\-core\-\_\-posts\-\_\-media Class Reference}
+\label{classadmin__core__posts__media}\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+}
+Inheritance diagram for admin\-\_\-core\-\_\-posts\-\_\-media\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classadmin__core__posts__media}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__core__posts__media_afbc4e912a0604b94d47d66744c64d8ba}{do\-Execute} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classadmin__core__posts__media_abb2b0939f7947c95c98702d2222442b0}{do\-Media\-Import} (\$content)
+\item 
+\hyperlink{classadmin__core__posts__media_ae9c08a5d34ae6ec0459ca4e370ef4cc4}{recache\-Media\-Tag} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__core__posts__media_a15729ab39b7940b377935de1d936b7ba}{\-\_\-move\-Media\-Tag} ()
+\item 
+\hyperlink{classadmin__core__posts__media_added6865a5097091f91f0d673094a976}{\-\_\-media\-Tag\-Import} ()
+\item 
+\hyperlink{classadmin__core__posts__media_a1e5c31e7572056440170bee743cbcd25}{\-\_\-media\-Tag\-Export} ()
+\item 
+\hyperlink{classadmin__core__posts__media_a35cc060377e06d36e53bc3285277db9a}{\-\_\-media\-Tag\-Delete} ()
+\item 
+\hyperlink{classadmin__core__posts__media_afc35b8e68fb5ef9a2b0a04e156edd864}{\-\_\-media\-Tag\-Save} (\$type='add')
+\item 
+\hyperlink{classadmin__core__posts__media_a7de358bedcead8733161eac864342401}{\-\_\-media\-Tag\-Form} (\$type='add', \$errors=array())
+\item 
+\hyperlink{classadmin__core__posts__media_aeedf5f7ac0d0fed55b95aae66778e7d0}{\-\_\-media\-Tag\-Index} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin__core__posts__media_a6f96e7fc92441776c9d1cd3386663b40}{{\bfseries \$html}}\label{classadmin__core__posts__media_a6f96e7fc92441776c9d1cd3386663b40}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin__core__posts__media_a35cc060377e06d36e53bc3285277db9a}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!\-\_\-media\-Tag\-Delete@{\-\_\-media\-Tag\-Delete}}
+\index{\-\_\-media\-Tag\-Delete@{\-\_\-media\-Tag\-Delete}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{\-\_\-media\-Tag\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-media\-Tag\-Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__posts__media_a35cc060377e06d36e53bc3285277db9a}
+Delete a custom media tag
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_a1e5c31e7572056440170bee743cbcd25}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!\-\_\-media\-Tag\-Export@{\-\_\-media\-Tag\-Export}}
+\index{\-\_\-media\-Tag\-Export@{\-\_\-media\-Tag\-Export}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{\-\_\-media\-Tag\-Export}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-media\-Tag\-Export (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__posts__media_a1e5c31e7572056440170bee743cbcd25}
+Export a media\-Tag X\-M\-L file
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} \mbox{[}Outputs to screen\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_a7de358bedcead8733161eac864342401}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!\-\_\-media\-Tag\-Form@{\-\_\-media\-Tag\-Form}}
+\index{\-\_\-media\-Tag\-Form@{\-\_\-media\-Tag\-Form}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{\-\_\-media\-Tag\-Form}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-media\-Tag\-Form (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'add'}, }
+\item[{}]{\$errors = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__posts__media_a7de358bedcead8733161eac864342401}
+Show the mediatag add/edit form
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \mbox{[}\$type='add'\mbox{]} \\
+\hline
+{\em array} & \mbox{[}Optional\mbox{]} array of errors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_added6865a5097091f91f0d673094a976}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!\-\_\-media\-Tag\-Import@{\-\_\-media\-Tag\-Import}}
+\index{\-\_\-media\-Tag\-Import@{\-\_\-media\-Tag\-Import}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{\-\_\-media\-Tag\-Import}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-media\-Tag\-Import (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__posts__media_added6865a5097091f91f0d673094a976}
+Import a media\-Tag X\-M\-L file
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} \mbox{[}Outputs to screen\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_aeedf5f7ac0d0fed55b95aae66778e7d0}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!\-\_\-media\-Tag\-Index@{\-\_\-media\-Tag\-Index}}
+\index{\-\_\-media\-Tag\-Index@{\-\_\-media\-Tag\-Index}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{\-\_\-media\-Tag\-Index}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-media\-Tag\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__posts__media_aeedf5f7ac0d0fed55b95aae66778e7d0}
+List all the the current media tag types
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_afc35b8e68fb5ef9a2b0a04e156edd864}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!\-\_\-media\-Tag\-Save@{\-\_\-media\-Tag\-Save}}
+\index{\-\_\-media\-Tag\-Save@{\-\_\-media\-Tag\-Save}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{\-\_\-media\-Tag\-Save}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-media\-Tag\-Save (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'add'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__posts__media_afc35b8e68fb5ef9a2b0a04e156edd864}
+Save changes to a custom media tag
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \mbox{[}\$type='add'\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_a15729ab39b7940b377935de1d936b7ba}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!\-\_\-move\-Media\-Tag@{\-\_\-move\-Media\-Tag}}
+\index{\-\_\-move\-Media\-Tag@{\-\_\-move\-Media\-Tag}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{\-\_\-move\-Media\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-move\-Media\-Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__core__posts__media_a15729ab39b7940b377935de1d936b7ba}
+Reorder media tags
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_afbc4e912a0604b94d47d66744c64d8ba}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!do\-Execute@{do\-Execute}}
+\index{do\-Execute@{do\-Execute}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{do\-Execute}]{\setlength{\rightskip}{0pt plus 5cm}do\-Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__posts__media_afbc4e912a0604b94d47d66744c64d8ba}
+Main class entry point
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & \hyperlink{classips_registry}{ips\-Registry} reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} \mbox{[}Outputs to screen\mbox{]} 
+\end{DoxyReturn}
+----------------------------------------\/ 
+
+Reimplemented from \hyperlink{classips_command_afbc4e912a0604b94d47d66744c64d8ba}{ips\-Command}.
+
+\hypertarget{classadmin__core__posts__media_abb2b0939f7947c95c98702d2222442b0}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!do\-Media\-Import@{do\-Media\-Import}}
+\index{do\-Media\-Import@{do\-Media\-Import}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{do\-Media\-Import}]{\setlength{\rightskip}{0pt plus 5cm}do\-Media\-Import (
+\begin{DoxyParamCaption}
+\item[{}]{\$content}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__posts__media_abb2b0939f7947c95c98702d2222442b0}
+Abstracted import routine for installer
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & X\-M\-L file content \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__core__posts__media_ae9c08a5d34ae6ec0459ca4e370ef4cc4}{\index{admin\-\_\-core\-\_\-posts\-\_\-media@{admin\-\_\-core\-\_\-posts\-\_\-media}!recache\-Media\-Tag@{recache\-Media\-Tag}}
+\index{recache\-Media\-Tag@{recache\-Media\-Tag}!admin_core_posts_media@{admin\-\_\-core\-\_\-posts\-\_\-media}}
+\subsubsection[{recache\-Media\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}recache\-Media\-Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__core__posts__media_ae9c08a5d34ae6ec0459ca4e370ef4cc4}
+Recache the mediatag config
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/applications/core/modules\-\_\-admin/posts/media.\-php\end{DoxyCompactItemize}

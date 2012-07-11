@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Invision Install Guide: Help &amp; FAQ</title>
+		<style type='text/css' media='all'>
+			@import url('install.css');
+		</style>
+		<script type='text/javascript'>
+			//<![CDATA[
+		  		if (top.location != self.location) { top.location = self.location }
+				var use_enhanced_js = 1;
+			//]]>
+		</script>
+	<style>
+		BODY, TABLE { font-family: verdana, arial; font-size:12px; line-height:150% }
+		.title      { background-image: url(tile_back.gif); font-family:arial; font-size:18px; color:white; font-weight:bold; height:40px }
+		.table1     { border:1px solid #999999 }
+		.table2     { border:1px dotted #999999 }
+		.menustrip  { font-color:black; background-color:#EEEEEE; font-size:12px; height:24px }
+		a:link, a:visited, a:active  { color:#000055 }
+		a:hover                      { color:#333377;text-decoration:underline }
+		.header     { border-bottom:1px dashed #999999; font-family:Verdana, Arial; font-weight:bold; color:#4C77B6; font-size:20px; background-color:#FEFEFE; letter-spacing:-1px }
+	</style>
+	</head>
+	<body bgcolor="#FFFFFF">
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<div id='ipswrapper'>
+		    <div class='main_shell'>
+            <div id='branding'><img src='images/logo.png' /></div>
+		 	    <div id='navigation'>
+					<ul id='section_buttons'>
+                    	<li class='active'><a style='text-decoration: none;' href='../../START_HERE.html'><span>Main</span></a></li>
+						<li class='active'><a style='text-decoration: none;' href='help.html#install' target='bottom'><span>Installation Problems</span></a></li>
+   						<li class='active'><a style='text-decoration: none;' href='help.html#admin' target='bottom'><span>Admin CP Problems</span></a></li>
+   						<li class='active'><a style='text-decoration: none;' href='help.html#main' target='bottom'><span>Board Problems</span></a></li>
+  						<li class='active'><a style='text-decoration: none;' href='help.html#help' target='bottom'><span>Further Help</span></a></li>
+
+					</ul>
+				</div>
+
+
+
+
+
+<div class='content_shell'>
+		 	        <div class='package' style='text-align:middle;height:600px'>
+<div class='content_wrap' style='width:650px; margin:6px 12px 6px 6px;height:550px'>
+<!-- Start content -->
+
+<a name='top'></a>
+
+<br />
+
+
+
+<table width='95%' align='center' cellpadding='4' cellspacing='0'>
+
+ <tr>
+
+  <td class='header' align='left'><a name='install'></a>Installation Problems</td>
+
+ </tr>
+
+ <tr>
+
+  <td align='left'>
+
+  <b>When I run the installer, I get a page of code.</b>
+
+  <br />
+
+  If when accessing the installer via your web browser you receive a page of code and not the installation start screen, this means that either PHP has
+
+  not been installed or has not been configured properly. Please consult with your web host to see if this is the case.
+
+  <br /><br />
+
+  <b>I get an error like this 'access denied for user@localhost using password YES' when I submit the main form.</b>
+
+  <br />
+
+  If you receive this error from mySQL it means that either the MySQL database name, MySQL username, MySQL password or MySQL host information is wrong. Please double check the information you
+
+  entered making sure that passwords are typed correctly. In some cases, this information is case sensitive. If this error persists, please consult with your web host to check that the information
+
+  you have is correct.
+
+  <br /><br />
+
+  <b>After installing, I get this error 'Warning: fopen("/.install.lock", "w") - Permission denied ...'</b>
+
+  <br />
+
+  After installing, Invision Power Board attempts to create a "lock" file which disables the installation script. If you receive this error, the installer
+
+  has not been able to create this file. After you have logged into the Admin Center for the first time, you should remove the "install/index.php" script
+
+  from your server and only re-upload it if you wish to make a fresh install. You can then safely ignore this warning.
+
+  <br /><br />
+
+  <b>When installing I get an error like this: 'WARNING! Could not locate 'conf_global.php'</b>
+
+  <br />
+
+  This error means that the installer could not "guess" the location of the file 'conf_global.php'. Make sure you have uploaded this file into the same directory that you
+
+  uploaded 'initdata.php' into.
+
+ </td></tr>
+
+</table>
+
+<a href='help.html'><img align='right' src='images/p_up.gif' /></a>
+
+<br />
+
+
+
+<a name='admin'></a>
+
+<table width='95%' align='center' cellpadding='4' cellspacing='0'>
+
+ <tr>
+
+  <td class='header' align='left'>Admin CP Problems</td>
+
+ </tr>
+
+ <tr>
+
+  <td align='left'>
+
+  <b>No matter what I do, I can't stay logged into the Admin CP.</b>
+
+  <br />
+
+  For extra security, the Admin CP checks your IP address as part of the admin session validation. In some cases your IP address will change with each page request (especially if you are using a dial up ISP). You can
+
+  stop the Admin CP checking your IP address which will solve the problem.
+
+  <br />To do this, open up "initdata.php" in your text editor. Do a search in your text editor (Ctrl+F in Notepad/Wordpad for Windows) for <span style='color:red'>define( 'IPB_ACP_IP_MATCH', 1 );</span>. Change that to <span style='color:red'>define( 'IPB_ACP_IP_MATCH', 0 );</span> then save the file and re-upload to your
+
+  server.
+
+  <br />Although there is no immediate security risk to doing this, you should not disclose your admin session ID to anyone or post the link you are using for that admin CP session to anyone.
+
+  <br /><br />
+
+  <b>When I try to access the Admin CP, the page is completely blank</b>
+
+  <br />
+
+  This problem could be the result of a few things.<br />
+
+  Firstly, open up "initdata.php" in a text editor and near the top change: <span style='color:red'>define( 'IPB_ACP_USE_GZIP', 1 );</span> to <span style='color:red'>define( 'IPB_ACP_USE_GZIP', 0 );</span>. Save the file and re-upload to your
+
+  server.
+
+  <br />
+
+  If that doesn't solve the problem, check the CHMOD values on the directories you created during the installation process. If in doubt, CHMOD them to 0777 and any directories contained within. If this doesn't solve the problem, you'll need to speak with your hosting provider about what files and directories CHMOD values should be to function properly.
+
+ </td></tr>
+
+</table>
+
+<a href='help.html'><img align='right' src='images/p_up.gif' /></a>
+
+<br />
+
+
+
+<a name='main'></a>
+
+<table width='95%' align='center' cellpadding='4' cellspacing='0'>
+
+ <tr>
+
+  <td class='header' align='left'>General Board Problems</td>
+
+ </tr>
+
+ <tr>
+
+  <td align='left'>
+
+  <b>Every time I try to access a page on the forums it loads a blank page.</b>
+
+  <br />
+
+  Can you log into the Admin CP? If you do not know the url, enter the following into your web browser address bar <b>http://www.your-domain-here.com/forums/admin/index.php</b> (obviously using the correct URL to your board!).
+
+  <br />If the Admin CP loads first time, log in there and try the following:
+
+  <br /><br />Click on "System Settings" on the left. Click on "Server Environment". When the page has loaded, turn off the following: <b>Print HTTP headers?</b> and set <b>DISABLE GZIP encoding?</b> to Yes. When complete, submit the form
+
+  and try to access your board again.
+
+  <br />
+
+  If it still loads a blank page, check the CHMOD values on the directories you created during the installation including any directories contained within. If in doubt, CHMOD to 0777. Again, if this doesn't solve the problem, you'll need to speak with your hosting provider about what files and directories CHMOD values should be to function properly.
+
+  <br /><br />
+
+  <b>I am on a Windows server and I get an Internal Server Error when trying to access my board</b>
+
+  <br />
+
+  There is an option to disable the headers that Invision Power Board prints by default.
+
+  <br />Log into your Admin Control Panel, click on "System Settings" to expand the sub-menu. Click on "Server Environment". When the page has loaded, turn off <b>Print HTTP headers?</b> and submit the form
+
+  and try to access your board again.
+
+  <br /><br />
+
+  <b>I am on a Windows server and when I make a post I am taken to a blank page</b>
+
+  <br />
+
+  Some Windows based servers require a different HTTP protocol when redirecting HTTP requests, there is an option in the Admin Control Panel to overcome this.
+
+  <br />
+
+  Log into your Admin Control Panel, click on "System Settings" to expand the sub-menu. Click on "Server Environment". Choose "Windows Refresh Command" from the "Immediate Redirect Type" option. Submit the form.
+
+ </td></tr>
+
+</table>
+
+<a href='help.html'><img align='right' src='images/p_up.gif' /></a>
+
+<br />
+
+
+
+<a name='help'></a>
+
+<table width='95%' align='center' cellpadding='4' cellspacing='0'>
+
+ <tr>
+
+  <td class='header' align='left'>Getting further help</td>
+
+ </tr>
+
+ <tr>
+
+  <td align='left'>
+
+  If you have a problem outside the ones solved in this guide, then don't panic!<br />
+
+  We have a large team of trained support professionals that <b>will</b> be able to provide a solution to your problems.<br />
+
+  Simply log into your <a href='http://www.invisionpower.com/customer'>Client Area</a> and submit a ticket.
+
+<br /><br />
+
+If you wish to contact us for non-technical issues, please visit our <a href='http://www.invisionpower.com/corporate/contact.html' target='_blank'>Contact Page</a> which includes a handy email form, mailing address and telephone number.
+
+  </td>
+
+ </tr>
+
+</table>
+<a href='help.html'><img align='right' src='images/p_up.gif' /></a>
+<!-- End content -->
+</div>
+     </div>
+</div>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+	<title>Invision Power Board Install Guide: Welcome</title>
+	<style type='text/css' media='all'>
+		@import url('install.css');
+	</style>
+</head>
+<body>
+
+
+<h2>Installing: Step 1 - Uploading</h2>
+<br />
+<div class='content-text'>
+	  At this point, you should have the zip archive "unzipped" and the contents similar to those shown in the <a href='chmod.html' target='bottom'>structure and CHMOD guide</a>. If you
+	  do not have a similar structure, check to make sure you have your zip program preferences set to allow creation of directories and to preserve case and long filenames.
+	  <br /><br />
+	  If you haven't done so already, create a new directory on your server named appropriately. If you wanted to access the forums via 'http://www.domain.com/forums/', create a directory called 'forums' in the
+	  'public_html' or 'www' directory on your webserver.
+This varies from server to server so if you're unsure of your "webroot" directory, please contact your hosting provider.<br /><br />
+	  Using your FTP client, move into the directory you wish to upload to (if you followed the above advice, move into the newly created 'forums' directory.)
+	  <br /><br />
+	  Using your FTP client, create the following directories "admin", "cache", "converge_local", "hooks", "interface", "ips_kernel", "lofiversion", "public", and "uploads" <span style='color:blue'>(TIP: If your FTP client supports "Drag n' Drop" which most modern clients do, you can save yourself some time and effort by
+	  simply selecting all the files from the "unzipped" zip archive and drag them into your FTP client window, this will then copy all the files, creating the directories as it goes. If you choose
+	  to do this, you can safely ignore most of the following instruction, just remember to CHMOD as outlined in the stucture and CHMOD guide).</span>
+<br /><br />
+	   Once the directories have been created, CHMOD "cache" (recursively), "public" (recursively), "hooks" and "uploads" to CHMOD "0777" (Read/write on Windows file servers). If you receive permissions errors (Internal Server Error 500) later on, you can CHMOD these to
+	   "0755" which should correct the issue. Remember that some files in those directories, like an index.php file, may need to be CHMOD to "0644" or "0444" to be accessed and ran on some *nix server setups.<br /><br /> 
+       
+       Now, upload the contents of the files in your local folders (from the zip file) into the corresponding directories you've just created on your server. Some folders will contain other
+	   files and folders, upload them all - preserving the structure you have in your zip file (for example, upload the entire contents of the "cache" folder on your computer to the "cache" directory on the server).
+<br /><br />
+	   Once you have finished uploading into the directories, upload the rest of the files "conf_global.dist.php", "index.php", "initdata.php" and "xml.php" to the same place as you created the directories earlier (into "forums" for our example).
+Once these files are uploaded, rename "conf_global.dist.php" to  "conf_global.php" and CHMOD that file to "0777" (Read/write on Windows file servers) as well.<br /><br />
+		
+		Repeat this process for any addons you are also installing such as IP.Blog or IP.Gallery.<br /><br />
+		
+	   That's it, the most time consuming part is now done! You can proceed to the next step.
+</div>
+<br /><br />
+<div class='content-next'>
+	<img src='images/bullet_doing.gif' alt='' style='vertical-align:middle' border='0' /> <a href='install2.html'>Next: Installation Step Two</a>
+</div>
+
+</body>
+</html>

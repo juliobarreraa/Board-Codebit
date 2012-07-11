@@ -45,6 +45,7 @@ class task_item
 	 * @var		$registry
 	 */
 	protected $registry;
+	protected $DB;
 	
 	/**
 	 * Constructor
@@ -61,6 +62,8 @@ class task_item
 		
 		$this->class	= $class;
 		$this->task		= $task;
+		$this->DB       = ipsRegistry::DB();
+		$this->cache = ipsRegistry::cache();
 	}
 	
 	/**
@@ -78,7 +81,14 @@ class task_item
 		
 		$classToLoad = IPSLib::loadActionOverloader( IPSLib::getAppDir( 'portal' ) . '/sources/PortalCache.php', 'PortalCache' );
 		$portalCache    = new $classToLoad($this->registry);
-		$portalCache->setfriends();
+		
+		$rows = $this->registry->members->getOnlineUsers();
+		
+		
+		foreach($rows as $member) {
+   			$portalCache->setFriends( (int)$member['member_id'] );
+        }
+        
 		
 		//-----------------------------------------
 		// Unlock Task: DO NOT MODIFY!

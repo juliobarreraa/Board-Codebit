@@ -1,0 +1,212 @@
+\hypertarget{classadmin__forum__functions}{\section{admin\-\_\-forum\-\_\-functions Class Reference}
+\label{classadmin__forum__functions}\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}}
+}
+Inheritance diagram for admin\-\_\-forum\-\_\-functions\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classadmin__forum__functions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__forum__functions_a2aa68cc501998312db5ef710bbe3a2af}{forum\-Build\-Children} (\$root\-\_\-id, \$temp\-\_\-html=\char`\"{}\char`\"{}, \$depth\-\_\-guide=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classadmin__forum__functions_a60508b3baa05074bf4e2fe2e86cf1253}{render\-Forum} (\$r, \$depth\-\_\-guide=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classadmin__forum__functions_a4c65a3aadef9cf1349e14708f1152d10}{forum\-Show\-Cat} (\$content, \$r)
+\item 
+\hyperlink{classadmin__forum__functions_a3a04624c66cef28d14a418b98560a116}{forums\-List\-Forums} ()
+\item 
+\hyperlink{classadmin__forum__functions_a1df3a83adcb5311bc242ccfc30ba0e77}{ad\-Forums\-Forum\-List} (\$restrict=0, \$disable\-Cats=F\-A\-L\-S\-E, \$exclude=array())
+\item 
+\hyperlink{classadmin__forum__functions_af6536dec7aa17c468961ce20bb232910}{ad\-Forums\-Forum\-Data} ()
+\item 
+\hyperlink{classadmin__forum__functions_a08fe8cbddf5e7c8e72619b7a9ef88dec}{forums\-Forum\-Data\-Internal} (\$root\-\_\-id, \$jump\-\_\-array=array(), \$depth\-\_\-guide=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classadmin__forum__functions_a6f96e7fc92441776c9d1cd3386663b40}{{\bfseries \$html}}\label{classadmin__forum__functions_a6f96e7fc92441776c9d1cd3386663b40}
+
+\item 
+\hypertarget{classadmin__forum__functions_a9a4a6fba2208984cabb3afacadf33919}{{\bfseries \$type} = \char`\"{}\char`\"{}}\label{classadmin__forum__functions_a9a4a6fba2208984cabb3afacadf33919}
+
+\item 
+\hypertarget{classadmin__forum__functions_aed69d4505c8733f90f822ae6ed281823}{{\bfseries \$printed} = 0}\label{classadmin__forum__functions_aed69d4505c8733f90f822ae6ed281823}
+
+\item 
+\hypertarget{classadmin__forum__functions_a2a44a205e187c7e7155a754ec7d975b7}{{\bfseries \$skins} = array()}\label{classadmin__forum__functions_a2a44a205e187c7e7155a754ec7d975b7}
+
+\item 
+\hypertarget{classadmin__forum__functions_ad2e6212184a8d41e8152159deb6c9517}{{\bfseries \$need\-\_\-desc} = array()}\label{classadmin__forum__functions_ad2e6212184a8d41e8152159deb6c9517}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classadmin__forum__functions_a8c244b277499523617472a4fbcec0dd3}{forums\-Forum\-List\-Internal} (\$root\-\_\-id, \$jump\-\_\-array=array(), \$depth\-\_\-guide=\char`\"{}\char`\"{}, \$disable\-Cats=F\-A\-L\-S\-E, \$exclude=array())
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classadmin__forum__functions_af6536dec7aa17c468961ce20bb232910}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!ad\-Forums\-Forum\-Data@{ad\-Forums\-Forum\-Data}}
+\index{ad\-Forums\-Forum\-Data@{ad\-Forums\-Forum\-Data}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{ad\-Forums\-Forum\-Data}]{\setlength{\rightskip}{0pt plus 5cm}ad\-Forums\-Forum\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__forum__functions_af6536dec7aa17c468961ce20bb232910}
+Build Forum Data
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classadmin__forum__functions_a1df3a83adcb5311bc242ccfc30ba0e77}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!ad\-Forums\-Forum\-List@{ad\-Forums\-Forum\-List}}
+\index{ad\-Forums\-Forum\-List@{ad\-Forums\-Forum\-List}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{ad\-Forums\-Forum\-List}]{\setlength{\rightskip}{0pt plus 5cm}ad\-Forums\-Forum\-List (
+\begin{DoxyParamCaption}
+\item[{}]{\$restrict = {\ttfamily 0}, }
+\item[{}]{\$disable\-Cats = {\ttfamily FALSE}, }
+\item[{}]{\$exclude = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__forum__functions_a1df3a83adcb5311bc242ccfc30ba0e77}
+Build Forum Jump
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$restrict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classadmin__forum__functions_a2aa68cc501998312db5ef710bbe3a2af}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!forum\-Build\-Children@{forum\-Build\-Children}}
+\index{forum\-Build\-Children@{forum\-Build\-Children}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{forum\-Build\-Children}]{\setlength{\rightskip}{0pt plus 5cm}forum\-Build\-Children (
+\begin{DoxyParamCaption}
+\item[{}]{\$root\-\_\-id, }
+\item[{}]{\$temp\-\_\-html = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$depth\-\_\-guide = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__forum__functions_a2aa68cc501998312db5ef710bbe3a2af}
+Build forum children
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$root\-\_\-id} & \\
+\hline
+string & {\em \$temp\-\_\-html} & \\
+\hline
+string & {\em \$depth\-\_\-guide} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classadmin__forum__functions_a08fe8cbddf5e7c8e72619b7a9ef88dec}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!forums\-Forum\-Data\-Internal@{forums\-Forum\-Data\-Internal}}
+\index{forums\-Forum\-Data\-Internal@{forums\-Forum\-Data\-Internal}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{forums\-Forum\-Data\-Internal}]{\setlength{\rightskip}{0pt plus 5cm}forums\-Forum\-Data\-Internal (
+\begin{DoxyParamCaption}
+\item[{}]{\$root\-\_\-id, }
+\item[{}]{\$jump\-\_\-array = {\ttfamily array()}, }
+\item[{}]{\$depth\-\_\-guide = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__forum__functions_a08fe8cbddf5e7c8e72619b7a9ef88dec}
+Build Forum Data Helper
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$root\-\_\-id} & \\
+\hline
+array & {\em \$jump\-\_\-array} & \\
+\hline
+string & {\em \$depth\-\_\-guide} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classadmin__forum__functions_a8c244b277499523617472a4fbcec0dd3}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!forums\-Forum\-List\-Internal@{forums\-Forum\-List\-Internal}}
+\index{forums\-Forum\-List\-Internal@{forums\-Forum\-List\-Internal}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{forums\-Forum\-List\-Internal}]{\setlength{\rightskip}{0pt plus 5cm}forums\-Forum\-List\-Internal (
+\begin{DoxyParamCaption}
+\item[{}]{\$root\-\_\-id, }
+\item[{}]{\$jump\-\_\-array = {\ttfamily array()}, }
+\item[{}]{\$depth\-\_\-guide = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$disable\-Cats = {\ttfamily FALSE}, }
+\item[{}]{\$exclude = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classadmin__forum__functions_a8c244b277499523617472a4fbcec0dd3}
+Build Forum List Helper
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$root\-\_\-id} & \\
+\hline
+array & {\em \$jump\-\_\-array} & \\
+\hline
+string & {\em \$depth\-\_\-guide} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classadmin__forum__functions_a4c65a3aadef9cf1349e14708f1152d10}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!forum\-Show\-Cat@{forum\-Show\-Cat}}
+\index{forum\-Show\-Cat@{forum\-Show\-Cat}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{forum\-Show\-Cat}]{\setlength{\rightskip}{0pt plus 5cm}forum\-Show\-Cat (
+\begin{DoxyParamCaption}
+\item[{}]{\$content, }
+\item[{}]{\$r}
+\end{DoxyParamCaption}
+)}}\label{classadmin__forum__functions_a4c65a3aadef9cf1349e14708f1152d10}
+Show Category
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+array & {\em \$r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__forum__functions_a3a04624c66cef28d14a418b98560a116}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!forums\-List\-Forums@{forums\-List\-Forums}}
+\index{forums\-List\-Forums@{forums\-List\-Forums}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{forums\-List\-Forums}]{\setlength{\rightskip}{0pt plus 5cm}forums\-List\-Forums (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classadmin__forum__functions_a3a04624c66cef28d14a418b98560a116}
+List all forums
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classadmin__forum__functions_a60508b3baa05074bf4e2fe2e86cf1253}{\index{admin\-\_\-forum\-\_\-functions@{admin\-\_\-forum\-\_\-functions}!render\-Forum@{render\-Forum}}
+\index{render\-Forum@{render\-Forum}!admin_forum_functions@{admin\-\_\-forum\-\_\-functions}}
+\subsubsection[{render\-Forum}]{\setlength{\rightskip}{0pt plus 5cm}render\-Forum (
+\begin{DoxyParamCaption}
+\item[{}]{\$r, }
+\item[{}]{\$depth\-\_\-guide = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classadmin__forum__functions_a60508b3baa05074bf4e2fe2e86cf1253}
+Build forum
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$r} & \\
+\hline
+string & {\em \$depth\-\_\-guide} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/applications/forums/sources/classes/forums/admin\-\_\-forum\-\_\-functions.\-php\end{DoxyCompactItemize}

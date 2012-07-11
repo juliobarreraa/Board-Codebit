@@ -1,0 +1,96 @@
+\hypertarget{classapi_topic_view}{\section{api\-Topic\-View Class Reference}
+\label{classapi_topic_view}\index{api\-Topic\-View@{api\-Topic\-View}}
+}
+
+
+Forums topic view A\-P\-I.  
+
+
+Inheritance diagram for api\-Topic\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classapi_topic_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classapi_topic_view_a095c5d389db211932136b53f25f39685}{\-\_\-\-\_\-construct} ()
+\item 
+\hyperlink{classapi_topic_view_a718ee6e71e32df74e37a93568daf2639}{return\-\_\-topic\-\_\-list\-\_\-data} (\$view\-\_\-as\-\_\-guest=false)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classapi_topic_view_af9d44ca8823257cb2c86a82d193c8b68}{\$topic\-\_\-list\-\_\-config}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classapi_topic_view_a5934d8cb70f1818c80b753b23354f3b6}{\$attach\-\_\-pids} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Forums topic view A\-P\-I. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classapi_topic_view_a095c5d389db211932136b53f25f39685}{\index{api\-Topic\-View@{api\-Topic\-View}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!apiTopicView@{api\-Topic\-View}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapi_topic_view_a095c5d389db211932136b53f25f39685}
+Constructor\-: calls parent \hyperlink{classapi_core_a4be4055f3361d4800e16bc2e2e38cda6}{init()} method and runs other additional calls
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classapi_topic_view_a718ee6e71e32df74e37a93568daf2639}{\index{api\-Topic\-View@{api\-Topic\-View}!return\-\_\-topic\-\_\-list\-\_\-data@{return\-\_\-topic\-\_\-list\-\_\-data}}
+\index{return\-\_\-topic\-\_\-list\-\_\-data@{return\-\_\-topic\-\_\-list\-\_\-data}!apiTopicView@{api\-Topic\-View}}
+\subsubsection[{return\-\_\-topic\-\_\-list\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}return\-\_\-topic\-\_\-list\-\_\-data (
+\begin{DoxyParamCaption}
+\item[{}]{\$view\-\_\-as\-\_\-guest = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classapi_topic_view_a718ee6e71e32df74e37a93568daf2639}
+Returns an array of topics
+
+
+\begin{DoxyParams}{Parameters}
+{\em boolean} & Load only topics viewable by guests? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape array} Array of topics data 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{classapi_topic_view_a5934d8cb70f1818c80b753b23354f3b6}{\index{api\-Topic\-View@{api\-Topic\-View}!\$attach\-\_\-pids@{\$attach\-\_\-pids}}
+\index{\$attach\-\_\-pids@{\$attach\-\_\-pids}!apiTopicView@{api\-Topic\-View}}
+\subsubsection[{\$attach\-\_\-pids}]{\setlength{\rightskip}{0pt plus 5cm}\$attach\-\_\-pids = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classapi_topic_view_a5934d8cb70f1818c80b753b23354f3b6}
+Array of post I\-Ds with attachments \hypertarget{classapi_topic_view_af9d44ca8823257cb2c86a82d193c8b68}{\index{api\-Topic\-View@{api\-Topic\-View}!\$topic\-\_\-list\-\_\-config@{\$topic\-\_\-list\-\_\-config}}
+\index{\$topic\-\_\-list\-\_\-config@{\$topic\-\_\-list\-\_\-config}!apiTopicView@{api\-Topic\-View}}
+\subsubsection[{\$topic\-\_\-list\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}\$topic\-\_\-list\-\_\-config}}\label{classapi_topic_view_af9d44ca8823257cb2c86a82d193c8b68}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ array(  \textcolor{stringliteral}{'offset'}               => 0,
+                                                                                \textcolor{stringliteral}{
+      'limit'}                  => 5,
+                                                                                \textcolor{stringliteral}{
+      'forums'}         => \textcolor{charliteral}{'*'},
+                                                                                \textcolor{stringliteral}{
+      'order\_field'}    => \textcolor{stringliteral}{'last\_post'},
+                                                                                \textcolor{stringliteral}{
+      'order\_by'}               => \textcolor{stringliteral}{'DESC'}
+                                                                          )
+\end{DoxyCode}
+Configuration array for the topic list 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/api/forums/\hyperlink{api__topic__view_8php}{api\-\_\-topic\-\_\-view.\-php}\end{DoxyCompactItemize}

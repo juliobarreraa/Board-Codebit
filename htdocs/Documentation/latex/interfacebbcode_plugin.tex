@@ -1,0 +1,143 @@
+\hypertarget{interfacebbcode_plugin}{\section{bbcode\-Plugin Interface Reference}
+\label{interfacebbcode_plugin}\index{bbcode\-Plugin@{bbcode\-Plugin}}
+}
+Inheritance diagram for bbcode\-Plugin\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interfacebbcode_plugin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacebbcode_plugin_a761782abec1999eac70cda803a5e0e32}{pre\-Db\-Parse} (\$txt)
+\item 
+\hyperlink{interfacebbcode_plugin_a96ae233b150cbe9652e841d073b9bfce}{pre\-Display\-Parse} (\$txt)
+\item 
+\hyperlink{interfacebbcode_plugin_ab5c4381b2631b7a6de161ec15a6ecb39}{pre\-Edit\-Parse} (\$txt)
+\item 
+\hyperlink{interfacebbcode_plugin_a761782abec1999eac70cda803a5e0e32}{pre\-Db\-Parse} (\$txt)
+\item 
+\hyperlink{interfacebbcode_plugin_a96ae233b150cbe9652e841d073b9bfce}{pre\-Display\-Parse} (\$txt)
+\item 
+\hyperlink{interfacebbcode_plugin_ab5c4381b2631b7a6de161ec15a6ecb39}{pre\-Edit\-Parse} (\$txt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacebbcode_plugin_a761782abec1999eac70cda803a5e0e32}{\index{bbcode\-Plugin@{bbcode\-Plugin}!pre\-Db\-Parse@{pre\-Db\-Parse}}
+\index{pre\-Db\-Parse@{pre\-Db\-Parse}!bbcodePlugin@{bbcode\-Plugin}}
+\subsubsection[{pre\-Db\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Db\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{interfacebbcode_plugin_a761782abec1999eac70cda803a5e0e32}
+Method that is run before the content is stored in the database You are responsible for ensuring you mark the replaced text appropriately so that you are able to unparse it, if you wish to have bbcode parsed on save
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & B\-B\-Code text from submission to be stored in database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Formatted content, ready for display 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbbcode__sharedmedia_a761782abec1999eac70cda803a5e0e32}{bbcode\-\_\-sharedmedia}.
+
+\hypertarget{interfacebbcode_plugin_a761782abec1999eac70cda803a5e0e32}{\index{bbcode\-Plugin@{bbcode\-Plugin}!pre\-Db\-Parse@{pre\-Db\-Parse}}
+\index{pre\-Db\-Parse@{pre\-Db\-Parse}!bbcodePlugin@{bbcode\-Plugin}}
+\subsubsection[{pre\-Db\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Db\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{interfacebbcode_plugin_a761782abec1999eac70cda803a5e0e32}
+Method that is run before the content is stored in the database You are responsible for ensuring you mark the replaced text appropriately so that you are able to unparse it, if you wish to have bbcode parsed on save
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & B\-B\-Code text from submission to be stored in database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Formatted content, ready for display 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbbcode__sharedmedia_a761782abec1999eac70cda803a5e0e32}{bbcode\-\_\-sharedmedia}.
+
+\hypertarget{interfacebbcode_plugin_a96ae233b150cbe9652e841d073b9bfce}{\index{bbcode\-Plugin@{bbcode\-Plugin}!pre\-Display\-Parse@{pre\-Display\-Parse}}
+\index{pre\-Display\-Parse@{pre\-Display\-Parse}!bbcodePlugin@{bbcode\-Plugin}}
+\subsubsection[{pre\-Display\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Display\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{interfacebbcode_plugin_a96ae233b150cbe9652e841d073b9bfce}
+Method that is run before the content is displayed to the user This is the safest method of parsing, as the original submitted text is left in tact. No markers are necessary if you use parse on display.
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & B\-B\-Code/parsed text from database to be displayed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Formatted content, ready for display 
+\end{DoxyReturn}
+\hypertarget{interfacebbcode_plugin_a96ae233b150cbe9652e841d073b9bfce}{\index{bbcode\-Plugin@{bbcode\-Plugin}!pre\-Display\-Parse@{pre\-Display\-Parse}}
+\index{pre\-Display\-Parse@{pre\-Display\-Parse}!bbcodePlugin@{bbcode\-Plugin}}
+\subsubsection[{pre\-Display\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Display\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{interfacebbcode_plugin_a96ae233b150cbe9652e841d073b9bfce}
+Method that is run before the content is displayed to the user This is the safest method of parsing, as the original submitted text is left in tact. No markers are necessary if you use parse on display.
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & B\-B\-Code/parsed text from database to be displayed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Formatted content, ready for display 
+\end{DoxyReturn}
+\hypertarget{interfacebbcode_plugin_ab5c4381b2631b7a6de161ec15a6ecb39}{\index{bbcode\-Plugin@{bbcode\-Plugin}!pre\-Edit\-Parse@{pre\-Edit\-Parse}}
+\index{pre\-Edit\-Parse@{pre\-Edit\-Parse}!bbcodePlugin@{bbcode\-Plugin}}
+\subsubsection[{pre\-Edit\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Edit\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{interfacebbcode_plugin_ab5c4381b2631b7a6de161ec15a6ecb39}
+Method that is run before the content is placed into an editor for editing If you use \char`\"{}parse on display\char`\"{} you may simply return \$txt
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & Parsed text from database to be edited \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string B\-B\-Code content, ready for editing 
+\end{DoxyReturn}
+\hypertarget{interfacebbcode_plugin_ab5c4381b2631b7a6de161ec15a6ecb39}{\index{bbcode\-Plugin@{bbcode\-Plugin}!pre\-Edit\-Parse@{pre\-Edit\-Parse}}
+\index{pre\-Edit\-Parse@{pre\-Edit\-Parse}!bbcodePlugin@{bbcode\-Plugin}}
+\subsubsection[{pre\-Edit\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}pre\-Edit\-Parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{interfacebbcode_plugin_ab5c4381b2631b7a6de161ec15a6ecb39}
+Method that is run before the content is placed into an editor for editing If you use \char`\"{}parse on display\char`\"{} you may simply return \$txt
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & Parsed text from database to be edited \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string B\-B\-Code content, ready for editing 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/classes/bbcode/custom/defaults.\-php\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/sources/interfaces/interface\-\_\-bbcode.\-php\end{DoxyCompactItemize}

@@ -1,0 +1,765 @@
+\hypertarget{classapp__forums__classes__topics}{\section{app\-\_\-forums\-\_\-classes\-\_\-topics Class Reference}
+\label{classapp__forums__classes__topics}\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classapp__forums__classes__topics_a178c3a93e57e75dd87a5d39112af0b07}{\-\_\-\-\_\-construct} (\hyperlink{classips_registry}{ips\-Registry} \$registry)
+\item 
+\hyperlink{classapp__forums__classes__topics_ade382c064e04343c1c1e0ffd15a45bbe}{auto\-Populate} (\$\hyperlink{classtopic}{topic}=\char`\"{}\char`\"{}, \$return=true)
+\item 
+\hyperlink{classapp__forums__classes__topics_a684b4aab2e3bbb55407d9615be7b1ea5}{set\-Up\-Topic} (\$\hyperlink{classtopic}{topic}=array())
+\item 
+\hyperlink{classapp__forums__classes__topics_a0669630528c6213a70ea52f4eaa3726e}{update\-Topic} (\$tid, \$data)
+\item 
+\hyperlink{classapp__forums__classes__topics_a9ae35dc4ddf7936983e623f81051500f}{rebuild\-Topic} (\$tid)
+\item 
+\hyperlink{classapp__forums__classes__topics_abe0edf082deb9609387506d0989305f4}{get\-Topic\-By\-Id} (\$tid)
+\item 
+\hyperlink{classapp__forums__classes__topics_a4dc259a82d99c53f99147fa494006ed2}{get\-Post\-By\-Id} (\$pid, \$check\-Archived=false)
+\item 
+\hyperlink{classapp__forums__classes__topics_ae4ee830ef61c42bbf8f179147d48d885}{get\-Topics} (\$filters)
+\item 
+\hyperlink{classapp__forums__classes__topics_a9e92a37adc937b590e0fe84a6b4f10cc}{get\-Topics\-Count} ()
+\item 
+\hyperlink{classapp__forums__classes__topics_a4d1d9482540c711f7f490c7306ad2ed5}{get\-Posts} (\$filters)
+\item 
+\hyperlink{classapp__forums__classes__topics_a68f42ee6c8fb0c5193e9af321ee1ab91}{get\-Posts\-Count} ()
+\item 
+\hyperlink{classapp__forums__classes__topics_a3d24ed0e93b212b4d5e382fa795bf4ef}{get\-Error\-Message} ()
+\item 
+\hyperlink{classapp__forums__classes__topics_ade45257a25c7924dcc04cec5cb1af70f}{set\-Error\-Message} (\$error\-Message)
+\item 
+\hyperlink{classapp__forums__classes__topics_ac0454c41b4e335fe0aa8f8f279d7ae84}{set\-Permission\-Data} (\$k='', \$v='')
+\item 
+\hyperlink{classapp__forums__classes__topics_a89348ddfcbe30ec6cf04b346bb8b823a}{get\-Permission\-Data} (\$k='')
+\item 
+\hyperlink{classapp__forums__classes__topics_ad03482aea1bc3a52271d144fa029e3e8}{get\-Topic\-Data} (\$k='')
+\item 
+\hyperlink{classapp__forums__classes__topics_aa1c6fbef21ae7c98a885d074c119f4d1}{set\-Topic\-Data} (\$k, \$v='')
+\item 
+\hyperlink{classapp__forums__classes__topics_a8ad42a7e0037618c849a3cb74fdf4291}{get\-Member\-Data} (\$k='')
+\item 
+\hyperlink{classapp__forums__classes__topics_aed5b5b4099e67fd6d385ab2c8aab8315}{set\-Member\-Data} (\$k, \$v='')
+\item 
+\hyperlink{classapp__forums__classes__topics_aa01414f79c088d6280f86990cdd2c16d}{get\-Moderator\-Data} ()
+\item 
+\hyperlink{classapp__forums__classes__topics_acb7dec594d20db33aa16962fe4363c3d}{get\-Next\-Unread\-Topic\-Id} (\$topic\-Data=false)
+\item 
+\hyperlink{classapp__forums__classes__topics_a73e81046fa21dfb869219c7245ea9f4b}{is\-On\-Last\-Page} (\$topic\-Data=false)
+\item 
+\hyperlink{classapp__forums__classes__topics_af971961c7c02cb8a5a82e14d8ad99133}{can\-See\-Ip} ()
+\item 
+\hyperlink{classapp__forums__classes__topics_ace710cd76c17f958bee9fdb6cab05518}{is\-Archived} (\$topic\-Data)
+\item 
+\hyperlink{classapp__forums__classes__topics_ad6045406cb646864f7047c2fdb2b15cf}{can\-View} (\$topic\-Data=false, \$member\-Data=false)
+\item 
+\hyperlink{classapp__forums__classes__topics_acd40fd6d4c07113e617bd9066bcdd1ad}{can\-Delete\-Post} (\$poster)
+\item 
+\hyperlink{classapp__forums__classes__topics_a34f648ba04f0a965f45b550594c76013}{can\-Edit\-Post} (\$poster=array())
+\item 
+\hyperlink{classapp__forums__classes__topics_abcf4c9adc4953f1ac35af06fbbfe9d90}{get\-Reply\-Status} ()
+\item 
+\hyperlink{classapp__forums__classes__topics_a4840b0a01c591f0a90373151b77a40fb}{get\-Multi\-Moderation\-Data} ()
+\item 
+\hyperlink{classapp__forums__classes__topics_a1d122274f10c4381209c82a9b8c1a305}{parse\-Member} (array \$member)
+\item 
+\hyperlink{classapp__forums__classes__topics_a43c3aeb4184a2ac07a14c6c65c02d1d7}{parse\-Topic\-For\-Line\-Entry} (array \$\hyperlink{classtopic}{topic})
+\item 
+\hyperlink{classapp__forums__classes__topics_abdfe201884fd7d9755e47cd8ce959f79}{parse\-Post} (array \$post)
+\item 
+\hyperlink{classapp__forums__classes__topics_a8a5de06c48f6bc71dca5bdc93c961165}{add\-Recent\-Post} (\$post)
+\item 
+\hyperlink{classapp__forums__classes__topics_a0f0464a3e3b14366432a7baf3d60fd13}{delete\-Recent\-Post} (\$where)
+\item 
+\hyperlink{classapp__forums__classes__topics_a33c2b20cf8356bc357c6f8008626d647}{update\-Recent\-Post} (\$update, \$where)
+\item 
+\hyperlink{classapp__forums__classes__topics_afc10aac190bcb1d120ce7d2cbb9bdd2d}{restore\-Recent\-Post} (\$where)
+\item 
+\hyperlink{classapp__forums__classes__topics_af9cced2da51a34a78b4eafa3a940ea8c}{get\-Post\-Table\-Field} (\$field, \$is\-Archive)
+\item 
+\hyperlink{classapp__forums__classes__topics_a71c6dba06a8cf4c92d355c6ac1884a9f}{archive\-Post\-To\-Native\-Fields} (\$post)
+\item 
+\hyperlink{classapp__forums__classes__topics_a2c71ed453ae06c42990c1efbb3e8a226}{get\-Post\-Table\-Fields} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classapp__forums__classes__topics_a9e8633cf48f7c5fc8cc9f5fa31450b99}{{\bfseries \$return} = true}\label{classapp__forums__classes__topics_a9e8633cf48f7c5fc8cc9f5fa31450b99}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classapp__forums__classes__topics_a9019c5938ee15575deb946e2c4d29202}{\-\_\-set\-Post\-Filters} (\$filters)
+\item 
+\hyperlink{classapp__forums__classes__topics_aa60a9436d8ab35a14ecd1c1f087c5652}{\-\_\-set\-Topic\-Filters} (\$filters)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classapp__forums__classes__topics_a531e4a386aaa7f3e06d3642dc38d7e80}{{\bfseries \$registry}}\label{classapp__forums__classes__topics_a531e4a386aaa7f3e06d3642dc38d7e80}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_a7dc56dc8b18ad37272b56fa7395bedef}{{\bfseries \$\-D\-B}}\label{classapp__forums__classes__topics_a7dc56dc8b18ad37272b56fa7395bedef}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_ac7c3353107070daa85f641882931b358}{{\bfseries \$settings}}\label{classapp__forums__classes__topics_ac7c3353107070daa85f641882931b358}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_abb35c8495a232b510389fa6d7b15d38a}{{\bfseries \$request}}\label{classapp__forums__classes__topics_abb35c8495a232b510389fa6d7b15d38a}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_a7714b111b644017933931ec69a154102}{{\bfseries \$lang}}\label{classapp__forums__classes__topics_a7714b111b644017933931ec69a154102}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_a5e1c849c6148a8732eee400fcee0d044}{{\bfseries \$member}}\label{classapp__forums__classes__topics_a5e1c849c6148a8732eee400fcee0d044}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_ae9d848ba2cf6eee63bdc060e2dfcf95a}{{\bfseries \$member\-Data}}\label{classapp__forums__classes__topics_ae9d848ba2cf6eee63bdc060e2dfcf95a}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_ac2dc76d756ec398393d4b1d23659276c}{{\bfseries \$cache}}\label{classapp__forums__classes__topics_ac2dc76d756ec398393d4b1d23659276c}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_a0334a912b7c2d39a9bc71177578d782e}{{\bfseries \$caches}}\label{classapp__forums__classes__topics_a0334a912b7c2d39a9bc71177578d782e}
+
+\item 
+\hyperlink{classapp__forums__classes__topics_a0d3ec74991237d3bab61d7f995f5e3f9}{\$topic\-Data} = array()
+\item 
+\hypertarget{classapp__forums__classes__topics_a8f68c7c6ef97a083fba66115feb1866e}{{\bfseries \$\-\_\-member\-Data} = array()}\label{classapp__forums__classes__topics_a8f68c7c6ef97a083fba66115feb1866e}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_aa25d40d776da47a084934b7ed77e16d7}{{\bfseries \$moderator\-Data} = null}\label{classapp__forums__classes__topics_aa25d40d776da47a084934b7ed77e16d7}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_a7369f24a4b31fee1c09cde05fed069ae}{{\bfseries \$permissions\-Data} = array()}\label{classapp__forums__classes__topics_a7369f24a4b31fee1c09cde05fed069ae}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_a25b5b4c70be7dd968b64cb57e5f9565d}{{\bfseries \$error\-Message} = array()}\label{classapp__forums__classes__topics_a25b5b4c70be7dd968b64cb57e5f9565d}
+
+\item 
+\hypertarget{classapp__forums__classes__topics_a21eb202df2a50a32e1aaf0bd18b30ad1}{{\bfseries \$\-\_\-parsed\-Members} = array()}\label{classapp__forums__classes__topics_a21eb202df2a50a32e1aaf0bd18b30ad1}
+
+\item 
+{\bfseries \$fields}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classapp__forums__classes__topics_a178c3a93e57e75dd87a5d39112af0b07}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{{\bf ips\-Registry}}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a178c3a93e57e75dd87a5d39112af0b07}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Registry reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+Check secure key \hyperlink{}{http\-://community.\-invisionpower.\-com/tracker/issue-\/22078-\/i-\/can-\/edit-\/your-\/treshold}
+
+\subsection{Member Function Documentation}
+\hypertarget{classapp__forums__classes__topics_a9019c5938ee15575deb946e2c4d29202}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!\-\_\-set\-Post\-Filters@{\-\_\-set\-Post\-Filters}}
+\index{\-\_\-set\-Post\-Filters@{\-\_\-set\-Post\-Filters}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{\-\_\-set\-Post\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-set\-Post\-Filters (
+\begin{DoxyParamCaption}
+\item[{}]{\$filters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classapp__forums__classes__topics_a9019c5938ee15575deb946e2c4d29202}
+Set post filters Takes user input and cleans it up a bit
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Incoming filters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_aa60a9436d8ab35a14ecd1c1f087c5652}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!\-\_\-set\-Topic\-Filters@{\-\_\-set\-Topic\-Filters}}
+\index{\-\_\-set\-Topic\-Filters@{\-\_\-set\-Topic\-Filters}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{\-\_\-set\-Topic\-Filters}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-set\-Topic\-Filters (
+\begin{DoxyParamCaption}
+\item[{}]{\$filters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classapp__forums__classes__topics_aa60a9436d8ab35a14ecd1c1f087c5652}
+Set topic filters Takes user input and cleans it up a bit
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Incoming filters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a8a5de06c48f6bc71dca5bdc93c961165}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!add\-Recent\-Post@{add\-Recent\-Post}}
+\index{add\-Recent\-Post@{add\-Recent\-Post}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{add\-Recent\-Post}]{\setlength{\rightskip}{0pt plus 5cm}add\-Recent\-Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$post}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a8a5de06c48f6bc71dca5bdc93c961165}
+Add the recent post 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$post} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a71c6dba06a8cf4c92d355c6ac1884a9f}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!archive\-Post\-To\-Native\-Fields@{archive\-Post\-To\-Native\-Fields}}
+\index{archive\-Post\-To\-Native\-Fields@{archive\-Post\-To\-Native\-Fields}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{archive\-Post\-To\-Native\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}archive\-Post\-To\-Native\-Fields (
+\begin{DoxyParamCaption}
+\item[{}]{\$post}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a71c6dba06a8cf4c92d355c6ac1884a9f}
+Take an archive row and returned native friendly array 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$post} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_ade382c064e04343c1c1e0ffd15a45bbe}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!auto\-Populate@{auto\-Populate}}
+\index{auto\-Populate@{auto\-Populate}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{auto\-Populate}]{\setlength{\rightskip}{0pt plus 5cm}auto\-Populate (
+\begin{DoxyParamCaption}
+\item[{}]{\$topic = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$return = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_ade382c064e04343c1c1e0ffd15a45bbe}
+Auto populate the data and that. Populated topic\-Data and forum\-Data. Also does rudimentary access checks
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$topic} & Array of topic data, or single topic id \\
+\hline
+bool & {\em \$return} & Return errors instead of printing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_acd40fd6d4c07113e617bd9066bcdd1ad}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!can\-Delete\-Post@{can\-Delete\-Post}}
+\index{can\-Delete\-Post@{can\-Delete\-Post}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{can\-Delete\-Post}]{\setlength{\rightskip}{0pt plus 5cm}can\-Delete\-Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$poster}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_acd40fd6d4c07113e617bd9066bcdd1ad}
+Return whether or not we have permission to delete the post (\-\_\-get\-Delete\-Button\-Data)
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a34f648ba04f0a965f45b550594c76013}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!can\-Edit\-Post@{can\-Edit\-Post}}
+\index{can\-Edit\-Post@{can\-Edit\-Post}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{can\-Edit\-Post}]{\setlength{\rightskip}{0pt plus 5cm}can\-Edit\-Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$poster = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a34f648ba04f0a965f45b550594c76013}
+Return whether or not we can edit this post
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array of post data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_af971961c7c02cb8a5a82e14d8ad99133}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!can\-See\-Ip@{can\-See\-Ip}}
+\index{can\-See\-Ip@{can\-See\-Ip}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{can\-See\-Ip}]{\setlength{\rightskip}{0pt plus 5cm}can\-See\-Ip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_af971961c7c02cb8a5a82e14d8ad99133}
+Return whether we can see the I\-P address or not
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_ad6045406cb646864f7047c2fdb2b15cf}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!can\-View@{can\-View}}
+\index{can\-View@{can\-View}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{can\-View}]{\setlength{\rightskip}{0pt plus 5cm}can\-View (
+\begin{DoxyParamCaption}
+\item[{}]{\$topic\-Data = {\ttfamily false}, }
+\item[{}]{\$member\-Data = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_ad6045406cb646864f7047c2fdb2b15cf}
+Can view or cannot view 
+\begin{DoxyParams}{Parameters}
+{\em mixed} & Nothing or inline topic\-Data \\
+\hline
+{\em mixed} & Nothing or inline member\-Data \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a0f0464a3e3b14366432a7baf3d60fd13}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!delete\-Recent\-Post@{delete\-Recent\-Post}}
+\index{delete\-Recent\-Post@{delete\-Recent\-Post}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{delete\-Recent\-Post}]{\setlength{\rightskip}{0pt plus 5cm}delete\-Recent\-Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$where}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a0f0464a3e3b14366432a7baf3d60fd13}
+Delete a recent post 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$post} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a3d24ed0e93b212b4d5e382fa795bf4ef}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Error\-Message@{get\-Error\-Message}}
+\index{get\-Error\-Message@{get\-Error\-Message}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Error\-Message}]{\setlength{\rightskip}{0pt plus 5cm}get\-Error\-Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a3d24ed0e93b212b4d5e382fa795bf4ef}
+\begin{DoxyReturn}{Returns}
+the \$error\-Message 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a8ad42a7e0037618c849a3cb74fdf4291}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Member\-Data@{get\-Member\-Data}}
+\index{get\-Member\-Data@{get\-Member\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Member\-Data}]{\setlength{\rightskip}{0pt plus 5cm}get\-Member\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$k = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a8ad42a7e0037618c849a3cb74fdf4291}
+\begin{DoxyReturn}{Returns}
+the \$\-\_\-member\-Data 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_aa01414f79c088d6280f86990cdd2c16d}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Moderator\-Data@{get\-Moderator\-Data}}
+\index{get\-Moderator\-Data@{get\-Moderator\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Moderator\-Data}]{\setlength{\rightskip}{0pt plus 5cm}get\-Moderator\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_aa01414f79c088d6280f86990cdd2c16d}
+Loads and fetches the moderator data \hypertarget{classapp__forums__classes__topics_a4840b0a01c591f0a90373151b77a40fb}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Multi\-Moderation\-Data@{get\-Multi\-Moderation\-Data}}
+\index{get\-Multi\-Moderation\-Data@{get\-Multi\-Moderation\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Multi\-Moderation\-Data}]{\setlength{\rightskip}{0pt plus 5cm}get\-Multi\-Moderation\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a4840b0a01c591f0a90373151b77a40fb}
+Get multimoderation data
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_acb7dec594d20db33aa16962fe4363c3d}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Next\-Unread\-Topic\-Id@{get\-Next\-Unread\-Topic\-Id}}
+\index{get\-Next\-Unread\-Topic\-Id@{get\-Next\-Unread\-Topic\-Id}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Next\-Unread\-Topic\-Id}]{\setlength{\rightskip}{0pt plus 5cm}get\-Next\-Unread\-Topic\-Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$topic\-Data = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_acb7dec594d20db33aa16962fe4363c3d}
+Fetch the next unread topic\-I\-D 
+\begin{DoxyParams}{Parameters}
+{\em array} & or null \$topic\-Data \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a89348ddfcbe30ec6cf04b346bb8b823a}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Permission\-Data@{get\-Permission\-Data}}
+\index{get\-Permission\-Data@{get\-Permission\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Permission\-Data}]{\setlength{\rightskip}{0pt plus 5cm}get\-Permission\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$k = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a89348ddfcbe30ec6cf04b346bb8b823a}
+\begin{DoxyReturn}{Returns}
+the \$permission\-Data 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a4dc259a82d99c53f99147fa494006ed2}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Post\-By\-Id@{get\-Post\-By\-Id}}
+\index{get\-Post\-By\-Id@{get\-Post\-By\-Id}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Post\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}get\-Post\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$pid, }
+\item[{}]{\$check\-Archived = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a4dc259a82d99c53f99147fa494006ed2}
+Load and return a post by I\-D. 
+\begin{DoxyParams}[1]{Parameters}
+intval & {\em \$pid} & \\
+\hline
+ & {\em boolean} & Check for archived topic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Post Data 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a4d1d9482540c711f7f490c7306ad2ed5}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Posts@{get\-Posts}}
+\index{get\-Posts@{get\-Posts}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Posts}]{\setlength{\rightskip}{0pt plus 5cm}get\-Posts (
+\begin{DoxyParamCaption}
+\item[{}]{\$filters}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a4d1d9482540c711f7f490c7306ad2ed5}
+get\-Posts Fetches posts based on different critera 
+\begin{DoxyParams}{Parameters}
+{\em array} & Filters (see below for specifics) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+F\-I\-L\-T\-E\-R\-S\-: topic\-Id Get posts matching the (array) topic ids, (int) topic I\-D forum\-Id Get posts matching the (array) forum ids, (int) forum I\-D not\-Forum\-Id Get posts N\-O\-T matching the (array) forum ids, (int) forum I\-D post\-Id Get posts matching the (array) post ids, (int) post id author\-Id Get posts matching the (array) author ids, (int) author id member\-Data Set member\-Data (this-\/$>$member\-Data is used otherwise) only\-Viewable Set whether this member can view them or not. (default is true ) N\-O\-T\-E\-: Will not check to see if parent topic is viewable! only\-Visible Set whether to skip unapproved posts where permission allows (default is true) post\-Type array of 'sdelete', 'visible', 'hidden', 'pdeleted' (if you specify these, permission checks are N\-O\-T performed) sort\-Field Sort key (date, pid, etc) sort\-Order asc/desc pid\-Is\-Greater Where P\-I\-D is greater than x date\-Is\-Greater Where D\-A\-T\-E is greater than U\-N\-I\-X skip\-Forum\-Check Skips the forum I\-D I\-N list check to ensure you have access to view (good for when using perms elsewhere) parse Parses post content limit, offset Limit the amount of results in the returned query get\-Count fetch count without limit get\-Count\-Only fetch count and return only check\-Archived Check archive tables if no matches \hypertarget{classapp__forums__classes__topics_a68f42ee6c8fb0c5193e9af321ee1ab91}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Posts\-Count@{get\-Posts\-Count}}
+\index{get\-Posts\-Count@{get\-Posts\-Count}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Posts\-Count}]{\setlength{\rightskip}{0pt plus 5cm}get\-Posts\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a68f42ee6c8fb0c5193e9af321ee1ab91}
+get\-Posts\-Count Fetches number of posts based on different critera (useful for pagination when combined with \hyperlink{classapp__forums__classes__topics_a4d1d9482540c711f7f490c7306ad2ed5}{get\-Posts()}) \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_af9cced2da51a34a78b4eafa3a940ea8c}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Post\-Table\-Field@{get\-Post\-Table\-Field}}
+\index{get\-Post\-Table\-Field@{get\-Post\-Table\-Field}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Post\-Table\-Field}]{\setlength{\rightskip}{0pt plus 5cm}get\-Post\-Table\-Field (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$is\-Archive}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_af9cced2da51a34a78b4eafa3a940ea8c}
+Returns either a field name from post\-\_\-db or from archive\-\_\-db 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & \\
+\hline
+string & {\em \$is\-Archive} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a2c71ed453ae06c42990c1efbb3e8a226}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Post\-Table\-Fields@{get\-Post\-Table\-Fields}}
+\index{get\-Post\-Table\-Fields@{get\-Post\-Table\-Fields}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Post\-Table\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}get\-Post\-Table\-Fields (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a2c71ed453ae06c42990c1efbb3e8a226}
+Get fields \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_abcf4c9adc4953f1ac35af06fbbfe9d90}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Reply\-Status@{get\-Reply\-Status}}
+\index{get\-Reply\-Status@{get\-Reply\-Status}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Reply\-Status}]{\setlength{\rightskip}{0pt plus 5cm}get\-Reply\-Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_abcf4c9adc4953f1ac35af06fbbfe9d90}
+Can make a reply to this topic \begin{DoxyReturn}{Returns}
+string locked / moved / no\-\_\-reply / reply 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_abe0edf082deb9609387506d0989305f4}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Topic\-By\-Id@{get\-Topic\-By\-Id}}
+\index{get\-Topic\-By\-Id@{get\-Topic\-By\-Id}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Topic\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}get\-Topic\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$tid}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_abe0edf082deb9609387506d0989305f4}
+Load and return a topic by I\-D. 
+\begin{DoxyParams}[1]{Parameters}
+intval & {\em \$tid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Topic Data 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_ad03482aea1bc3a52271d144fa029e3e8}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Topic\-Data@{get\-Topic\-Data}}
+\index{get\-Topic\-Data@{get\-Topic\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Topic\-Data}]{\setlength{\rightskip}{0pt plus 5cm}get\-Topic\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$k = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_ad03482aea1bc3a52271d144fa029e3e8}
+\begin{DoxyReturn}{Returns}
+the \$topic\-Data 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_ae4ee830ef61c42bbf8f179147d48d885}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Topics@{get\-Topics}}
+\index{get\-Topics@{get\-Topics}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Topics}]{\setlength{\rightskip}{0pt plus 5cm}get\-Topics (
+\begin{DoxyParamCaption}
+\item[{}]{\$filters}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_ae4ee830ef61c42bbf8f179147d48d885}
+get\-Topics Fetches topics based on different critera 
+\begin{DoxyParams}{Parameters}
+{\em array} & Filters (see below for specifics) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+F\-I\-L\-T\-E\-R\-S\-: forum\-Id Get topics matching the (array) forum ids, (int) forum I\-D topic\-Id Get topics matching the (array) topic ids, (int) topic I\-D member\-Data Set member\-Data (this-\/$>$member\-Data is used otherwise) only\-Viewable Set whether this member can view them or not. (default is true ) N\-O\-T\-E\-: Will not check to see if parent topic is viewable! only\-Visible Set whether to skip unapproved posts where permission allows (default is true) topic\-Type array of 'sdelete', 'visible', 'hidden', 'pdeleted' (if you specify these, permission checks are N\-O\-T performed) archive\-State Archive status 'not', 'archived', 'working', 'exclude', 'restore' sort\-Field Sort key (date, pid, etc) sort\-Order asc/desc skip\-Forum\-Check Skips the forum I\-D I\-N list check to ensure you have access to view (good for when using perms elsewhere) tid\-Is\-Greater Where T\-I\-D is greater than x tid\-Is\-Less Where T\-I\-D is less than x date\-Is\-Greater Where D\-A\-T\-E is greater than U\-N\-I\-X get\-First\-Post Return the first post of the topic parse Parses the first post of the topic limit, offset Limit the amount of results in the returned query get\-Count fetch count without limit get\-Count\-Only As above, but returns the count and does not fetch the data \hypertarget{classapp__forums__classes__topics_a9e92a37adc937b590e0fe84a6b4f10cc}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!get\-Topics\-Count@{get\-Topics\-Count}}
+\index{get\-Topics\-Count@{get\-Topics\-Count}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{get\-Topics\-Count}]{\setlength{\rightskip}{0pt plus 5cm}get\-Topics\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a9e92a37adc937b590e0fe84a6b4f10cc}
+get\-Topics\-Count Fetches number of topics based on different critera (useful for pagination when combined with \hyperlink{classapp__forums__classes__topics_a4d1d9482540c711f7f490c7306ad2ed5}{get\-Posts()}) \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_ace710cd76c17f958bee9fdb6cab05518}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!is\-Archived@{is\-Archived}}
+\index{is\-Archived@{is\-Archived}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{is\-Archived}]{\setlength{\rightskip}{0pt plus 5cm}is\-Archived (
+\begin{DoxyParamCaption}
+\item[{}]{\$topic\-Data}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_ace710cd76c17f958bee9fdb6cab05518}
+Is this topic archived? For this purpose, either 'working' or 'archived' returns true 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$topic\-Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a73e81046fa21dfb869219c7245ea9f4b}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!is\-On\-Last\-Page@{is\-On\-Last\-Page}}
+\index{is\-On\-Last\-Page@{is\-On\-Last\-Page}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{is\-On\-Last\-Page}]{\setlength{\rightskip}{0pt plus 5cm}is\-On\-Last\-Page (
+\begin{DoxyParamCaption}
+\item[{}]{\$topic\-Data = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a73e81046fa21dfb869219c7245ea9f4b}
+Determines if we're on the last page or not ... 
+\begin{DoxyParams}{Parameters}
+{\em array} & or null \$topic\-Data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a1d122274f10c4381209c82a9b8c1a305}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!parse\-Member@{parse\-Member}}
+\index{parse\-Member@{parse\-Member}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{parse\-Member}]{\setlength{\rightskip}{0pt plus 5cm}parse\-Member (
+\begin{DoxyParamCaption}
+\item[{array}]{\$member}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a1d122274f10c4381209c82a9b8c1a305}
+Parses and caches members 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$member} & \\
+\hline
+\end{DoxyParams}
+Add group data and setup secondary groups as well \hyperlink{}{http\-://community.\-invisionpower.\-com/tracker/issue-\/29142-\/can-\/post-\/html-\/in-\/secondary-\/groups/}\hypertarget{classapp__forums__classes__topics_abdfe201884fd7d9755e47cd8ce959f79}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!parse\-Post@{parse\-Post}}
+\index{parse\-Post@{parse\-Post}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{parse\-Post}]{\setlength{\rightskip}{0pt plus 5cm}parse\-Post (
+\begin{DoxyParamCaption}
+\item[{array}]{\$post}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_abdfe201884fd7d9755e47cd8ce959f79}
+Builds an array of post data for output
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$row} & Array of post data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a43c3aeb4184a2ac07a14c6c65c02d1d7}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!parse\-Topic\-For\-Line\-Entry@{parse\-Topic\-For\-Line\-Entry}}
+\index{parse\-Topic\-For\-Line\-Entry@{parse\-Topic\-For\-Line\-Entry}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{parse\-Topic\-For\-Line\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}parse\-Topic\-For\-Line\-Entry (
+\begin{DoxyParamCaption}
+\item[{array}]{\$topic}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a43c3aeb4184a2ac07a14c6c65c02d1d7}
+Parse the topic for forum/search results/also tagged view 
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a9ae35dc4ddf7936983e623f81051500f}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!rebuild\-Topic@{rebuild\-Topic}}
+\index{rebuild\-Topic@{rebuild\-Topic}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{rebuild\-Topic}]{\setlength{\rightskip}{0pt plus 5cm}rebuild\-Topic (
+\begin{DoxyParamCaption}
+\item[{}]{\$tid}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a9ae35dc4ddf7936983e623f81051500f}
+Rebuild a topic
+
+
+\begin{DoxyParams}{Parameters}
+{\em integer} & Topic id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Rebuild complete 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_afc10aac190bcb1d120ce7d2cbb9bdd2d}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!restore\-Recent\-Post@{restore\-Recent\-Post}}
+\index{restore\-Recent\-Post@{restore\-Recent\-Post}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{restore\-Recent\-Post}]{\setlength{\rightskip}{0pt plus 5cm}restore\-Recent\-Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$where}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_afc10aac190bcb1d120ce7d2cbb9bdd2d}
+Restore posts 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$where} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_ade45257a25c7924dcc04cec5cb1af70f}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!set\-Error\-Message@{set\-Error\-Message}}
+\index{set\-Error\-Message@{set\-Error\-Message}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{set\-Error\-Message}]{\setlength{\rightskip}{0pt plus 5cm}set\-Error\-Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$error\-Message}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_ade45257a25c7924dcc04cec5cb1af70f}
+
+\begin{DoxyParams}[1]{Parameters}
+field\-\_\-type & {\em \$error\-Message} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_aed5b5b4099e67fd6d385ab2c8aab8315}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!set\-Member\-Data@{set\-Member\-Data}}
+\index{set\-Member\-Data@{set\-Member\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{set\-Member\-Data}]{\setlength{\rightskip}{0pt plus 5cm}set\-Member\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$k, }
+\item[{}]{\$v = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_aed5b5b4099e67fd6d385ab2c8aab8315}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & key \\
+\hline
+{\em string} & value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_ac0454c41b4e335fe0aa8f8f279d7ae84}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!set\-Permission\-Data@{set\-Permission\-Data}}
+\index{set\-Permission\-Data@{set\-Permission\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{set\-Permission\-Data}]{\setlength{\rightskip}{0pt plus 5cm}set\-Permission\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$k = {\ttfamily ''}, }
+\item[{}]{\$v = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_ac0454c41b4e335fe0aa8f8f279d7ae84}
+Sets up the permissions for this class
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & key \\
+\hline
+{\em string} & value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_aa1c6fbef21ae7c98a885d074c119f4d1}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!set\-Topic\-Data@{set\-Topic\-Data}}
+\index{set\-Topic\-Data@{set\-Topic\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{set\-Topic\-Data}]{\setlength{\rightskip}{0pt plus 5cm}set\-Topic\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$k, }
+\item[{}]{\$v = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_aa1c6fbef21ae7c98a885d074c119f4d1}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & key \\
+\hline
+{\em string} & value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a684b4aab2e3bbb55407d9615be7b1ea5}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!set\-Up\-Topic@{set\-Up\-Topic}}
+\index{set\-Up\-Topic@{set\-Up\-Topic}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{set\-Up\-Topic}]{\setlength{\rightskip}{0pt plus 5cm}set\-Up\-Topic (
+\begin{DoxyParamCaption}
+\item[{}]{\$topic = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a684b4aab2e3bbb55407d9615be7b1ea5}
+Sets up a topic 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$topic} & If not passed then \$this-\/$>$topic\-Data is used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classapp__forums__classes__topics_a33c2b20cf8356bc357c6f8008626d647}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!update\-Recent\-Post@{update\-Recent\-Post}}
+\index{update\-Recent\-Post@{update\-Recent\-Post}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{update\-Recent\-Post}]{\setlength{\rightskip}{0pt plus 5cm}update\-Recent\-Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$update, }
+\item[{}]{\$where}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a33c2b20cf8356bc357c6f8008626d647}
+Update a recent post 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$post} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classapp__forums__classes__topics_a0669630528c6213a70ea52f4eaa3726e}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!update\-Topic@{update\-Topic}}
+\index{update\-Topic@{update\-Topic}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{update\-Topic}]{\setlength{\rightskip}{0pt plus 5cm}update\-Topic (
+\begin{DoxyParamCaption}
+\item[{}]{\$tid, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{classapp__forums__classes__topics_a0669630528c6213a70ea52f4eaa3726e}
+Update a topic 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$tid} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\hypertarget{classapp__forums__classes__topics_ab2303c817e3b402b77b7f99627b9c319}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!\$fields@{\$fields}}
+\index{\$fields@{\$fields}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{\$fields}]{\setlength{\rightskip}{0pt plus 5cm}\$fields\hspace{0.3cm}{\ttfamily [protected]}}}\label{classapp__forums__classes__topics_ab2303c817e3b402b77b7f99627b9c319}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ array(\textcolor{stringliteral}{'pid'}             => \textcolor{stringliteral}{'archive\_id'},
+                                                          \textcolor{stringliteral}{'author\_id'}           
+       => \textcolor{stringliteral}{'archive\_author\_id'},
+                                                          \textcolor{stringliteral}{'author\_name'}         
+       => \textcolor{stringliteral}{'archive\_author\_name'},
+                                                      \textcolor{stringliteral}{'ip\_address'}       => \textcolor{stringliteral}{'
+      archive\_ip\_address'},
+                                                          \textcolor{stringliteral}{'post\_date'}        =>
+       \textcolor{stringliteral}{'archive\_content\_date'},
+                                                          \textcolor{stringliteral}{'post'}                
+                => \textcolor{stringliteral}{'archive\_content'},
+                                                          \textcolor{stringliteral}{'queued'}              
+           => \textcolor{stringliteral}{'archive\_queued'},
+                                                          \textcolor{stringliteral}{'topic\_id'}            
+       => \textcolor{stringliteral}{'archive\_topic\_id'},
+                                                          \textcolor{stringliteral}{'new\_topic'}           
+       => \textcolor{stringliteral}{'archive\_is\_first'},
+                                                          \textcolor{stringliteral}{'post\_bwoptions'}   =>
+       \textcolor{stringliteral}{'archive\_bwoptions'},
+                                                          \textcolor{stringliteral}{'post\_key'}            
+       => \textcolor{stringliteral}{'archive\_attach\_key'},
+                                                          \textcolor{stringliteral}{'post\_htmlstate'}   =>
+       \textcolor{stringliteral}{'archive\_html\_mode'},
+                                                          \textcolor{stringliteral}{'use\_sig'}             
+       => \textcolor{stringliteral}{'archive\_show\_signature'},
+                                                          \textcolor{stringliteral}{'use\_emo'}             
+       => \textcolor{stringliteral}{'archive\_show\_emoticons'},
+                                                          \textcolor{stringliteral}{'append\_edit'}         
+       => \textcolor{stringliteral}{'archive\_show\_edited\_by'},
+                                                          \textcolor{stringliteral}{'edit\_time'}           
+       => \textcolor{stringliteral}{'archive\_edit\_time'},
+                                                          \textcolor{stringliteral}{'edit\_name'}           
+       => \textcolor{stringliteral}{'archive\_edit\_name'},
+                                                          \textcolor{stringliteral}{'post\_edit\_reason'} =>
+       \textcolor{stringliteral}{'archive\_edit\_reason'},
+                                                          \textcolor{stringliteral}{'\_prefix\_'}            
+       => \textcolor{stringliteral}{'archive\_'},
+                                                          \textcolor{stringliteral}{'\_table\_'}                     
+       => \textcolor{stringliteral}{'forums\_archive\_posts'} )
+\end{DoxyCode}
+\hypertarget{classapp__forums__classes__topics_a0d3ec74991237d3bab61d7f995f5e3f9}{\index{app\-\_\-forums\-\_\-classes\-\_\-topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}!\$topic\-Data@{\$topic\-Data}}
+\index{\$topic\-Data@{\$topic\-Data}!app_forums_classes_topics@{app\-\_\-forums\-\_\-classes\-\_\-topics}}
+\subsubsection[{\$topic\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\$topic\-Data = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classapp__forums__classes__topics_a0d3ec74991237d3bab61d7f995f5e3f9}
+\#@-\/ 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/admin/applications/forums/sources/classes/topics.\-php\end{DoxyCompactItemize}

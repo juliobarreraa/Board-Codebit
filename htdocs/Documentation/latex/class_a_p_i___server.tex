@@ -1,0 +1,369 @@
+\hypertarget{class_a_p_i___server}{\section{A\-P\-I\-\_\-\-Server Class Reference}
+\label{class_a_p_i___server}\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_p_i___server_a9bca9e7526df8937db1e2b31cabae7d2}{\-\_\-\-\_\-construct} (\$registry)
+\item 
+\hyperlink{class_a_p_i___server_a220d226690bfe0f7ba0a30c5cca12627}{fetch\-Online\-Users} (\$api\-\_\-key, \$api\-\_\-module, \$sep\-\_\-character=',')
+\item 
+\hyperlink{class_a_p_i___server_af807de79b9c9a202e8f3811c9d21cab3}{fetch\-Stats} (\$api\-\_\-key, \$api\-\_\-module)
+\item 
+\hyperlink{class_a_p_i___server_ab36cf374af99b58bc7e41674c880e66e}{hello\-Board} (\$api\-\_\-key, \$api\-\_\-module)
+\item 
+\hyperlink{class_a_p_i___server_a568da3a1f85ecb95d4a1c3d16de42c8d}{post\-Topic} (\$api\-\_\-key, \$api\-\_\-module, \$member\-\_\-field, \$member\-\_\-key, \$forum\-\_\-id, \$topic\-\_\-title, \$topic\-\_\-description, \$post\-\_\-content)
+\item 
+\hyperlink{class_a_p_i___server_ac81442838cc9e84f90efd76c25cfc939}{post\-Reply} (\$api\-\_\-key, \$api\-\_\-module, \$member\-\_\-field, \$member\-\_\-key, \$topic\-\_\-id, \$post\-\_\-content)
+\item 
+\hyperlink{class_a_p_i___server_adadc4c1820b0c6b49dd42aeddcb2bdc5}{fetch\-Member} (\$api\-\_\-key, \$api\-\_\-module, \$search\-\_\-type, \$search\-\_\-string)
+\item 
+\hyperlink{class_a_p_i___server_a7aaa8f0f01dee55528f70508aca439ad}{check\-Member\-Exists} (\$api\-\_\-key, \$api\-\_\-module, \$search\-\_\-type, \$search\-\_\-string)
+\item 
+\hyperlink{class_a_p_i___server_a824c00f5fdd34fcedc193568af003f37}{fetch\-Forums\-Option\-List} (\$api\-\_\-key, \$api\-\_\-module, \$selected\-\_\-forum\-\_\-ids, \$view\-\_\-as\-\_\-guest)
+\item 
+\hyperlink{class_a_p_i___server_aeec29abd72a8f86912c9d0350c9c16cb}{fetch\-Forums} (\$api\-\_\-key, \$api\-\_\-module, \$forum\-\_\-ids, \$view\-\_\-as\-\_\-guest)
+\item 
+\hyperlink{class_a_p_i___server_a5b98466477244e5a8622bf3eff838df9}{fetch\-Topics} (\$api\-\_\-key, \$api\-\_\-module, \$forum\-\_\-ids, \$order\-\_\-field, \$order\-\_\-by, \$offset, \$limit, \$view\-\_\-as\-\_\-guest)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_p_i___server_a88f9cadcf1ac0baf73cbc7d7ac88e9c0}{{\bfseries \$\-\_\-\-\_\-dispatch\-\_\-map} = array()}\label{class_a_p_i___server_a88f9cadcf1ac0baf73cbc7d7ac88e9c0}
+
+\item 
+\hypertarget{class_a_p_i___server_afe15ae991ce0d11e2e2e88f7fcfb2109}{{\bfseries \$class\-Api\-Server}}\label{class_a_p_i___server_afe15ae991ce0d11e2e2e88f7fcfb2109}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_p_i___server_a1853b4776c4bcb01f31680f35f862203}{\-\_\-\-\_\-authenticate} (\$api\-\_\-key, \$api\-\_\-module, \$api\-\_\-function)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_p_i___server_a531e4a386aaa7f3e06d3642dc38d7e80}{{\bfseries \$registry}}\label{class_a_p_i___server_a531e4a386aaa7f3e06d3642dc38d7e80}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_p_i___server_a9bca9e7526df8937db1e2b31cabae7d2}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$registry}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_a9bca9e7526df8937db1e2b31cabae7d2}
+Constructor
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_p_i___server_a1853b4776c4bcb01f31680f35f862203}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!\-\_\-\-\_\-authenticate@{\-\_\-\-\_\-authenticate}}
+\index{\-\_\-\-\_\-authenticate@{\-\_\-\-\_\-authenticate}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{\-\_\-\-\_\-authenticate}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-authenticate (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$api\-\_\-function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_a_p_i___server_a1853b4776c4bcb01f31680f35f862203}
+Checks to see if the request is allowed
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authenticate Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$api\-\_\-function} & Function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Error message, if any 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_a7aaa8f0f01dee55528f70508aca439ad}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!check\-Member\-Exists@{check\-Member\-Exists}}
+\index{check\-Member\-Exists@{check\-Member\-Exists}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{check\-Member\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}check\-Member\-Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$search\-\_\-type, }
+\item[{}]{\$search\-\_\-string}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_a7aaa8f0f01dee55528f70508aca439ad}
+Check if a member exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$search\-\_\-type} & Member field to check (valid\-: \char`\"{}id\char`\"{}, \char`\"{}email\char`\"{}, \char`\"{}username\char`\"{}, \char`\"{}displayname\char`\"{}) \\
+\hline
+string & {\em \$search\-\_\-string} & String to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_aeec29abd72a8f86912c9d0350c9c16cb}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!fetch\-Forums@{fetch\-Forums}}
+\index{fetch\-Forums@{fetch\-Forums}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{fetch\-Forums}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Forums (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$forum\-\_\-ids, }
+\item[{}]{\$view\-\_\-as\-\_\-guest}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_aeec29abd72a8f86912c9d0350c9c16cb}
+Returns the board's forums. W\-A\-R\-N\-I\-N\-G\-: Last option is deprecated and no longer supported. User is automatically treated like a guest.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$forum\-\_\-ids} & Comma separated list of forum ids \\
+\hline
+bool & {\em \$view\-\_\-as\-\_\-guest} & Treat user as a guest \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_a824c00f5fdd34fcedc193568af003f37}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!fetch\-Forums\-Option\-List@{fetch\-Forums\-Option\-List}}
+\index{fetch\-Forums\-Option\-List@{fetch\-Forums\-Option\-List}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{fetch\-Forums\-Option\-List}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Forums\-Option\-List (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$selected\-\_\-forum\-\_\-ids, }
+\item[{}]{\$view\-\_\-as\-\_\-guest}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_a824c00f5fdd34fcedc193568af003f37}
+Fetch the forum options list. W\-A\-R\-N\-I\-N\-G\-: Last two options are deprecated and no longer supported. All viewable forums returned. User is automatically treated like a guest.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$selected\-\_\-forum\-\_\-ids} & Comma separated list of forum ids \\
+\hline
+bool & {\em \$view\-\_\-as\-\_\-guest} & Treat user as a guest \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_adadc4c1820b0c6b49dd42aeddcb2bdc5}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!fetch\-Member@{fetch\-Member}}
+\index{fetch\-Member@{fetch\-Member}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{fetch\-Member}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Member (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$search\-\_\-type, }
+\item[{}]{\$search\-\_\-string}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_adadc4c1820b0c6b49dd42aeddcb2bdc5}
+Returns a member
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$search\-\_\-type} & Member field to check (valid\-: \char`\"{}id\char`\"{}, \char`\"{}email\char`\"{}, \char`\"{}username\char`\"{}, \char`\"{}displayname\char`\"{}) \\
+\hline
+string & {\em \$search\-\_\-string} & String to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_a220d226690bfe0f7ba0a30c5cca12627}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!fetch\-Online\-Users@{fetch\-Online\-Users}}
+\index{fetch\-Online\-Users@{fetch\-Online\-Users}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{fetch\-Online\-Users}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Online\-Users (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$sep\-\_\-character = {\ttfamily ','}}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_a220d226690bfe0f7ba0a30c5cca12627}
+Returns the list of online users
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$sep\-\_\-character} & Separator character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_af807de79b9c9a202e8f3811c9d21cab3}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!fetch\-Stats@{fetch\-Stats}}
+\index{fetch\-Stats@{fetch\-Stats}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{fetch\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Stats (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_af807de79b9c9a202e8f3811c9d21cab3}
+Returns details about the board
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_a5b98466477244e5a8622bf3eff838df9}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!fetch\-Topics@{fetch\-Topics}}
+\index{fetch\-Topics@{fetch\-Topics}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{fetch\-Topics}]{\setlength{\rightskip}{0pt plus 5cm}fetch\-Topics (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$forum\-\_\-ids, }
+\item[{}]{\$order\-\_\-field, }
+\item[{}]{\$order\-\_\-by, }
+\item[{}]{\$offset, }
+\item[{}]{\$limit, }
+\item[{}]{\$view\-\_\-as\-\_\-guest}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_a5b98466477244e5a8622bf3eff838df9}
+Returns topics based on request params
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$forum\-\_\-ids} & Comma separated list of forum ids \\
+\hline
+string & {\em \$order\-\_\-field} & D\-B field to order by \\
+\hline
+string & {\em \$order\-\_\-by} & One of \char`\"{}asc\char`\"{} or \char`\"{}desc\char`\"{} \\
+\hline
+integer & {\em \$offset} & Start point offset for results \\
+\hline
+integer & {\em \$limit} & Number of results to pull \\
+\hline
+bool & {\em \$view\-\_\-as\-\_\-guest} & Treat user as a guest \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_ab36cf374af99b58bc7e41674c880e66e}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!hello\-Board@{hello\-Board}}
+\index{hello\-Board@{hello\-Board}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{hello\-Board}]{\setlength{\rightskip}{0pt plus 5cm}hello\-Board (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_ab36cf374af99b58bc7e41674c880e66e}
+Returns hello board test
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i___server_ac81442838cc9e84f90efd76c25cfc939}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!post\-Reply@{post\-Reply}}
+\index{post\-Reply@{post\-Reply}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{post\-Reply}]{\setlength{\rightskip}{0pt plus 5cm}post\-Reply (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$member\-\_\-field, }
+\item[{}]{\$member\-\_\-key, }
+\item[{}]{\$topic\-\_\-id, }
+\item[{}]{\$post\-\_\-content}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_ac81442838cc9e84f90efd76c25cfc939}
+Posts a topic reply
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$member\-\_\-field} & Member field to check (valid\-: \char`\"{}id\char`\"{}, \char`\"{}email\char`\"{}, \char`\"{}username\char`\"{}, \char`\"{}displayname\char`\"{}) \\
+\hline
+string & {\em \$member\-\_\-key} & Member key to check for \\
+\hline
+integer & {\em \$topic\-\_\-id} & Topic id to post in \\
+\hline
+string & {\em \$post\-\_\-content} & Posted content \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+And post it...\hypertarget{class_a_p_i___server_a568da3a1f85ecb95d4a1c3d16de42c8d}{\index{A\-P\-I\-\_\-\-Server@{A\-P\-I\-\_\-\-Server}!post\-Topic@{post\-Topic}}
+\index{post\-Topic@{post\-Topic}!API_Server@{A\-P\-I\-\_\-\-Server}}
+\subsubsection[{post\-Topic}]{\setlength{\rightskip}{0pt plus 5cm}post\-Topic (
+\begin{DoxyParamCaption}
+\item[{}]{\$api\-\_\-key, }
+\item[{}]{\$api\-\_\-module, }
+\item[{}]{\$member\-\_\-field, }
+\item[{}]{\$member\-\_\-key, }
+\item[{}]{\$forum\-\_\-id, }
+\item[{}]{\$topic\-\_\-title, }
+\item[{}]{\$topic\-\_\-description, }
+\item[{}]{\$post\-\_\-content}
+\end{DoxyParamCaption}
+)}}\label{class_a_p_i___server_a568da3a1f85ecb95d4a1c3d16de42c8d}
+Posts a topic to the board remotely
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$api\-\_\-key} & Authentication Key \\
+\hline
+string & {\em \$api\-\_\-module} & Module \\
+\hline
+string & {\em \$member\-\_\-field} & Member field to check (valid\-: \char`\"{}id\char`\"{}, \char`\"{}email\char`\"{}, \char`\"{}username\char`\"{}, \char`\"{}displayname\char`\"{}) \\
+\hline
+string & {\em \$member\-\_\-key} & Member key to check for \\
+\hline
+integer & {\em \$forum\-\_\-id} & Forum id to post in \\
+\hline
+string & {\em \$topic\-\_\-title} & Topic title \\
+\hline
+string & {\em \$topic\-\_\-description} & Topic description \\
+\hline
+string & {\em \$post\-\_\-content} & Posted content \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string xml 
+\end{DoxyReturn}
+And post it...
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/local/apache2/htdocs/codebit\-\_\-org/htdocs/interface/board/modules/ipb/api.\-php\end{DoxyCompactItemize}
