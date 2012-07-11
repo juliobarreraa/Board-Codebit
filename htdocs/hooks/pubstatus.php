@@ -36,10 +36,8 @@ class pubstatus {
     }
     
     public function getOutput() {
-        //Load cache
-        
         $this->lang->loadLanguageFile(array('public_global'), 'core'); //Load language
-                
+
         return $this->registry->output->getTemplate('portal')->poststatusShow();
     }
 }
