@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * IP.Content custom bbcode
- * Last Updated: $Date: 2012-06-01 13:11:08 -0400 (Fri, 01 Jun 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$author$
@@ -12,7 +12,7 @@
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Content
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10855 $ 
+ * @version		$Rev: 10914 $ 
  */
 
 if( !class_exists('bbcode_parent_class') )

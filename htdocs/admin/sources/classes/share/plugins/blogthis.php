@@ -2,7 +2,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Blog This plug in for share links library.
  *
  * Created by Mark Wade

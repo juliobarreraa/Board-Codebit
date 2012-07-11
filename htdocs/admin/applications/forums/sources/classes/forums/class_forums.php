@@ -2,19 +2,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Forums Class
- * Last Updated: $Date: 2012-05-25 13:17:47 -0400 (Fri, 25 May 2012) $
+ * Last Updated: $Date: 2012-06-15 10:12:59 -0400 (Fri, 15 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: mmecham $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
  * @since		26th January 2004
- * @version		$Rev: 10798 $
+ * @version		$Rev: 10931 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -1039,7 +1039,7 @@ class class_forums
 		// Markers
 		//-----------------------------------------
 
-		$rtime = $this->registry->classItemMarking->fetchTimeLastMarked( array( 'forumID' => $forum_data['id'] ), 'forums' );
+		$rtime = $this->registry->classItemMarking->fetchTimeLastMarked( array( 'forumID' => $forum_data['id'], 'itemLastUpdate' => $forum_data['last_post'] ), 'forums' );
 
 		if( !isset($forum_data['_has_unread']) )
 		{
@@ -1069,7 +1069,7 @@ class class_forums
 				// Markers.  We never set false from inside loop.
 				//-----------------------------------------
 				
-				$rtime	             = $this->registry->classItemMarking->fetchTimeLastMarked( array( 'forumID' => $data['id'] ), 'forums' );
+				$rtime	             = $this->registry->classItemMarking->fetchTimeLastMarked( array( 'forumID' => $data['id'], 'itemLastUpdate' => $data['last_post'] ), 'forums' );
 				$data['_has_unread'] = 0;
 				
 				if( $data['last_post'] && $data['last_post'] > $rtime )
@@ -1092,7 +1092,7 @@ class class_forums
 						{
 							$_child	= $this->getForumById( $_child );
 							
-							$rtime	             = $this->registry->classItemMarking->fetchTimeLastMarked( array( 'forumID' => $_child['id'] ), 'forums' );
+							$rtime	             = $this->registry->classItemMarking->fetchTimeLastMarked( array( 'forumID' => $_child['id'], 'itemLastUpdate' => $_child['last_post'] ), 'forums' );
 							
 							if( $_child['last_post'] && $_child['last_post'] > $rtime )
 							{
@@ -2622,9 +2622,10 @@ class class_forums
 	 */
 	public function getHasUnread( $forumId )
 	{
-		$latestStamp = intval( $this->registry->classItemMarking->fetchTimeLastMarked( array('forumID' => $forumId ), 'forums' ) );
 		$forumData   = $this->getForumById( $forumId );
 		$lastPost    = $forumData['last_post'];
+		
+		$latestStamp = intval( $this->registry->classItemMarking->fetchTimeLastMarked( array('forumID' => $forumId, 'itemLastUpdate' => $forumData['last_post'] ), 'forums' ) );
 		
 		return ( $latestStamp < $lastPost ) ? true : false;
 	}
@@ -2665,7 +2666,7 @@ class class_forums
 				/* Avoid repeated calls to classItemMarking */
 				if ( ! isset( $fCache['marked'][ $data['forum_id'] ] ) )
 				{
-					$fCache['marked'][ $data['forum_id'] ] = intval( $this->registry->classItemMarking->fetchTimeLastMarked( array('forumID' => $data['forum_id'] ), 'forums' ) );
+					$fCache['marked'][ $data['forum_id'] ] = intval( $this->registry->classItemMarking->fetchTimeLastMarked( array('forumID' => $data['forum_id'], 'itemLastUpdate' => $data['last_post'] ), 'forums' ) );
 				}
 				
 				/* May as well cache this too */

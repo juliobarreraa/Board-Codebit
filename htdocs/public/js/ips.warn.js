@@ -81,7 +81,7 @@ _idx.prototype.warn = {
 							new Effect.Fade( $('remove-points-li'), { duration: 0.3 } );
 						}
 						
-						if ( t.responseJSON['setPoints'] )
+						if ( !isNaN(t.responseJSON['setPoints']) )
 						{
 							$('points-field').value = t.responseJSON['setPoints'];
 						}

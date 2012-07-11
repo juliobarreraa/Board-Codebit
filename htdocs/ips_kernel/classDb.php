@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Database Abstraction Layer
- * Last Updated: $Date: 2012-05-29 04:58:00 -0400 (Tue, 29 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: bfarber $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Kernel
  * @link		http://www.invisionpower.com
  * @since		Monday 28th February 2005 16:46
- * @version		$Revision: 10803 $
+ * @version		$Revision: 10914 $
  *
  * Basic Usage Examples
  * <code>

@@ -3,16 +3,16 @@
  * <pre>
  * Invision Power Services
  * IP.Board - requirements checker
- * Last Updated: $Date: 2012-05-21 09:09:36 -0400 (Mon, 21 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $ (Orginal: Mark)
+ * @author 		$Author: bfarber $ (Orginal: Mark)
  * @copyright	(c) 2010 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		8th September 2010
- * @version		$Revision: 10771 $
+ * @version		$Revision: 10914 $
  */
 
 class core_upgradeCheck

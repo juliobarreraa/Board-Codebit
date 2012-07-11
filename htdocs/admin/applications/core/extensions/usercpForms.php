@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Core user control panel plugin
- * Last Updated: $Date: 2012-05-21 16:37:50 -0400 (Mon, 21 May 2012) $
+ * Last Updated: $Date: 2012-06-13 14:36:10 -0400 (Wed, 13 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Core
  * @link		http://www.invisionpower.com
  * @since		20th February 2002
- * @version		$Rev: 10777 $
+ * @version		$Rev: 10917 $
  *
  */
 
@@ -2434,7 +2434,7 @@ class usercpForms_core extends public_core_usercp_manualResolver implements inte
 			// Make sure it's a legal date
 			//-----------------------------------------
 			
-			$_year = $this->request['year'] ? $this->request['year'] : 1999;
+			$_year = $this->request['year'] ? $this->request['year'] : 2000;
 			
 			if ( ! checkdate( $this->request['month'], $this->request['day'], $_year ) )
 			{

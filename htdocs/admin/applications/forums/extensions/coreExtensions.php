@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Forum permissions mappings
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$author$
@@ -13,7 +13,7 @@
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $ 
+ * @version		$Rev: 10914 $ 
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -346,9 +346,9 @@ class forumsPermMappingForum
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Item Marking
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $
@@ -357,7 +357,7 @@ class forumsPermMappingForum
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $
+ * @version		$Rev: 10914 $
  */
 
 class itemMarking__forums
@@ -493,9 +493,9 @@ class itemMarking__forums
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Fetch Skin
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $
@@ -504,7 +504,7 @@ class itemMarking__forums
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $
+ * @version		$Rev: 10914 $
  */
 
 class fetchSkin__forums
@@ -597,9 +597,9 @@ class fetchSkin__forums
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Library: Handle public session data
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $
@@ -609,7 +609,7 @@ class fetchSkin__forums
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
  * @since		12th March 2002
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10914 $
  */
 
 class publicSessions__forums

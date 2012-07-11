@@ -3,11 +3,11 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Static SETUP Classes for IP.Board 3
  *
  * These classes are not required as objects. 
- * Last Updated: $Date: 2012-05-11 11:17:52 -0400 (Fri, 11 May 2012) $
+ * Last Updated: $Date: 2012-06-22 10:34:40 -0400 (Fri, 22 Jun 2012) $
  * </pre>
  *
  * @author 		Matt Mecham
@@ -16,7 +16,7 @@
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		1st December 2008
- * @version		$Revision: 10727 $
+ * @version		$Revision: 10971 $
  *
  */
 
@@ -178,7 +178,7 @@ class IPSInstall
 		$core_conf .= "\ndefine('IN_DEV', 0);";
 		
 		/* Remote archive stuff */
-		$core_conf .= "\n/* Remote archive DB - complete these details if you\'re using a remote DB for the post archive */\n";
+		$core_conf .= "\n/* Remote archive DB - complete these details if you\'re using a remote DB for the post archive.\n   If content has already been archived in the local DB, this will need transferring and will not be done automatically. */\n";
 		
 		foreach( array( 'archive_remote_sql_host', 'archive_remote_sql_database', 'archive_remote_sql_user', 'archive_remote_sql_pass', 'archive_remote_sql_charset' ) as $k )
 		{

@@ -5,11 +5,11 @@
  *~TERABYTE_DOC_READY~
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: mmecham $
+ * $Author: bfarber $
  * @since		Tuesday 1st March 2005 15:40
- * $LastChangedDate: 2012-04-12 11:12:25 -0400 (Thu, 12 Apr 2012) $
- * @version		v3.3.3
- * $Revision: 10587 $
+ * $LastChangedDate: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10914 $
  */
 
 /**

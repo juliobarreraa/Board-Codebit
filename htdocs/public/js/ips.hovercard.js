@@ -365,7 +365,7 @@ IPBoard.prototype.hoverCard = Class.create( {
 	ajax: function( id )
 	{
 		var now   = this.unixtime();
-		var url   = false;
+		var url   = this.options.ajaxUrl;
 		var bDims = {};
 		var aDims = {};
 		
@@ -412,7 +412,7 @@ IPBoard.prototype.hoverCard = Class.create( {
 		if ( this.options.getId )
 		{
 			var _id = $(id).readAttribute('hovercard-id');
-			url = this.options.ajaxUrl + '&' + this.options.setIdParam + '=' + _id;
+			url = url + '&' + this.options.setIdParam + '=' + _id;
 		}
 		
 		this.debugWrite( "Ajax load " + id + " " + url );

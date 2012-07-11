@@ -4,11 +4,11 @@
  *~TERABYTE_DOC_READY~
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: mmecham $
+ * $Author: AndyMillne $
  * @since		-
- * $LastChangedDate: 2012-01-24 07:52:19 -0500 (Tue, 24 Jan 2012) $
- * @version		v3.3.3
- * $Revision: 10172 $
+ * $LastChangedDate: 2012-07-02 10:20:47 -0400 (Mon, 02 Jul 2012) $
+ * @version		v3.3.4
+ * $Revision: 11019 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -120,6 +120,16 @@ class task_item
 			$moderatorLibrary->topicDeleteFromDB( $r['tid'], true );
 			$moderatorLibrary->clearModQueueTable( 'topic', $r['tid'] );
 			$moderatorLibrary->addModerateLog( $r['forum_id'], $r['tid'], '', $r['title'], $this->lang->words['acp_deleted_a_topic'] );
+		
+			// Do we have a linked topic to remove?
+			$linked_topic = $this->DB->buildAndFetch( array( 'select' => 'tid, forum_id', 'from' => 'topics', 'where' => "state='link' AND moved_to='" . $r['tid'] . '&' . $r['forum_id'] . "'" ) );
+			
+			if ( $linked_topic )
+			{
+				$this->DB->delete( 'topics', "tid=" . $linked_topic['tid'] );				
+				$forums[ $linked_topic['forum_id'] ] = $linked_topic['forum_id'];
+			}
+		
 		}
 		
 		//-----------------------------------------

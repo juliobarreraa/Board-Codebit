@@ -2,18 +2,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Basic Forum Search
- * Last Updated: $Date: 2012-06-12 08:43:54 -0400 (Tue, 12 Jun 2012) $
+ * Last Updated: $Date: 2012-06-29 18:12:03 -0400 (Fri, 29 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: AndyMillne $
  * @copyright	© 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10912 $
+ * @version		$Rev: 11014 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -658,6 +658,7 @@ class search_engine_forums extends search_engine
 			else
 			{
 				$this->sphinxClient->SetFilter( 'queued', array( 0 ) );
+				$this->sphinxClient->SetFilter( 'approved', array( 1 ) );
 			}
 		}
 		else

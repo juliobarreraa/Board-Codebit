@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * API: Core
- * Last Updated: $Date: 2012-06-11 11:49:47 -0400 (Mon, 11 Jun 2012) $
+ * Last Updated: $Date: 2012-06-20 09:46:36 -0400 (Wed, 20 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: mmecham $
@@ -12,7 +12,7 @@
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10908 $
+ * @version		$Rev: 10961 $
  */
  
 if ( ! defined( 'IN_IPB' ) )
@@ -541,6 +541,13 @@ class hanEmail
 		$this->htmlTemplate      = $this->applyHtmlWrapper( $this->subject, ( $rawHtml ? $this->htmlTemplate : $this->convertTextEmailToHtmlEmail( $this->htmlTemplate ) ) );
 		$this->htmlTemplate      = preg_replace( '#<!--hook\.([^\>]+?)-->#', '', $this->htmlTemplate );
 		$this->htmlTemplate		 = $this->registry->getClass('output')->parseIPSTags( $this->htmlTemplate );
+		
+		/* strip all tags if not HTML */
+		if ( ! $this->settings['email_use_html'] )
+		{
+			$this->plainTextTemplate = IPSText::stripTags( $this->plainTextTemplate );
+		}
+		
 		$this->plainTextTemplate = IPSText::stripTags( stripslashes($this->lang->words['email_header']) ) . $this->plainTextTemplate . IPSText::stripTags( stripslashes($this->lang->words['email_footer']) );
 		
 		/* Some older apps use $this->message, so give them plaintext */

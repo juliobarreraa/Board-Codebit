@@ -68,16 +68,4 @@
 			</item>
 		</items>
 	</group>
-	
-	<group>
-		<grouptitle>Admin Login Logs</grouptitle>
-		<grouplang>core_acp_loginlogs</grouplang>
-		<items>
-			<item>
-				<key>acplogin_log</key>
-				<string>Can view admin login logs?</string>
-			</item>
-		</items>
-	</group>
-
 </permissions>

@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Basic Forum Search
- * Last Updated: $Date: 2012-05-16 07:04:05 -0400 (Wed, 16 May 2012) $
+ * Last Updated: $Date: 2012-07-05 11:04:28 -0400 (Thu, 05 Jul 2012) $
  * </pre>
  *
  * @author 		$Author: mmecham $
@@ -13,7 +13,7 @@
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10759 $
+ * @version		$Rev: 11035 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -162,7 +162,7 @@ class search_engine_forums extends search_engine
 
 		/* Search in titles */
 		/* Removed  OR !($search_tags && $this->settings['tags_enabled']) ) as it was allowing a blank search if tags disabled which makes no sense - Matt */
-		if ( $search_term )
+		if ( $search_term OR IPSSearchRegistry::get('in.search_author') )
 		{
 			if ( ! IPSSearchRegistry::searchTitleOnly() )
 			{

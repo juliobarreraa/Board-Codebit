@@ -3,9 +3,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Poll voting
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $
@@ -15,7 +15,7 @@
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
  * @since		20th February 2002
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10914 $
  *
  */
 

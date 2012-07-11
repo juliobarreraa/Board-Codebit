@@ -3,11 +3,11 @@
  * @file		modcp.php 	Moderator control panel
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: ips_terabyte $
+ * $Author: bfarber $
  * @since		2/14/2011
- * $LastChangedDate: 2012-05-21 16:37:50 -0400 (Mon, 21 May 2012) $
- * @version		v3.3.3
- * $Revision: 10777 $
+ * $LastChangedDate: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10914 $
  */
 
 if ( ! defined( 'IN_IPB' ) )

@@ -1,19 +1,13 @@
 <?php
 /**
- * <pre>
- * Invision Power Services
- * IP.Board v3.3.3
- * AJAX Sharelinks
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
- * </pre>
- *
- * @author 		$Author: bfarber $
- * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
- * @license		http://www.invisionpower.com/company/standards.php#license
- * @package		IP.Board
- * @subpackage	Core
- * @link		http://www.invisionpower.com
- * @version		$Revision: 10721 $
+ * @file		sharelinks.php 	Ajax method for sharelinks
+ *~TERABYTE_DOC_READY~
+ * $Copyright: (c) 2001 - 2012 Invision Power Services, Inc.$
+ * $License: http://www.invisionpower.com/company/standards.php#license$
+ * $Author: ips_terabyte $
+ * $LastChangedDate: 2012-06-22 07:55:48 -0400 (Fri, 22 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10969 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -22,13 +16,17 @@ if ( ! defined( 'IN_IPB' ) )
 	exit();
 }
 
+/**
+ * @class		public_core_ajax_sharelinks
+ * @brief		Ajax method for sharelinks
+ */
 class public_core_ajax_sharelinks extends ipsAjaxCommand 
 {
 	/**
-	 * Class entry point
+	 * Main function executed automatically by the controller
 	 *
-	 * @param	object		Registry reference
-	 * @return	@e void		[Outputs to screen]
+	 * @param	object		$registry		Registry object
+	 * @return	@e void
 	 */
 	public function doExecute( ipsRegistry $registry ) 
 	{
@@ -58,6 +56,8 @@ class public_core_ajax_sharelinks extends ipsAjaxCommand
 	
 	/**
 	 * Stores post prefs for share links
+	 * 
+	 * @return	@e void		[Outputs JSON to browser AJAX call]
 	 */
 	protected function _savePostPrefs()
 	{
@@ -69,7 +69,7 @@ class public_core_ajax_sharelinks extends ipsAjaxCommand
 	/**
 	 * Displays a form of facebook stuff. It's really that exciting.
 	 *
-	 * @Deprecated as of 3.3 - now using Facebook standard share button
+	 * @deprecated as of 3.3 - now using Facebook standard share button
 	 * @return	@e void		[Outputs HTML to browser AJAX call]
 	 */
 	protected function _facebookForm()
@@ -125,7 +125,7 @@ class public_core_ajax_sharelinks extends ipsAjaxCommand
 			
 			try
 			{
-				$userData = $connect->fetchUserData();				
+				$userData = $connect->fetchUserData();
 				
 				if ( $userData['first_name'] )
 				{
@@ -138,22 +138,16 @@ class public_core_ajax_sharelinks extends ipsAjaxCommand
 					
 					$this->returnHtml( $this->registry->output->getTemplate('global_other')->facebookDone( $userData ) );
 				}
-				else
-				{
-					$this->returnHtml( 'finchersaysno' );
-				}
 				
 			}
 			catch( Exception $e )
 			{
-				$this->returnHtml( 'finchersaysno' );
+				// Fallsback to returnString below
 			}
 		}
-		else
-		{
-			/* Bog off */
-			$this->returnString( 'finchersaysno' );
-		}
+		
+		/* Bog off */
+		$this->returnString( 'finchersaysno' );
 	}
 
 		
@@ -194,23 +188,11 @@ class public_core_ajax_sharelinks extends ipsAjaxCommand
 					$user['status']['id'] = $sid;
 					$this->returnHtml( $this->registry->output->getTemplate('global_other')->twitterDone( $user ) );
 				}
-				else
-				{
-					/* Bog off */
-					$this->returnString( 'failwhale' );
-				}
-			}
-			else
-			{
-				/* Bog off */
-				$this->returnString( 'failwhale' );
 			}
 		}
-		else
-		{
-			/* Bog off */
-			$this->returnString( 'failwhale' );
-		}
+		
+		/* Bog off */
+		$this->returnString( 'failwhale' );
 	}
 	
 	/**
@@ -232,16 +214,9 @@ class public_core_ajax_sharelinks extends ipsAjaxCommand
 			{
 				$this->returnHtml( $this->registry->output->getTemplate('global_other')->twitterPop( $user ) );
 			}
-			else
-			{
-				/* Bog off */
-				$this->returnHtml( 'x' );
-			}
 		}
-		else
-		{
-			/* Bog off */
-			$this->returnHtml( 'x' );
-		}
+		
+		/* Bog off */
+		$this->returnHtml( 'x' );
 	}
 }

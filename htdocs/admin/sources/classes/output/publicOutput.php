@@ -3,18 +3,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Public output methods
- * Last Updated: $Date: 2012-06-07 14:04:18 -0400 (Thu, 07 Jun 2012) $
+ * Last Updated: $Date: 2012-07-05 11:04:28 -0400 (Thu, 05 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: mmecham $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		Who knows...
- * @version		$Revision: 10891 $
+ * @version		$Revision: 11035 $
  *
  */
 
@@ -2055,7 +2055,7 @@ class output
 		{
 			preg_match( "/s=([a-zA-Z0-9]{32})(.*?)$/", $url, $matches );
 
-			if( ! empty($matches[2]) )
+			if ( ! empty($matches[2]) )
 			{
 				$url	= preg_replace( "/s=([a-zA-Z0-9]{32})(&amp;|&)/", '', $url );
 				$_s     = $matches[1];
@@ -2063,7 +2063,7 @@ class output
 			
 			if ( strstr( $url, 's=0' ) )
 			{
-				$url	= preg_replace( "/s=0(&amp;|&)/", '', $url );
+				$url	= preg_replace( "/(\?|&|;)s=0(&amp;|&)/", '', $url );
 				$_s     = '';
 			}
 		}

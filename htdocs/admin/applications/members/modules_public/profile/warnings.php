@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Warnings Management
- * Last Updated: $Date: 2012-05-25 13:17:47 -0400 (Fri, 25 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $ (Original: Mark)
+ * @author 		$Author: bfarber $ (Original: Mark)
  * @copyright	© 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Members
  * @link		http://www.invisionpower.com
  * @since		9th November 2011
- * @version		$Revision: 10798 $
+ * @version		$Revision: 10914 $
  *
  */
 

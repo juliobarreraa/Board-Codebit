@@ -1,18 +1,18 @@
 <?php
 /**
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * ACP : Settings
- * Last Updated: $Date: 2012-05-22 13:20:41 -0400 (Tue, 22 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: bfarber $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Core
  * @link		http://www.invisionpower.com
  * @since		Wed. 18th August 2004
- * @version		$Rev: 10784 $
+ * @version		$Rev: 10914 $
  */
 
 if ( ! defined( 'IN_ACP' ) )

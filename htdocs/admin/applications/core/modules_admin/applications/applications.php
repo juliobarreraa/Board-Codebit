@@ -4,11 +4,11 @@
  *~TERABYTE_DOC_READY~
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: ips_terabyte $
+ * $Author: bfarber $
  * @since		15 January 2007
- * $LastChangedDate: 2012-05-31 11:34:45 -0400 (Thu, 31 May 2012) $
- * @version		v3.3.3
- * $Revision: 10844 $
+ * $LastChangedDate: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10914 $
  */
 
 if ( ! defined( 'IN_ACP' ) )

@@ -2,21 +2,21 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Static Classes for IP.Board 3
  *
  * These classes are not required as objects. We have grouped
  * together several singletons to prevent multiple file loads
- * Last Updated: $Date: 2012-06-08 12:17:17 -0400 (Fri, 08 Jun 2012) $
+ * Last Updated: $Date: 2012-07-04 13:32:40 -0400 (Wed, 04 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		12th March 2002
- * @version		$Revision: 10899 $
+ * @version		$Revision: 11032 $
  *
  * @author	Matt
  */
@@ -5049,7 +5049,7 @@ class IPSText
 		
 		/* Init some more vars */
 		$loosematch = 1;//strstr( $highlight, '*' ) ? 1 : 0;
-		$isPhrase   = preg_match( '#("|&quot;)#', $highlight );
+		$isPhrase   = preg_match( '#("|&(amp;)?quot;)#', $highlight );
 		$keywords   = str_replace( '*', '', str_replace( "+", " ", str_replace( "++", "+", str_replace( '-', '', trim($highlight) ) ) ) );
 		$keywords	= str_replace( '&quot;', '', str_replace( '\\', '&#092;', str_replace( '&amp;quot;', '', $keywords ) ) );
 		$word_array = array();
@@ -5795,6 +5795,7 @@ class IPSText
 	static public function UNhtmlspecialchars($t="")
 	{
 		$t = str_replace( "&amp;" , "&", $t );
+		$t = str_replace( "&#38;" , "&", $t );
 		$t = str_replace( "&lt;"  , "<", $t );
 		$t = str_replace( "&gt;"  , ">", $t );
 		$t = str_replace( "&quot;", '"', $t );

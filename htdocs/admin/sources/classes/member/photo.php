@@ -2,7 +2,7 @@
 /**
  * <pre>
  * Photo routines
- * Last Updated: $Date: 2012-05-11 11:17:52 -0400 (Fri, 11 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author		$author$
@@ -11,7 +11,7 @@
  * @package		IP.Board
  * @author		MattMecham
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10727 $ 
+ * @version		$Rev: 10914 $ 
  */
 
 class classes_member_photo

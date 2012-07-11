@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Ouput format: HTML
  * (Matt Mecham)
- * Last Updated: $Date: 2012-06-08 14:41:59 -0400 (Fri, 08 Jun 2012) $
+ * Last Updated: $Date: 2012-07-05 13:22:46 -0400 (Thu, 05 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		9th March 2005 11:03
- * @version		$Revision: 10902 $
+ * @version		$Revision: 11037 $
  *
  */
 
@@ -113,7 +113,7 @@ class htmlOutput extends coreOutput implements interface_output
 		{
 			header("HTTP/1.1 " . $this->_headerCode . ' ' . $this->_headerStatus );
 		}
-			
+		
 		if ( $this->settings['print_headers'] )
     	{	
 			/* Forcing a download? */
@@ -131,7 +131,7 @@ class htmlOutput extends coreOutput implements interface_output
 			{
 				$expires	= ( $this->_headerExpire ) ? gmdate( "D, d M Y H:i:s", time() + $this->_headerExpire ) . " GMT" : gmdate( "D, d M Y H:i:s", time() - 86400 ) . " GMT";
 				$maxAge		= $this->_headerExpire;
-				$nocache	= ( ! $this->_headerExpire ) ? 'no-cache,' : '';
+				$nocache	= ( ! $this->_headerExpire ) ? 'no-cache, ' : '';
 				
 				header( "Cache-Control:  ". $nocache . "must-revalidate, max-age=" . $maxAge );
 				header( "Expires: " . $expires );
@@ -517,17 +517,22 @@ class htmlOutput extends coreOutput implements interface_output
 			/* Strip session URL if there wasn't one */
 			if ( ! IN_ACP AND $this->member->session_type != 'cookie' AND ! $this->request['s'] )
 			{
-				$url = preg_replace( '/\?s=([a-zA-Z0-9]{32})(&amp;|&|$)/', '', $url );
+				$url = preg_replace( '/\?s=([a-zA-Z0-9]{32})(&amp;|&|$)/', '?', $url );
+				$url = rtrim( $url, '?' ); // Let's remove ? just in case there's nothing after it..
 			}
 			
 			/* Log it */
 			IPSDebug::addLogMessage( "Redirecting: " . $_SERVER['REQUEST_URI'] . ' to ' . $url, '301log' );
 			
 			/* Set codes */
-			$this->setHeaderCode( ( $send301 === true ) ? 301 : intval( $send301 ) );
+			if ( $this->settings['header_redirect'] != 'html' )
+			{
+				$this->setHeaderCode( ( $send301 === true ) ? 301 : intval( $send301 ) );
+			}
+			
 			$this->printHeader();
 		}
-
+		
 		if ( $this->settings['header_redirect'] == 'refresh' )
 		{
 			@header("Refresh: 0;url=".$url);
@@ -655,19 +660,13 @@ class htmlOutput extends coreOutput implements interface_output
        // Form & Get & Skin
        //-----------------------------------------
 	
-		/* Admins only */
-		if ( ! $this->memberData['g_access_cp'] )
+		if ( $this->settings['debug_level'] >= 2 )
 		{
-			//return '';
-		}
-		
-       if ($this->settings['debug_level'] >= 2)
-       {
 			$stats .= "<br />\n<div class='tableborder'>\n<div class='subtitle'>IPSDebug Messages</div><div class='row1' style='padding:6px'>\n";
 
 			foreach( IPSDebug::getMessages() as $dx => $entry )
 			{
-				$stats .= "<strong>$entry</strong><br />\n";
+				$stats .= "<strong>{$entry}</strong><br />\n";
 			}
 
 			$stats .= "</div>\n</div>";
@@ -770,7 +769,7 @@ class htmlOutput extends coreOutput implements interface_output
 
 			$cache['task_next_run'] = $cache['task_next_run'] ? $cache['task_next_run'] : 0;
 
-			$stats .= "<b>Next task</b> = ".$this->registry->getClass( 'class_localization')->getDate( $cache['task_next_run'], 'LONG' )."\n<br /><b>Time now</b> = ".$this->registry->getClass( 'class_localization')->getDate( time(), 'LONG' );
+			$stats .= "<b>Next task</b> = ".$this->registry->getClass('class_localization')->getDate( $cache['task_next_run'], 'LONG' )."\n<br /><b>Time now</b> = ".$this->registry->getClass( 'class_localization')->getDate( time(), 'LONG' );
 			$stats .= "<br /><b>Timestamp Now</b> = ".time();
 			
 			$stats .= "<p>MEMBER: last_visit: " . $this->memberData['last_visit'] . " / " . $this->registry->getClass( 'class_localization')->getDate( $this->memberData['last_visit'], 'LONG' ) . "</p>";
@@ -786,8 +785,7 @@ class htmlOutput extends coreOutput implements interface_output
 			$stats .= "<strong>".implode(", ",array_keys($this->output->loaded_templates))."</strong><br />\n";
 			$stats .= "<strong>".implode(", ",array_values( $this->registry->getClass('class_localization')->loaded_lang_files ) )."</strong><br />\n";
 			$stats .= "</div>\n</div>";
-
-        }
+		}
 
         //-----------------------------------------
         // SQL
@@ -878,9 +876,9 @@ class htmlOutput extends coreOutput implements interface_output
         {
 			$stats = "
 					  <div align='center' style='width:92%; margin:120px auto 20px auto; overflow:auto;'>
-					   <div class='tableborder' align='left' id='debug'>
-						<div class='maintitle'>Debug Information (<a href='#' onclick=\"$('debug').toggle(); return false;\">Hide Debug Information</a>)</div>
-						 <div style='padding:5px;background:#8394B2;'>{$stats}</div>
+					   <div class='tableborder' align='left'>
+						<div class='maintitle'>Debug Information (<a href='#' onclick=\"$('debug').toggle(); return false;\">Toggle Debug Information</a>)</div>
+						 <div style='padding:5px;background:#8394B2;' id='debug'>{$stats}</div>
 					   </div>
 					  </div>";
         }

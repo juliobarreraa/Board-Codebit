@@ -3,10 +3,10 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Extended Member Functions. Disparate functions that are not required
  * on every page view.
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $ (Original: MattMecham)
@@ -15,7 +15,7 @@
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		Tuesday 1st March 2005 (11:52)
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10914 $
  *
  */
 

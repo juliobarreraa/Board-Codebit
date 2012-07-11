@@ -2,19 +2,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Posting display formatting methods
- * Last Updated: $Date: 2012-06-06 15:26:34 -0400 (Wed, 06 Jun 2012) $
+ * Last Updated: $Date: 2012-07-09 12:56:26 -0400 (Mon, 09 Jul 2012) $
  * </pre>
  * File Created By: Matt Mecham
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Revision: 10878 $
+ * @version		$Revision: 11047 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -825,7 +825,7 @@ class classPostForms extends classPost
 			}
 			else if ( $this->getAuthor('member_id') != 0 )
 			{
-				if ( $this->moderator['mid'] != "" )
+				if ( isset($this->moderator['mid']) && $this->moderator['mid'] != "" )
 				{
 					if ($this->moderator['close_topic'])
 					{
@@ -852,7 +852,9 @@ class classPostForms extends classPost
 			else
 			{
 				// Guest
-				return "";
+				return array( 'dropDownOptions' => $html,
+					  		  'canSetOpenTime'  => 0,
+					  		  'canSetCloseTime' => 0 );
 			}
 			
 			if ( !($can_pin == 0 and $can_close == 0 and $can_move == 0) )

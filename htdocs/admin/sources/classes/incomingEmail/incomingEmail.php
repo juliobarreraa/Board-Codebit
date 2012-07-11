@@ -2,7 +2,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Parse Incoming Emails
  * Last Updated: $Date: 2012-06-01 11:18:06 -0400 (Fri, 01 Jun 2012) $
  * </pre>

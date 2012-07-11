@@ -3,18 +3,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Moderator actions
- * Last Updated: $Date: 2012-06-07 06:49:06 -0400 (Thu, 07 Jun 2012) $
+ * Last Updated: $Date: 2012-06-13 12:05:06 -0400 (Wed, 13 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Revision: 10887 $
+ * @version		$Revision: 10916 $
  *
  */
 
@@ -238,6 +238,9 @@ class public_forums_moderate_multimod extends ipsCommand
 			if ( $this->mm_data['topic_approve'] == 1 )
 			{
 				$this->modLibrary->stmAddApprove();
+				
+				/* Bug #36869: Approving a topic doesn't increment user post count */
+				$this->modLibrary->clearModQueueTable( 'topic', $this->topic['tid'], true );				
 			}
 			else if ( $this->mm_data['topic_approve'] == 2 )
 			{

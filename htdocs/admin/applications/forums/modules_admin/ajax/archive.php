@@ -2,7 +2,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Archive stuff (AJAX) - Matt Mecham
  * Last Updated: $Date: 2011-05-05 12:03:47 +0100 (Thu, 05 May 2011) $
  * </pre>

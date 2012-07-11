@@ -6,7 +6,7 @@
  * $Author: rtissier $
  * @since		3/8/2011
  * $LastChangedDate: 2011-03-16 19:10:59 -0400 (Wed, 16 Mar 2011) $
- * @version		v3.3.3
+ * @version		v3.3.4
  * $Revision: 8108 $
  */
 

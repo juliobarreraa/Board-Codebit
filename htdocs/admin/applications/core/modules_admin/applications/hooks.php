@@ -2,19 +2,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Hooks Management
- * Last Updated: $Date: 2012-05-31 11:34:45 -0400 (Thu, 31 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: bfarber $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Core
  * @link		http://www.invisionpower.com
  * @since		3.0.0
- * @version		$Revision: 10844 $
+ * @version		$Revision: 10914 $
  */
 
 if ( ! defined( 'IN_ACP' ) )

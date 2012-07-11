@@ -7,7 +7,7 @@
  * $Author: bfarber $
  * @since		8th Feb 2011
  * $LastChangedDate: 2011-09-12 20:59:05 -0400 (Mon, 12 Sep 2011) $
- * @version		v3.3.3
+ * @version		v3.3.4
  * $Revision: 9483 $
  */
 

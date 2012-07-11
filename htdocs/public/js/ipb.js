@@ -994,7 +994,7 @@ Object.extend( RegExp, {
 // Extend String with URL UTF-8 escape
 String.prototype.encodeUrl = function()
 {
-		text = this;
+		var text = this;
 		var regcheck = text.match(/[\x90-\xFF]/g);
 		
 		if ( regcheck )
@@ -1011,7 +1011,7 @@ String.prototype.encodeUrl = function()
 // Extend String with URL UTF-8 escape - duplicated so it can be changed from above
 String.prototype.encodeParam = function()
 {
-		text = this;
+		var text = this;
 		var regcheck = text.match(/[\x90-\xFF]/g);
 
 		if ( regcheck )

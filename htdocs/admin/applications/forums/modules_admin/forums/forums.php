@@ -2,19 +2,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Forum management
- * Last Updated: $Date: 2012-05-17 08:01:44 -0400 (Thu, 17 May 2012) $
+ * Last Updated: $Date: 2012-06-15 08:09:05 -0400 (Fri, 15 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
  * @since		Tuesday 17th August 2004
- * @version		$Revision: 10764 $
+ * @version		$Revision: 10929 $
  */
 
 if ( ! defined( 'IN_ACP' ) )
@@ -517,7 +517,7 @@ class admin_forums_forums_forums extends ipsCommand
 		}
 		
 		$this->DB->build( array( 'select' => 'id, name, parent_id', 'from' => 'forums', 'order' => 'position' ) );
-		$this->DB->execute();
+		$forums = $this->DB->execute($forums);
 		
 		if( $this->DB->getTotalRows() < 2 )
 		{
@@ -534,10 +534,12 @@ class admin_forums_forums_forums extends ipsCommand
 			$this->registry->output->showError( $this->lang->words['contains_archived_topics_so_there_haha'], '11312.1' );
 		}
 		
-		while( $r = $this->DB->fetch() )
+		while( $r = $this->DB->fetch( $forums ) )
 		{
+			
 			if( $r['id'] == $this->request['f'] )
 			{
+				
 				$name 	= $r['name'];
 				$is_cat	= $r['parent_id'] > 0 ? 0 : 1;
 				continue;

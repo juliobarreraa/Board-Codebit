@@ -7,7 +7,7 @@
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Downloads
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $ 
+ * @version		$Rev: 10914 $ 
  */
 
 if ( ! defined( 'IN_IPB' ) )

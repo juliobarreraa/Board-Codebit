@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * RSS skin functions
- * Last Updated: $LastChangedDate: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $LastChangedDate: 2012-06-18 11:11:25 -0400 (Mon, 18 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
  * @since		14th May 2003
- * @version		$Rev: 10721 $
+ * @version		$Rev: 10937 $
  */
  
 class cp_skin_rss
@@ -622,7 +622,7 @@ $IPBHTML .= <<<HTML
 					<li class='i_edit'>
 						<a href='{$this->settings['base_url']}{$this->form_code}&amp;do=rssimport_edit&amp;rss_import_id={$data['rss_import_id']}' title='{$this->lang->words['rss_im_edit']}'>{$this->lang->words['rss_im_edit']}</a>
 					</li>
-					<li class='i_refresh'><a href='{$this->settings['base_url']}{$this->form_code}&amp;do=rssimport_recache&amp;rss_import_id={$data['rss_import_id']}'>{$this->lang->words['rss_im_update']}</a></li>
+					<li class='i_refresh'><a href='{$this->settings['base_url']}{$this->form_code}&amp;do=rssimport_recache&amp;rss_import_id={$data['rss_import_id']}' title='{$this->lang->words['rss_im_update']}'>{$this->lang->words['rss_im_update']}</a></li>
 					<li class='ipsControlStrip_more ipbmenu' id="menu{$data['rss_import_id']}">
 						<a href='#'>More</a>
 					</li>

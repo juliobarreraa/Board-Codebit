@@ -685,7 +685,14 @@ _topic.prototype.topic = {
 									toggleEditorButtons( true );
 									
 									if (  t.responseJSON && t.responseJSON['error'] ){
-										ipb.global.errorDialogue( t.responseJSON['error'] );
+										if (! Object.isUndefined( ipb.lang[t.responseJSON['error']] ))
+										{
+											ipb.global.errorDialogue( ipb.lang[t.responseJSON['error']] );
+										}
+										else
+										{
+											ipb.global.errorDialogue( t.responseJSON['error'] );
+										}										
 										return false;
 									}
 									else if( t.responseJSON && t.responseJSON['success'] )
@@ -1099,7 +1106,8 @@ _topic.prototype.topic = {
 			{
 				if( !pid.blank() )
 				{
-					ipb.topic.totalChecked++;
+					/* #37999: We don't need this increment as the action of checking the box itself will also increment the count */
+					//ipb.topic.totalChecked++;
 					
 					if( $('checkbox_' + pid) )
 					{

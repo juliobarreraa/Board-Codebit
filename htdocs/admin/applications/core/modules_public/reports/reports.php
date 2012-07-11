@@ -4,12 +4,12 @@
  *~TERABYTE_DOC_READY~
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: mark $
+ * $Author: AndyMillne $
  * @author		Based on original "Report Center" by Luke Scott
  * @since		-
- * $LastChangedDate: 2012-04-09 11:09:31 -0400 (Mon, 09 Apr 2012) $
- * @version		v3.3.3
- * $Revision: 10580 $
+ * $LastChangedDate: 2012-06-26 07:24:43 -0400 (Tue, 26 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10987 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -353,8 +353,15 @@ class public_core_reports_reports extends ipsCommand
 		$members = IPSMember::load( $members_to_load );
 		
 		foreach( $reports as $id => $data )
-		{
-			$reports[ $id ]['member'] = IPSMember::buildDisplayData( $members[ $data['updated_by'] ] );
+		{			
+			if( $data['updated_by'] )
+			{
+				$reports[ $id ]['member']	= IPSMember::buildDisplayData( $members[ $data['updated_by'] ] );
+			}
+			else
+			{
+				$reports[ $id ]['member']  = IPSMember::buildDisplayData( IPSMember::setUpGuest( '' ) );
+			}
 		}
 		
 		//-----------------------------------------
@@ -740,7 +747,14 @@ class public_core_reports_reports extends ipsCommand
 			$row['_title']  = $row['title'];
 			$row['title']   = $row['member_title'];
 			
-			$row['author']  = IPSMember::buildDisplayData( $row );
+			if( $row['member_id'] )
+			{
+				$row['author'] = IPSMember::buildDisplayData( $row );
+			}
+			else
+			{
+				$row['author'] = IPSMember::buildDisplayData( IPSMember::setUpGuest( '' ) );
+			}
 			
 			$row['title']   = $row['_title'];
 			$row['report']	= IPSText::getTextClass('bbcode')->preDisplayParse( $row['report'] );

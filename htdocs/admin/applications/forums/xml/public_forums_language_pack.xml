@@ -10,146 +10,260 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>wi_t_toggle_end</word_key>
-      <word_default>topic with no new</word_default>
+      <word_key>update_status_default</word_key>
+      <word_default><![CDATA[What's on your mind?]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>watched_topics</word_key>
-      <word_default>Topics</word_default>
+      <word_key>recent_status_updates</word_key>
+      <word_default>Recent Status Updates</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>wi_toggle_end</word_key>
-      <word_default>forums with no new</word_default>
+      <word_key>norecent_status_updates</word_key>
+      <word_default>No recent status updates</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>wi_toggle_start</word_key>
-      <word_default>Toggle</word_default>
+      <word_key>recent_gallery_images</word_key>
+      <word_default>Recent Gallery Images</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>wi_not_watch</word_key>
-      <word_default>You are not watching any forums</word_default>
+      <word_key>recently_added_entries</word_key>
+      <word_default>Recent Blog Entries</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>wi_no_topics</word_key>
-      <word_default>You are not watching any topics</word_default>
+      <word_key>norecent_entries_hook</word_key>
+      <word_default>No recent blog entries</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>wi_no_new</word_key>
-      <word_default>No new topics or posts</word_default>
+      <word_key>view_entry</word_key>
+      <word_default>View blog entry</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>wi_content_title</word_key>
-      <word_default>Watched Content</word_default>
+      <word_key>new_posts</word_key>
+      <word_default>View New Posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>new_active_cont</word_key>
-      <word_default><![CDATA[Today's active content]]></word_default>
+      <word_key>on</word_key>
+      <word_default>On</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>show_by</word_key>
-      <word_default>Show by</word_default>
+      <word_key>norecent_topics_hook</word_key>
+      <word_default>No recent topics</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>today_active_cont</word_key>
-      <word_default><![CDATA[View today's active content]]></word_default>
+      <word_key>board_index_title</word_key>
+      <word_default>Community Index</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>most_online</word_key>
-      <word_default><![CDATA[Most users ever online was <b><#NUM#></b> on <b><#DATE#></b>]]></word_default>
+      <word_key>sidebar_close</word_key>
+      <word_default>Close</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>active_users</word_key>
-      <word_default>(in the past %s minutes)</word_default>
+      <word_key>sidebar_open</word_key>
+      <word_default>Open</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>f_none</word_key>
-      <word_default>No posts to view</word_default>
+      <word_key>toggle_cat</word_key>
+      <word_default>Toggle %s</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>info</word_key>
-      <word_default>Information</word_default>
+      <word_key>ex_col</word_key>
+      <word_default>Expand/Collapse</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>active_users_text</word_key>
-      <word_default>active user(s)</word_default>
+      <word_key>view_cat</word_key>
+      <word_default>View %s</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>in</word_key>
-      <word_default>In:</word_default>
+      <word_key>forums_in_cat</word_key>
+      <word_default>Forums within the category</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>f_protected</word_key>
-      <word_default><![CDATA[<i>Protected Forum</i>]]></word_default>
+      <word_key>stats</word_key>
+      <word_default>Stats</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>topics</word_key>
-      <word_default>topics</word_default>
+      <word_key>subforums</word_key>
+      <word_default>Subforums:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>cat_name</word_key>
-      <word_default>Forum</word_default>
+      <word_key>view_unapproved</word_key>
+      <word_default>View unapproved items</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>forums</word_key>
-      <word_default>Forums</word_default>
+      <word_key>last_post</word_key>
+      <word_default>Last post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>last_post_info</word_key>
-      <word_default>Last Post Info</word_default>
+      <word_key>total_posts</word_key>
+      <word_default>Total Posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>posts</word_key>
-      <word_default>posts</word_default>
+      <word_key>total_members</word_key>
+      <word_default>Total Members</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>anon_users</word_key>
-      <word_default>anonymous users</word_default>
+      <word_key>newest_member</word_key>
+      <word_default>Newest Member</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>online_at_once</word_key>
+      <word_default>Most Online</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>upcoming_events</word_key>
+      <word_default>Upcoming Calendar Events</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>recently_added_topics</word_key>
+      <word_default>Recent Topics</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>todays_top_posters</word_key>
+      <word_default><![CDATA[Today's Top Posters]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>view_topic</word_key>
+      <word_default>View topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>recent_by</word_key>
+      <word_default>by</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>f_queued</word_key>
+      <word_default>%s unapproved topic(s) and %s unapproved post(s)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>f_queued_topics</word_key>
+      <word_default>%s unapproved topic(s)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>f_queued_posts</word_key>
+      <word_default>%s unapproved post(s)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>sub_forum_title</word_key>
+      <word_default>Subforums</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>rd_hits</word_key>
+      <word_default>Hits</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>oul_click</word_key>
+      <word_default>Last Click</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>oul_name</word_key>
+      <word_default>Member Name</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>by</word_key>
+      <word_default>By</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>calender_f_title</word_key>
+      <word_default>Forthcoming Calendar Events within the next %s days</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>no_calendar_events</word_key>
+      <word_default>There are no forthcoming calendar events</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>newslink</word_key>
+      <word_default>View the latest news</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>sm_today_posters</word_key>
+      <word_default><![CDATA[Today's Top Posters]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>sm_all_posters_title</word_key>
+      <word_default><![CDATA[View today's top 20 posters]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -184,8 +298,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>watched_forums</word_key>
-      <word_default>Forums</word_default>
+      <word_key>birthdays_title</word_key>
+      <word_default>%s Birthday(s) Today</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -196,8 +310,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>members</word_key>
-      <word_default>members</word_default>
+      <word_key>replies</word_key>
+      <word_default>replies</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -208,8 +322,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>replies</word_key>
-      <word_default>replies</word_default>
+      <word_key>members</word_key>
+      <word_default>members</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -220,278 +334,164 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>birthdays_title</word_key>
-      <word_default>%s Birthday(s) Today</word_default>
+      <word_key>anon_users</word_key>
+      <word_default>anonymous users</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>sm_today_posters</word_key>
-      <word_default><![CDATA[Today's Top Posters]]></word_default>
+      <word_key>posts</word_key>
+      <word_default>posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>sm_all_posters_title</word_key>
-      <word_default><![CDATA[View today's top 20 posters]]></word_default>
+      <word_key>forums</word_key>
+      <word_default>Forums</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>newslink</word_key>
-      <word_default>View the latest news</word_default>
+      <word_key>last_post_info</word_key>
+      <word_default>Last Post Info</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>no_calendar_events</word_key>
-      <word_default>There are no forthcoming calendar events</word_default>
+      <word_key>cat_name</word_key>
+      <word_default>Forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>by</word_key>
-      <word_default>By</word_default>
+      <word_key>in</word_key>
+      <word_default>In:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>calender_f_title</word_key>
-      <word_default>Forthcoming Calendar Events within the next %s days</word_default>
+      <word_key>topics</word_key>
+      <word_default>topics</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>oul_name</word_key>
-      <word_default>Member Name</word_default>
+      <word_key>f_protected</word_key>
+      <word_default><![CDATA[<i>Protected Forum</i>]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>oul_click</word_key>
-      <word_default>Last Click</word_default>
+      <word_key>info</word_key>
+      <word_default>Information</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>f_queued</word_key>
-      <word_default>%s unapproved topic(s) and %s unapproved post(s)</word_default>
+      <word_key>active_users_text</word_key>
+      <word_default>active user(s)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>f_queued_topics</word_key>
-      <word_default>%s unapproved topic(s)</word_default>
+      <word_key>active_users</word_key>
+      <word_default>(in the past %s minutes)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>f_queued_posts</word_key>
-      <word_default>%s unapproved post(s)</word_default>
+      <word_key>f_none</word_key>
+      <word_default>No posts to view</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>rd_hits</word_key>
-      <word_default>Hits</word_default>
+      <word_key>most_online</word_key>
+      <word_default><![CDATA[Most users ever online was <b><#NUM#></b> on <b><#DATE#></b>]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>sub_forum_title</word_key>
-      <word_default>Subforums</word_default>
+      <word_key>today_active_cont</word_key>
+      <word_default><![CDATA[View today's active content]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>view_topic</word_key>
-      <word_default>View topic</word_default>
+      <word_key>new_active_cont</word_key>
+      <word_default><![CDATA[Today's active content]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>recent_by</word_key>
-      <word_default>by</word_default>
+      <word_key>show_by</word_key>
+      <word_default>Show by</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>todays_top_posters</word_key>
-      <word_default><![CDATA[Today's Top Posters]]></word_default>
+      <word_key>wi_content_title</word_key>
+      <word_default>Watched Content</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>recently_added_topics</word_key>
-      <word_default>Recent Topics</word_default>
+      <word_key>wi_no_new</word_key>
+      <word_default>No new topics or posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>upcoming_events</word_key>
-      <word_default>Upcoming Calendar Events</word_default>
+      <word_key>wi_not_watch</word_key>
+      <word_default>You are not watching any forums</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>total_members</word_key>
-      <word_default>Total Members</word_default>
+      <word_key>wi_no_topics</word_key>
+      <word_default>You are not watching any topics</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>online_at_once</word_key>
-      <word_default>Most Online</word_default>
+      <word_key>wi_toggle_start</word_key>
+      <word_default>Toggle</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>newest_member</word_key>
-      <word_default>Newest Member</word_default>
+      <word_key>wi_toggle_end</word_key>
+      <word_default>forums with no new</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>total_posts</word_key>
-      <word_default>Total Posts</word_default>
+      <word_key>wi_t_toggle_end</word_key>
+      <word_default>topic with no new</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>last_post</word_key>
-      <word_default>Last post</word_default>
+      <word_key>watched_topics</word_key>
+      <word_default>Topics</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>view_unapproved</word_key>
-      <word_default>View unapproved items</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>subforums</word_key>
-      <word_default>Subforums:</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>stats</word_key>
-      <word_default>Stats</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>forums_in_cat</word_key>
-      <word_default>Forums within the category</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>view_cat</word_key>
-      <word_default>View %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>ex_col</word_key>
-      <word_default>Expand/Collapse</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>toggle_cat</word_key>
-      <word_default>Toggle %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>sidebar_open</word_key>
-      <word_default>Open</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>sidebar_close</word_key>
-      <word_default>Close</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>board_index_title</word_key>
-      <word_default>Community Index</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>norecent_topics_hook</word_key>
-      <word_default>No recent topics</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>on</word_key>
-      <word_default>On</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>new_posts</word_key>
-      <word_default>View New Posts</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>view_entry</word_key>
-      <word_default>View blog entry</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>norecent_entries_hook</word_key>
-      <word_default>No recent blog entries</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>recently_added_entries</word_key>
-      <word_default>Recent Blog Entries</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>norecent_status_updates</word_key>
-      <word_default>No recent status updates</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>recent_gallery_images</word_key>
-      <word_default>Recent Gallery Images</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>recent_status_updates</word_key>
-      <word_default>Recent Status Updates</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>update_status_default</word_key>
-      <word_default><![CDATA[What's on your mind?]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>macro__markread</word_key>
-      <word_default>Mark as read</word_default>
+      <word_key>watched_forums</word_key>
+      <word_default>Forums</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
       <word_key>macro__unreadf</word_key>
       <word_default>Unread forum</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>macro__markread</word_key>
+      <word_default>Mark as read</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -508,26 +508,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>popular_tags</word_key>
-      <word_default>Popular Tags</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>macro__redirect</word_key>
-      <word_default>Redirect forum</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>macro__readonly</word_key>
-      <word_default>Read-only forum</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
-      <word_key>macro__readpw</word_key>
-      <word_default>Read forum (password protected)</word_default>
+      <word_key>macro__readcat</word_key>
+      <word_default>Read category</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -538,8 +520,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>macro__readcat</word_key>
-      <word_default>Read category</word_default>
+      <word_key>macro__readpw</word_key>
+      <word_default>Read forum (password protected)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>macro__readonly</word_key>
+      <word_default>Read-only forum</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>popular_tags</word_key>
+      <word_default>Popular Tags</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>macro__redirect</word_key>
+      <word_default>Redirect forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -556,14 +556,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>slh_mostly</word_key>
-      <word_default>Most</word_default>
+      <word_key>slh_title</word_key>
+      <word_default>Shared Links</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>slh_title</word_key>
-      <word_default>Shared Links</word_default>
+      <word_key>slh_mostly</word_key>
+      <word_default>Most</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -574,26 +574,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>online_link</word_key>
-      <word_default>See full list</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_boards</word_pack>
       <word_key>hook_facebookactivity</word_key>
       <word_default>Recent Facebook Activity</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
-      <word_key>online_right_now</word_key>
-      <word_default>%s users are online</word_default>
+      <word_key>online_link</word_key>
+      <word_default>See full list</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_boards</word_pack>
       <word_key>next_occurrence</word_key>
       <word_default>Occurs on </word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_boards</word_pack>
+      <word_key>online_right_now</word_key>
+      <word_default>%s users are online</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -700,6 +700,78 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
+      <word_key>tdb__noreasongi</word_key>
+      <word_default>No reason given</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_restore_topic</word_key>
+      <word_default>Unhide</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_delete_topic</word_key>
+      <word_default>Delete</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_title</word_key>
+      <word_default>Delete Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_remove_from_view</word_key>
+      <word_default>Remove From View</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_remove_from_view_desc</word_key>
+      <word_default><![CDATA[This option <strong>hides the post</strong>, but leaves it in the topic.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dltt_remove_from_view_desc</word_key>
+      <word_default><![CDATA[This option <strong>hides the topic</strong>, but leaves it in the forum.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_remove_from_view_extra</word_key>
+      <word_default>Moderators may be still be able to view it</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_reason</word_key>
+      <word_default>Reason:</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_remove</word_key>
+      <word_default>Remove</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_delete_from_topic</word_key>
+      <word_default>Delete From Forum</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>dlt_delete_from_topic_desc</word_key>
+      <word_default><![CDATA[This option <strong>completely removes the post</strong> from the topic.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
       <word_key>forum_last_post_info</word_key>
       <word_default>Last Post Info</word_default>
     </lang>
@@ -712,26 +784,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>forum_topic</word_key>
-      <word_default>Topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>forum_started_by</word_key>
       <word_default>Started By</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>sort_submit</word_key>
-      <word_default>Update Filter</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>forum_by</word_key>
-      <word_default>By:</word_default>
+      <word_key>forum_topic</word_key>
+      <word_default>Topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -742,20 +802,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
+      <word_key>forum_by</word_key>
+      <word_default>By:</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>sort_submit</word_key>
+      <word_default>Update Filter</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
       <word_key>need_password_txt</word_key>
       <word_default><![CDATA[<b>This forum is protected by a password!</b><br/ >You must enter the correct forum password to gain access to this forum. Please ensure that your browser is capable of storing temporary cookies.]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>need_password</word_key>
-      <word_default>Enter Forum Password</word_default>
+      <word_key>enter_forum_pass</word_key>
+      <word_default>Forum Password</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>enter_forum_pass</word_key>
-      <word_default>Forum Password</word_default>
+      <word_key>need_password</word_key>
+      <word_default>Enter Forum Password</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -772,14 +844,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topicfilter_istarted</word_key>
-      <word_default>Topics I Started</word_default>
+      <word_key>topicfilter_moved</word_key>
+      <word_default>Moved</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topicfilter_moved</word_key>
-      <word_default>Moved</word_default>
+      <word_key>topicfilter_istarted</word_key>
+      <word_default>Topics I Started</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -808,20 +880,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topicfilter_all</word_key>
-      <word_default>All Topics</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>ascending_order</word_key>
       <word_default>Ascending (A-Z)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>descending_order</word_key>
-      <word_default>Descending (Z-A)</word_default>
+      <word_key>topicfilter_all</word_key>
+      <word_default>All Topics</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>sort_by_attach</word_key>
+      <word_default>Attachments</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -832,8 +904,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>sort_by_attach</word_key>
-      <word_default>Attachments</word_default>
+      <word_key>descending_order</word_key>
+      <word_default>Descending (Z-A)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -850,20 +922,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>sort_by_replies</word_key>
-      <word_default>Replies</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>sort_by_poster</word_key>
       <word_default>Topic Starter</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>sort_by_last_poster</word_key>
-      <word_default>Last Poster</word_default>
+      <word_key>sort_by_replies</word_key>
+      <word_default>Replies</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -874,14 +940,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>show_7_days</word_key>
-      <word_default>Last 7 days</word_default>
+      <word_key>sort_by_last_poster</word_key>
+      <word_default>Last Poster</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>show_all</word_key>
-      <word_default>Show All</word_default>
+      <word_key>show_7_days</word_key>
+      <word_default>Last 7 days</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -892,20 +958,44 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>show_90_days</word_key>
-      <word_default>Last 90 days</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>show_last_visit</word_key>
       <word_default>Since Last Visit</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
+      <word_key>show_all</word_key>
+      <word_default>Show All</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
       <word_key>show_30_days</word_key>
       <word_default>Last 30 days</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>show_90_days</word_key>
+      <word_default>Last 90 days</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>show_25_days</word_key>
+      <word_default>Last 25 days</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>show_20_days</word_key>
+      <word_default>Last 20 days</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>show_10_days</word_key>
+      <word_default>Last 10 days</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -922,24 +1012,6 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>show_10_days</word_key>
-      <word_default>Last 10 days</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>show_20_days</word_key>
-      <word_default>Last 20 days</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>show_25_days</word_key>
-      <word_default>Last 25 days</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>show_today</word_key>
       <word_default>From Today</word_default>
     </lang>
@@ -948,6 +1020,12 @@
       <word_pack>public_forums</word_pack>
       <word_key>show_5_days</word_key>
       <word_default>Last 5 days</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>pm_locked</word_key>
+      <word_default>This topic is locked</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -964,12 +1042,6 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>pm_locked</word_key>
-      <word_default>This topic is locked</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>pm_poll_no</word_key>
       <word_default>Poll (No New)</word_default>
     </lang>
@@ -978,18 +1050,6 @@
       <word_pack>public_forums</word_pack>
       <word_key>pm_poll</word_key>
       <word_default>Poll (New)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>search_forum</word_key>
-      <word_default>Search forum</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>active_users_titlef</word_key>
-      <word_default>%s user(s) are browsing this forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1018,6 +1078,18 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
+      <word_key>search_forum</word_key>
+      <word_default>Search forum</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>active_users_titlef</word_key>
+      <word_default>%s user(s) are browsing this forum</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
       <word_key>attach_page_title</word_key>
       <word_default>Attachments</word_default>
     </lang>
@@ -1026,18 +1098,6 @@
       <word_pack>public_forums</word_pack>
       <word_key>attach_post_date</word_key>
       <word_default>Posted on</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>mm_title</word_key>
-      <word_default>Multi-Moderation</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>attach_post</word_key>
-      <word_default>Post #</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1054,8 +1114,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_attach</word_key>
-      <word_default>attachment(s): View</word_default>
+      <word_key>attach_post</word_key>
+      <word_default>Post #</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1066,8 +1126,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>cpt_move</word_key>
-      <word_default>Move</word_default>
+      <word_key>topic_attach</word_key>
+      <word_default>attachment(s): View</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>mm_title</word_key>
+      <word_default>Multi-Moderation</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1078,14 +1144,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>cpt_delete</word_key>
-      <word_default>Delete</word_default>
+      <word_key>cpt_move</word_key>
+      <word_default>Move</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>cpt_merge</word_key>
-      <word_default>Merge</word_default>
+      <word_key>cpt_delete</word_key>
+      <word_default>Delete</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1096,20 +1162,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
+      <word_key>cpt_merge</word_key>
+      <word_default>Merge</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
       <word_key>cpt_hide</word_key>
       <word_default>Hide</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>cpt_approve</word_key>
-      <word_default>Approve</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>cpt_approve_f</word_key>
-      <word_default>Approve</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1120,14 +1180,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>cpt_unhide_f</word_key>
-      <word_default>Unhide</word_default>
+      <word_key>cpt_approve_f</word_key>
+      <word_default>Approve</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>cpt_approve</word_key>
+      <word_default>Approve</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
       <word_key>cpt_hide_f</word_key>
       <word_default>Hide</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>cpt_unhide_f</word_key>
+      <word_default>Unhide</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1150,8 +1222,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>cpt_open_f</word_key>
-      <word_default>Lock</word_default>
+      <word_key>cpt_close_f</word_key>
+      <word_default>Unlock</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1162,20 +1234,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>mark_as_read</word_key>
-      <word_default>Mark this forum as read</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>announce_row</word_key>
-      <word_default>Announcement</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>mod_showallinvisible</word_key>
-      <word_default>Show All Invisible Topics</word_default>
+      <word_key>cpt_open_f</word_key>
+      <word_default>Lock</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1198,8 +1258,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>cpt_close_f</word_key>
-      <word_default>Unlock</word_default>
+      <word_key>mark_as_read</word_key>
+      <word_default>Mark this forum as read</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>announce_row</word_key>
+      <word_default>Announcement</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>mod_showallinvisible</word_key>
+      <word_default>Show All Invisible Topics</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1234,24 +1306,6 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>filter_options</word_key>
-      <word_default>Click here to show filter options</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>mod_hidden</word_key>
-      <word_default>Show Hidden</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>mod_unapproved</word_key>
-      <word_default>Show Unapproved</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>mod_prumemovetopics</word_key>
       <word_default>Prune/Mass Move Topics</word_default>
     </lang>
@@ -1264,8 +1318,38 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
+      <word_key>mod_unapproved</word_key>
+      <word_default>Show Unapproved</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>filter_options</word_key>
+      <word_default>Click here to show filter options</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>mod_hidden</word_key>
+      <word_default>Show Hidden</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
       <word_key>forum_management</word_key>
       <word_default>Forum Management</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>views</word_key>
+      <word_default>views</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>view_uapproved_posts</word_key>
+      <word_default>View unapproved posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1282,8 +1366,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>views</word_key>
-      <word_default>views</word_default>
+      <word_key>replies</word_key>
+      <word_default>replies</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>reply</word_key>
+      <word_default>reply</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>first_unread_post</word_key>
+      <word_default>Go to first unread post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1300,32 +1396,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>view_uapproved_posts</word_key>
-      <word_default>View unapproved posts</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>reply</word_key>
-      <word_default>reply</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>replies</word_key>
-      <word_default>replies</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>first_unread_post</word_key>
-      <word_default>Go to first unread post</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>topic_move</word_key>
-      <word_default>Move</word_default>
+      <word_key>topic_open</word_key>
+      <word_default>Unlock</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1336,8 +1408,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_open</word_key>
-      <word_default>Unlock</word_default>
+      <word_key>topic_move</word_key>
+      <word_default>Move</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1348,14 +1420,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_unpin</word_key>
-      <word_default>Unpin</word_default>
+      <word_key>topic_delete</word_key>
+      <word_default>Delete</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_delete</word_key>
-      <word_default>Delete</word_default>
+      <word_key>topic_unpin</word_key>
+      <word_default>Unpin</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1378,20 +1450,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_select_all</word_key>
-      <word_default>Select all topics on this page</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>topic_start</word_key>
       <word_default>Start New Topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>in_last_topic</word_key>
-      <word_default>In:</word_default>
+      <word_key>topic_select_all</word_key>
+      <word_default>Select all topics on this page</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1402,8 +1468,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>goto_forum</word_key>
-      <word_default>Go to forum</word_default>
+      <word_key>in_last_topic</word_key>
+      <word_default>In:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1414,8 +1480,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>view_forum_rules</word_key>
-      <word_default>View forum rules</word_default>
+      <word_key>goto_forum</word_key>
+      <word_default>Go to forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1426,8 +1492,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>view_post</word_key>
-      <word_default>View post</word_default>
+      <word_key>view_forum_rules</word_key>
+      <word_default>View forum rules</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>filter_direction</word_key>
+      <word_default>Sort direction</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1438,32 +1510,38 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>dltt_delete_from_topic_desc</word_key>
-      <word_default><![CDATA[This option <strong>completely removes the topic</strong> from the forum.]]></word_default>
+      <word_key>view_post</word_key>
+      <word_default>View post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>dlt_delete_from_topic_extra</word_key>
-      <word_default>It may be available for review in the ModeratorCP</word_default>
+      <word_key>filter_sort</word_key>
+      <word_default>Sort by</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>dlt_delete_now</word_key>
-      <word_default>Delete Now</word_default>
+      <word_key>rename_topic_update</word_key>
+      <word_default>Update</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>nmo_t_approve</word_key>
-      <word_default><![CDATA[&middot; Approve %s un-approved forum topics]]></word_default>
+      <word_key>view_reported_posts</word_key>
+      <word_default>View reported posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>nmo_t_delete_approve</word_key>
-      <word_default><![CDATA[&middot; Permanently Remove %s un-approved forum topics]]></word_default>
+      <word_key>filter_type</word_key>
+      <word_default>Show topic type</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>view_deleted_posts</word_key>
+      <word_default>View deleted posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1480,110 +1558,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>view_deleted_posts</word_key>
-      <word_default>View deleted posts</word_default>
+      <word_key>nmo_t_delete_approve</word_key>
+      <word_default><![CDATA[&middot; Permanently Remove %s un-approved forum topics]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>filter_sort</word_key>
-      <word_default>Sort by</word_default>
+      <word_key>nmo_t_approve</word_key>
+      <word_default><![CDATA[&middot; Approve %s un-approved forum topics]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>filter_type</word_key>
-      <word_default>Show topic type</word_default>
+      <word_key>dlt_delete_now</word_key>
+      <word_default>Delete Now</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>view_reported_posts</word_key>
-      <word_default>View reported posts</word_default>
+      <word_key>dlt_delete_from_topic_extra</word_key>
+      <word_default>It may be available for review in the ModeratorCP</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>rename_topic_update</word_key>
-      <word_default>Update</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>filter_direction</word_key>
-      <word_default>Sort direction</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_delete_from_topic_desc</word_key>
-      <word_default><![CDATA[This option <strong>completely removes the post</strong> from the topic.]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_remove</word_key>
-      <word_default>Remove</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_delete_from_topic</word_key>
-      <word_default>Delete From Forum</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_reason</word_key>
-      <word_default>Reason:</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dltt_remove_from_view_desc</word_key>
-      <word_default><![CDATA[This option <strong>hides the topic</strong>, but leaves it in the forum.]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_remove_from_view_extra</word_key>
-      <word_default>Moderators may be still be able to view it</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_remove_from_view_desc</word_key>
-      <word_default><![CDATA[This option <strong>hides the post</strong>, but leaves it in the topic.]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_remove_from_view</word_key>
-      <word_default>Remove From View</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_title</word_key>
-      <word_default>Delete Topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_delete_topic</word_key>
-      <word_default>Delete</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>dlt_restore_topic</word_key>
-      <word_default>Unhide</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>tdb__noreasongi</word_key>
-      <word_default>No reason given</word_default>
+      <word_key>dltt_delete_from_topic_desc</word_key>
+      <word_default><![CDATA[This option <strong>completely removes the topic</strong> from the forum.]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1594,14 +1594,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>you_posted_here</word_key>
-      <word_default>You posted in this topic</word_default>
+      <word_key>lastby</word_key>
+      <word_default>Last by</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>lastby</word_key>
-      <word_default>Last by</word_default>
+      <word_key>you_posted_here</word_key>
+      <word_default>You posted in this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1624,20 +1624,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>show_mod_tools_desc</word_key>
-      <word_default>Provides tools for managing topics in this forum</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>load_more_topics</word_key>
-      <word_default>Load more topics</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>topic_is_hot</word_key>
-      <word_default>Hot</word_default>
+      <word_key>like_follow_f</word_key>
+      <word_default>follow this forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1654,14 +1642,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>like_follow_f</word_key>
-      <word_default>follow this forum</word_default>
+      <word_key>topic_is_hot</word_key>
+      <word_default>Hot</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>load_more_topics</word_key>
+      <word_default>Load more topics</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>sort_custom</word_key>
+      <word_default>Custom</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
       <word_key>show_mod_tools</word_key>
       <word_default>Show moderation tools</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>show_mod_tools_desc</word_key>
+      <word_default>Provides tools for managing topics in this forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1678,12 +1684,6 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>sort_custom</word_key>
-      <word_default>Custom</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>sort_start</word_key>
       <word_default>Start Date</word_default>
     </lang>
@@ -1696,20 +1696,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_queued_count</word_key>
-      <word_default><![CDATA[This topic has <strong>%s</strong> unapproved posts. Click to view.]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>topic_hidden_count</word_key>
       <word_default><![CDATA[This topic has <strong>%s</strong> hidden posts. Click to view.]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>go_back_to</word_key>
-      <word_default>Back to %s</word_default>
+      <word_key>topic_queued_count</word_key>
+      <word_default><![CDATA[This topic has <strong>%s</strong> unapproved posts. Click to view.]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1720,26 +1714,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>findex_userphoto_alt</word_key>
-      <word_default>%s - last post by %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>topic_approve</word_key>
-      <word_default>Approve</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>forum_no_start_topic_guest</word_key>
-      <word_default>Please log in to post a topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
-      <word_key>f_comment_action_count</word_key>
-      <word_default><![CDATA[With <span id='comment_count'>#{count}</span> checked topics:]]></word_default>
+      <word_key>go_back_to</word_key>
+      <word_default>Back to %s</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1750,8 +1726,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>mini_page_count</word_key>
-      <word_default>%s pages</word_default>
+      <word_key>topic_hide_reason_default</word_key>
+      <word_default>Enter a reason...</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1762,20 +1738,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_delete_confirm</word_key>
-      <word_default>Are you sure you want to delete this topic?</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_forums</word_pack>
       <word_key>topic_is_archived</word_key>
       <word_default/>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>topic_hide_reason_default</word_key>
-      <word_default>Enter a reason...</word_default>
+      <word_key>mini_page_count</word_key>
+      <word_default>%s pages</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1786,14 +1756,44 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
-      <word_key>restore_post</word_key>
-      <word_default>Restore</word_default>
+      <word_key>topic_delete_confirm</word_key>
+      <word_default>Are you sure you want to delete this topic?</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>f_comment_action_count</word_key>
+      <word_default><![CDATA[With <span id='comment_count'>#{count}</span> checked topics:]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>forum_no_start_topic_guest</word_key>
+      <word_default>Please log in to post a topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>topic_approve</word_key>
+      <word_default>Approve</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>findex_userphoto_alt</word_key>
+      <word_default>%s - last post by %s</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_forums</word_pack>
       <word_key>perm_delete_post</word_key>
       <word_default>Permanently delete</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_forums</word_pack>
+      <word_key>restore_post</word_key>
+      <word_default>Restore</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1834,26 +1834,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>submit_delete</word_key>
-      <word_default>Delete this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
       <word_key>p_unpinned</word_key>
       <word_default>Topic Unpinned</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>submit_edit</word_key>
-      <word_default>Edit this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>p_pdeleted</word_key>
-      <word_default>Post Deleted</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1864,8 +1846,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>p_opened</word_key>
-      <word_default>Topic Opened</word_default>
+      <word_key>p_pdeleted</word_key>
+      <word_default>Post Deleted</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>submit_edit</word_key>
+      <word_default>Edit this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>submit_delete</word_key>
+      <word_default>Delete this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>p_closed</word_key>
+      <word_default>Topic Closed</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1876,8 +1876,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>p_closed</word_key>
-      <word_default>Topic Closed</word_default>
+      <word_key>p_opened</word_key>
+      <word_default>Topic Opened</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1894,8 +1894,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>edit_f_title</word_key>
-      <word_default>Topic Title</word_default>
+      <word_key>p_deleted</word_key>
+      <word_default>Topic Deleted</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1906,8 +1906,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>p_deleted</word_key>
-      <word_default>Topic Deleted</word_default>
+      <word_key>edit_f_title</word_key>
+      <word_default>Topic Title</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1918,20 +1918,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>t_close</word_key>
-      <word_default>Close Topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
       <word_key>delete_topic</word_key>
       <word_default>Deleting Topic, only continue if you wish to delete this topic, there will be no other confirmation screens.</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>edit_f_desc</word_key>
-      <word_default>Topic Description</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1942,20 +1930,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>edit_f_desc</word_key>
+      <word_default>Topic Description</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>t_close</word_key>
+      <word_default>Close Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>top_move</word_key>
       <word_default>Move Topic </word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>t_delete</word_key>
-      <word_default>Delete Topic</word_default>
+      <word_key>p_pinned</word_key>
+      <word_default>Topic Pinned</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>t_open</word_key>
-      <word_default>Open Topic</word_default>
+      <word_key>t_delete</word_key>
+      <word_default>Delete Topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1972,8 +1972,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>p_pinned</word_key>
-      <word_default>Topic Pinned</word_default>
+      <word_key>top_edit</word_key>
+      <word_default>Editing Topic </word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>submit_move</word_key>
+      <word_default>Move topic(s)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>t_open</word_key>
+      <word_default>Open Topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -1984,14 +1996,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>top_edit</word_key>
-      <word_default>Editing Topic </word_default>
+      <word_key>leave_link</word_key>
+      <word_default>Leave a link to the new topic in the source forum?</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>submit_move</word_key>
-      <word_default>Move topic(s)</word_default>
+      <word_key>move_exp</word_key>
+      <word_default>Please select the destination forum and method of moving</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>ts_redirect</word_key>
+      <word_default>All members have been unsubscribed from this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>mt_redirect</word_key>
+      <word_default>The topics have been merged</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2020,44 +2044,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>ts_redirect</word_key>
-      <word_default>All members have been unsubscribed from this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>leave_link</word_key>
-      <word_default>Leave a link to the new topic in the source forum?</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>move_exp</word_key>
-      <word_default>Please select the destination forum and method of moving</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
       <word_key>mt_submit</word_key>
       <word_default>Merge Topics</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>mt_redirect</word_key>
-      <word_default>The topics have been merged</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>mt_new_title</word_key>
-      <word_default>Topic Title</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>mt_new_desc</word_key>
-      <word_default>Topic Description</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2068,8 +2056,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>th_last_name</word_key>
-      <word_default>Last Post by</word_default>
+      <word_key>mt_tid_desc</word_key>
+      <word_default>(Tip: You can simply copy the URL from your browser address bar when viewing the topic and paste it here)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>mt_new_desc</word_key>
+      <word_default>Topic Description</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>mt_new_title</word_key>
+      <word_default>Topic Title</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2080,20 +2080,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>ml_none</word_key>
-      <word_default>There are no entries for this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>mt_tid_desc</word_key>
-      <word_default>(Tip: You can simply copy the URL from your browser address bar when viewing the topic and paste it here)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
       <word_key>mt_top</word_key>
       <word_default>Merge Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>ml_none</word_key>
+      <word_default>There are no entries for this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2104,14 +2098,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>ml_desc</word_key>
-      <word_default>Description</word_default>
+      <word_key>ml_name</word_key>
+      <word_default>Member Name</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>ml_name</word_key>
-      <word_default>Member Name</word_default>
+      <word_key>ml_desc</word_key>
+      <word_default>Description</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2134,14 +2128,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>th_start_name</word_key>
-      <word_default>Topic Started by</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>th_start_date</word_key>
-      <word_default>Topic Started on</word_default>
+      <word_key>th_last_name</word_key>
+      <word_default>Last Post by</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2152,26 +2140,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>th_topic</word_key>
-      <word_default>Topic Title</word_default>
+      <word_key>th_start_date</word_key>
+      <word_default>Topic Started on</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>st_explain</word_key>
-      <word_default><![CDATA[Splitting a topic allows you to select posts to be moved into a new topic. Please specify the title for the new topic and its destination forum before continuing.<br /><b>Note</b> Long posts are reverted back to code tags and shortened to prevent long pages]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>th_title</word_key>
-      <word_default>Topic History Report</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>st_new_topic</word_key>
-      <word_default>New Topic Details</word_default>
+      <word_key>th_start_name</word_key>
+      <word_default>Topic Started by</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2182,26 +2158,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>st_new_topic</word_key>
+      <word_default>New Topic Details</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>th_title</word_key>
+      <word_default>Topic History Report</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>th_topic</word_key>
+      <word_default>Topic Title</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>st_top_bit</word_key>
       <word_default><![CDATA[Posted by <b>%s</b> on <b>%s</b>]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>st_forum</word_key>
-      <word_default>Forum for new topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>st_submit</word_key>
-      <word_default>Split the selected posts</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>st_post</word_key>
-      <word_default>Post Review</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2212,8 +2188,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>st_post</word_key>
+      <word_default>Post Review</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>st_submit</word_key>
+      <word_default>Split the selected posts</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>st_forum</word_key>
+      <word_default>Forum for new topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>st_top</word_key>
       <word_default>Split Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>st_explain</word_key>
+      <word_default><![CDATA[Splitting a topic allows you to select posts to be moved into a new topic. Please specify the title for the new topic and its destination forum before continuing.<br /><b>Note</b> Long posts are reverted back to code tags and shortened to prevent long pages]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2242,14 +2242,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>mpt_title</word_key>
-      <word_default>Prune Settings</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cp_resync</word_key>
-      <word_default>Forum Resynchronized</word_default>
+      <word_key>cp_tmove_end</word_key>
+      <word_default>Move selected topics</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2260,8 +2254,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_tmove_end</word_key>
-      <word_default>Move selected topics</word_default>
+      <word_key>cp_resync</word_key>
+      <word_default>Forum Resynchronized</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>mpt_title</word_key>
+      <word_default>Prune Settings</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cp_results</word_key>
+      <word_default>Result</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cp_redirect_posts</word_key>
+      <word_default>Posts updated</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2296,18 +2308,6 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_results</word_key>
-      <word_default>Result</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cp_redirect_posts</word_key>
-      <word_default>Posts updated</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
       <word_key>redirect_modified</word_key>
       <word_default>Modified Topic</word_default>
     </lang>
@@ -2326,20 +2326,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cmp_topic</word_key>
-      <word_default>Enter topic ID</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
       <word_key>cmp_topic2</word_key>
       <word_default><![CDATA[This is the ID of the topic these posts will be moved into.<br />(Tip: You can simply copy the URL from your browser address bar when viewing the topic and paste it here)]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cmp_title</word_key>
-      <word_default>Move Posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2350,14 +2338,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cm_attach</word_key>
-      <word_default>Final Merged Post Attachments</word_default>
+      <word_key>cmp_title</word_key>
+      <word_default>Move Posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cm_attach_title</word_key>
-      <word_default>Download attachment</word_default>
+      <word_key>cmp_topic</word_key>
+      <word_default>Enter topic ID</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2368,8 +2356,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cm_keep</word_key>
-      <word_default>Keep</word_default>
+      <word_key>cm_attach_title</word_key>
+      <word_default>Download attachment</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2380,20 +2368,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cm_submit</word_key>
-      <word_default>Merge Posts</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cm_text</word_key>
-      <word_default>Final Merged Post Content</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cm_author</word_key>
-      <word_default>Final Merged Post Author</word_default>
+      <word_key>cm_keep</word_key>
+      <word_default>Keep</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2404,14 +2380,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cm_title</word_key>
-      <word_default>Merging Posts</word_default>
+      <word_key>cm_author</word_key>
+      <word_default>Final Merged Post Author</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_total_match</word_key>
-      <word_default>Total topics to (re)move</word_default>
+      <word_key>cm_text</word_key>
+      <word_default>Final Merged Post Content</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cm_submit</word_key>
+      <word_default>Merge Posts</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cm_attach</word_key>
+      <word_default>Final Merged Post Attachments</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cm_title</word_key>
+      <word_default>Merging Posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2428,14 +2422,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_ac_prune</word_key>
-      <word_default><![CDATA[PRUNE ONLY, DON'T MOVE]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cp_prune_text</word_key>
-      <word_default><![CDATA[You may remove topics or move topics to another forum based on your criteria. To move topics, choose a destination forum from the drop down menu. To simply remove the topics, choose 'PRUNE ONLY' from the forums drop down menu. Moving topics will not leave moved links in the source forum.]]></word_default>
+      <word_key>cp_total_match</word_key>
+      <word_default>Total topics to (re)move</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2446,8 +2434,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_prune_sub2</word_key>
-      <word_default>Prune this forum!</word_default>
+      <word_key>cp_prune_text</word_key>
+      <word_default><![CDATA[You may remove topics or move topics to another forum based on your criteria. To move topics, choose a destination forum from the drop down menu. To simply remove the topics, choose 'PRUNE ONLY' from the forums drop down menu. Moving topics will not leave moved links in the source forum.]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2458,8 +2446,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_pday_all</word_key>
-      <word_default>Any type of topic</word_default>
+      <word_key>cp_ac_prune</word_key>
+      <word_default><![CDATA[PRUNE ONLY, DON'T MOVE]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cp_prune_sub2</word_key>
+      <word_default>Prune this forum!</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2470,8 +2464,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_pday_open</word_key>
-      <word_default>Open Topics only</word_default>
+      <word_key>cp_pday_link</word_key>
+      <word_default>Move linked Topics only</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cp_pday_all</word_key>
+      <word_default>Any type of topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2482,8 +2482,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_pday_link</word_key>
-      <word_default>Move linked Topics only</word_default>
+      <word_key>mps_ignorepin</word_key>
+      <word_default>Is not a pinned topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cp_pday_open</word_key>
+      <word_default>Open Topics only</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2494,20 +2500,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>mps_ignorepin</word_key>
-      <word_default>Is not a pinned topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
       <word_key>cp_prune_type</word_key>
       <word_default>Matches the topic state</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cp_action</word_key>
-      <word_default>Prune Action</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2518,20 +2512,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>cp_action</word_key>
+      <word_default>Prune Action</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>cp_prune</word_key>
       <word_default>Manage Topics in forum: </word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cp_per_go</word_key>
-      <word_default><![CDATA[Process <em>n</em> topics per cycle]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>cp_prune_action2</word_key>
-      <word_default>Prune or move to</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2542,14 +2530,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_prune_domove</word_key>
-      <word_default>Move the topics!</word_default>
+      <word_key>cp_prune_action2</word_key>
+      <word_default>Prune or move to</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_optional</word_key>
-      <word_default>All these settings are optional</word_default>
+      <word_key>cp_per_go</word_key>
+      <word_default><![CDATA[Process <em>n</em> topics per cycle]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>cp_prune_domove</word_key>
+      <word_default>Move the topics!</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2560,14 +2554,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>cp_batch_done</word_key>
-      <word_default>%s topics processed so far. %s to go...</word_default>
+      <word_key>cp_optional</word_key>
+      <word_default>All these settings are optional</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>mod_from_id</word_key>
-      <word_default>From Topic ID:</word_default>
+      <word_key>cp_batch_done</word_key>
+      <word_default>%s topics processed so far. %s to go...</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2578,32 +2572,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_opened_topic</word_key>
-      <word_default>Opened Topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_unpinned_topic</word_key>
-      <word_default>Unpinned Topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_merged_posts</word_key>
-      <word_default>Merged post ids: %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_edit_title</word_key>
-      <word_default><![CDATA[Moderator edited a topic title: (ID: %s) from '%s' to '%s']]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_locked_topic</word_key>
-      <word_default>Locked Topic</word_default>
+      <word_key>mod_from_id</word_key>
+      <word_default>From Topic ID:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2614,14 +2584,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_deleted_a_topic</word_key>
-      <word_default>Deleted a topic</word_default>
+      <word_key>acp_unpinned_topic</word_key>
+      <word_default>Unpinned Topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_merged_topic</word_key>
-      <word_default><![CDATA[Merged topic '%s' with '%s']]></word_default>
+      <word_key>acp_opened_topic</word_key>
+      <word_default>Opened Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>acp_locked_topic</word_key>
+      <word_default>Locked Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>acp_edit_title</word_key>
+      <word_default><![CDATA[Moderator edited a topic title: (ID: %s) from '%s' to '%s']]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>acp_deleted_a_topic</word_key>
+      <word_default>Deleted a topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2632,8 +2620,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_deleted_topics</word_key>
-      <word_default>Deleted topics (IDs: %s )</word_default>
+      <word_key>acp_merged_posts</word_key>
+      <word_default>Merged post ids: %s</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2644,26 +2632,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_multi_mod</word_key>
-      <word_default><![CDATA[Applied multi-mod '%s' on forum %s]]></word_default>
+      <word_key>acp_deleted_topics</word_key>
+      <word_default>Deleted topics (IDs: %s )</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_moved_topics</word_key>
-      <word_default>Moved topics from %s to %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_split_topic</word_key>
-      <word_default>Split topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_pruned_forum</word_key>
-      <word_default>Pruned Forum</word_default>
+      <word_key>acp_merged_topic</word_key>
+      <word_default><![CDATA[Merged topic '%s' with '%s']]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2674,26 +2650,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>acp_pruned_forum</word_key>
+      <word_default>Pruned Forum</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>acp_moved_topics</word_key>
+      <word_default>Moved topics from %s to %s</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>acp_multi_mod</word_key>
+      <word_default><![CDATA[Applied multi-mod '%s' on forum %s]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>acp_split_topic</word_key>
+      <word_default>Split topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>acp_approve_topic</word_key>
       <word_default>Approved a topic (tid: %s)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_unapprove_topic</word_key>
-      <word_default>Un-Approved a topic (tid: %s)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>multi_post_delete_mod_log</word_key>
-      <word_default><![CDATA[Deleted %s posts from topic '%s']]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>merge_topic_options</word_key>
-      <word_default>Merge Topic Options</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2704,14 +2686,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>acp_unapproved_posts</word_key>
+      <word_default><![CDATA[Un-approved %s pending posts for '%s']]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
+      <word_key>acp_unapprove_topic</word_key>
+      <word_default>Un-Approved a topic (tid: %s)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>acp_moved_posts</word_key>
       <word_default><![CDATA[Moved posts from '%s' to '%s']]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_unapproved_posts</word_key>
-      <word_default><![CDATA[Un-approved %s pending posts for '%s']]></word_default>
+      <word_key>multi_post_delete_mod_log</word_key>
+      <word_default><![CDATA[Deleted %s posts from topic '%s']]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2734,20 +2728,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>merge_topic_options</word_key>
+      <word_default>Merge Topic Options</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>move_topic_options</word_key>
       <word_default>Move Topic Options</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>mod_logs_topic_summary</word_key>
-      <word_default>Moderator logs for the topic</word_default>
+      <word_key>summary_th_info</word_key>
+      <word_default>Information</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>summary_th_info</word_key>
-      <word_default>Information</word_default>
+      <word_key>mod_logs_topic_summary</word_key>
+      <word_default>Moderator logs for the topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2782,26 +2782,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>move_posted</word_key>
+      <word_default>Posted</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>merge_select</word_key>
       <word_default>Select the date and author of the merged post, and edit the post content if desired.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>mm_delete_top_posts</word_key>
-      <word_default>Hide options for %s posts</word_default>
+      <word_key>move_posts_option</word_key>
+      <word_default>Move Posts Options</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
       <word_key>multi_post_delete</word_key>
       <word_default>Deleted posts (%s)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>move_posts_option</word_key>
-      <word_default>Move Posts Options</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2818,20 +2818,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>mm_delete_top_posts</word_key>
+      <word_default>Hide options for %s posts</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>p_topic_restored</word_key>
       <word_default>Topic Restored</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>move_posted</word_key>
-      <word_default>Posted</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_mod</word_pack>
-      <word_key>acp_unsoftdeleted_posts</word_key>
-      <word_default>Un-Hidden posts (number of posts: %s)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2842,8 +2836,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>acp_softdeleted_topics</word_key>
-      <word_default>Hidden a topic (tid: %s)</word_default>
+      <word_key>acp_unsoftdeleted_posts</word_key>
+      <word_default>Un-Hidden posts (number of posts: %s)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2854,8 +2848,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
-      <word_key>mod_or</word_key>
-      <word_default>OR</word_default>
+      <word_key>acp_softdeleted_topics</word_key>
+      <word_default>Hidden a topic (tid: %s)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2866,8 +2860,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_mod</word_pack>
+      <word_key>mod_or</word_key>
+      <word_default>OR</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_mod</word_pack>
       <word_key>mod_no_posts_to_del</word_key>
       <word_default>There were no posts that you have permission to delete selected for deletion.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>edited_poll</word_key>
+      <word_default>Edited poll</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>edited_topic_title</word_key>
+      <word_default><![CDATA[Edited topic title or description '%s' to '%s' via post form]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>added_poll</word_key>
+      <word_default><![CDATA[Added a poll to the topic titled '%s']]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2884,50 +2902,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>top_txt_reply</word_key>
-      <word_default>Replying to</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
       <word_key>enable_emo</word_key>
       <word_default><![CDATA[<strong>Enable</strong> emoticons?]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>added_poll</word_key>
-      <word_default><![CDATA[Added a poll to the topic titled '%s']]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>too_many_img</word_key>
-      <word_default>Sorry, but you have posted more images than you are allowed to</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>edited_poll</word_key>
-      <word_default>Edited poll</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>too_many_media</word_key>
-      <word_default>Sorry, but you have posted more media files than you are allowed to</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>flash_too_big</word_key>
-      <word_default>Please reduce the size of the flash movie you are posting</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>topic_title_long</word_key>
-      <word_default>The topic title you supplied is too long</word_default>
+      <word_key>top_txt_reply</word_key>
+      <word_default>Replying to</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2938,50 +2920,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>topic_title_long</word_key>
+      <word_default>The topic title you supplied is too long</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>too_many_media</word_key>
+      <word_default>Sorry, but you have posted more media files than you are allowed to</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>topic_desc</word_key>
       <word_default>Topic Description</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>top_txt_edit</word_key>
-      <word_default>Editing a post in</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>poll_to_many</word_key>
-      <word_default>You have more poll choices than the administrator allows for this forum, please reduce them</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>flash_not_allowed</word_key>
-      <word_default>Flash videos are not allowed</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>topic_title</word_key>
-      <word_default>Topic Title</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>post_preview</word_key>
-      <word_default>Post Preview</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>review_topic</word_key>
-      <word_default>Review the complete topic (launches new window)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>editing_post</word_key>
-      <word_default>Editing Post In </word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -2998,8 +2950,80 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>top_txt_edit</word_key>
+      <word_default>Editing a post in</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>poll_to_many</word_key>
+      <word_default>You have more poll choices than the administrator allows for this forum, please reduce them</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>too_many_img</word_key>
+      <word_default>Sorry, but you have posted more images than you are allowed to</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>review_topic</word_key>
+      <word_default>Review the complete topic (launches new window)</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>editing_post</word_key>
+      <word_default>Editing Post In </word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>topic_title</word_key>
+      <word_default>Topic Title</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>post_preview</word_key>
+      <word_default>Post Preview</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>guest_name</word_key>
       <word_default>Enter Your Name</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>flash_not_allowed</word_key>
+      <word_default>Flash videos are not allowed</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>moderate_post</word_key>
+      <word_default>Your post will be previewed by a moderator before it is added to this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>flash_too_big</word_key>
+      <word_default>Please reduce the size of the flash movie you are posting</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>post_icon</word_key>
+      <word_default>Post Icons</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>moderate_topic</word_key>
+      <word_default>Your new topic will be previewed by a moderator before it is added into this forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3016,32 +3040,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>post_icon</word_key>
-      <word_default>Post Icons</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>moderate_post</word_key>
-      <word_default>Your post will be previewed by a moderator before it is added to this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
       <word_key>top_txt_new</word_key>
       <word_default>Posting a New Topic in </word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>moderate_topic</word_key>
-      <word_default>Your new topic will be previewed by a moderator before it is added into this forum</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>too_many_emoticons</word_key>
-      <word_default><![CDATA[You have posted a message with more emoticons than this community allows. Please reduce the number of emoticons you've added to the message]]></word_default>
+      <word_key>no_post</word_key>
+      <word_default>You must enter a post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3058,8 +3064,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>submit_new</word_key>
-      <word_default>Post New Topic</word_default>
+      <word_key>too_many_emoticons</word_key>
+      <word_default><![CDATA[You have posted a message with more emoticons than this community allows. Please reduce the number of emoticons you've added to the message]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3076,26 +3082,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>no_post</word_key>
-      <word_default>You must enter a post</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>mod_nowt</word_key>
-      <word_default>( Do Nothing )</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>mod_pin</word_key>
-      <word_default>Pin this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>mod_move</word_key>
-      <word_default>Move this topic</word_default>
+      <word_key>after_posting_pf</word_key>
+      <word_default>After Posting</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3106,26 +3094,38 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>after_posting_pf</word_key>
-      <word_default>After Posting</word_default>
+      <word_key>mod_move</word_key>
+      <word_default>Move this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>append_edit</word_key>
-      <word_default><![CDATA[<strong>Add</strong> the 'Edit by' line in this post?]]></word_default>
+      <word_key>mod_pin</word_key>
+      <word_default>Pin this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>upload_failed</word_key>
-      <word_default><![CDATA[The requested file upload failed because suitable permissions have not been enabled on the 'uploads' directory. Please contact the community administrator and inform them of this error.]]></word_default>
+      <word_key>mod_nowt</word_key>
+      <word_default>( Do Nothing )</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>submit_new</word_key>
+      <word_default>Post New Topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
       <word_key>mod_pinclose</word_key>
       <word_default><![CDATA[Pin &amp; Close this topic]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>append_edit</word_key>
+      <word_default><![CDATA[<strong>Add</strong> the 'Edit by' line in this post?]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3142,8 +3142,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>upload_failed</word_key>
+      <word_default><![CDATA[The requested file upload failed because suitable permissions have not been enabled on the 'uploads' directory. Please contact the community administrator and inform them of this error.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>invalid_mime_type</word_key>
       <word_default>Upload failed. You are not permitted to upload a file with that file extension.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>poll_public_warning</word_key>
+      <word_default><![CDATA[If checked, member votes will be made public. (<strong>This cannot be changed once a vote has been made!</strong>)]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>poll_fs_public</word_key>
+      <word_default>Make votes public?</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3166,14 +3184,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>poll_fs_public</word_key>
-      <word_default>Make votes public?</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>poll_public_warning</word_key>
-      <word_default><![CDATA[If checked, member votes will be made public. (<strong>This cannot be changed once a vote has been made!</strong>)]]></word_default>
+      <word_key>question_title</word_key>
+      <word_default>Question</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3184,32 +3196,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>question_title</word_key>
-      <word_default>Question</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
       <word_key>post_optional</word_key>
       <word_default>(Optional)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>mod_time_format</word_key>
-      <word_default>HH:MM</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>mod_date_format</word_key>
-      <word_default>MM/DD/YYYY</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>mod_close_time</word_key>
-      <word_default>Topic Close Time</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3220,20 +3208,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>mod_close_time</word_key>
+      <word_default>Topic Close Time</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>mod_date_format</word_key>
+      <word_default>MM/DD/YYYY</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>mod_time_format</word_key>
+      <word_default>HH:MM</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>picons_none</word_key>
       <word_default><![CDATA[[ Use None ]]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>attach_delete_title</word_key>
-      <word_default>Delete this attachment</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>attach_delete</word_key>
-      <word_default>Delete</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3250,14 +3244,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>ignore_first_line</word_key>
-      <word_default>You have chosen to ignore all posts from:</word_default>
+      <word_key>attach_delete</word_key>
+      <word_default>Delete</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>err_reg_code</word_key>
-      <word_default>The security code you supplied did not match the one displayed, a new code has been generated, please try again</word_default>
+      <word_key>attach_delete_title</word_key>
+      <word_default>Delete this attachment</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3268,14 +3262,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>too_many_quotes</word_key>
-      <word_default>You have posted more than the allowed number of quoted blocks of text</word_default>
+      <word_key>err_reg_code</word_key>
+      <word_default>The security code you supplied did not match the one displayed, a new code has been generated, please try again</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>domain_not_allowed</word_key>
-      <word_default>You have entered a link to a website that the administrator does not allow links to</word_default>
+      <word_key>ignore_first_line</word_key>
+      <word_default>You have chosen to ignore all posts from:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3286,14 +3280,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>poll_multichoice</word_key>
-      <word_default>Allow multiple choice?</word_default>
+      <word_key>domain_not_allowed</word_key>
+      <word_default>You have entered a link to a website that the administrator does not allow links to</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>too_many_quotes</word_key>
+      <word_default>You have posted more than the allowed number of quoted blocks of text</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
       <word_key>poll_only_title</word_key>
       <word_default>Poll-only topic?</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>poll_multichoice</word_key>
+      <word_default>Allow multiple choice?</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3328,38 +3334,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>mod_unpin</word_key>
-      <word_default>Unpin this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>used_space_js</word_key>
-      <word_default><![CDATA[You can upload up to <strong>[left]</strong> of files (Max. single file size: <strong>%s</strong>)]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>select_several</word_key>
-      <word_default>You can select more than one file at a time by holding Ctrl (on Windows) or Command (on Mac) and selecting your files.</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>trouble_uploading</word_key>
-      <word_default>Trouble uploading?</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
       <word_key>switch_to_basic</word_key>
       <word_default>Try our basic uploader</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>used_space</word_key>
-      <word_default><![CDATA[You can upload up to <strong>%s</strong> of files (Max. single file size: <strong>%s</strong>)]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3370,8 +3346,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>used_space_unlimited</word_key>
-      <word_default><![CDATA[Max. single file size: <strong>%s</strong>]]></word_default>
+      <word_key>mod_unpin</word_key>
+      <word_default>Unpin this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>trouble_uploading</word_key>
+      <word_default>Trouble uploading?</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>select_several</word_key>
+      <word_default>You can select more than one file at a time by holding Ctrl (on Windows) or Command (on Mac) and selecting your files.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>used_space_js</word_key>
+      <word_default><![CDATA[You can upload up to <strong>[left]</strong> of files (Max. single file size: <strong>%s</strong>)]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3382,26 +3376,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>CODE_ERROR</word_key>
-      <word_default>The verification code you entered was incorrect</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>REG_CODE_ENTER</word_key>
-      <word_default>The administrator requires you to enter a verification code in order to post your message</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>NO_EDIT_PERMS</word_key>
-      <word_default>You do not have permission to edit this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>NO_SUCH_TOPIC</word_key>
-      <word_default>The topic you are attempting to post in could not be found.  It is possible that the topic was deleted.</word_default>
+      <word_key>used_space_unlimited</word_key>
+      <word_default><![CDATA[Max. single file size: <strong>%s</strong>]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3412,8 +3388,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>NO_PPD_DAYS</word_key>
-      <word_default>This will reset on %s</word_default>
+      <word_key>used_space</word_key>
+      <word_default><![CDATA[You can upload up to <strong>%s</strong> of files (Max. single file size: <strong>%s</strong>)]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>NO_SUCH_TOPIC</word_key>
+      <word_default>The topic you are attempting to post in could not be found.  It is possible that the topic was deleted.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>NO_EDIT_PERMS</word_key>
+      <word_default>You do not have permission to edit this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>REG_CODE_ENTER</word_key>
+      <word_default>The administrator requires you to enter a verification code in order to post your message</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3424,8 +3418,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>CODE_ERROR</word_key>
+      <word_default>The verification code you entered was incorrect</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>NO_POSTING_PPD</word_key>
       <word_default>You cannot make any more posts. You have exceeded %s posts per day.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>NO_PPD_DAYS</word_key>
+      <word_default>This will reset on %s</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>NO_START_PERM</word_key>
+      <word_default>You do not have permission to start topics in this forum.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3436,8 +3448,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>NO_START_PERM</word_key>
-      <word_default>You do not have permission to start topics in this forum.</word_default>
+      <word_key>TOPIC_HIDDEN</word_key>
+      <word_default>You do not have permission to reply to hidden topics.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>NO_REPLY_POLL</word_key>
+      <word_default>This is a poll only topic and replies are not permitted.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3460,14 +3478,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>NO_REPLY_POLL</word_key>
-      <word_default>This is a poll only topic and replies are not permitted.</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>NO_AUTHOR_SET</word_key>
-      <word_default>We could not determine who was posting this topic.</word_default>
+      <word_key>NO_SUCH_FORUM</word_key>
+      <word_default>It appears the forum you were attempting to submit to does not exist.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3484,8 +3496,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>NO_SUCH_FORUM</word_key>
-      <word_default>It appears the forum you were attempting to submit to does not exist.</word_default>
+      <word_key>NO_AUTHOR_SET</word_key>
+      <word_default>We could not determine who was posting this topic.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3526,14 +3538,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>edit_options</word_key>
-      <word_default>Edit Options</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>post_options</word_key>
-      <word_default>Post Options</word_default>
+      <word_key>post</word_key>
+      <word_default>Post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3544,8 +3550,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>post</word_key>
-      <word_default>Post</word_default>
+      <word_key>post_options</word_key>
+      <word_default>Post Options</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>edit_options</word_key>
+      <word_default>Edit Options</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>topic_information</word_key>
+      <word_default>Topic Information</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3562,20 +3580,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>topic_information</word_key>
-      <word_default>Topic Information</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>add_another_question</word_key>
-      <word_default>Add Another Question</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>poll_votes_desc</word_key>
-      <word_default>The number of votes this choice has (or starts with, if this is a new poll)</word_default>
+      <word_key>emoticons_template_title</word_key>
+      <word_default>Emoticons</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3586,14 +3592,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>emoticons_template_title</word_key>
-      <word_default>Emoticons</word_default>
+      <word_key>poll_votes_desc</word_key>
+      <word_default>The number of votes this choice has (or starts with, if this is a new poll)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
       <word_key>remove_choice</word_key>
       <word_default>Remove Choice</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
+      <word_key>add_another_question</word_key>
+      <word_default>Add Another Question</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3610,6 +3622,12 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>quote_mismatch</word_key>
+      <word_default>The number of opening quote tags does not match the number of closing quote tags.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>add_poll_choice</word_key>
       <word_default>Add Choice</word_default>
     </lang>
@@ -3622,32 +3640,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>quote_mismatch</word_key>
-      <word_default>The number of opening quote tags does not match the number of closing quote tags.</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>mob_tags</word_key>
-      <word_default>Tags</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
       <word_key>no_permission_shared</word_key>
       <word_default>You do not have permission to share one or more pieces of content you were attempting to share.</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>moderator_options</word_key>
-      <word_default>Moderator Options</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_post</word_pack>
-      <word_key>enable_track</word_key>
-      <word_default><![CDATA[<strong>Follow</strong> this topic?]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3658,20 +3652,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>moderator_options</word_key>
+      <word_default>Moderator Options</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>already_sub</word_key>
       <word_default>You are currently following this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>too_many_tags</word_key>
-      <word_default>You may not submit more than %s tag(s)</word_default>
+      <word_key>enable_track</word_key>
+      <word_default><![CDATA[<strong>Follow</strong> this topic?]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>mob_add_tag</word_key>
-      <word_default>Add</word_default>
+      <word_key>too_many_tags</word_key>
+      <word_default>You may not submit more than %s tag(s)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3688,14 +3688,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
+      <word_key>mob_add_tag</word_key>
+      <word_default>Add</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_post</word_pack>
       <word_key>mob_edit_tags</word_key>
       <word_default>Edit Topic Tags</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>remember_share_prefs</word_key>
-      <word_default>Set as my default sharing choice</word_default>
+      <word_key>mob_tags</word_key>
+      <word_default>Tags</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3706,8 +3712,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_post</word_pack>
-      <word_key>edited_topic_title</word_key>
-      <word_default><![CDATA[Edited topic title or description '%s' to '%s' via post form]]></word_default>
+      <word_key>remember_share_prefs</word_key>
+      <word_default>Set as my default sharing choice</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3832,104 +3838,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
-      <word_key>topic_noperms</word_key>
-      <word_default>You do not have permission to access this forum</word_default>
+      <word_key>no_forums</word_key>
+      <word_default>View %s Forums</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
-      <word_key>topic_noattach</word_key>
-      <word_default>The specified topic does not have any attachments</word_default>
+      <word_key>whoposted_name</word_key>
+      <word_default>Member name</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
-      <word_key>notopic_attach</word_key>
-      <word_default>Could not load attachments for the requested topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>stats_missing_tid</word_key>
-      <word_default>You must select a valid topic for this feature</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>leader_all_forums</word_key>
-      <word_default>All Forums</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>leader_forums</word_key>
-      <word_default>Forums</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>leader_last_seen</word_key>
-      <word_default>Last Active</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>leader_group</word_key>
-      <word_default>Group</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>forum_leaders</word_key>
-      <word_default>The moderating team</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>leader_name</word_key>
-      <word_default>Member Name</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>top_poster_title</word_key>
-      <word_default><![CDATA[Today's top 20 posters]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>no_info</word_key>
-      <word_default>No information is available at this time</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>member_percent</word_key>
-      <word_default><![CDATA[% of today's posts]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>member_joined</word_key>
-      <word_default>Joined</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>member_today</word_key>
-      <word_default>Posts Today</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>member</word_key>
-      <word_default>Member</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_stats</word_pack>
-      <word_key>member_posts</word_key>
-      <word_default>Total Member Posts</word_default>
+      <word_key>whoposted_posts</word_key>
+      <word_default>Posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3946,32 +3868,116 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
-      <word_key>whoposted_posts</word_key>
-      <word_default>Posts</word_default>
+      <word_key>member</word_key>
+      <word_default>Member</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
-      <word_key>whoposted_name</word_key>
-      <word_default>Member name</word_default>
+      <word_key>member_posts</word_key>
+      <word_default>Total Member Posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
-      <word_key>no_forums</word_key>
-      <word_default>View %s Forums</word_default>
+      <word_key>member_today</word_key>
+      <word_default>Posts Today</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
-      <word_key>who_farted</word_key>
-      <word_default>Who posted in:</word_default>
+      <word_key>member_joined</word_key>
+      <word_default>Joined</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>member_percent</word_key>
+      <word_default><![CDATA[% of today's posts]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>no_info</word_key>
+      <word_default>No information is available at this time</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>top_poster_title</word_key>
+      <word_default><![CDATA[Today's top 20 posters]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>forum_leaders</word_key>
+      <word_default>The moderating team</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>leader_name</word_key>
+      <word_default>Member Name</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>leader_group</word_key>
+      <word_default>Group</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>leader_last_seen</word_key>
+      <word_default>Last Active</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>leader_forums</word_key>
+      <word_default>Forums</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>leader_all_forums</word_key>
+      <word_default>All Forums</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>stats_missing_tid</word_key>
+      <word_default>You must select a valid topic for this feature</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>notopic_attach</word_key>
+      <word_default>Could not load attachments for the requested topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>topic_noattach</word_key>
+      <word_default>The specified topic does not have any attachments</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>topic_noperms</word_key>
+      <word_default>You do not have permission to access this forum</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_stats</word_pack>
       <word_key>who_replied_title</word_key>
       <word_default>Who posted in this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_stats</word_pack>
+      <word_key>who_farted</word_key>
+      <word_default>Who posted in:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -3988,6 +3994,18 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>return_to</word_key>
+      <word_default>Return to</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>macro__attachment</word_key>
+      <word_default>Attachment</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>popular_post</word_key>
       <word_default>POPULAR</word_default>
     </lang>
@@ -4000,26 +4018,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>top_this_post_by</word_key>
-      <word_default>This post by</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
       <word_key>top_rep</word_key>
       <word_default>Reputation</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>top_js_4star</word_key>
-      <word_default>Rate topic 4 stars</word_default>
+      <word_key>top_this_post_by</word_key>
+      <word_default>This post by</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>top_js_5star</word_key>
       <word_default>Rate topic 5 stars</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>top_js_4star</word_key>
+      <word_default>Rate topic 4 stars</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4036,14 +4054,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>mobile_top_locked_reply</word_key>
-      <word_default>Locked (Reply)</word_default>
+      <word_key>top_js_1star</word_key>
+      <word_default>Rate topic 1 star</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>top_js_1star</word_key>
-      <word_default>Rate topic 1 star</word_default>
+      <word_key>mobile_top_locked_reply</word_key>
+      <word_default>Locked (Reply)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4054,20 +4072,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>top_locked_reply</word_key>
-      <word_default>Locked (click to reply)</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
       <word_key>top_cannot_reply</word_key>
       <word_default>You cannot reply to this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>attach_dl</word_key>
-      <word_default>Download attachment</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4078,14 +4084,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>top_cannot_start</word_key>
-      <word_default>You cannot start a new topic</word_default>
+      <word_key>top_locked_reply</word_key>
+      <word_default>Locked (click to reply)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>top_locked</word_key>
       <word_default>This topic is locked</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>top_cannot_start</word_key>
+      <word_default>You cannot start a new topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>attach_dl</word_key>
+      <word_default>Download attachment</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4102,14 +4120,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>topic_stats</word_key>
-      <word_default><![CDATA[<#POSTS#> replies since <#START#>]]></word_default>
+      <word_key>ip</word_key>
+      <word_default>IP</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>ip</word_key>
-      <word_default>IP</word_default>
+      <word_key>topic_stats</word_key>
+      <word_default><![CDATA[<#POSTS#> replies since <#START#>]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4132,14 +4150,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>CLOSE_TOPIC</word_key>
-      <word_default>Lock</word_default>
+      <word_key>MOVE_TOPIC</word_key>
+      <word_default>Move</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>MOVE_TOPIC</word_key>
-      <word_default>Move</word_default>
+      <word_key>CLOSE_TOPIC</word_key>
+      <word_default>Lock</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4162,6 +4180,12 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>EDIT_TOPIC</word_key>
+      <word_default>Edit Title</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>OPEN_TOPIC</word_key>
       <word_default>Unlock</word_default>
     </lang>
@@ -4180,20 +4204,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>EDIT_TOPIC</word_key>
-      <word_default>Edit Title</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
       <word_key>UNSUBBIT</word_key>
       <word_default>Remove Followers</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>active_users_members</word_key>
-      <word_default>%s Members:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4204,8 +4216,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>TOPIC_HISTORY</word_key>
-      <word_default>Logs</word_default>
+      <word_key>active_users_members</word_key>
+      <word_default>%s Members:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4216,14 +4228,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>MERGE_TOPIC</word_key>
-      <word_default>Merge</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>SPLIT_TOPIC</word_key>
-      <word_default>Split</word_default>
+      <word_key>TOPIC_HISTORY</word_key>
+      <word_default>Logs</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4234,14 +4240,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>qr_post</word_key>
-      <word_default>Post</word_default>
+      <word_key>SPLIT_TOPIC</word_key>
+      <word_default>Split</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>qr_title</word_key>
-      <word_default>Fast Reply</word_default>
+      <word_key>MERGE_TOPIC</word_key>
+      <word_default>Merge</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>qr_post</word_key>
+      <word_default>Post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4252,14 +4264,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>pl_show_vote</word_key>
-      <word_default>Show Vote Options</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>attach_size</word_key>
-      <word_default>Size:</word_default>
+      <word_key>qr_title</word_key>
+      <word_default>Fast Reply</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4282,14 +4288,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>attach_ahits</word_key>
-      <word_default>Downloads:</word_default>
+      <word_key>pl_show_vote</word_key>
+      <word_default>Show Vote Options</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>attach_size</word_key>
+      <word_default>Size:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>attach_normal</word_key>
       <word_default>Attached Files</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>attach_ahits</word_key>
+      <word_default>Downloads:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4306,6 +4324,12 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>cpt_move</word_key>
+      <word_default>Move</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>tt_reply_to_post</word_key>
       <word_default>Reply directly to this post</word_default>
     </lang>
@@ -4314,12 +4338,6 @@
       <word_pack>public_topic</word_pack>
       <word_key>f_go</word_key>
       <word_default>With Selected</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>cpt_move</word_key>
-      <word_default>Move</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4336,14 +4354,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>cpt_unapprove</word_key>
-      <word_default>Unapprove</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>cpt_approvet</word_key>
-      <word_default>Approve</word_default>
+      <word_key>cpt_delete</word_key>
+      <word_default>Delete</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4360,38 +4372,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>cpt_delete</word_key>
-      <word_default>Delete</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>announce_end</word_key>
-      <word_default>Announcement ends %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>cpt_approve</word_key>
+      <word_key>cpt_approvet</word_key>
       <word_default>Approve</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>announce_start</word_key>
-      <word_default>Announcement started %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>poll_s_votes</word_key>
-      <word_default>votes</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>poll_you_created</word_key>
-      <word_default>You created this poll</word_default>
+      <word_key>cpt_unapprove</word_key>
+      <word_default>Unapprove</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4408,8 +4396,32 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_no_guests</word_key>
-      <word_default>Guests cannot vote</word_default>
+      <word_key>announce_start</word_key>
+      <word_default>Announcement started %s</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>announce_end</word_key>
+      <word_default>Announcement ends %s</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>cpt_approve</word_key>
+      <word_default>Approve</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>poll_you_created</word_key>
+      <word_default>You created this poll</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>poll_s_votes</word_key>
+      <word_default>votes</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4420,14 +4432,38 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_you_voted</word_key>
-      <word_default>You have already voted in this poll</word_default>
+      <word_key>poll_no_guests</word_key>
+      <word_default>Guests cannot vote</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>poll_add_vote</word_key>
       <word_default>Vote!</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>poll_you_voted</word_key>
+      <word_default>You have already voted in this poll</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>poll_viewing_results</word_key>
+      <word_default>Viewing poll results</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>poll_vote_added</word_key>
+      <word_default>Your vote has been added</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_rated_already</word_key>
+      <word_default>You have already rated this topic and you are not allowed to change your rating.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4444,32 +4480,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>topic_rated_already</word_key>
-      <word_default>You have already rated this topic and you are not allowed to change your rating.</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>poll_vote_added</word_key>
-      <word_default>Your vote has been added</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>poll_viewing_results</word_key>
-      <word_default>Viewing poll results</word_default>
+      <word_key>announce_title</word_key>
+      <word_default>Announcement</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>ignore_view_post</word_key>
       <word_default>View this post</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>ajax_no_t_name</word_key>
-      <word_default>Invalid topic name</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4492,8 +4510,38 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>announce_title</word_key>
-      <word_default>Announcement</word_default>
+      <word_key>ajax_no_openclose</word_key>
+      <word_default>You do not have permission to open/close this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>ajax_no_t_name</word_key>
+      <word_default>Invalid topic name</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>ajax_no_t_permission</word_key>
+      <word_default>You do not have permission to edit this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>ajax_no_topic_id</word_key>
+      <word_default>No topic id passed</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>ajax_topic_not_found</word_key>
+      <word_default>Could not locate the topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>rep_f_hide</word_key>
+      <word_default>Hide posts below</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4516,32 +4564,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>ajax_no_topic_id</word_key>
-      <word_default>No topic id passed</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>ajax_topic_not_found</word_key>
-      <word_default>Could not locate the topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>ajax_no_openclose</word_key>
-      <word_default>You do not have permission to open/close this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>ajax_no_t_permission</word_key>
-      <word_default>You do not have permission to edit this topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>rep_f_hide</word_key>
-      <word_default>Hide posts below</word_default>
+      <word_key>rep_f_points</word_key>
+      <word_default>points</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4552,8 +4576,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>rep_f_points</word_key>
-      <word_default>points</word_default>
+      <word_key>rep_f_viewing_all</word_key>
+      <word_default>Showing all posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4564,8 +4588,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>rep_f_viewing_all</word_key>
-      <word_default>Showing all posts</word_default>
+      <word_key>poll_edit</word_key>
+      <word_default>Edit this poll</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4576,8 +4600,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_edit</word_key>
-      <word_default>Edit this poll</word_default>
+      <word_key>poll_vote</word_key>
+      <word_default>Vote</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4588,44 +4612,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_vote</word_key>
-      <word_default>Vote</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_email_title</word_key>
-      <word_default>Email topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_email</word_key>
-      <word_default>Email</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_print_title</word_key>
-      <word_default>Print topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_print</word_key>
-      <word_default>Print</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_download_title</word_key>
-      <word_default>Download topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_download</word_key>
-      <word_default>Download</word_default>
+      <word_key>poll_public_notice</word_key>
+      <word_default><![CDATA[This is a public poll. Other members <strong>will</strong> be able to see which options you chose]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4636,26 +4624,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_votes</word_key>
-      <word_default>votes</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
       <word_key>poll_view</word_key>
       <word_default>View</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_view_voters</word_key>
-      <word_default>View Voters</word_default>
+      <word_key>poll_votes</word_key>
+      <word_default>votes</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_public_notice</word_key>
-      <word_default><![CDATA[This is a public poll. Other members <strong>will</strong> be able to see which options you chose]]></word_default>
+      <word_key>poll_view_voters</word_key>
+      <word_default>View Voters</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4678,14 +4660,44 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>topic_share</word_key>
-      <word_default>Share this topic:</word_default>
+      <word_key>topic_download</word_key>
+      <word_default>Download</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>share</word_key>
-      <word_default>Share</word_default>
+      <word_key>topic_download_title</word_key>
+      <word_default>Download topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_print_title</word_key>
+      <word_default>Print topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_print</word_key>
+      <word_default>Print</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_email</word_key>
+      <word_default>Email</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_email_title</word_key>
+      <word_default>Email topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_share</word_key>
+      <word_default>Share this topic:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4708,14 +4720,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>post_moderation</word_key>
-      <word_default>Post moderation</word_default>
+      <word_key>share</word_key>
+      <word_default>Share</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>topic_moderation</word_key>
       <word_default>Topic Moderation</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>post_moderation</word_key>
+      <word_default>Post moderation</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4738,8 +4756,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>post_edit</word_key>
-      <word_default>Edit</word_default>
+      <word_key>post_delete_title</word_key>
+      <word_default>Delete this post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4750,8 +4768,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>post_delete_title</word_key>
-      <word_default>Delete this post</word_default>
+      <word_key>post_reply</word_key>
+      <word_default>Quote</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4762,8 +4780,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>post_reply</word_key>
-      <word_default>Quote</word_default>
+      <word_key>post_edit</word_key>
+      <word_default>Edit</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4774,14 +4792,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>reputation_down</word_key>
-      <word_default>Vote this post down</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>macro__attachment</word_key>
-      <word_default>Attachment</word_default>
+      <word_key>report</word_key>
+      <word_default>Report</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4792,8 +4804,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>report</word_key>
-      <word_default>Report</word_default>
+      <word_key>reputation_down</word_key>
+      <word_default>Vote this post down</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4810,14 +4822,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>mobile_topic_add_reply</word_key>
-      <word_default>Reply</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>status_ppd_posts_no_time</word_key>
-      <word_default>You can make %s more posts today. This restriction is in place until you have %s more approved posts</word_default>
+      <word_key>post_icon</word_key>
+      <word_default>Post icon</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4828,26 +4834,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>post_icon</word_key>
-      <word_default>Post icon</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
       <word_key>info_about_this_ip</word_key>
       <word_default>Find information about this IP</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>link_to_post</word_key>
-      <word_default>: post</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>rep_view_anyway</word_key>
-      <word_default>View it anyway?</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4858,14 +4846,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>topic_stop_watching</word_key>
-      <word_default>Stop watching topic</word_default>
+      <word_key>rep_view_anyway</word_key>
+      <word_default>View it anyway?</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_vote_deleted</word_key>
-      <word_default>Your vote has been deleted from this poll</word_default>
+      <word_key>link_to_post</word_key>
+      <word_default>: post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4876,14 +4864,26 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>mobile_topic_add_reply</word_key>
+      <word_default>Reply</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_stop_watching</word_key>
+      <word_default>Stop watching topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>post_title_re</word_key>
       <word_default>RE: </word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>status_ppd_posts_nolimit_no_time</word_key>
-      <word_default>You can make %s more posts today.</word_default>
+      <word_key>poll_vote_deleted</word_key>
+      <word_default>Your vote has been deleted from this poll</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4894,20 +4894,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>status_ppd_posts_nolimit_no_time</word_key>
+      <word_default>You can make %s more posts today.</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>status_ppd_posts_no_time</word_key>
+      <word_default>You can make %s more posts today. This restriction is in place until you have %s more approved posts</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>status_ppd_posts</word_key>
       <word_default>You can make %s more posts until %s. This restriction is in place until you have %s more approved posts</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>post_ignored</word_key>
-      <word_default>This post is hidden because you have chosen to ignore posts by</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>add_a_reply</word_key>
-      <word_default>Add a reply</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4924,6 +4924,18 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>add_a_reply</word_key>
+      <word_default>Add a reply</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>search_topic_go</word_key>
+      <word_default>Go</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>search_topic</word_key>
       <word_default>Search Topic</word_default>
     </lang>
@@ -4936,32 +4948,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>dlp_delete_now</word_key>
-      <word_default>Delete Now</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>dlp_or</word_key>
-      <word_default>OR</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>blog_this</word_key>
-      <word_default>Blog This</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>post_ignored_rep</word_key>
-      <word_default>This post is hidden because the author has a reputation lower than your threshold. If you change the threshold at the top of the page, you can view this post by</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>search_topic_go</word_key>
-      <word_default>Go</word_default>
+      <word_key>post_ignored</word_key>
+      <word_default>This post is hidden because you have chosen to ignore posts by</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -4978,14 +4966,38 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>dlp_delete_from_topic_desc</word_key>
-      <word_default><![CDATA[This option <strong>completely removes the post</strong> from the topic.]]></word_default>
+      <word_key>blog_this</word_key>
+      <word_default>Blog This</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>post_ignored_rep</word_key>
+      <word_default>This post is hidden because the author has a reputation lower than your threshold. If you change the threshold at the top of the page, you can view this post by</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>dlp_or</word_key>
+      <word_default>OR</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>dlp_delete_now</word_key>
+      <word_default>Delete Now</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>dlp_delete_from_topic_extra</word_key>
       <word_default>It may be available for review in the ModeratorCP</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>dlp_delete_from_topic_desc</word_key>
+      <word_default><![CDATA[This option <strong>completely removes the post</strong> from the topic.]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5002,14 +5014,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>dlp_reason</word_key>
-      <word_default>Reason:</word_default>
+      <word_key>dlp_remove_from_view_desc</word_key>
+      <word_default><![CDATA[This option <strong>hides the post</strong>, but leaves it in the topic]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>dl_ths_restore</word_key>
-      <word_default>Unhide Topic</word_default>
+      <word_key>dlp_reason</word_key>
+      <word_default>Reason:</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5026,12 +5038,6 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>dlp_remove_from_view_desc</word_key>
-      <word_default><![CDATA[This option <strong>hides the post</strong>, but leaves it in the topic]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
       <word_key>dlp_title</word_key>
       <word_default>Hide Post</word_default>
     </lang>
@@ -5044,14 +5050,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>dl_ths_restore</word_key>
+      <word_default>Unhide Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>dlp_topic_has_deleted_desc</word_key>
       <word_default>This topic has been hidden.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>nmo_p_restore</word_key>
-      <word_default>Restore %s hidden posts</word_default>
+      <word_key>dlp_topic_has_deleted_title</word_key>
+      <word_default>This topic has been deleted</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5062,8 +5074,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>dlp_topic_has_deleted_title</word_key>
-      <word_default>This topic has been deleted</word_default>
+      <word_key>nmo_p_restore</word_key>
+      <word_default>Restore %s hidden posts</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5086,6 +5098,12 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>tg_unread</word_key>
+      <word_default>first unread post</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>tg_last</word_key>
       <word_default>last post</word_default>
     </lang>
@@ -5098,8 +5116,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>tg_gototopic</word_key>
-      <word_default>Go to this topic</word_default>
+      <word_key>tg_go_last_post</word_key>
+      <word_default>View latest unread</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5110,14 +5128,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>tg_go_last_post</word_key>
-      <word_default>View latest unread</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>tg_unread</word_key>
-      <word_default>first unread post</word_default>
+      <word_key>tg_gototopic</word_key>
+      <word_default>Go to this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5146,20 +5158,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>sdpost_remove</word_key>
-      <word_default>Remove</word_default>
+      <word_key>no_reason_given</word_key>
+      <word_default>No Reason Given</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>top_poll_only</word_key>
       <word_default>This is a poll-only topic</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>no_reason_given</word_key>
-      <word_default>No Reason Given</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5176,8 +5182,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>togglepostcontent</word_key>
-      <word_default>Toggle Post Content</word_default>
+      <word_key>sdpost_remove</word_key>
+      <word_default>Remove</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5188,14 +5194,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>newpoststp</word_key>
-      <word_default>new post(s)</word_default>
+      <word_key>togglepostcontent</word_key>
+      <word_default>Toggle Post Content</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>no_replies_to_topic</word_key>
       <word_default>No replies to this topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>newpoststp</word_key>
+      <word_default>new post(s)</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5212,14 +5224,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>like_totalcount_follow_t</word_key>
-      <word_default>%s member(s) follow this topic</word_default>
+      <word_key>topic_starter</word_key>
+      <word_default>Topic Author</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>topic_starter</word_key>
-      <word_default>Topic Author</word_default>
+      <word_key>like_totalcount_follow_t</word_key>
+      <word_default>%s member(s) follow this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5230,14 +5242,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>like_ucfirst_unfollow_t</word_key>
-      <word_default>Unfollow this topic</word_default>
+      <word_key>like_follow_t</word_key>
+      <word_default>follow this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>like_follow_t</word_key>
-      <word_default>follow this topic</word_default>
+      <word_key>like_ucfirst_unfollow_t</word_key>
+      <word_default>Unfollow this topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5260,20 +5272,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>posted_by</word_key>
-      <word_default>Posted by</word_default>
+      <word_key>go_to_first_unread</word_key>
+      <word_default>Go to first unread post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
       <word_key>started_by</word_key>
       <word_default>Started by</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>go_to_first_unread</word_key>
-      <word_default>Go to first unread post</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5290,6 +5296,18 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
+      <word_key>posted_by</word_key>
+      <word_default>Posted by</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>mark_topic_read</word_key>
+      <word_default>Mark As Read</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
       <word_key>locked_reply_fr</word_key>
       <word_default>Be aware that this topic is locked.  You have permission to reply to locked topics.</word_default>
     </lang>
@@ -5302,8 +5320,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>mark_topic_read</word_key>
-      <word_default>Mark As Read</word_default>
+      <word_key>ignore_userx_signature</word_key>
+      <word_default><![CDATA[Ignore %s&#39;s signature]]></word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>ignore_all_signatures</word_key>
+      <word_default>Ignore all signatures</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>mq_clear_desc</word_key>
+      <word_default>Clear the posts you have selected with MultiQuote</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5316,18 +5346,6 @@
       <word_pack>public_topic</word_pack>
       <word_key>mq_clear</word_key>
       <word_default>Clear</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>mq_clear_desc</word_key>
-      <word_default>Clear the posts you have selected with MultiQuote</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_duplicate_post</word_key>
-      <word_default>This reply has not been added as it has been posted too quickly</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5350,32 +5368,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>comments_act_go</word_key>
-      <word_default>Go</word_default>
+      <word_key>poll_merge_title</word_key>
+      <word_default>Which poll would you like to keep?</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>post_hide</word_key>
-      <word_default>Hide</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>post_delete</word_key>
-      <word_default>Delete</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>post_delete_confirm</word_key>
-      <word_default>Are you sure you want to delete this post?</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>do_like_down</word_key>
-      <word_default>Remove like for this item</word_default>
+      <word_key>ajax_reply_noperm</word_key>
+      <word_default>You do not have permission to reply to this topic.</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5386,8 +5386,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>ajax_reply_noperm</word_key>
-      <word_default>You do not have permission to reply to this topic.</word_default>
+      <word_key>do_like_down</word_key>
+      <word_default>Remove like for this item</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>topic_duplicate_post</word_key>
+      <word_default>This reply has not been added as it has been posted too quickly</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5404,14 +5410,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>drestore_title</word_key>
-      <word_default>Unarchive Topic</word_default>
+      <word_key>top_archived_topic</word_key>
+      <word_default><![CDATA[<strong>This topic has been archived</strong>. This means that you cannot reply to this topic.]]></word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>top_archived_topic</word_key>
-      <word_default><![CDATA[<strong>This topic has been archived</strong>. This means that you cannot reply to this topic.]]></word_default>
+      <word_key>drestore_title</word_key>
+      <word_default>Unarchive Topic</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5428,20 +5434,8 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>ignore_all_signatures</word_key>
-      <word_default>Ignore all signatures</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>ignore_userx_signature</word_key>
-      <word_default><![CDATA[Ignore %s&#39;s signature]]></word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
-      <word_key>topic_meta_pages</word_key>
-      <word_default>Page %s of %s -</word_default>
+      <word_key>post_delete_confirm</word_key>
+      <word_default>Are you sure you want to delete this post?</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5452,8 +5446,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>poll_merge_title</word_key>
-      <word_default>Which poll would you like to keep?</word_default>
+      <word_key>post_delete</word_key>
+      <word_default>Delete</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>comments_act_go</word_key>
+      <word_default>Go</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>post_hide</word_key>
+      <word_default>Hide</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5464,26 +5470,20 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>topic_meta_description</word_key>
-      <word_default>%s - posted in %s: %s</word_default>
-    </lang>
-    <lang>
-      <word_app>forums</word_app>
-      <word_pack>public_topic</word_pack>
       <word_key>topic_no_reply_guest</word_key>
       <word_default>Please log in to reply</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>delete_post</word_key>
-      <word_default>Delete Post</word_default>
+      <word_key>topic_meta_description</word_key>
+      <word_default>%s - posted in %s: %s</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>tarchived_delete</word_key>
-      <word_default>Delete Topic</word_default>
+      <word_key>topic_meta_pages</word_key>
+      <word_default>Page %s of %s -</word_default>
     </lang>
     <lang>
       <word_app>forums</word_app>
@@ -5494,8 +5494,14 @@
     <lang>
       <word_app>forums</word_app>
       <word_pack>public_topic</word_pack>
-      <word_key>return_to</word_key>
-      <word_default>Return to</word_default>
+      <word_key>tarchived_delete</word_key>
+      <word_default>Delete Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>forums</word_app>
+      <word_pack>public_topic</word_pack>
+      <word_key>delete_post</word_key>
+      <word_default>Delete Post</word_default>
     </lang>
   </languagegroup>
 </languageexport>

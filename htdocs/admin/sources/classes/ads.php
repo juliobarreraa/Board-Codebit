@@ -2,7 +2,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Advertisements
  * </pre>
  *
@@ -12,7 +12,7 @@
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		17th February 2010
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10914 $
  */
 
 class IPSAdCode extends IPSAdCodeDefault

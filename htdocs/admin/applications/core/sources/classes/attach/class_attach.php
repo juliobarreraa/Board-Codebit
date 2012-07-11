@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Attachments
- * Last Updated: $Date: 2012-06-06 06:52:09 -0400 (Wed, 06 Jun 2012) $
+ * Last Updated: $Date: 2012-06-26 07:24:43 -0400 (Tue, 26 Jun 2012) $
  * </pre>
  *
  * <code>
@@ -23,7 +23,7 @@
  * @package		IP.Board
  * @subpackage  Core 
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10875 $
+ * @version		$Rev: 10987 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -612,7 +612,7 @@ class class_attach
 				
 				/* Make older attachments safe */
 				$row['attach_file'] = str_replace( '<', '&lt;', $row['attach_file'] );
-				$row['attach_file'] = str_replace( '>', '&&t;', $row['attach_file'] );
+				$row['attach_file'] = str_replace( '>', '&gt;', $row['attach_file'] );
 				
 				/* this is now done at upload */
 				//$row['attach_file'] = htmlspecialchars( $row['attach_file'] );

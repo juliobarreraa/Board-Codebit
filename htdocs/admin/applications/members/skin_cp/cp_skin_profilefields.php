@@ -2,19 +2,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * ACP profile fields skin file
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-29 09:20:50 -0400 (Fri, 29 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Members
  * @link		http://www.invisionpower.com
  * @since		20th February 2002
- * @version		$Rev: 10721 $
+ * @version		$Rev: 11004 $
  *
  */
  
@@ -478,7 +478,7 @@ $IPBHTML .= <<<HTML
 	
 HTML;
 
-return $IPBHTML;		
+return $IPBHTML;
 }
 
 /**
@@ -518,7 +518,7 @@ $IPBHTML .= <<<HTML
 </form>
 HTML;
 
-return $IPBHTML;		
+return $IPBHTML;
 }
 
 }

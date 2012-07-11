@@ -3,7 +3,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Dashboard Notifications
  * Last Updated: $Date
  *
@@ -13,7 +13,7 @@
  * @package		IP.Board
  * @subpackage	Members
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $
+ * @version		$Rev: 10914 $
  *
  */
 

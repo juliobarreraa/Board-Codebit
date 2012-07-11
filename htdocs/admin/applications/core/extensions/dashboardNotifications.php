@@ -2,17 +2,17 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Dashboard Notifications
  * Last Updated: $Date
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Core
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $
+ * @version		$Rev: 11026 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -208,8 +208,12 @@ class dashboardNotifications__core
 			$entries[] = array( $this->lang->words['cp_unfinishedupgrade'], $this->lang->words['cp_upgrade_warning'] );
 		}
 		
-		/* PHP Version Check */
-		if( PHP_VERSION < '5.1.0' )
+		/**
+		 * PHP Version Check
+		 * 
+		 * @todo	Remove this for 4.0? Installer/upgrader already do check for this anyway...
+		 */
+		if( PHP_VERSION < '5.2.0' )
 		{
 			$entries[] = array( sprintf( $this->lang->words['cp_yourphpversion'],  PHP_VERSION ), $this->lang->words['cp_php_warning'] );
 		}

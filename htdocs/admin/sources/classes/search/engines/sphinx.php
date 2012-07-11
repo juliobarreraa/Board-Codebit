@@ -2,18 +2,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Global Search
- * Last Updated: $Date: 2012-05-29 07:07:32 -0400 (Tue, 29 May 2012) $
+ * Last Updated: $Date: 2012-06-21 12:05:17 -0400 (Thu, 21 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Core
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10805 $
+ * @version		$Rev: 10967 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -77,7 +77,7 @@ class search_engine
 		$this->caches     =& $this->registry->cache()->fetchCaches();
 		
 		/* Do we have the sphinxes? */
-		if( ! is_file( 'sphinxapi.php' ) )
+		if( ! is_file( DOC_IPS_ROOT_PATH . 'sphinxapi.php' ) )
 		{
 			$registry->output->showError( 'sphinx_api_missing', 10182 );
 		}

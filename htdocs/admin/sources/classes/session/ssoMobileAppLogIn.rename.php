@@ -3,7 +3,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Sample Mobile App SSO Class
  * Last Updated: $Date: 2012-05-10 21:10:13 +0100 (Thu, 10 May 2012) $
  * </pre>

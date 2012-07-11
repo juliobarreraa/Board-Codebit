@@ -7,7 +7,7 @@
  * $Author: ips_terabyte $ (Original: Matt)
  * @since		11 Nov 2011
  * $LastChangedDate: 2010-10-14 13:11:17 -0400 (Thu, 14 Oct 2010) $
- * @version		v3.3.3
+ * @version		v3.3.4
  * $Revision: 477 $
  */
 

@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Reputation Profile Tab
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-07-09 12:56:26 -0400 (Mon, 09 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Members
  * @link		http://www.invisionpower.com
  * @since		4th January 2012
- * @version		$Revision: 10721 $
+ * @version		$Revision: 11047 $
  *
  */
 
@@ -66,7 +66,13 @@ class profile_reputation extends profile_plugin_parent
 		$app = ( ! empty($this->request['app_tab']) and isset( $supportedApps[ $this->request['app_tab'] ] ) ) ? $this->request['app_tab'] : 'forums';
 		$type = ( isset( $this->request['type'] ) and $this->request['type'] == 'received' ) ? 'received' : 'given';
 		$st = isset( $this->request['st'] ) ? intval( $this->request['st'] ) : 0;
-
+		
+		/* Can we view given reputation - If not, no point going any further*/
+		if ( $type == 'given' && ! $this->memberData['gbw_view_reps'] )
+		{
+			return $this->registry->getClass('output')->getTemplate('profile')->tabReputation( $member, $app, 'received', $supportedApps );
+		}
+		
 		/* Load our extension class */
 		$classToLoad     = IPSLib::loadLibrary( IPSLib::getAppDir( $app ) . '/extensions/reputation.php', 'reputation_' . $app, $app );
 		$reputationClass = new $classToLoad();

@@ -3,7 +3,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Sphinx template file
  * Last Updated: $Date: 2011-06-02 17:57:20 -0400 (Thu, 02 Jun 2011) $
  * </pre>

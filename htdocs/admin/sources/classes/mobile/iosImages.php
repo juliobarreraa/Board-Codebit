@@ -3,7 +3,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Mobile iOS App image class
  * Owner: Matt Mecham
  * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $

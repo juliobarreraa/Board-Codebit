@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Global Search
- * Last Updated: $Date: 2012-05-25 12:09:04 -0400 (Fri, 25 May 2012) $
+ * Last Updated: $Date: 2012-07-11 08:47:20 -0400 (Wed, 11 Jul 2012) $
  * </pre>
  *
  * @author 		$Author: mmecham $
@@ -13,7 +13,7 @@
  * @package		IP.Board
  * @subpackage	Core
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10796 $
+ * @version		$Rev: 11059 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -511,6 +511,11 @@ class public_core_search_search extends ipsCommand
 		{
 			/* Set a no-expires header */
 			$this->registry->getClass('output')->setCacheExpirationSeconds( 30 * 60 );
+		}
+		
+		if ( is_array( $this->request['search_app_filters'] ) )
+		{
+			array_walk_recursive( $this->request['search_app_filters'], create_function('&$item, $key', '$item = IPSText::htmlspecialchars($item);' ) );
 		}
 		
 		/* App specific */

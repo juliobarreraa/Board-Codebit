@@ -2,18 +2,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Moderator actions
- * Last Updated: $Date: 2012-06-06 05:12:48 -0400 (Wed, 06 Jun 2012) $
+ * Last Updated: $Date: 2012-06-15 08:09:05 -0400 (Fri, 15 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Revision: 10870 $
+ * @version		$Revision: 10929 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -377,7 +377,10 @@ class app_forums_classes_topics
 										     'limit'		   => 1 ) );
 			
 			$first_post = array_pop( $_post );
+			
+			$first_post['has_poll_id'] = ( $topicData['poll_start_date'] ) ? 1 : 0;
 	
+			$last_poster_name  = $last_post['members_display_name']  ? $last_post['members_display_name']  : $last_post['author_name'];
 			$first_poster_name = $first_post['members_display_name'] ? $first_post['members_display_name'] : $first_post['author_name'];
 			$_last_poster_name = $last_poster_name ? $last_poster_name : ( $pcount > 0 ? $this->lang->words['global_guestname'] : $first_poster_name );
 		}

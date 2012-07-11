@@ -3,18 +3,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board vVERSION_NUMBER
+ * IP.Board v3.3.4
  * Editor Library: RTE (WYSIWYG) Class
- * Last Updated: $Date: 2012-06-14 07:48:10 +0100 (Thu, 14 Jun 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: bfarber $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		9th March 2005 11:03
- * @version		$Revision: 10919 $
+ * @version		$Revision: 10914 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -2630,7 +2630,7 @@ class classes_editor_composite
 			{
 				if ( $word > 127 )
 				{
-					$converted = $this->_convertEntity( array( 1 => $word ), true );
+					$converted = str_replace( '&', '&amp;', $this->_convertEntity( array( 1 => $word ), true ) );
 					
 					if ( $converted  )
 					{

@@ -4,11 +4,11 @@
  *~TERABYTE_DOC_READY~
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: mark $ (Original: Mark)
+ * $Author: AndyMillne $ (Original: Mark)
  * @since		9 Nov 2011
- * $LastChangedDate: 2012-04-23 12:09:51 -0400 (Mon, 23 Apr 2012) $
- * @version		v3.3.3
- * $Revision: 10623 $
+ * $LastChangedDate: 2012-06-19 08:37:02 -0400 (Tue, 19 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10947 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -85,7 +85,7 @@ class public_members_ajax_warnings extends ipsAjaxCommand
 			$reason = $this->DB->buildAndFetch( array( 'select' => '*', 'from' => 'members_warn_reasons', 'where' => "wr_id={$id}" ) );
 			
 			$manuallySetPoints			= $reason['wr_points_override'];
-			$setPoints					= $this->request['points'] ? floatval( $this->request['points'] ) : $reason['wr_points'];
+			$setPoints					= ( is_numeric($this->request['points']) ) ? intval( $this->request['points'] ) : $reason['wr_points'];
 			
 			$removePoints				= $reason['wr_remove'];
 			$removePointsUnit			= $reason['wr_remove_unit'];

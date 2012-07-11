@@ -2,7 +2,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Archive: Restore
  * By Matt Mecham
  * </pre>

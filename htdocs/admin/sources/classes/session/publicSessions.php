@@ -3,18 +3,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Public session handler
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-18 11:11:25 -0400 (Mon, 18 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		26th January 2004
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10937 $
  *
  */
 
@@ -585,11 +585,11 @@ class publicSessions extends ips_MemberRegistry
 	 */
 	public function returnCurrentSession()
 	{
-		$return	= $this->_sessionsToSave[ $this->session_id ];
-		
-		if( count($this->_queryOverride[ $this->session_id ]) )
+		$return	= ( isset($this->_sessionsToSave[ $this->session_id ]) && is_array($this->_sessionsToSave[ $this->session_id ]) ) ? $this->_sessionsToSave[ $this->session_id ] : array();
+						
+		if ( isset($this->_queryOverride[ $this->session_id ]) && is_array($this->_queryOverride[ $this->session_id ]) && count($this->_queryOverride[ $this->session_id ]) )
 		{
-			$return	= is_array($return) ? array_merge( $return, $this->_queryOverride[ $this->session_id ] ) : ( is_array($this->_queryOverride[ $this->session_id ]) ? $this->_queryOverride[ $this->session_id ] : array() );
+			$return	= array_merge( $return, $this->_queryOverride[ $this->session_id ] );
 		}
 		
 		return $return;

@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * System tools skin file
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $
@@ -14,7 +14,7 @@
  * @subpackage	Core
  * @link		http://www.invisionpower.com
  * @since		Friday 19th May 2006 17:33
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10914 $
  */
  
 class cp_skin_system

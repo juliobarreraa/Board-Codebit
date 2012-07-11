@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Moderator actions
- * Last Updated: $Date: 2012-06-04 12:04:53 -0400 (Mon, 04 Jun 2012) $
+ * Last Updated: $Date: 2012-06-27 12:46:44 -0400 (Wed, 27 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: AndyMillne $
@@ -13,7 +13,7 @@
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Revision: 10862 $
+ * @version		$Revision: 10995 $
  *
  */
 
@@ -657,6 +657,9 @@ class moderatorLibrary
 			if ( in_array( $topicData['topic_firstpost'], $_pids ) )
 			{
 				$this->DB->update( 'topics', array( 'approved' => $_approveTopic ), 'tid=' . $tid );
+				
+				/* Need to hide/show tags too */
+				$this->registry->tags->updateVisibilityByMetaId( $tid, $_approveTopic );
 			
 				/* Unapprove the topic, but not the first post? */
 				//if ( $_queuedPost )

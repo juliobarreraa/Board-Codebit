@@ -3,7 +3,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Template Plugin: Insert IP.C media file
  * Last Updated: $Date$$
  * </pre>

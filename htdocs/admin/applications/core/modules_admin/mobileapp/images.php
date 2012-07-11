@@ -3,7 +3,7 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Manage mobile app images
  * Last Updated: $Date: 2012-03-30 16:23:27 +0100 (Fri, 30 Mar 2012) $
  * </pre>

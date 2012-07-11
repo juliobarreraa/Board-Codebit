@@ -3,13 +3,13 @@
  * IPS Converters
  * Application Files
  * Login functions
- * Last Updated: $Date: 2012-04-04 18:02:26 -0400 (Wed, 04 Apr 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  *
  * @author 		$Author: bfarber $
  * @copyright	(c) 2006 - 2009 Invision Power Services, Inc.
  * @package		IPS Converters
  * @link		http://www.invisionpower.com
- * @version		$Revision: 10560 $
+ * @version		$Revision: 10914 $
  */
 
 class converters

@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Send email using php mail() or SMTP
- * Last Updated: $Date: 2012-06-08 07:37:57 -0400 (Fri, 08 Jun 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: AndyMillne $
+ * @author 		$Author: bfarber $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Kernel
  * @link		http://www.invisionpower.com
  * @since		Tuesday 1st March 2005 (11:52)
- * @version		$Revision: 10896 $
+ * @version		$Revision: 10914 $
  *
  *
  * Example usage:

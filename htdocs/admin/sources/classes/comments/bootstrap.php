@@ -7,7 +7,7 @@
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		Core
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10862 $
+ * @version		$Rev: 10914 $
  *
  */
 

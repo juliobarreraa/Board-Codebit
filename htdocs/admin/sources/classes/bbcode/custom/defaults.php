@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Custom bbcode plugin interfaces
- * Last Updated: $Date: 2012-05-24 11:33:36 -0400 (Thu, 24 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$author$
@@ -12,7 +12,7 @@
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10790 $ 
+ * @version		$Rev: 10914 $ 
  */
 
 interface bbcodePlugin
@@ -53,9 +53,9 @@ interface bbcodePlugin
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * BBCode parser: default custom bbcodes: img, quote, list, size, member, media, url, snapback
- * Last Updated: $Date: 2012-05-24 11:33:36 -0400 (Thu, 24 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$author$
@@ -63,7 +63,7 @@ interface bbcodePlugin
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10790 $ 
+ * @version		$Rev: 10914 $ 
  *
  */
 

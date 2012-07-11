@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Register
- * Last Updated: $Date: 2012-06-05 10:32:23 -0400 (Tue, 05 Jun 2012) $
+ * Last Updated: $Date: 2012-06-22 07:58:19 -0400 (Fri, 22 Jun 2012) $
  * </pre>
  *
  * @author 		$Author $
@@ -14,7 +14,7 @@
  * @subpackage	Core
  * @link		http://www.invisionpower.com
  * @since		20th February 2002
- * @version		$Rev: 10864 $
+ * @version		$Rev: 10970 $
  *
  */
 
@@ -1459,7 +1459,7 @@ class public_core_global_register extends ipsCommand
 		//	account for a spam user too
 		//-----------------------------------------
 		
-		if ( ( $validate['new_reg'] == 1 ) && (($this->settings['reg_auth_type'] == "admin" ) || $validate['spam_user']) ) 
+		if ( ( $validate['new_reg'] == 1 ) && (($this->settings['reg_auth_type'] == "admin" ) || $validate['spam_flag']) ) 
 		{ 
 			$this->registry->output->showError( 'validate_admin_turn', 10121 );
 		} 

@@ -3,9 +3,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Admin Output Library
- * Last Updated: $LastChangedDate: 2012-05-29 10:44:35 -0400 (Tue, 29 May 2012) $
+ * Last Updated: $LastChangedDate: 2012-07-03 10:29:35 -0400 (Tue, 03 Jul 2012) $
  * </pre>
  *
  * @author 		$Author: ips_terabyte $
@@ -13,7 +13,7 @@
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10809 $
+ * @version		$Rev: 11026 $
  *
  */
 
@@ -635,12 +635,13 @@ class adminOutput extends output
 					$_seen_nav[ $data[1] ] = 1;
 				}
 
-				$_nav = ( isset( $_last_nav['nav'] ) ) ? $_last_nav['nav'] . ' &gt; ' . $data[1] : $data[1];
+				$_nav = isset($_last_nav['nav']) ? $_last_nav['nav'] . ' &gt; ' . $data[1] : $data[1];
 				
 				# Append last nav...
 				$_last_nav = array( 'url'   => $data[0],
 								 	'title' => $data[1],
 								    'nav'   => $_nav );
+				
 				if ( $data[0] )
 				{
 					$navigation[] = "<a href='" . $data[0] . "'>" . $data[1] . "</a>";
@@ -665,13 +666,13 @@ class adminOutput extends output
 					$_seen_nav[ $data[1] ] = 1;
 				}
 
-				$_nav      = ( $_last_nav['nav'] ) ? $_last_nav['nav'] . ' &gt; ' . $data[1] : $data[1];
-
+				$_nav      = isset($_last_nav['nav']) ? $_last_nav['nav'] . ' &gt; ' . $data[1] : $data[1];
+				
 				# Append last nav...
 				$_last_nav = array( 'url'   => $data[0],
 								 	'title' => $data[1],
 								    'nav'   => $_nav );
-
+				
 				if ( $data[0] )
 				{
 					$navigation[] = "<a href='" . $data[0] . "'>" . $data[1] . "</a>";

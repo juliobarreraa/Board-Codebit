@@ -2,18 +2,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Topic View
- * Last Updated: $Date: 2012-06-08 14:41:59 -0400 (Fri, 08 Jun 2012) $
+ * Last Updated: $Date: 2012-07-02 16:40:12 -0400 (Mon, 02 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage  Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10902 $
+ * @version		$Rev: 11021 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -328,10 +328,7 @@ class public_forums_forums_topics extends ipsCommand
 		}
 		else
 		{
-			$topicData['_starter']	= IPSMember::buildDisplayData( array(
-																		'member_id'				=> 0,
-																		'members_display_name'	=> $topicData['starter_name'] ? $this->settings['guest_name_pre'] . $topicData['starter_name'] . $this->settings['guest_name_suf'] : $this->lang->words['global_guestname'],
-																)		);
+			$topicData['_starter']  = IPSMember::buildDisplayData( IPSMember::setUpGuest( $topicData['starter_name'] ? $this->settings['guest_name_pre'] . $topicData['starter_name'] . $this->settings['guest_name_suf'] : '' ) );
 		}
 		
 		/* Can we report? */
@@ -1230,33 +1227,64 @@ class public_forums_forums_topics extends ipsCommand
 		/* Limit to 5 unique topics */
 		if ( count( $results ) )
 		{
-			foreach( $results as $id => $data )
+			$_tmp    = $results;
+			$results = array();
+			$loadIds = array();
+			$members = array();
+			
+			foreach( $_tmp as $_id => $_data )
 			{
-				if ( ! in_array( $data['tid'], $final ) )
+				if ( ! isset($results[ $_data['tid'] ]) )
 				{
-					if ( $this->registry->class_forums->fetchHiddenTopicType( $data ) != 'visible' )
+					if ( $this->registry->class_forums->fetchHiddenTopicType( $_data ) != 'visible' )
 					{
 						continue;
 					}
 					
-					if ( count( $final ) == 5 )
+					if( $_data['starter_id'] )
+					{
+						$loadIds[ $_data['starter_id'] ] = $_data['starter_id'];
+					}
+					
+					$results[ $_data['tid'] ] = $_data;
+					
+					/* Alreay got our 5 results? */
+					if ( count( $results ) == 5 )
 					{
 						break;
 					}
-					
-					$data = $this->registry->topics->parseTopicForLineEntry( $data );
-					
-					/* Sort out navigation */
-					$data['nav'] = $this->registry->class_forums->forumsBreadcrumbNav( $data['forum_id'] );
-					
-					if ( $data['last_poster_id'] )
-					{
-						$final[ $data['tid'] ] = IPSMember::buildDisplayData( $data, array( 'photoTagSize' => 'mini' ) );
-					}
-					else
-					{
-						$final[ $data['tid'] ] = $data;
-					}
+				}
+			}
+			
+			if ( count($loadIds) )
+			{
+				$members = IPSMember::load( $loadIds );
+			}
+			
+			/* Finally parse our results */
+			foreach( $results as $id => $data )
+			{
+				if( $data['starter_id'] && isset($members[ $data['starter_id'] ]) )
+				{
+					$data['_starter'] = IPSMember::buildDisplayData( $members[ $data['starter_id'] ] );
+				}
+				else
+				{
+					$data['_starter'] = IPSMember::buildDisplayData( IPSMember::setUpGuest( $data['starter_name'] ? $this->settings['guest_name_pre'] . $data['starter_name'] . $this->settings['guest_name_suf'] : '' ) );
+				}			
+				
+				$data = $this->registry->topics->parseTopicForLineEntry( $data );
+				
+				/* Sort out navigation */
+				$data['nav'] = $this->registry->class_forums->forumsBreadcrumbNav( $data['forum_id'] );
+				
+				if ( $data['last_poster_id'] )
+				{
+					$final[ $data['tid'] ] = IPSMember::buildDisplayData( $data, array( 'photoTagSize' => 'mini' ) );
+				}
+				else
+				{
+					$final[ $data['tid'] ] = $data;
 				}
 			}	
 		}
@@ -1594,10 +1622,15 @@ class public_forums_forums_topics extends ipsCommand
 							  array( 'select' => 'pp.*',
 									 'from'   => array( 'profile_portal' => 'pp' ),
 									 'where'  => 'm.member_id=pp.pp_member_id',
-									 'type'   => 'left' ),
-							  array( 'select' => 'w.wl_id',
+									 'type'   => 'left' ) );
+		
+		/* Warn system enabled? */	
+		if( $this->settings['warn_on'] == 1 )
+		{
+			$_post_joins[] =  array( 'select' => 'w.wl_id',
 									 'from'	  => array( 'members_warn_logs' => 'w' ),
-									 'where'  => 'w.wl_content_app=\'forums\' and w.wl_content_id1=p.pid' ) );
+									 'where'  => 'w.wl_content_app=\'forums\' and w.wl_content_id1=p.pid' );
+		}
 		
 		/* Add data hook joins */					
 		if ( is_array($dataHook['postJoins']) && count($dataHook['postJoins']) )

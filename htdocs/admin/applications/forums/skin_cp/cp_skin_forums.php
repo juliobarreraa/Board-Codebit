@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Forums skin functions
- * Last Updated: $LastChangedDate: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $LastChangedDate: 2012-06-29 09:20:50 -0400 (Fri, 29 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
  * @since		14th May 2003
- * @version		$Rev: 10721 $
+ * @version		$Rev: 11004 $
  */
  
 class cp_skin_forums
@@ -680,7 +680,7 @@ $IPBHTML .= <<<HTML
 HTML;
 
 //--endhtml--//
-return $IPBHTML;	
+return $IPBHTML;
 }
 
 /**

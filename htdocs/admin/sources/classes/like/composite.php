@@ -4,11 +4,11 @@
  *~TERABYTE_DOC_READY~
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: mmecham $
+ * $Author: ips_terabyte $
  * @since		11th October 2010
- * $LastChangedDate: 2012-06-06 05:12:48 -0400 (Wed, 06 Jun 2012) $
- * @version		v3.3.3
- * $Revision: 10870 $
+ * $LastChangedDate: 2012-06-18 11:11:25 -0400 (Mon, 18 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10937 $
  * 
  * <b>Example Usage:</b>
  * @code
@@ -686,15 +686,15 @@ abstract class classes_like_composite
 		/* Check for outdated notifications and update them as required */
 		$oldestPossDate = 0;
 		
-		if ( in_array( 'weekly', $types ) )
-		{
-			/* Grab 12 days to ensure we don't update rows ready to be sent */
-			$oldestPossDate = $blackhole - ( 86400 * 10 );
-		}
-		else
+		if ( $type == 'daily' )
 		{
 			/* Grab 4 days to account for timezone differences */
 			$oldestPossDate = $blackhole - ( 86400 * 4 );
+		}
+		else
+		{
+			/* Grab 10 days to ensure we don't update rows ready to be sent */
+			$oldestPossDate = $blackhole - ( 86400 * 10 );
 		}
 		
 		if ( $oldestPossDate )

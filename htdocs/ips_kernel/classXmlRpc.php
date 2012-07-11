@@ -3,9 +3,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * XML-RPC Server: Send, receive and process XML-RPC requests
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $
@@ -15,7 +15,7 @@
  * @subpackage	Kernel
  * @link		http://www.invisionpower.com
  * @since		6th January 2006
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10914 $
  *
  *
  * Example Usage:
@@ -712,7 +712,7 @@ class classXmlRpc
 		else
 		{
 			$header  = "POST $path HTTP/1.0\r\n";
-			$header .= "User-Agent: IPS XML-RPC Client Library (\$Revision: 10721 $)\r\n";
+			$header .= "User-Agent: IPS XML-RPC Client Library (\$Revision: 10914 $)\r\n";
 			$header .= "Host: $host\r\n";
 			
 			if ( $this->auth_user && $this->auth_pass )

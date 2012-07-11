@@ -2,19 +2,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Report Center :: Posts plugin
- * Last Updated: $LastChangedDate: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $LastChangedDate: 2012-06-26 07:24:43 -0400 (Tue, 26 Jun 2012) $
  * </pre>
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: AndyMillne $
  * @author		Based on original "Report Center" by Luke Scott
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $
+ * @version		$Rev: 10987 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -479,12 +479,7 @@ class post_plugin
 	 * @return	@e void
 	 */
 	protected function _checkAccess( $tid )
-    {
-		if ( ! $this->memberData['member_id'] )
-		{
-			$this->registry->output->showError( 'reports_must_be_member', 10169 );
-		}
-		
+    {	
 		//-----------------------------------------
 		// Needs silly a. alias to keep oracle
 		// happy

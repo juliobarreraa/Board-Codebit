@@ -18,6 +18,9 @@ ipb_gallery.carousel = Class.create({
 	active			: null,
 	autoProgress	: null,
 	
+	/**
+	 * Initialize the carousel
+	 */
 	initialize: function( wrapper, options )
 	{
 		this.wrapper = $(wrapper);
@@ -34,7 +37,14 @@ ipb_gallery.carousel = Class.create({
 			this.hRight	= $( this.options.handle + '_right' );
 		}
 
-		this.items	= this.wrapper.select(".carousel_img");
+		try
+		{
+			this.items	= this.wrapper.select(".carousel_img");
+		}
+		catch( e )
+		{
+			return false;
+		}
 
 		this.items.each( function(elem, index){
 			if( index > 0 )
@@ -57,7 +67,10 @@ ipb_gallery.carousel = Class.create({
 		
 		this.startAutoProgress();
 	},
-	
+
+	/**
+	 * Callback for when a user mouses over carousel
+	 */
 	mouseEnter: function(e)
 	{
 		if( this.hLeft && this.hRight )
@@ -68,7 +81,10 @@ ipb_gallery.carousel = Class.create({
 		
 		clearTimeout( this.autoProgress );
 	},
-	
+
+	/**
+	 * Callback for when a user mouses out of carousel
+	 */
 	mouseLeave: function(e)
 	{
 		if( this.hLeft && this.hRight )
@@ -79,7 +95,10 @@ ipb_gallery.carousel = Class.create({
 		
 		this.startAutoProgress();
 	},
-	
+
+	/**
+	 * Callback for when a user clicks on the next/prev buttons
+	 */
 	mouseClick: function(e, element)
 	{
 		Event.stop(e);
@@ -93,7 +112,10 @@ ipb_gallery.carousel = Class.create({
 			this.updatePane( this.getPrev( this.active ) );
 		}
 	},
-	
+
+	/**
+	 * Initialize carousel auto-progression
+	 */
 	startAutoProgress: function()
 	{
 		this.autoProgress = setTimeout( function(){ 
@@ -101,7 +123,10 @@ ipb_gallery.carousel = Class.create({
 			this.startAutoProgress();
 		}.bind(this), this.options.duration * 1000 );		
 	},
-	
+
+	/**
+	 * Update the displayed image
+	 */
 	updatePane: function( newPane )
 	{
 		new Effect.Fade( $( this.active ), { duration: 0.5 } );
@@ -109,7 +134,10 @@ ipb_gallery.carousel = Class.create({
 		
 		this.active = newPane;
 	},
-	
+
+	/**
+	 * Retrieve the next image
+	 */
 	getNext: function( cur )
 	{
 		// If no ID or currentImage is specified, return first image
@@ -129,7 +157,10 @@ ipb_gallery.carousel = Class.create({
 			return this.items[ pos + 1 ];
 		}
 	},
-	
+
+	/**
+	 * Retrieve the previous image
+	 */
 	getPrev: function( cur )
 	{
 		// If no ID or currentImage is specified, return first image

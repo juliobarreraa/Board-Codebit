@@ -206,7 +206,7 @@
 </div>]]></template_content>
       <template_name>boardIndexTemplate</template_name>
       <template_data><![CDATA[$lastvisit="", $stats=array(), $cat_data=array(), $show_side_blocks=true, $side_blocks=array()]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -265,7 +265,7 @@
 	</div>]]></template_content>
       <template_name>hookBoardIndexShareLinks</template_name>
       <template_data>$data</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -287,7 +287,7 @@
 </div>]]></template_content>
       <template_name>hookBoardIndexStatusUpdates</template_name>
       <template_data>$updates=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -317,7 +317,7 @@
 </if>]]></template_content>
       <template_name>hookFacebookActivity</template_name>
       <template_data/>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -348,7 +348,7 @@
 </if>]]></template_content>
       <template_name>hookRecentTopics</template_name>
       <template_data>$topics</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -368,7 +368,7 @@
 </div>]]></template_content>
       <template_name>hookTagCloud</template_name>
       <template_data>$tags</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -393,7 +393,7 @@
 </foreach>]]></template_content>
       <template_name>statusReplies</template_name>
       <template_data>$replies=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -485,7 +485,7 @@
 </foreach>]]></template_content>
       <template_name>statusUpdates</template_name>
       <template_data>$updates=array(), $smallSpace=0, $latestOnly=0</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -509,7 +509,7 @@
 </div>]]></template_content>
       <template_name>ajax__deleteTopic</template_name>
       <template_data/>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -558,7 +558,7 @@
 </if>]]></template_content>
       <template_name>forumAttachments</template_name>
       <template_data>$title, $rows, $pages</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -916,7 +916,7 @@
 </select>]]></template_content>
       <template_name>forumIndexTemplate</template_name>
       <template_data>$forum_data, $announce_data, $topic_data, $other_data, $multi_mod_data, $sub_forum_data, $footer_filter, $active_user_data, $mod_data, $inforum=1</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -952,7 +952,7 @@
 </form>]]></template_content>
       <template_name>forumPasswordLogIn</template_name>
       <template_data><![CDATA[$fid=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -969,7 +969,7 @@
 </script>]]></template_content>
       <template_name>likeSummary</template_name>
       <template_data>$data, $relId, $opts</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -983,7 +983,7 @@
 </if>]]></template_content>
       <template_name>likeSummaryContents</template_name>
       <template_data>$data, $relId, $opts=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1000,7 +1000,7 @@
 </fieldset>]]></template_content>
       <template_name>show_rules</template_name>
       <template_data><![CDATA[$rules=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1127,7 +1127,7 @@
 					<if test="topicmoderator:|:$this->memberData['is_mod'] == 1  || $forum_data['permissions']['TopicSoftDelete']">
 						<ul id='topic_mod_{$data['real_tid']}_menucontent' class='ipbmenu_content' style='display: none'>
 							<if test="isUnapproved:|:$data['approved'] == 0">
-								<li><a class='t_approve' href='{parse url="app=forums&amp;module=moderate&amp;section=moderate&amp;f={$forum_data['id']}&amp;st={$this->request['st']}&amp;t={$data['real_tid']}&amp;auth_key={$this->member->form_hash}&amp;do=topic_approve&amp;from=forum" base="public"}' title='{$this->lang->words['topic_hide']}'>{$this->lang->words['topic_approve']}</a></li>
+								<li><a class='t_approve' href='{parse url="app=forums&amp;module=moderate&amp;section=moderate&amp;f={$forum_data['id']}&amp;st={$this->request['st']}&amp;t={$data['real_tid']}&amp;auth_key={$this->member->form_hash}&amp;do=topic_approve&amp;from=forum" base="public"}' title='{$this->lang->words['topic_approve']}'>{$this->lang->words['topic_approve']}</a></li>
 							</if>
 							<li><a class='t_rename' href='{parse url="app=forums&amp;module=moderate&amp;section=moderate&amp;f={$forum_data['id']}&amp;t={$data['tid']}&amp;auth_key={$this->member->form_hash}&amp;do=05" base="public"}' title='{$this->lang->words['topic_rename']}'>{$this->lang->words['topic_rename']}</a></li>
 							<if test="islink:|:$data['state'] != 'link'">
@@ -1173,7 +1173,7 @@
 </if>]]></template_content>
       <template_name>topic</template_name>
       <template_data>$data, $forum_data, $other_data, $inforum</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1192,7 +1192,7 @@
 </span>]]></template_content>
       <template_name>topic_rating_image</template_name>
       <template_data>$rating_id=1</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1205,7 +1205,7 @@
 </if>]]></template_content>
       <template_name>topicPrefixWrap</template_name>
       <template_data>$text</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935306</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1245,7 +1245,7 @@
 </script>]]></template_content>
       <template_name>bbcodePopUpList</template_name>
       <template_data>$rows</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1295,7 +1295,7 @@
 </div>]]></template_content>
       <template_name>emoticonPopUpList</template_name>
       <template_data>$editor_id, $rows, $legacy_editor=false</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1306,7 +1306,7 @@
       <template_content><![CDATA[<div><b>{$tag}</b></div>]]></template_content>
       <template_name>wrap_tag</template_name>
       <template_data><![CDATA[$tag=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1334,7 +1334,7 @@
 </form>]]></template_content>
       <template_name>deleteTopicForm</template_name>
       <template_data>$forum, $topic</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1368,7 +1368,7 @@
 <br />]]></template_content>
       <template_name>editTopicTitle</template_name>
       <template_data>$forum, $topic</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1406,7 +1406,7 @@
 </foreach>]]></template_content>
       <template_name>mergeMultiplePolls</template_name>
       <template_data>$polls, $tids</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1421,7 +1421,7 @@
 <foreach loop="selectedpids:$this->request['selectedpids'] as $pid">
 	<input type="hidden" name="selectedpids[{$pid}]" value="{$pid}" />
 </foreach>
-<if test="$this->request['selectedpidsJS']">
+<if test="hasSelectedPidsJs:|:$this->request['selectedpidsJS']">
 	<foreach loop="selectedpidsjs:explode( ',', $this->request['selectedpidsJS'] ) as $pid">
 		<input type="hidden" name="selectedpids[{$pid}]" value="{$pid}" />
 	</foreach>
@@ -1494,7 +1494,7 @@
 </form>]]></template_content>
       <template_name>mergePostForm</template_name>
       <template_data>$editor, $dates, $authors, $uploads, $seoTitle</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1532,7 +1532,7 @@
 </form>]]></template_content>
       <template_name>mergeTopicsForm</template_name>
       <template_data>$forum, $topic</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1591,7 +1591,7 @@
 </form>]]></template_content>
       <template_name>movePostForm</template_name>
       <template_data><![CDATA[$forum, $topic, $posts, $error='']]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1605,6 +1605,7 @@
 <input type='hidden' name='t' value='{$topic['tid']}' />
 <input type='hidden' name='f' value='{$forum['id']}' />
 <input type='hidden' name='st' value='{$this->request['st']}' />
+
 <p class='message'>{$this->lang->words['move_exp']}</p>
 <br />
 <h2 class='maintitle'>{$this->lang->words['top_move']}: {$forum['name']} &gt; {$topic['title']}</h2>
@@ -1630,7 +1631,7 @@
 </form>]]></template_content>
       <template_name>moveTopicForm</template_name>
       <template_data>$forum, $topic, $forum_jump</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1684,7 +1685,7 @@
 </form>]]></template_content>
       <template_name>moveTopicsForm</template_name>
       <template_data>$forum, $jump_html, $topics</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1782,7 +1783,7 @@
 </div>]]></template_content>
       <template_name>pruneSplash</template_name>
       <template_data><![CDATA[$forum="", $forums_html="", $confirm_data="", $complete_html=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1793,7 +1794,7 @@
       <template_content><![CDATA[<strong>{$title}</strong><br /> {$msg}]]></template_content>
       <template_name>simplePage</template_name>
       <template_data><![CDATA[$title="", $msg=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1829,7 +1830,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['topic_hide_reason_default']
 </script>]]></template_content>
       <template_name>softDeleteSplash</template_name>
       <template_data>$forum, $tids=array(), $canHardDelete=false</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1867,7 +1868,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </script>]]></template_content>
       <template_name>softDeleteSplashPosts</template_name>
       <template_data>$forum, $topic, $pids=array(), $canHardDelete=false</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1927,7 +1928,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </form>]]></template_content>
       <template_name>splitPostForm</template_name>
       <template_data>$forum, $topic, $posts, $jump</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1991,7 +1992,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </table>]]></template_content>
       <template_name>topicHistory</template_name>
       <template_data>$topic, $avg_post, $mod_logs=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2015,7 +2016,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </form>]]></template_content>
       <template_name>unsubscribeForm</template_name>
       <template_data>$forum, $topic, $text</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935307</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2052,7 +2053,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </html>]]></template_content>
       <template_name>attachiFrame</template_name>
       <template_data>$JSON, $id</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2066,7 +2067,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 <br />]]></template_content>
       <template_name>errors</template_name>
       <template_data><![CDATA[$data=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2117,6 +2118,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 	ipb.templates['poll_choice'] = 		new Template("<li id='poll_#{qid}_#{cid}_wrap' style='display: none'><input type='text' id='poll_#{qid}_#{cid}' name='choice[#{qid}_#{cid}]' class='input_text' value='#{choice}' size='66' maxlength='254' /> <input type='text' id='poll_#{qid}_#{cid}_votes' name='votes[#{qid}_#{cid}]' value='#{votes}' class='input_text' size='5' title='{$this->lang->words['poll_votes_desc']}' /> <a href='#' id='remove_#{qid}_#{cid}' title='{$this->lang->words['remove_choice']}'>{parse replacement="remove_poll_choice"}</a></li>");
 //|#^#]>
 </script>
+
 <div class='post_form poll_form' id='poll_form'>
 	<a href='#' id='add_poll' class='ipsType_small'><img src='{$this->settings['img_url']}/bullet_toggle_plus.png' /> {$this->lang->words['poll_manage_link']}</a>
 	
@@ -2152,7 +2154,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </div>]]></template_content>
       <template_name>pollBox</template_name>
       <template_data>$data</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2359,7 +2361,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 {$formData['topicSummary'][0]['html']}]]></template_content>
       <template_name>postFormTemplate</template_name>
       <template_data>$formData=array(), $form = array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2385,7 +2387,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </if>]]></template_content>
       <template_name>preview</template_name>
       <template_data><![CDATA[$data=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2423,7 +2425,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </div>]]></template_content>
       <template_name>topicSummary</template_name>
       <template_data>$posts=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2510,7 +2512,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </script>]]></template_content>
       <template_name>uploadForm</template_name>
       <template_data><![CDATA[$post_key="",$type="",$stats=array(),$id="",$forum_id=0]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2537,7 +2539,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </script>]]></template_content>
       <template_name>ajax__deletePost</template_name>
       <template_data/>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2559,7 +2561,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </div>]]></template_content>
       <template_name>ajax__doDeletePost</template_name>
       <template_data/>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2578,7 +2580,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </div>]]></template_content>
       <template_name>ajax__restoreTopicDialog</template_name>
       <template_data/>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2596,7 +2598,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </ul>]]></template_content>
       <template_name>ajaxSigCloseMenu</template_name>
       <template_data>$post</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2632,7 +2634,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 {parse template="include_highlighter" group="global" params="1"}]]></template_content>
       <template_name>announcement_show</template_name>
       <template_data><![CDATA[$announce="",$author=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2659,7 +2661,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </if>]]></template_content>
       <template_name>archiveStatusMessage</template_name>
       <template_data>$topic, $forum</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2690,7 +2692,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </if>]]></template_content>
       <template_name>hookFacebookLike</template_name>
       <template_data/>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2707,7 +2709,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </script>]]></template_content>
       <template_name>likeSummary</template_name>
       <template_data>$data, $relId, $opts</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2721,7 +2723,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </if>]]></template_content>
       <template_name>likeSummaryContents</template_name>
       <template_data>$data, $relId, $opts=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2831,7 +2833,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 </div>]]></template_content>
       <template_name>pollDisplay</template_name>
       <template_data>$poll, $topicData, $forumData, $pollData, $showResults, $editPoll=1</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2984,7 +2986,7 @@ $('delPop_reason').defaultize( "{$this->lang->words['post_hide_reason_default']}
 							<a href='{parse url="app=blog&amp;blog_this=forums&amp;id1={$this->request['t']}&amp;id2={$post['post']['pid']}" base="public"}'>{$this->lang->words['blog_this']}</a>
 						</li>
 					</if>
-					<if test="canReportPost:|:$topic['_canReport'] and ( $this->memberData['member_id'] ) && ! $topic['_isArchived']">
+					<if test="canReportPost:|:$topic['_canReport'] and ! $topic['_isArchived']">
 						<li class='report'>
 							<a href='{parse url="app=core&amp;module=reports&amp;rcom=post&amp;tid={$this->request['t']}&amp;pid={$post['post']['pid']}&amp;st={$this->request['st']}" base="public"}'>{$this->lang->words['report']}</a>
 						</li>
@@ -3047,7 +3049,7 @@ if ( pid > ipb.topic.topPid ){
 </script>]]></template_content>
       <template_name>post</template_name>
       <template_data>$post, $displayData, $topic, $forum=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3069,7 +3071,7 @@ if ( pid > ipb.topic.topPid ){
 	</if>]]></template_content>
       <template_name>quickEditPost</template_name>
       <template_data>$post</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3089,7 +3091,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>show_attachment_title</template_name>
       <template_data><![CDATA[$title="",$data="",$type=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3102,7 +3104,7 @@ if ( pid > ipb.topic.topPid ){
 &nbsp;&nbsp;<span class="desc lighter">{$data['attach_hits']} {$this->lang->words['attach_hits']}</span>]]></template_content>
       <template_name>Show_attachments</template_name>
       <template_data><![CDATA[$data=""]]></template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3114,7 +3116,7 @@ if ( pid > ipb.topic.topPid ){
 {parse expression="$this->registry->output->addMetaTag( 'og:image', "{$this->settings['upload_url']}/{$data['o_location']}", false )"}]]></template_content>
       <template_name>Show_attachments_img</template_name>
       <template_data>$data=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3126,7 +3128,7 @@ if ( pid > ipb.topic.topPid ){
 {parse expression="$this->registry->output->addMetaTag( 'og:image', "{$this->settings['upload_url']}/{$data['t_location']}", false )"}]]></template_content>
       <template_name>Show_attachments_img_thumb</template_name>
       <template_data>$data=array()</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3226,7 +3228,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>softDeletedPostBit</template_name>
       <template_data>$post, $sdData, $topic</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3257,7 +3259,7 @@ if ( pid > ipb.topic.topPid ){
 </if>]]></template_content>
       <template_name>topicPreview</template_name>
       <template_data>$topic, $posts</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3661,7 +3663,7 @@ if ( pid > ipb.topic.topPid ){
 </form>]]></template_content>
       <template_name>topicViewTemplate</template_name>
       <template_data>$forum, $topic, $post_data, $displayData</template_data>
-      <template_updated>1341858166</template_updated>
+      <template_updated>1341935308</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>

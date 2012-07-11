@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Formats forum search results
- * Last Updated: $Date: 2012-05-25 13:17:47 -0400 (Fri, 25 May 2012) $
+ * Last Updated: $Date: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$author$
@@ -13,7 +13,7 @@
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10798 $
+ * @version		$Rev: 10914 $
  */
 
 if ( ! defined( 'IN_IPB' ) )

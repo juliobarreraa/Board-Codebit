@@ -2,18 +2,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Moderator actions
- * Last Updated: $Date: 2012-05-25 13:17:47 -0400 (Fri, 25 May 2012) $
+ * Last Updated: $Date: 2012-07-03 11:43:57 -0400 (Tue, 03 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: ips_terabyte $
+ * @author 		$Author: AndyMillne $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Revision: 10798 $
+ * @version		$Revision: 11027 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -565,10 +565,7 @@ class public_forums_moderate_moderate extends ipsCommand
 			$_like->toggleVisibility( $this->topic['tid'], true );
 
 			/* Tagging */
-			if ( $this->registry->tags->isEnabled() )
-			{
-				$this->registry->tags->updateVisibilityByMetaId( $this->topic['tid'], 1 );
-			}
+			$this->registry->tags->updateVisibilityByMetaId( $this->topic['tid'], 1 );
 			
 			/* Remove any soft delete logs if we are 'restoring' */
 			if( $this->request['do'] == 'topic_restore' )
@@ -2246,10 +2243,10 @@ class public_forums_moderate_moderate extends ipsCommand
 		if ( $old_topic_poll['pid'] and !$main_topic_poll['pid'] )
 		{
 			// Make that poll the poll for the master topic
-			$this->DB->update( 'polls', array( 'tid' => $this->topic['tid'] ), "tid={$old_topic_poll}" );
+			$this->DB->update( 'polls', array( 'tid' => $this->topic['tid'] ), "tid={$old_topic_poll['tid']}" );
 			
 			// Make the votes for that now
-			$this->DB->update( 'voters', array( 'tid' => $this->topic['tid'] ), "tid={$old_topic_poll}" );
+			$this->DB->update( 'voters', array( 'tid' => $this->topic['tid'] ), "tid={$old_topic_poll['tid']}" );
 			
 			// Let the master topic know that it has a poll now
 			$this->DB->update( 'topics', array( 'poll_state' => 1 ), "tid={$this->topic['tid']}" );
@@ -2622,6 +2619,25 @@ class public_forums_moderate_moderate extends ipsCommand
 		
 		$this->request['TopicTitle'] =  $_postClass->cleanTopicTitle( $this->request['TopicTitle']  );
 		$this->request['TopicTitle'] =  trim( IPSText::getTextClass( 'bbcode' )->stripBadWords( $this->request['TopicTitle'] ) );
+		
+		if( $this->settings['etfilter_shout'] )
+		{
+			if( function_exists('mb_convert_case') )
+			{
+				if( in_array( strtolower( $this->settings['gb_char_set'] ), array_map( 'strtolower', mb_list_encodings() ) ) )
+				{
+					$this->request['TopicTitle'] = mb_convert_case( $this->request['TopicTitle'], MB_CASE_TITLE, $this->settings['gb_char_set'] );
+				}
+				else
+				{
+					$this->request['TopicTitle'] = ucwords( strtolower( $this->request['TopicTitle'] ) );
+				}
+			}
+			else
+			{
+				$this->request['TopicTitle'] = ucwords( strtolower( $this->request['TopicTitle'] ) );
+			}
+		}
 
 		$this->request['TopicDesc'] =  trim( IPSText::getTextClass( 'bbcode' )->stripBadWords( $this->request['TopicDesc'] ) );
 		$this->request['TopicDesc'] =  IPSText::mbsubstr( $this->request['TopicDesc'], 0, 70  );

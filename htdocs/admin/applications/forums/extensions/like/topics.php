@@ -4,10 +4,10 @@
  *~TERABYTE_DOC_READY~
  * $Copyright: (c) 2001 - 2011 Invision Power Services, Inc.$
  * $License: http://www.invisionpower.com/company/standards.php#license$
- * $Author: mmecham $
- * $LastChangedDate: 2012-05-29 04:58:00 -0400 (Tue, 29 May 2012) $
- * @version		v3.3.3
- * $Revision: 10803 $
+ * $Author: ips_terabyte $
+ * $LastChangedDate: 2012-06-20 06:37:39 -0400 (Wed, 20 Jun 2012) $
+ * @version		v3.3.4
+ * $Revision: 10955 $
  */
 
 if ( ! defined( 'IN_IPB' ) )
@@ -237,7 +237,7 @@ class like_forums_topics_composite extends classes_like_composite
 			}
 								
 			/* Process it */
-			$main_output .= $this->lang->words['topic_langbit'] . ": " . $topic['title'] . " (" . $this->lang->words['forum_langbit'] . ":" . $forum['name'] . ")<br />"
+			$main_output .= $this->lang->words['follow_topic'] . ": " . $topic['title'] . " (" . $this->lang->words['follow_forum'] . ":" . $forum['name'] . ")<br />"
 						 .  $tFurl . "<br />"
 						 .  "=====================================<br />"
 						 .  $post_output

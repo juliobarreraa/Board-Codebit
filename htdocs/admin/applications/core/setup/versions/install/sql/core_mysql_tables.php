@@ -1386,7 +1386,8 @@ $TABLE[] = "CREATE TABLE sessions (
   KEY location2 (location_2_type,location_2_id),
   KEY location3 (location_3_type,location_3_id),
   KEY running_time (running_time),
-  KEY member_id (member_id)
+  KEY member_id (member_id),
+  KEY ip_address (ip_address)  
 );";
 
 $TABLE[] = "CREATE TABLE skin_cache (
@@ -1668,7 +1669,8 @@ $TABLE[] = "CREATE TABLE twitter_connect (
 	t_key		VARCHAR(32) NOT NULL default '',
 	t_token		VARCHAR(255) NOT NULL default '',
 	t_secret	VARCHAR(255) NOT NULL default '',
-	t_time		INT(10) NOT NULL default 0
+	t_time		INT(10) NOT NULL default 0,
+	PRIMARY KEY  (t_key)
 );";
 
 $TABLE[] = "CREATE TABLE upgrade_history (

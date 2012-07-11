@@ -28,6 +28,20 @@ IPSLib::loadLibrary( IPS_ROOT_PATH . 'sources/classes/member/status.php', 'membe
 
 class portalMemberStatus extends memberStatus
 {
+	
+	/**
+	 * CONSTRUCTOR
+	 *
+	 * @param	object	Registry
+	 * @return	@e void
+	 */
+	public function __construct( ipsRegistry $registry )
+	{
+		parent::__construct( $registry );
+		
+		$this->settings['tc_parse_names_internal'] = 1;
+	}
+	
 	/**
 	 * Auto parse some stuff
 	 *
@@ -35,26 +49,29 @@ class portalMemberStatus extends memberStatus
 	 */
 	protected function _parseContent( $content, $creator='' )
 	{
-		/* Auto parse tags */
-		if ( $this->settings['su_parse_url'] )
-		{
-			$content = preg_replace_callback( '#(^|\s|\(|>|\](?<!\[url\]))((?:http|https|news|ftp)://\w+[^\),\s\<\[]+)#is', array( $this, '_autoParseUrls' ), $content );
-		}
+		parent::_parseContent( $content, $creator );
 		
-		/* Twittah? */
-		if ( $creator == 'twitter' )
+		/* Portal update? */
+		if ( $creator == 'portal' )
 		{
-			if ( $this->settings['tc_parse_tags'] )
+			if ( $this->settings['tc_parse_names_internal'] )
 			{
-				$content = preg_replace_callback( '#(^|\s)(\\#([a-z_A-Z0-9:_-]+))#', array( $this, '_autoParseTags' ), $content );
-			}
-			
-			if ( $this->settings['tc_parse_names'] )
-			{
-				$content = preg_replace_callback('#(^|\s)@([a-z_A-Z0-9]+)#', array( $this, '_autoParseNames' ), $content );
+				$content = preg_replace_callback( '#(^|\s)(\\#([a-z_A-Z0-9:_-]+))#', array( $this, '_autoParseNamesInternal' ), $content );
 			}
 		}
 		
 		return $content;
+	}
+	
+	/**
+	 * Callback to auto-parse @names
+	 * 
+	 * @param	array		Matches from the regular expression
+	 * @return	string		Converted text
+	 */
+	protected function _autoParseNamesInternal( $matches )
+	{
+	    //TODO: Añadir funcionalidad
+		return '';//$this->_autoParseUrls( array( '', $matches[1], 'http://www.twitter.com/' . urlencode( $matches[2] ), '@' . $matches[2] ) );
 	}
 }

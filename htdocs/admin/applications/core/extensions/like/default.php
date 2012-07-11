@@ -6,7 +6,7 @@
  * $License: http://www.invisionpower.com/company/standards.php#license$
  * $Author: mark $
  * $LastChangedDate: 2011-12-08 16:43:34 +0000 (Thu, 08 Dec 2011) $
- * @version		v3.3.3
+ * @version		v3.3.4
  * $Revision: 9971 $
  */
 

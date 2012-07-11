@@ -3,7 +3,7 @@
  * <pre>
  * Status Updates Class
  * Holds various functions
- * Last Updated: $Date: 2012-06-01 09:52:18 -0400 (Fri, 01 Jun 2012) $
+ * Last Updated: $Date: 2012-06-21 10:57:38 -0400 (Thu, 21 Jun 2012) $
  * </pre>
  *
  * @author		$author$
@@ -12,7 +12,7 @@
  * @package		IP.Board
  * @author		MattMecham
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10850 $ 
+ * @version		$Rev: 10966 $ 
  *
  * Example: Create new status update
  * <code>
@@ -638,7 +638,7 @@ class memberStatus
 	    			
 	    			if ( $this->settings['friends_enabled'] AND $author['member_id'] == $owner['member_id'] )
 	    			{
-		    			$this->DB->build( array( 'select' => 'friends_member_id', 'from' => 'profile_friends', 'where' => 'friends_friend_id=' . $owner['member_id'] ) );
+		    			$this->DB->build( array( 'select' => 'friends_member_id, friends_approved', 'from' => 'profile_friends', 'where' => 'friends_friend_id=' . $owner['member_id'] ) );
 		    			$this->DB->execute();
 		    			
 		    			while( $_friend = $this->DB->fetch() )

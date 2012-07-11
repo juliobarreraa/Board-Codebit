@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Report Center :: Private Messages plugin
- * Last Updated: $LastChangedDate: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $LastChangedDate: 2012-06-12 10:14:49 -0400 (Tue, 12 Jun 2012) $
  * </pre>
  *
  * @author 		$Author: bfarber $
@@ -14,7 +14,7 @@
  * @package		IP.Board
  * @subpackage	Members
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $
+ * @version		$Rev: 10914 $
  */
 
 if ( ! defined( 'IN_IPB' ) )

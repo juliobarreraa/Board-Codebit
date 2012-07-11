@@ -2,9 +2,9 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Moderator actions
- * Last Updated: $Date: 2012-06-06 15:26:34 -0400 (Wed, 06 Jun 2012) $
+ * Last Updated: $Date: 2012-06-29 09:20:50 -0400 (Fri, 29 Jun 2012) $
  * </pre>
  * File Created By: Matt Mecham
  *
@@ -14,7 +14,7 @@
  * @package		IP.Board
  * @subpackage	Forums
  * @link		http://www.invisionpower.com
- * @version		$Revision: 10878 $
+ * @version		$Revision: 11004 $
  * 
  */
 
@@ -383,7 +383,7 @@ class classPost
 	 */
 	public function hasSetting( $key )
 	{
-		if ( in_array( $key, $this->_internalData['Settings'] ) )
+		if ( is_array($this->_internalData['Settings']) && count($this->_internalData['Settings']) && in_array( $key, $this->_internalData['Settings'] ) )
 		{
 			return true;
 		}
@@ -550,12 +550,6 @@ class classPost
 		if ( ( ! $this->getAuthor('member_group_id') ) OR ( ! $this->getAuthor('members_display_name') ) )
 		{
 			throw new Exception( "NO_USER_SET" );
-		}
-		
-		/* Does this member have permanent post restriction ? */
-		if ( $this->_bypassPermChecks !== TRUE && IPSMember::isOnModQueue( $this->getAuthor() ) === NULL )
-		{
-			throw new Exception( "warnings_restrict_post_perm" );
 		}
 		
 		/* Auto check published */
@@ -851,6 +845,11 @@ class classPost
 		catch( Exception $error )
 		{
 			$this->_postErrors	= $error->getMessage();
+		}
+		
+		if ( $this->_bypassPermChecks !== TRUE && IPSMember::isOnModQueue( $this->getAuthor() ) === NULL )
+		{
+			$this->_postErrors = 'warnings_restrict_post_perm';
 		}
 		
 		if ( ! $this->getPostContent() AND ! $this->getPostContentPreFormatted() AND ! $this->getIsPreview() )
@@ -1355,6 +1354,14 @@ class classPost
 				}
 			}
 			
+			if( $topic['approved'] != ipsRegistry::getClass('class_forums')->fetchTopicHiddenFlag( 'visible' ) )
+			{
+				if( $this->getAuthor('g_post_closed') != 1 )
+				{
+					throw new Exception( 'TOPIC_HIDDEN' );
+				}
+			}
+			
 			if( !empty($topic['poll_only']) )
 			{
 				if( $this->getAuthor('g_post_closed') != 1 )
@@ -1440,6 +1447,11 @@ class classPost
 		catch( Exception $error )
 		{
 			$this->_postErrors = $error->getMessage();
+		}
+		
+		if ( $this->_bypassPermChecks !== TRUE && IPSMember::isOnModQueue( $this->getAuthor() ) === NULL )
+		{
+			$this->_postErrors = 'warnings_restrict_post_perm';
 		}
 		
 		if ( ! $this->getPostContent() AND ! $this->getPostContentPreFormatted() AND !$this->getIsPreview() )
@@ -1836,6 +1848,11 @@ class classPost
 			{
 				$this->_postErrors	= $error->getMessage();
 			}
+		}
+		
+		if ( $this->_bypassPermChecks !== TRUE && IPSMember::isOnModQueue( $this->getAuthor() ) === NULL )
+		{
+			$this->_postErrors = 'warnings_restrict_post_perm';
 		}
 		
 		if ( ! $this->getPostContent() AND ! $this->getPostContentPreFormatted() )

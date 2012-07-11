@@ -3,18 +3,18 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * BBCode parsing core - common methods
- * Last Updated: $Date: 2012-06-08 04:28:02 -0400 (Fri, 08 Jun 2012) $
+ * Last Updated: $Date: 2012-07-03 12:09:49 -0400 (Tue, 03 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: mmecham $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		9th March 2005 11:03
- * @version		$Revision: 10894 $
+ * @version		$Revision: 11028 $
  *
  * Basic usage examples
  * <code>
@@ -413,6 +413,7 @@ class class_bbcode_core
 		$this->error			= '';
 		$this->image_count		= 0;
 		$this->emoticon_count	= 0;
+		$this->emoticon_alts	= array();
 	}
 
 	/**
@@ -637,15 +638,15 @@ class class_bbcode_core
 			{
 				$r['type']	= preg_quote( $r['type'], "/" );
 				
-				/* Link */
-				if ( IPS_DOC_CHAR_SET == 'UTF-8' && IPSText::isUTF8( $text ) )
-				{
-					$text = preg_replace( '/(^|\p{L}|\s)' . $r['type'] . '(\p{L}|!|\?|\.|,|$)/i', "\\1{$replace}\\2", $text );
-				}
-				else
-				{
+				/* Link - reverting in 3.3.4*/
+				//if ( IPS_DOC_CHAR_SET == 'UTF-8' && IPSText::isUTF8( $text ) )
+				//{
+				//	$text = preg_replace( '/(^|\p{L}|\s)' . $r['type'] . '(\p{L}|!|\?|\.|,|$)/i', "\\1{$replace}\\2", $text );
+				//}
+				//else
+				//{
 					$text = preg_replace( '/(^|\b|\s)' . $r['type'] . '(\b|!|\?|\.|,|$)/i', "\\1{$replace}\\2", $text );
-				}
+				//}
 			}
 			else
 			{
@@ -1954,6 +1955,9 @@ class class_bbcode_core
 			}
 		}
 
+		/* Make sure we don't have any xss from custom replacements. Bug #37994 */
+		$txt = $this->checkXss($txt, true);
+		
 		return $txt;
 	}
 	
@@ -2602,7 +2606,7 @@ class class_bbcode_core
 
 		$this->emoticon_count++;
 		
-		$this->emoticon_alts[] = array( "#EMO_ALT_{$this->emoticon_count}#", $_emoCode );
+		$this->emoticon_alts[ $this->emoticon_count ] = array( "#EMO_ALT_{$this->emoticon_count}#", $_emoCode );
 		
 		//-----------------------------------------
 		// Return

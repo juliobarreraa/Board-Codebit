@@ -3,19 +3,19 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Skin Caching Functions
- * Last Updated: $Date: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $Date: 2012-06-22 07:55:48 -0400 (Fri, 22 Jun 2012) $
  * </pre>
  *
  * Owner: Matt
- * @author 		$Author: bfarber $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
  * @since		9th July 2008
- * @version		$Revision: 10721 $
+ * @version		$Revision: 10969 $
  *
  */
 
@@ -1617,7 +1617,7 @@ EOF;
 		
 		if ( ! is_numeric( $id ) )
 		{
-			$id = $this->fetchSetIdByKey( $id );
+			$id = $this->fetchSetIdByKey( $id, true );
 		}
 		
 		$setData = $this->fetchSkinData( $id );
@@ -1693,7 +1693,7 @@ EOF;
 		
 		if ( ! is_numeric( $id ) )
 		{
-			$id = $this->fetchSetIdByKey( $id );
+			$id = $this->fetchSetIdByKey( $id, true );
 		}
 		
 		$setData = $this->fetchSkinData( $id );
@@ -1768,7 +1768,7 @@ EOF;
 		
 		if ( ! is_numeric( $id ) )
 		{
-			$id = $this->fetchSetIdByKey( $id );
+			$id = $this->fetchSetIdByKey( $id, true );
 		}
 		
 		$setData = $this->fetchSkinData( $id );

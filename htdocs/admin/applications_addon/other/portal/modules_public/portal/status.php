@@ -72,12 +72,12 @@ class public_portal_portal_status extends public_members_profile_status
 	    	{
 	    		$this->registry->output->showError( 'status_off', 10268, null, null, 403 );
 	    	}
-	
 			/* Set owner */
 			$this->registry->getClass('portalMemberStatus')->setStatusOwner( $owner );
 		}
 		else
 		{
+		    $this->registry->getClass('portalMemberStatus')->setCreator( 'portal' ); //Set creator
 			/* Set post outs */
 			$this->registry->getClass('portalMemberStatus')->setExternalUpdates( array( 'twitter' => $su_Twitter, 'facebook' => $su_Facebook ) );
 		}

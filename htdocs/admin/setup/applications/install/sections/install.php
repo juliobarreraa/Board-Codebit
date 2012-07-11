@@ -2,17 +2,17 @@
 /**
  * <pre>
  * Invision Power Services
- * IP.Board v3.3.3
+ * IP.Board v3.3.4
  * Installer: EULA file
- * Last Updated: $LastChangedDate: 2012-05-10 16:10:13 -0400 (Thu, 10 May 2012) $
+ * Last Updated: $LastChangedDate: 2012-07-03 10:29:35 -0400 (Tue, 03 Jul 2012) $
  * </pre>
  *
- * @author 		$Author: bfarber $
+ * @author 		$Author: ips_terabyte $
  * @copyright	(c) 2001 - 2009 Invision Power Services, Inc.
  * @license		http://www.invisionpower.com/company/standards.php#license
  * @package		IP.Board
  * @link		http://www.invisionpower.com
- * @version		$Rev: 10721 $
+ * @version		$Rev: 11026 $
  *
  */
 
@@ -1711,7 +1711,8 @@ class install_install extends ipsCommand
 		// INIT
 		//-----------------------------------------
 
-		$this->settings['base_url'] = IPSSetUp::getSavedData('install_url');
+		$this->settings['base_url']			= IPSSetUp::getSavedData('install_url');
+		$this->settings['ipb_reg_number']	= IPSSetUp::getSavedData('lkey');
 
 		$previous = $_REQUEST['previous'];
 
