@@ -238,10 +238,10 @@ $IPBHTML = "";
 //--starthtml--//
 $IPBHTML .= <<<EOF
 <div class='poststatusShow ipsBox'>
-	<form>
+	<form id='statusPostForm' action="{parse url="app=portal&amp;module=portal&amp;section=status&amp;do=new&amp;k={$this->member->form_hash}&amp;id={$this->memberData['member_id']}" base="public"}" method='post'>
 		<div class='wdthink-attach ipsList_data'>
 			<div class='wdthink row_data mentions-input-box'>
-			   <textarea class='mention'></textarea>
+			   <textarea class='mention' name='content'></textarea>
 			</div>
 			<div class='attach row_data'>
 				<input type='button' id='attach' value='{$this->lang->words['poststatus_attachment']}' />
