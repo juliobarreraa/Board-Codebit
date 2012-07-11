@@ -16,6 +16,10 @@ _mentions.prototype.mentions = (function() {
         options.mentionObj = options.mentionObj || 'textarea.mention';
         options.url =  options.url || 'app=portal&module=ajax&section=status&do=getfriends';
         return {
+            initEvents: function() {
+                if($('statusPostForm'))
+        			$('statusPostForm').on( 'submit', ipb.mentions.init().post.bindAsEventListener( this, 'statusContent' ) );
+            },
         	setup: function() {
         		  //Unbind
         		  if(jQuery(options.mentionObj))
@@ -66,8 +70,74 @@ _mentions.prototype.mentions = (function() {
     				    }
 				  });
         	},
-        	post: function() {
-	        	
+        	post: function( e, field ) {
+	        	Event.stop(e);
+        		
+        		if ( $( field ).value.length < 2 || $( field ).value == ipb.lang['prof_update_default'] )
+        		{
+        			return false;
+        		}
+        		
+        		var su_Twitter  = $('su_Twitter') && $('su_Twitter').checked ? 1  : 0;
+        		var su_Facebook = $('su_Facebook') && $('su_Facebook').checked ? 1 : 0;
+        		var su_Tags;
+        		jQuery('#statusContent').mentionsInput('getMentions', function(data) {
+        		          su_Tags = JSON.stringify(data);
+        		});
+        		new Ajax.Request( ipb.vars['base_url'] + "app=portal&section=status&module=ajax&do=new&md5check=" + ipb.vars['secure_hash'] + '&smallSpace=' + ipb.status.smallSpace + '&skin_group=' + ipb.status.skin_group + '&forMemberId=' + ipb.status.forMemberId,
+        						{
+        							method: 'post',
+        							evalJSON: 'force',
+        							parameters: {
+        								content: $( field ).value.encodeParam(),
+        								su_Twitter: su_Twitter,
+        								su_Facebook: su_Facebook,
+        								su_Tags: su_Tags
+        							},
+        							onSuccess: function(t)
+        							{
+        								if( Object.isUndefined( t.responseJSON ) )
+        								{
+        									alert( ipb.lang['action_failed'] );
+        									return;
+        								}
+        								
+        								if( t.responseJSON['error'] )
+        								{
+        									alert( t.responseJSON['error'] );
+        								}
+        								else
+        								{
+        									try {
+        										$('status_wrapper').innerHTML = t.responseJSON['html'] + $('status_wrapper').innerHTML;
+        										
+        										/* Showing latest only? */
+        										if ( ipb.status.myLatest )
+        										{
+        											if ( $('statusWrap-' + ipb.status.myLatest ) )
+        											{
+        												$('statusWrap-' + ipb.status.myLatest ).hide();
+        											}
+        										}
+        										
+        										/* Need to blur out of field
+        											@link	http://community.invisionpower.com/tracker/issue-21358-small-input-field-behavior-issue-after-updating-status/
+        										*/
+        										$( field ).blur();
+        										$( field ).value = '';
+        										
+        										ipb.menus.closeAll(e);
+        										
+        										/* Re-init events */
+        										ipb.status.initEvents();
+        									}
+        									catch(err)
+        									{
+        										Debug.error( 'Logging error: ' + err );
+        									}
+        								}
+        							}
+        						});
         	}
         }
     }
@@ -79,9 +149,9 @@ _mentions.prototype.mentions = (function() {
 	    init: function(options) {
 	        if(instance === undefined) {
 		        instance = new Mentions(  );
+    	        instance.setup();
+    	        instance.initEvents();
 	        }
-	        
-	        instance.setup();
 	        
 	        return instance;
 	    }

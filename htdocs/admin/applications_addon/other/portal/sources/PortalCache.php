@@ -66,4 +66,18 @@ class PortalCache {
 		$this->cache->rebuildCache( 'portalfriends_' . $member_id, 'portal' );
 	}
 	
+	public function getValuesByKey( $key, $in_array ) {
+	
+       	$returnKeys = array();
+       	
+    	if( in_array( $key, array_keys( $in_array ) ) ) {
+        	//si existe la clave en el arreglo entonces la devolvemos.
+        	foreach( $in_array as $array ) {
+        	    if( array_key_exists( $key, $array ) )
+                	$returnKeys[] = $array[ $key ];
+        	}
+    	}
+    	return $returnKeys;
+	}
+	
 }
