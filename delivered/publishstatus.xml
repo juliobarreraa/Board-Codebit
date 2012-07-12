@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name>Post Status</hook_name>
+      <hook_desc>Publish status update</hook_desc>
+      <hook_author>@codebit_org</hook_author>
+      <hook_email>juliobarreraa@gmail.com</hook_email>
+      <hook_website>http://www.codebit.org</hook_website>
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:3:{s:21:"required_applications";a:0:{}s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+      <hook_version_human>1.10</hook_version_human>
+      <hook_version_long>1010</hook_version_long>
+      <hook_extra_data><![CDATA[a:4:{s:7:"display";a:3:{s:8:"language";s:65:"From core_public_global: poststatus_attachment, poststatus_submit";s:9:"templates";s:50:"From skin_portal: pluginPostStatus, poststatusShow";s:5:"tasks";s:14:"Tasks: Friends";}s:8:"language";a:1:{s:18:"core_public_global";a:2:{s:0:"";s:21:"poststatus_attachment";i:1;s:17:"poststatus_submit";}}s:9:"templates";a:1:{s:11:"skin_portal";a:2:{i:0;s:16:"pluginPostStatus";i:1;s:14:"poststatusShow";}}s:5:"tasks";a:1:{s:0:"";s:7:"friends";}}]]></hook_extra_data>
+      <hook_key>publishstatus</hook_key>
+      <hook_global_caches/>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>pubstatus.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>pubstatus</hook_classname>
+      <hook_data><![CDATA[a:8:{s:12:"dataLocation";s:0:"";s:14:"libApplication";s:0:"";s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_portal";s:12:"skinFunction";s:16:"pluginPostStatus";s:4:"type";s:2:"if";s:2:"id";s:20:"loadPluginPostStatus";s:8:"position";s:12:"post.startif";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+/**
+ * <pre>
+ * Codebit.org
+ * IP.Board v3.3.0
+ * @description
+ * Last Updated: $Date: 10-may-2012 -006  $
+ * </pre>
+ * @filename            labelfriends.php
+ * @author 		$Author: juliobarreraa@gmail.com $
+ * @package		PRI
+ * @subpackage	        
+ * @link		http://www.codebit.org
+ * @since		10-may-2012
+ * @timestamp           17:56:10
+ * @version		$Rev:  $
+ *
+ */
+
+/**
+ * Description of labelfriends
+ *
+ * @author juliobarreraa@gmail.com
+ */
+class pubstatus {
+    //Protected
+    protected $registry;
+    
+    //Public
+    public $lang;
+    
+    public function __construct() {
+        $this->registry = ipsRegistry::instance();
+        $this->lang = $this->registry->getClass('class_localization');
+        $this->memberData	=& $this->registry->member()->fetchMemberData();
+    }
+    
+    public function getOutput() {
+        $this->lang->loadLanguageFile(array('public_global'), 'core'); //Load language
+
+    	/* System enabled? */
+    	//if ( ! $this->settings['su_enabled'] )
+    	//{
+    //		return '';
+    //	}
+    	
+    	$this->registry->class_localization->loadLanguageFile( array( 'public_profile' ), 'members' );
+    	
+		/* Load status class */
+		if ( ! $this->registry->isClassLoaded( 'memberStatus' ) )
+		{
+			$classToLoad = IPSLib::loadLibrary( IPS_ROOT_PATH . 'sources/classes/member/status.php', 'memberStatus' );
+			$this->registry->setClass( 'memberStatus', new $classToLoad( ipsRegistry::instance() ) );
+		}
+		
+		/* Fetch */
+		$statuses = $this->registry->getClass('memberStatus')->fetch( $this->memberData, array( 'friends_only' => true ) );
+		
+		$statuses_output = $this->registry->getClass('output')->getTemplate('boards')->hookBoardIndexStatusUpdates( $statuses );
+		
+        return $this->registry->output->getTemplate('portal')->poststatusShow( $statuses_output );
+    }
+}]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings/>
+  <hookextras_language>
+    <language>
+      <word_app>core</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>poststatus_attachment</word_key>
+      <word_default>Adjuntar</word_default>
+    </language>
+    <language>
+      <word_app>core</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>poststatus_submit</word_key>
+      <word_default>Publicar</word_default>
+    </language>
+  </hookextras_language>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates>
+    <templates>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<if test="loadPluginPostStatus:|:$active">
+<!-- Load Plugin Post Status -->
+<!-- End Load Plugin Post Status -->
+</if>]]></template_content>
+      <template_name>pluginPostStatus</template_name>
+      <template_data>$active = false</template_data>
+      <template_updated>1342070872</template_updated>
+      <template_removable>0</template_removable>
+      <template_added_to>0</template_added_to>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </templates>
+    <templates>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<div class='poststatusShow ipsBox'>
+	<form id='statusPostForm' action="{parse url="app=portal&amp;module=portal&amp;section=status&amp;do=new&amp;k={$this->member->form_hash}&amp;id={$this->memberData['member_id']}" base="public"}" method='post'>
+		<div class='wdthink-attach ipsList_data'>
+			<div class='wdthink row_data mentions-input-box'>
+			   <textarea class='mention' name='content' id='statusContent'></textarea>
+			</div>
+			<div class='attach row_data'>
+				<input type='button' id='attach' value='{$this->lang->words['poststatus_attachment']}' />
+			</div>
+		</div>
+		<div class='publish'>
+			<input type='submit' value='{$this->lang->words['poststatus_submit']}' />
+		</div>
+	</form>
+</div>
+{$statuses_output}]]></template_content>
+      <template_name>poststatusShow</template_name>
+      <template_data>$statuses_output</template_data>
+      <template_updated>1342070872</template_updated>
+      <template_removable>0</template_removable>
+      <template_added_to>0</template_added_to>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </templates>
+  </hookextras_templates>
+  <hookextras_css/>
+  <hookextras_replacements/>
+  <hookextras_tasks>
+    <tasks>
+      <task_title>Friends</task_title>
+      <task_file>friends.php</task_file>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>-1</task_hour>
+      <task_minute>1</task_minute>
+      <task_cronkey>ae69a64ecdc27096562514951e036740</task_cronkey>
+      <task_log>0</task_log>
+      <task_description>Friends cache member</task_description>
+      <task_enabled>0</task_enabled>
+      <task_key>friends</task_key>
+      <task_safemode>0</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>portal</task_application>
+    </tasks>
+  </hookextras_tasks>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert/>
+</hookexport>

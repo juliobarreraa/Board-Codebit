@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<information>
+  <data>
+    <name>Portal</name>
+    <public_name>Portal</public_name>
+    <author>Michael John (DevFuse)</author>
+    <description/>
+    <disabledatinstall>0</disabledatinstall>
+    <global_caches>portal</global_caches>
+    <website>http://www.devfuse.com</website>
+    <update_check/>
+    <templategroups>
+        <template match="exact">skin_portal</template>
+    </templategroups>
+  </data>
+</information>
