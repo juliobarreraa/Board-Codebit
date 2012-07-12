@@ -16,7 +16,7 @@
  </div>]]></template_content>
       <template_name>messengerDisabled</template_name>
       <template_data/>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -225,7 +225,7 @@
 <br class='clear' />]]></template_content>
       <template_name>messengerTemplate</template_name>
       <template_data><![CDATA[$html, $jumpmenu, $dirData, $totalData=array(), $topicParticipants=array(), $inlineError='', $deletedTopic=0]]></template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -266,7 +266,7 @@
 </form>]]></template_content>
       <template_name>PMQuickForm</template_name>
       <template_data>$toMemberData</template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -360,7 +360,7 @@
 <br />]]></template_content>
       <template_name>sendNewPersonalTopicForm</template_name>
       <template_data>$displayData</template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -439,7 +439,7 @@
 <br />]]></template_content>
       <template_name>sendReplyForm</template_name>
       <template_data>$displayData</template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -576,7 +576,7 @@
 {parse template="include_highlighter" group="global" params=""}]]></template_content>
       <template_name>showConversation</template_name>
       <template_data><![CDATA[$topic, $replies, $members, $jump=""]]></template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -780,7 +780,7 @@ $memberNames = implode( $mems, ', ' );
 </html>]]></template_content>
       <template_name>showConversationForArchive</template_name>
       <template_data>$topic, $replies, $members</template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -876,9 +876,9 @@ $memberNames = implode( $mems, ', ' );
 											</if>
 											<if test="folderMultipleUsers:|:$msg['_otherInviteeCount'] > 0">
 												<if test="folderFixPlural:|:$msg['_otherInviteeCount'] > 1">
-													<span title='{parse expression="implode( ', ', $msg['_invitedMemberNames'] )"}'>({$this->lang->words['pc_and']} {$msg['_otherInviteeCount']} {$this->lang->words['pc_others']})</span>
+													<span title='{parse expression="implode( ', ', $msg['_invitedMemberNames'] )"}'>({$this->lang->words['pc_and']} {$msg['_otherInviteeCount']} {$this->lang->words['pc_others']})</p>
 												<else />
-													<span title='{parse expression="implode( ', ', $msg['_invitedMemberNames'] )"}'>({$this->lang->words['pc_and']} {$msg['_otherInviteeCount']} {$this->lang->words['pc_other']})</span>
+													<span title='{parse expression="implode( ', ', $msg['_invitedMemberNames'] )"}'>({$this->lang->words['pc_and']} {$msg['_otherInviteeCount']} {$this->lang->words['pc_other']})</p>
 												</if>
 											</if>
 										</span>
@@ -975,7 +975,7 @@ $memberNames = implode( $mems, ', ' );
 </div>]]></template_content>
       <template_name>showFolder</template_name>
       <template_data>$messages, $dirname, $pages, $currentFolderID, $jumpFolderHTML</template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -994,7 +994,7 @@ $memberNames = implode( $mems, ', ' );
 	</p>
 	<br />
 </if>
-<if test="hasPagination:|:$pages">
+<if test="$pages">
 	<div class='topic_controls'>
 	{$pages}
 	</div>
@@ -1088,7 +1088,7 @@ $memberNames = implode( $mems, ', ' );
 </div>]]></template_content>
       <template_name>showSearchResults</template_name>
       <template_data>$messages, $pages, $error</template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1332,7 +1332,7 @@ $memberNames = implode( $mems, ', ' );
 {$pages}]]></template_content>
       <template_name>member_list_show</template_name>
       <template_data><![CDATA[$members, $pages="", $dropdowns=array(), $defaults=array(), $custom_fields=null, $url='']]></template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1465,7 +1465,7 @@ $memberNames = implode( $mems, ', ' );
 </div>]]></template_content>
       <template_name>showOnlineList</template_name>
       <template_data><![CDATA[$rows, $links="", $defaults=array()]]></template_data>
-      <template_updated>1341935307</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1538,7 +1538,7 @@ $memberNames = implode( $mems, ', ' );
 </form>]]></template_content>
       <template_name>acknowledgeWarning</template_name>
       <template_data>$warning</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1667,7 +1667,7 @@ $memberNames = implode( $mems, ', ' );
 </form>]]></template_content>
       <template_name>addWarning</template_name>
       <template_data>$member, $reasons, $errors, $editor, $currentPunishments</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1695,7 +1695,7 @@ $memberNames = implode( $mems, ', ' );
 </div>]]></template_content>
       <template_name>customField__gender</template_name>
       <template_data>$f</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1715,7 +1715,7 @@ $memberNames = implode( $mems, ', ' );
 </if>]]></template_content>
       <template_name>customField__generic</template_name>
       <template_data>$f</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1768,7 +1768,7 @@ $memberNames = implode( $mems, ', ' );
 </if>]]></template_content>
       <template_name>customFieldGroup__contact</template_name>
       <template_data>$f</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1819,7 +1819,7 @@ body {
 </script>]]></template_content>
       <template_name>customizeProfile</template_name>
       <template_data>$member</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1855,7 +1855,7 @@ body {
 </table>]]></template_content>
       <template_name>dnameWrapper</template_name>
       <template_data><![CDATA[$member_name="",$records=array()]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1908,7 +1908,7 @@ body {
 </if>]]></template_content>
       <template_name>explainPoints</template_name>
       <template_data>$reasons, $actions</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2020,6 +2020,7 @@ body {
 					</div>
 				</li>
 			</if>
+		
 		</foreach>
 	</ul>
 <else />
@@ -2038,7 +2039,7 @@ body {
 </if>]]></template_content>
       <template_name>friendsList</template_name>
       <template_data>$friends, $pages</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2103,7 +2104,7 @@ body {
 <br /><br />]]></template_content>
       <template_name>listWarnings</template_name>
       <template_data>$member, $warnings, $pagination, $reasons, $canWarn</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2215,7 +2216,7 @@ body {
 </form>]]></template_content>
       <template_name>photoEditor</template_name>
       <template_data>$data, $member</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2573,12 +2574,11 @@ body {
 <script type='text/javascript'>
 	$("profile_content").setStyle( { minHeight: $('profile_tabs').measure('margin-box-height') + 138 + "px" } );
 </script>
-
 <!-- ******************************************************************************************* -->
 {parse template="include_highlighter" group="global" params=""}]]></template_content>
       <template_name>profileModern</template_name>
       <template_data><![CDATA[$tabs=array(), $member=array(), $visitors=array(), $default_tab='status', $default_tab_content='', $friends=array(), $status=array(), $warns=array()]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2611,7 +2611,7 @@ body {
 </div>]]></template_content>
       <template_name>reputationPage</template_name>
       <template_data><![CDATA[$langBit, $currentApp='', $supportedApps=array(), $processedResults='']]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2696,7 +2696,7 @@ body {
 </div>]]></template_content>
       <template_name>showCard</template_name>
       <template_data>$member, $download=0</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2726,7 +2726,7 @@ body {
 </if>]]></template_content>
       <template_name>statusReplies</template_name>
       <template_data>$replies=array(), $no_wrapper=false</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2817,7 +2817,7 @@ body {
 </foreach>]]></template_content>
       <template_name>statusUpdates</template_name>
       <template_data>$updates=array(), $smallSpace=0, $latestOnly=0</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2870,7 +2870,7 @@ body {
 </div>]]></template_content>
       <template_name>statusUpdatesPage</template_name>
       <template_data><![CDATA[$updates=array(), $pages='']]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2907,7 +2907,7 @@ body {
 </div>]]></template_content>
       <template_name>tabFriends</template_name>
       <template_data><![CDATA[$friends=array(), $member=array(), $pagination='']]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2918,7 +2918,7 @@ body {
       <template_content><![CDATA[<div class='no_messages'>{$this->lang->words[ $langkey ]}</div>]]></template_content>
       <template_name>tabNoContent</template_name>
       <template_data>$langkey</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2934,7 +2934,7 @@ body {
 </div>]]></template_content>
       <template_name>tabPosts</template_name>
       <template_data>$content</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2956,13 +2956,11 @@ body {
 			</ul>
 		</if>
 		<ul class='ipsList_inline ipsType_smaller right'>
-			<if test="canViewRep:|:$this->memberData['gbw_view_reps']">
-				<li <if test="currentIsGiven:|:$type == 'given'">class='active'</if>>
-					<a href='{parse url="showuser={$member['member_id']}&amp;tab=reputation&amp;app_tab={$currentApp}&amp;type=given" seotitle="{$member['members_seo_name']}" template="showuser" base="public"}'>
-						{$this->lang->words['reputation_given']}
-					</a>
-				</li>
-			</if>
+			<li <if test="currentIsGiven:|:$type == 'given'">class='active'</if>>
+				<a href='{parse url="showuser={$member['member_id']}&amp;tab=reputation&amp;app_tab={$currentApp}&amp;type=given" seotitle="{$member['members_seo_name']}" template="showuser" base="public"}'>
+					{$this->lang->words['reputation_given']}
+				</a>
+			</li>
 			<li <if test="currentIsReceived:|:$type == 'received'">class='active'</if>>
 				<a href='{parse url="showuser={$member['member_id']}&amp;tab=reputation&amp;app_tab={$currentApp}&amp;type=received" seotitle="{$member['members_seo_name']}" template="showuser" base="public"}'>
 					{$this->lang->words['reputation_received']}
@@ -2983,7 +2981,7 @@ body {
 </div>]]></template_content>
       <template_name>tabReputation</template_name>
       <template_data><![CDATA[$member, $currentApp='', $type='', $supportedApps=array(), $processedResults='', $pagination='']]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3052,7 +3050,7 @@ body {
 </div>]]></template_content>
       <template_name>tabReputation_calendar</template_name>
       <template_data>$results</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3098,7 +3096,7 @@ body {
 </div>]]></template_content>
       <template_name>tabReputation_posts</template_name>
       <template_data>$results</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3128,7 +3126,7 @@ body {
 </div>]]></template_content>
       <template_name>tabSingleColumn</template_name>
       <template_data><![CDATA[$row=array(), $read_more_link='', $url='', $title='']]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3151,7 +3149,7 @@ body {
 		</form>
 	</div>
 </if>
-<if test="leave_comment:|:$this->memberData['member_id'] && $this->memberData['member_id'] != $member['member_id'] && $member['pp_setting_count_comments'] AND $this->registry->getClass('memberStatus')->canCreate( $this->memberData )">
+<if test="leave_comment:|:$this->memberData['member_id'] && $this->memberData['member_id'] != $member['member_id'] && $member['pp_setting_count_comments']">
 	<div class='status_update'>
 		<form id='commentForm' action='{$this->settings['base_url']}app=members&amp;module=profile&amp;section=status&amp;do=new&amp;k={$this->member->form_hash}&amp;id={$this->memberData['member_id']}&amp;forMemberId={$member['member_id']}' method='post'>
 				<input type='hidden' name='member_id' value='{$member['member_id']}' />
@@ -3177,7 +3175,7 @@ body {
 </div>]]></template_content>
       <template_name>tabStatusUpdates</template_name>
       <template_data>$updates=array(), $actions, $member=array()</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3193,7 +3191,7 @@ body {
 </div>]]></template_content>
       <template_name>tabTopics</template_name>
       <template_data>$content</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3284,7 +3282,7 @@ body {
 </script>]]></template_content>
       <template_name>coreAttachments</template_name>
       <template_data><![CDATA[$info="",$pages="",$attachments]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3324,7 +3322,7 @@ body {
 </fieldset>]]></template_content>
       <template_name>displayNameForm</template_name>
       <template_data><![CDATA[$form=array(),$error="",$okmessage="", $isFB=false]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3419,7 +3417,7 @@ var msg = "$_message";
 </if>]]></template_content>
       <template_name>emailPasswordChangeForm</template_name>
       <template_data>$txt, $_message, $isFB=false</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3432,7 +3430,7 @@ var msg = "$_message";
 </select>]]></template_content>
       <template_name>field_dropdown</template_name>
       <template_data><![CDATA[$name="",$options=""]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3453,7 +3451,7 @@ var msg = "$_message";
 </li>]]></template_content>
       <template_name>field_entry</template_name>
       <template_data><![CDATA[$title="",$desc="",$content="",$id=""]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3464,7 +3462,7 @@ var msg = "$_message";
       <template_content><![CDATA[<textarea cols="80" rows="5" wrap="soft" name="$name" class='input_text'>{$value}</textarea>]]></template_content>
       <template_name>field_textarea</template_name>
       <template_data><![CDATA[$name="",$value=""]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3475,7 +3473,7 @@ var msg = "$_message";
       <template_content><![CDATA[<input type="text" size="50" name="{$name}" value='{$value}' class='input_text' />]]></template_content>
       <template_name>field_textinput</template_name>
       <template_data><![CDATA[$name="",$value=""]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3601,7 +3599,7 @@ var msg = "$_message";
 </if>]]></template_content>
       <template_name>membersFacebookConnect</template_name>
       <template_data>$fbuid, $fbUserData, $linkedMemberData, $perms</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3733,7 +3731,7 @@ var msg = "$_message";
 </script>]]></template_content>
       <template_name>membersIgnoredUsersForm</template_name>
       <template_data>$members, $pagination</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3801,7 +3799,7 @@ var msg = "$_message";
 </if>]]></template_content>
       <template_name>membersProfileCustomize</template_name>
       <template_data>$options, $input, $errors</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3852,7 +3850,6 @@ var msg = "$_message";
 			</ul>
 		</div>
 	</fieldset>
-
 	<fieldset class='ipsSettings_section'>
 		<h3 class='ipsSettings_sectiontitle'>{$this->lang->words['ucp_comments']}</h3>
 		<div>
@@ -3992,7 +3989,7 @@ toggle_dst();
 </script>]]></template_content>
       <template_name>membersProfileForm</template_name>
       <template_data><![CDATA[$custom_fields='',$group_titles='',$day='',$mon='',$year='', $amEditor='', $times=array()]]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4044,7 +4041,7 @@ toggle_dst();
 {parse template="include_highlighter" group="global" params="1"}]]></template_content>
       <template_name>membersSignatureForm</template_name>
       <template_data><![CDATA[$editor_html="",$sig_restrictions=array(),$signature='']]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4061,7 +4058,7 @@ toggle_dst();
 </fieldset>]]></template_content>
       <template_name>membersSignatureFormError</template_name>
       <template_data>$form</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4191,7 +4188,7 @@ toggle_dst();
 </if>]]></template_content>
       <template_name>membersTwitterConnect</template_name>
       <template_data>$isConnected, $twitterUser=array()</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4344,7 +4341,7 @@ toggle_dst();
 </fieldset>]]></template_content>
       <template_name>notificationsForm</template_name>
       <template_data>$config, $emailData</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4424,7 +4421,7 @@ toggle_dst();
 </div>]]></template_content>
       <template_name>notificationsLog</template_name>
       <template_data><![CDATA[$notifications, $error='', $pages='']]></template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4458,7 +4455,7 @@ toggle_dst();
 </fieldset>]]></template_content>
       <template_name>showNotification</template_name>
       <template_data>$notification</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4543,7 +4540,7 @@ $hasMoreTabs = (is_array($tabs[ $current_tab ]['_menu']) && count($tabs[ $curren
 </if>]]></template_content>
       <template_name>userCPTemplate</template_name>
       <template_data>$current_tab, $html, $tabs, $current_area, $errors=array(), $hide_form=0, $maxUpload=0</template_data>
-      <template_updated>1341935308</template_updated>
+      <template_updated>1342070872</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
