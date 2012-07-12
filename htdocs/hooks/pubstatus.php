@@ -33,11 +33,32 @@ class pubstatus {
     public function __construct() {
         $this->registry = ipsRegistry::instance();
         $this->lang = $this->registry->getClass('class_localization');
+        $this->memberData	=& $this->registry->member()->fetchMemberData();
     }
     
     public function getOutput() {
         $this->lang->loadLanguageFile(array('public_global'), 'core'); //Load language
 
-        return $this->registry->output->getTemplate('portal')->poststatusShow();
+    	/* System enabled? */
+    	//if ( ! $this->settings['su_enabled'] )
+    	//{
+    //		return '';
+    //	}
+    	
+    	$this->registry->class_localization->loadLanguageFile( array( 'public_profile' ), 'members' );
+    	
+		/* Load status class */
+		if ( ! $this->registry->isClassLoaded( 'memberStatus' ) )
+		{
+			$classToLoad = IPSLib::loadLibrary( IPS_ROOT_PATH . 'sources/classes/member/status.php', 'memberStatus' );
+			$this->registry->setClass( 'memberStatus', new $classToLoad( ipsRegistry::instance() ) );
+		}
+		
+		/* Fetch */
+		$statuses = $this->registry->getClass('memberStatus')->fetch( $this->memberData, array( 'friends_only' => true ) );
+		
+		$statuses_output = $this->registry->getClass('output')->getTemplate('boards')->hookBoardIndexStatusUpdates( $statuses );
+		
+        return $this->registry->output->getTemplate('portal')->poststatusShow( $statuses_output );
     }
 }

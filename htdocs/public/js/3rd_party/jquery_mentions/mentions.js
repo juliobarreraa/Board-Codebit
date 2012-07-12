@@ -111,6 +111,9 @@ _mentions.prototype.mentions = (function() {
         									try {
         										$('status_wrapper').innerHTML = t.responseJSON['html'] + $('status_wrapper').innerHTML;
         										
+        										//Reset tags
+        										jQuery('#statusContent').mentionsInput('reset');
+        										
         										/* Showing latest only? */
         										if ( ipb.status.myLatest )
         										{
@@ -129,7 +132,7 @@ _mentions.prototype.mentions = (function() {
         										ipb.menus.closeAll(e);
         										
         										/* Re-init events */
-        										ipb.status.initEvents();
+        										ipb.mentions.init().initEvents();
         									}
         									catch(err)
         									{

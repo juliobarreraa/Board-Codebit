@@ -233,7 +233,7 @@ return $IPBHTML;
 //===========================================================================
 // Name: poststatusShow
 //===========================================================================
-function poststatusShow() {
+function poststatusShow( $statuses_output ) {
 $IPBHTML = "";
 //--starthtml--//
 $IPBHTML .= <<<EOF
@@ -252,6 +252,7 @@ $IPBHTML .= <<<EOF
 		</div>
 	</form>
 </div>
+{$statuses_output}
 EOF;
 //--endhtml--//
 return $IPBHTML;
