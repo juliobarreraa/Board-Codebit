@@ -31,6 +31,7 @@ class portalMemberStatus extends memberStatus
 	public $su_Tags;
 	private $keys = null;
 	private $_friends = array();
+	
 	const USER_NAME = 'name';
 	
 	/**
@@ -42,7 +43,13 @@ class portalMemberStatus extends memberStatus
 	public function __construct( ipsRegistry $registry )
 	{
 		parent::__construct( $registry );
+		
 		$this->settings['tc_parse_names_internal'] = 1;
+		
+        if ( ! $this->registry->isClassLoaded( 'publish' ) ) {
+            $classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir( 'portal' ) . '/sources/classes/publish/publish.php', 'publish' );
+            $this->registry->setClass( 'publish', new $classToLoad( $this->registry ) );
+        }
 	}
 	
 	/**
@@ -107,4 +114,24 @@ class portalMemberStatus extends memberStatus
         
 		return $content;
 	}
+	
+    public function create( $author=null, $owner=null )
+    {
+        $data = parent::create( $author, $owner );
+        
+        /** 
+         * Data contiene los datos que insertaremos en la base de datos de bitácora
+         * Si status_member_id es identico a status_author_id es una publicación realizada al público/amigos en otro caso es realizada a status_member_id desde status_author_id
+         * El ID de la tabla de configuración estará dado por la Clave STATUS_UPDATE
+        **/
+        
+        $pformat_data = array
+                        (
+                              'configuration_id'       =>    STATUS_UPDATES,
+                              'parent_id'              =>    $data[ 'status_id' ],
+                        );
+                        
+        //Configuramos los datos e insertamos
+        $this->registry->publish->setDataPublish( $pformat_data )->do_insert();
+    }
 }

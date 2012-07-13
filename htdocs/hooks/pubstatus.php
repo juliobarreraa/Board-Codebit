@@ -38,27 +38,25 @@ class pubstatus {
     
     public function getOutput() {
         $this->lang->loadLanguageFile(array('public_global'), 'core'); //Load language
-
-    	/* System enabled? */
-    	//if ( ! $this->settings['su_enabled'] )
-    	//{
-    //		return '';
-    //	}
-    	
+            	
     	$this->registry->class_localization->loadLanguageFile( array( 'public_profile' ), 'members' );
     	
 		/* Load status class */
-		if ( ! $this->registry->isClassLoaded( 'memberStatus' ) )
+		if ( ! $this->registry->isClassLoaded( 'formatter' ) )
 		{
-			$classToLoad = IPSLib::loadLibrary( IPS_ROOT_PATH . 'sources/classes/member/status.php', 'memberStatus' );
-			$this->registry->setClass( 'memberStatus', new $classToLoad( ipsRegistry::instance() ) );
+			$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir( 'portal' ) . '/sources/classes/publish/formatter.php', 'formatter' );
+			$this->registry->setClass( 'formatter', new $classToLoad( ipsRegistry::instance() ) );
 		}
 		
-		/* Fetch */
-		$statuses = $this->registry->getClass('memberStatus')->fetch( $this->memberData, array( 'friends_only' => true ) );
+		$publish_rows = array();
 		
-		$statuses_output = $this->registry->getClass('output')->getTemplate('boards')->hookBoardIndexStatusUpdates( $statuses );
+		if( ( $rows = $this->registry->formatter->get_l_publish() ) )
+		{
+		      $publish_rows = $this->registry->formatter->setFormatPubs( $rows );
+		}
 		
-        return $this->registry->output->getTemplate('portal')->poststatusShow( $statuses_output );
+		$this->output = $this->registry->getClass('output')->getTemplate('portal')->showStatus( $publish_rows );
+		
+        return $this->registry->output->getTemplate('portal')->poststatusShow( $this->output );
     }
 }

@@ -45,3 +45,75 @@ Lang:
 
 poststatus_attachment
 poststatus_submit
+
+
+Se generará una tabla la cual contendrá un índice de la acción a ejecutar,
+
+publish_format_data
+
+id: Autoincrement (Servirá para la url a fin de que haga busquedas por id)
+configure_id: Es el id de relación que nos permitirá saber el formato que seguirá esa cadena para poderse mostrar y parsear. (El html u ouput se generá desde archivos que aprovechan el query y lo mandan a la vista, en el puede haber un header, left, footer predefinido pero sobreescribible, almacenado en other_global)
+member_id: Usuario que genera la acción, solo por indexación
+status_date: Int que guarda el timestamp de la acción realizada.
+
+parents: Entidad relación con las tablas que queremos hacer inner join (En caso de obtener un arreglo vacio se ignora)
+El formato de los parents ej:
+
+field_date es la fecha que se extrae desde las tablas parent
+
+Para saber si un estado a sido modificado y es necesario informar del mismo a los autores o involucrados, se marcara con un status_event en bool 1 o 0, 1 especifica que si hay acción realizada, una vez leída la acción será necesario cambiar el valor a 0.
+
+Esto irá en la tabla de configuración general: publish_general_configuration
+$parents[] = array
+             ( 
+                 array
+                 (
+                    'tableName'        => 'AquiIraElNombreDeLaTabla', //Obligatorio Se comprobará la existencia de la tabla
+                    'fromId'           => 'AquiIraElIndiceDeRelacionDeNuestraTablaPrimaria', //Obligatorio se puede omitir solo en el primer arreglo, los posteriores deben tenerlo como obligatorio ya que es parte del ON.
+                    'toId'             => 'AquiIraElIndiceDeRelacionDeLaTablaOrigen', //Obligatorio
+                    'fieldsCollection' => array  //Opcional aunque mínimo algun elemento del arreglo deberá tener algún elemento a seleccionar en caso contrario se hará un SELECT *
+                                          (
+                                              'Aquí irá el campo 1', //Se comprobará que cada uno de los campos existe
+                                              'Aquí irá el campo 2',
+                                          ),
+                 ),
+                 array
+                 (
+                    'tableName' => 'AquiIraElNombreDeLaTabla',
+                    'fromId'    => 'AquiIraElIndiceDeRelacionDeNuestraTablaPrimaria',
+                    'toId'      => 'AquiIraElIndiceDeRelacionDeLaTablaOrigen',
+                 ),
+                 array
+                 (
+                    'tableName' => 'AquiIraElNombreDeLaTabla',
+                    'fromId'    => 'AquiIraElIndiceDeRelacionDeNuestraTablaPrimaria',
+                    'toId'      => 'AquiIraElIndiceDeRelacionDeLaTablaOrigen',
+                 ),
+             );
+             
+Tantos indices de relación tenga, es como habrá un serialize más grande.
+
+Todos estos datos se van a cachear.
+
+             
+
+Una clase central que llevará las constantes y la interfaz de como se comportaran las inserciones en los diferentes metódos. Esta clase tendrá las constantes básicas para las diferentes clases en las que se hace la inserción de lo que se trabaja. (Bitácora), La cual se puede heredar para añadir nuevas constantes o funciones a la misma. Esta clase también tendrá las main querys y hará el retorno de datos. No tendrá ninguna vista en particular sobre la salida pero si permitirá una definción de las funciones que harán este trabajo.
+
+Constantes 
+
+//CONST UPDATES = 'status_update'; //Nombre de la clase que hereda a la clase principal para mostrar los datos.
+
+Interface
+Clase principal
+Clase secundaría
+Clases que usan la clase secundaría
+
+La clase principal implementaria la clase secundaria y la secundaria a la interface
+
+De la clase secundaria se hace el output
+
+
+Identificar los elementos donde se hace el insert
+
+
+Solo debemos mostrar publicaciones de nuestros propios amigos y las nuestras. A los invitados les mostraremos solo el perfil con las publicaciones publicas. Definiendo publicas aquellas que nosotros consideremos, es por ello que cada uno de los estados realizados directamente sobre el portal podrán elegir que tipo de actividad y privacidad deseamos por defecto será solo privacidad publica
