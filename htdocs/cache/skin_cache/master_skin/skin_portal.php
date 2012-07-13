@@ -242,18 +242,17 @@ $IPBHTML = "";
 //--starthtml--//
 $IPBHTML .= <<<EOF
 <foreach loop="outerLoop:$updates as $id => $status">
-<php>print_r($status);</php>
 	<if test="$this->memberData['member_id'] AND $latestOnly AND $status['member_id'] == $this->memberData['member_id']">
 	<script type="text/javascript">
-		ipb.status.myLatest = {$status['status_id']};
+		ipb.status.myLatest = {$status['id']};
 	</script>
 	</if>
-	<div class='ipsBox_container ipsPad' id='statusWrap-{$status['status_id']}'>
+	<div class='ipsBox_container ipsPad' id='statusWrap-{$status['id']}'>
 		<a href='{parse url="showuser={$status['member_id']}" seotitle="{$status['members_seo_name']}" template="showuser" base="public"}' title='{$this->lang->words['view_profile']}' class='ipsUserPhotoLink left'>
 			<img src='{$status['pp_small_photo']}' alt="{parse expression="sprintf($this->lang->words['users_photo'],$status['members_display_name'])"}" class='ipsUserPhoto ipsUserPhoto_medium' />
 		</a>	
 		<div class="ipsBox_withphoto status_content">
-			<div id="statusContent-{$status['status_id']}">
+			<div id="statusContent-{$status['id']}">
 				<h4>
 					{parse template="userHoverCard" group="global" params="$status"}
 					<if test="forSomeoneElse:|:$status['status_member_id'] != $status['status_author_id']">
@@ -282,12 +281,12 @@ $IPBHTML .= <<<EOF
 							<img src="{$this->settings['img_url']}/comments.png" alt="" /> &nbsp;<a href="#" id="statusMore-{$status['status_id']}" class='__showAll __x{$status['status_id']}'>{parse expression="sprintf( $this->lang->words['status_show_all_x'], $status['status_replies'] )"}</a>
 						</div>
 					</if>
-					<ul id='statusReplies-{$status['status_id']}' class='ipsList_withtinyphoto clear'>
+					<ul id='statusReplies-{$status['id']}' class='ipsList_withtinyphoto clear'>
 						{parse template="statusReplies" group="profile" params="$status['replies'], 1"}
 					</ul>
 				</if>
-				<div id='statusReplyBlank-{$status['status_id']}'></div>
-				<div id='statusReply-{$status['status_id']}'>
+				<div id='statusReplyBlank-{$status['id']}'></div>
+				<div id='statusReply-{$status['id']}'>
 				<if test="$status['_userCanReply']">
 					<ul class='ipsList_withtinyphoto reply row2 ipsPad'>
 						<li>

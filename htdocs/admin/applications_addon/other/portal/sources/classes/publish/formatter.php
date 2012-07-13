@@ -43,6 +43,7 @@ class formatter
                                     'select'        => 'pf.id, pf.member_id, pf.status_date',
                                     'from'          => array( 'publish_format_data' => 'pf' ),
                                     'limit'         => array (0, 10 ),
+                                    'order'         => 'id DESC',
                                     'add_join'      => array
                                                        (
                                                             array
@@ -66,13 +67,20 @@ class formatter
             return $rows;
         }
         
-        function setFormatPubs( array $pubs )
+        /**
+         *
+         * Formatea cada uno de los elementos del arreglo pubs obteniendo una consulta que arma los elementos del arreglo que se retornaran para su parseo en la vista.
+         * @param $pubs arreglo de publicaciones obtenidas desde la base de datos.
+         * @param $formatters, arreglo que permite modificar la estructura con la que se devuelve el objeto, en base a parámetros de consulta que permitiran añadir otras tablas.
+         * 
+        **/
+        function setFormatPubs( array $pubs, array $formatters = array() )
         {
             if( count( $pubs ) > 0 )
             {
                 foreach( $pubs as $pub )
                 {
-                    $pformats[] = $this->__getFormat( $pub );
+                    $pformats[] = $this->__getFormat( $pub, $formatters );
                 }
                 
                 return $pformats;
@@ -81,17 +89,30 @@ class formatter
             return false;
         }
         
-        function setFormatPub( array $pub )
+        /**
+         *
+         * Formatea el arreglo pub obteniendo una consulta que arma los elementos del arreglo que se retornaran para su parseo en la vista.
+         * @param $pub publicación obtenidas desde la base de datos.
+         * @param $formatters, arreglo que permite modificar la estructura con la que se devuelve el objeto, en base a parámetros de consulta que permitiran añadir otras tablas.
+         * 
+        **/
+        function setFormatPub( array $pub, array $formatters = array() )
         {
             if( is_array($pub) && count( $pub ) == 1 )
             {
-                return $this->__getFormat( $pub );
+                return $this->__getFormat( $pub, $formatters );
             }
             
             return false;
         }
         
-        private function __getFormat( array $pub )
+        /**
+         * @description Permite devolver un arreglo en base a una consulta armada, con los parents establecidos desde la base de datos en un arreglo serializado
+         * @param $pub, publicación que será formateada
+         * @param $formatters, arreglo que permite modificar la estructura con la que se devuelve el objeto, en base a parámetros de consulta que permitiran añadir otras tablas.
+         *
+        **/
+        private function __getFormat( array $pub, array $formatters = array() )
         {
             //Se da forma al objeto a fin de obtener un arreglo de datos que sirva para parsearse a la vista.
             if( ! count( $pub ) > 0) 
@@ -99,50 +120,68 @@ class formatter
                 return false;
             }
             
-            $parent = unserialize( $pub[ 'parents' ] );
+            $parent = unserialize( $pub[ 'parents' ] ); //Arreglo con el conjunto de tablas padre para armar la consulta
             
-            array_push( $parent[0], $this->__autocompleteJoins( array( 'members' ), $pub[ 'field_author_id' ] ) );
+            //Elementos que necesitan agregarse a la consulta de la base de datos.
+            array_push( $parent[0], $this->__autocompleteJoins( array( 'members' ), $pub[ 'field_author_id' ] ) ); 
+            array_push( $parent[0], $this->__autocompleteJoins( array( 'profile_portal' ) ) );
             
-            $add_joins = array();
-            $index = 0;
+            $add_joins = array(); //Variable que contiene un arreglo de los elementos que haran la construcción del build para pasar a SQL
             
-            foreach( $parent[0] as $inner )
+            $pre_formatted = array(); //Elemento a retornar con el formato para parse en la vista
+            
+            foreach( $parent[0] as $index => $inner )
             {
                  //Solo al elemento 1 se le permite no tener el campo de fromId ya que ya se conoce y es parent_id
                  if( ! $index == 0 )
                  {
-                     if( ! $this->__exist_list_keys( $inner, array( 'tableName', 'fromId', 'toId' ) ) )
+                     if( ! $this->__exist_list_keys( $inner, array( 'tableName', 'fromId', 'toId' ) ) ) //Comprobamos que existan las claves necesarias para poder hacer el join se omite fromId ya que por defecto es parent_id
                      {
                          return false;
                      }
                  }else {
-                     if( ! $this->__exist_list_keys( $inner, array( 'tableName', 'toId' ) ) )
+                     if( ! $this->__exist_list_keys( $inner, array( 'tableName', 'toId' ) ) ) //Comprobamos que existan las claves necesarias para poder hacer el join
                      {
                          return false;
                      }
-                     //Generamos un LastTableName si no es el primer index
-                     $inner[ 'lastTableName' ] = $parent[0][ ( $index - 1 ) ][ 'tableName' ];
                  }
                  
+                 //Generamos un LastTableName si no es el primer index para poder consultar la tabla anterior
+                 $inner[ 'lastTableName' ] = $parent[0][ ( $index - 1 ) ][ 'tableName' ];
                  
-                 if( ! ( $add_joins[] = $this->__getJoin( $inner, array( 'fieldsCollection', 'tableName', 'toId', 'fromId' ) ) ) )
+                 
+                 if( ! ( $add_joins[] = $this->__getJoin( $inner ) ) ) //Comprobamos que el arreglo join se haya construido correctamente
                  {
                      return false;
                  }
 
-                 $pre_formatted = $this->DB->buildAndFetch( array
-                                           (
-                                               'select'     => 'pf.status_date',
-                                               'from'       => array( 'publish_format_data' => 'pf' ),
-                                               'where'      => 'pf.id = ' . $pub[ 'id' ],
-                                               'add_join'   => $add_joins
-                                           )
-                                         );
-                $index++;
-                return $pre_formatted;
             }
+            
+            //Ejecutamos el query, validaciones necesarias para evitar una exception
+            $pre_formatted = $this->DB->buildAndFetch( array
+                                                         (
+                                                             'select'     => 'pf.status_date',
+                                                             'from'       => array( 'publish_format_data' => 'pf' ),
+                                                             'where'      => 'pf.id = ' . $pub[ 'id' ],
+                                                             'add_join'   => $add_joins
+                                                         )
+                                    );
+                                    
+            //Si existe el formatter 'avatars', devolvemos el arreglo armado con los datos de avatar
+            if( array_key_exists( 'avatars', $formatters ) )
+            {
+                $pre_formatted = $this->__setAvatar( $pre_formatted );
+            }
+            
+            return $pre_formatted;
         }
         
+        /**
+         * @description Recorre cada uno de los elementos de $list dentro de $data para comprobar que cada una de las claves de $list estan dentro de $data
+         * @param $data, Arreglo para parsear el join
+         * @param $list, Listado de claves que debe tener $data para poder hacer el join correctamente
+         *
+        **/
         private function __exist_list_keys( array $data, array $list )
         {
             foreach( $list as $item )
@@ -155,31 +194,45 @@ class formatter
             return true;
         }
         
-        private function __getJoin( array $inner, array $fields )
+        /**
+         * @description Devuelve un arreglo con los datos a seleccionar, la tabla desde la que se hará el select y la condicionante.
+         * @param $inner, arreglo que será parseado para convertirlo en un elemento join
+         *
+        **/
+        private function __getJoin( array $inner )
         {
             //Una vez comprobado que el join contenga los datos necesarios vamos a comenzar el armado.
             $add_join = array();
             
+            //Si existe fieldsCollection entonces lo añadimos a select
             if( array_key_exists( 'fieldsCollection', $inner ) )
             {
-                $add_join[ 'select' ] = sprintf( '%s.%s', $inner[ 'tableName' ], join( $inner[ 'tableName' ] . ', ', $inner[ 'fieldsCollection' ] ) );
+                $add_join[ 'select' ] = sprintf( '%s.%s ', $inner[ 'tableName' ], join( ', ', $inner[ 'fieldsCollection' ] ) );
             }
             
-            $add_join[ 'from' ]   = array( $inner[ 'tableName' ] => $inner[ 'tableName' ] );
+            $add_join[ 'from' ]   = array( $inner[ 'tableName' ] => $inner[ 'tableName' ] ); //Obligatorio la tabla de la cual se realizará la consulta
             
             if( array_key_exists( 'fromId', $inner ) && $inner[ 'fromId' ] != 'parent_id' )
             {
-                $add_join[ 'where' ]  = "{$inner[ 'lastTableName' ]}.{$inner[ 'fromId' ]} = {$inner[ 'toId' ]}";
+                $add_join[ 'where' ]  = "{$inner[ 'lastTableName' ]}.{$inner[ 'fromId' ]} = {$inner[ 'tableName' ]}.{$inner[ 'toId' ]}"; //Si existe fromId se genera el where entre la tabla actual y la anterior
             }else {
-                $add_join[ 'where' ]  = "pf.parent_id = {$inner[ 'tableName' ]}.{$inner[ 'toId' ]}";
+                $add_join[ 'where' ]  = "pf.parent_id = {$inner[ 'tableName' ]}.{$inner[ 'toId' ]}"; //Si no existe fromId se general el where entre la tabla actual y la tabla origen root
             }
             
-            $add_join[ 'type' ] = 'inner';
+            //TODO: Posiblemente se necesite que también sea left
+            $add_join[ 'type' ] = 'inner'; //Tipo inner
             
             return $add_join;
         }
         
-        private function __autocompleteJoins( array $types, $fromId ) 
+        /**
+         * @description Permite completar los joins con información extra
+         * @param $types, arreglo que permite saber las tablas que serán agregadas
+         * @param $fromId elemento que sirve para mostrar el campo que sirve como llave primaria de la clave o de enlace con otra tabla ON tabla.campo = tabla1.campo1
+         *
+        **/
+        //TODO: Modificar estructura para trabajar con multiples joins sin tener que llamar 1 a 1
+        private function __autocompleteJoins( array $types, $fromId = '' ) 
         {
             $add_joins = array();
             foreach( $types as $type )
@@ -187,12 +240,28 @@ class formatter
                 switch( $type )
                 {
                     case 'members':
-                       $add_joins[] = array( 'tableName' => 'members', 'fromId' => $fromId, 'toId' => 'member_id', 'fieldsCollection' => array( 'member_id' ) );
+                       $add_joins = array( 'tableName' => 'members', 'fromId' => $fromId, 'toId' => 'member_id', 'fieldsCollection' => array( 'member_id', 'members_seo_name', 'members_display_name' ) );
                     break;
+                    case 'profile_portal':
+                       $add_joins = array( 'tableName' => 'profile_portal', 'fromId' => 'member_id', 'toId' => 'pp_member_id', 'fieldsCollection' => array( 'pp_thumb_photo' ) );
                 }
             }
             
             
             return $add_joins;
+        }
+        
+        /**
+         * @description Permite completar información extra para el arreglo devuelto
+         * @param $pub, arreglo que contiene la información preparseada
+         * @param $member_id ID del usuario que se devolverá la información de la foto de perfil en caso de no pasarse se tomará de $pub
+         *
+        **/
+        private function __setAvatar( $pub, $member_id = 0 )
+        {
+             if( ! $member_id )
+                  $member_id = (int)$pub[ 'member_id' ];
+                  
+             return ( $pub + IPSMember::buildProfilePhoto( $member_id ) );
         }
 }

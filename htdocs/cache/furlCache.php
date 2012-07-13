@@ -4,7 +4,7 @@
  * Please modify the relevant 'furlTemplates.php' file in /{app}/extensions/furlTemplates.php
  * and rebuild from the Admin CP
  *
- * Written: Fri, 13 Jul 2012 02:30:00 +0000
+ * Written: Fri, 13 Jul 2012 18:15:00 +0000
  *
  * Why? Because Matt says so.
  */

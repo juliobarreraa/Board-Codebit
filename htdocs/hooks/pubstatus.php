@@ -52,7 +52,7 @@ class pubstatus {
 		
 		if( ( $rows = $this->registry->formatter->get_l_publish() ) )
 		{
-		      $publish_rows = $this->registry->formatter->setFormatPubs( $rows );
+		      $publish_rows = $this->registry->formatter->setFormatPubs( $rows, array( 'avatars' => true ) );
 		}
 		
 		$this->output = $this->registry->getClass('output')->getTemplate('portal')->showStatus( $publish_rows );
