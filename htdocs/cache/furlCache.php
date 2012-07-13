@@ -4,7 +4,7 @@
  * Please modify the relevant 'furlTemplates.php' file in /{app}/extensions/furlTemplates.php
  * and rebuild from the Admin CP
  *
- * Written: Fri, 13 Jul 2012 18:15:00 +0000
+ * Written: Fri, 13 Jul 2012 21:10:36 +0000
  *
  * Why? Because Matt says so.
  */
@@ -652,6 +652,341 @@
         array (
           0 => 'section',
           1 => 'most',
+        ),
+      ),
+    ),
+  ),
+  'viewsizes' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))image=(.+?)(?:(?:&|&amp;))size=(.+?)(&|$)/i',
+      1 => 'gallery/sizes/$1-#{__title__}/$2/$3',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/sizes/(\\d+?)-(.+?)/(?:(.+?)(/|$))?#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'module',
+          1 => 'images',
+        ),
+        2 => 
+        array (
+          0 => 'section',
+          1 => 'sizes',
+        ),
+        3 => 
+        array (
+          0 => 'image',
+          1 => '$1',
+        ),
+        4 => 
+        array (
+          0 => 'size',
+          1 => '$3',
+        ),
+      ),
+    ),
+  ),
+  'viewimage' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))image=(.+?)(&|$)/i',
+      1 => 'gallery/image/$1-#{__title__}/$2',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/image/(\\d+?)-#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'image',
+          1 => '$1',
+        ),
+      ),
+    ),
+  ),
+  'editalbum' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))albumedit=(.+?)(&|$)/i',
+      1 => 'gallery/album/$1-#{__title__}/edit/$2',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/album/(\\d+?)-(.+?)/edit(/|$)#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'module',
+          1 => 'images',
+        ),
+        2 => 
+        array (
+          0 => 'section',
+          1 => 'review',
+        ),
+        3 => 
+        array (
+          0 => 'album_id',
+          1 => '$1',
+        ),
+      ),
+    ),
+  ),
+  'viewalbum' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))(?:module=user(?:&|&amp;)user=\\d+?(?:&|&amp;)do=view_album(?:&|&amp;))?album=(.+?)(&|$)/i',
+      1 => 'gallery/album/$1-#{__title__}/$2',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/album/(\\d+?)-#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'album',
+          1 => '$1',
+        ),
+      ),
+    ),
+  ),
+  'browsealbumroot' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 0,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))browseAlbum=0(&|$)/i',
+      1 => 'gallery/browse/$1',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/browse/([^0-9]+?|$)#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'module',
+          1 => 'albums',
+        ),
+        2 => 
+        array (
+          0 => 'section',
+          1 => 'browse',
+        ),
+        3 => 
+        array (
+          0 => 'browseAlbum',
+          1 => '$1',
+        ),
+      ),
+    ),
+  ),
+  'browsealbum' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))browseAlbum=(\\d+?)(&|$)/i',
+      1 => 'gallery/browse/$1-#{__title__}/$2',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/browse/(\\d+?)-#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'module',
+          1 => 'albums',
+        ),
+        2 => 
+        array (
+          0 => 'section',
+          1 => 'browse',
+        ),
+        3 => 
+        array (
+          0 => 'browseAlbum',
+          1 => '$1',
+        ),
+      ),
+    ),
+  ),
+  'galleryportal' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 0,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))home=portal(&|$)/i',
+      1 => 'gallery/portal/$1',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/portal/#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'module',
+          1 => 'albums',
+        ),
+        2 => 
+        array (
+          0 => 'section',
+          1 => 'home',
+        ),
+      ),
+    ),
+  ),
+  'rssalbum' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))module=albums(?:(?:&|&amp;))section=rss(?:(?:&|&amp;))album=(.+?)(&|$)/i',
+      1 => 'gallery/rss/$1-#{__title__}/$2',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/rss/(\\d+?)-#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'module',
+          1 => 'albums',
+        ),
+        2 => 
+        array (
+          0 => 'section',
+          1 => 'rss',
+        ),
+        3 => 
+        array (
+          0 => 'album',
+          1 => '$1',
+        ),
+      ),
+    ),
+  ),
+  'useralbum' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery(?:(?:&|&amp;))user=(.+?)(&|$)/i',
+      1 => 'gallery/member/$1-#{__title__}/$2',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery/member/(\\d+?)-#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
+        ),
+        1 => 
+        array (
+          0 => 'module',
+          1 => 'albums',
+        ),
+        2 => 
+        array (
+          0 => 'section',
+          1 => 'user',
+        ),
+        3 => 
+        array (
+          0 => 'member_id',
+          1 => '$1',
+        ),
+      ),
+    ),
+  ),
+  'app=gallery' => 
+  array (
+    'app' => 'gallery',
+    'allowRedirect' => 1,
+    'out' => 
+    array (
+      0 => '/app=gallery/i',
+      1 => 'gallery/',
+    ),
+    'in' => 
+    array (
+      'regex' => '#/gallery(/|$|\\?)#i',
+      'matches' => 
+      array (
+        0 => 
+        array (
+          0 => 'app',
+          1 => 'gallery',
         ),
       ),
     ),

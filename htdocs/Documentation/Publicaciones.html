@@ -117,3 +117,59 @@ Identificar los elementos donde se hace el insert
 
 
 Solo debemos mostrar publicaciones de nuestros propios amigos y las nuestras. A los invitados les mostraremos solo el perfil con las publicaciones publicas. Definiendo publicas aquellas que nosotros consideremos, es por ello que cada uno de los estados realizados directamente sobre el portal podrán elegir que tipo de actividad y privacidad deseamos por defecto será solo privacidad publica
+
+______________________________________________________
+
+Permitir cachear cada uno de los últimos 100 estados por cada usuario.
+
+A las publicaciones les falta poder tener un where para poder determnar condicionantes
+
+
+				$array = array
+				         (
+				                array
+				                (
+				                       'tableName'              => 'gallery_images',
+				                       'toId'                   => 'id',
+				                       'fieldsCollection'       => array
+				                                                   (
+				                                                            'caption', 'description', 'directory', 'masked_file_name', 'medium_file_name', 'file_type', 'caption_seo',
+				                                                   ),
+				                ),
+				                array
+				                (
+				                       'tableName'              => 'gallery_albums_main',
+				                       'fromId'                 => 'img_album_id',
+				                       'toId'                   => 'album_id',
+				                       'fieldsCollection'       => array
+				                                                   (
+				                                                            'album_name', 'album_name_seo', 'album_description',
+				                                                   ),
+				                ),
+				         );
+				         
+Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [tableName] => member_status_updates
+                    [toId] => status_id
+                    [fieldsCollection] => Array
+                        (
+                            [0] => status_content
+                        )
+
+                )
+
+        )
+
+)
+
+
+--
+
+INSERT INTO `adpjWzk92y_publish_general_configuration` (`id`, `field_date`, `field_author_id`, `parents`, `enabled`) VALUES
+(1, 'status_date', 'status_author_id', 'a:1:{i:0;a:3:{s:9:"tableName";s:21:"member_status_updates";s:4:"toId";s:9:"status_id";s:16:"fieldsCollection";a:1:{i:0;s:14:"status_content";}}}a:1:{i:0;a:3:{s:9:"tableName";s:21:"member_status_updates";s:4:"toId";s:9:"status_id";s:16:"fieldsCollection";a:1:{i:0;s:14:"status_content";}}}', 1),
+(2, 'idate', 'member_id', 'a:2:{i:0;a:3:{s:9:"tableName";s:14:"gallery_images";s:4:"toId";s:2:"id";s:16:"fieldsCollection";a:7:{i:0;s:7:"caption";i:1;s:11:"description";i:2;s:9:"directory";i:3;s:16:"masked_file_name";i:4;s:16:"medium_file_name";i:5;s:9:"file_type";i:6;s:11:"caption_seo";}}i:1;a:4:{s:9:"tableName";s:19:"gallery_albums_main";s:6:"fromId";s:12:"img_album_id";s:4:"toId";s:8:"album_id";s:16:"fieldsCollection";a:3:{i:0;s:10:"album_name";i:1;s:14:"album_name_seo";i:2;s:17:"album_description";}}}', 1);

@@ -1,7 +1,7 @@
 <?php
 /**
  * Master skin file
- * Written: Mon, 09 Jul 2012 18:16:42 +0000
+ * Written: Fri, 13 Jul 2012 19:04:19 +0000
  */
 class skin_global_1 extends output {
 //===========================================================================
@@ -680,7 +680,6 @@ $IPBHTML .= <<<EOF
 			</ul>
 		</div>
 	</fieldset>
-
 	<fieldset class='ipsSettings_section'>
 		<h3 class='ipsSettings_sectiontitle'>{$this->lang->words['ucp_comments']}</h3>
 		<div>

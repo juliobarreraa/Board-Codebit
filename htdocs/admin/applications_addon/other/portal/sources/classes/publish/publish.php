@@ -25,6 +25,7 @@ if ( ! defined( 'IN_IPB' ) )
 }
 
 define( 'STATUS_UPDATES', 1 );
+define( 'GALLERY_UPDATES', 2);
 
 class publish
 {

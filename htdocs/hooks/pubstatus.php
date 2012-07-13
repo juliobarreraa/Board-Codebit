@@ -55,7 +55,11 @@ class pubstatus {
 		      $publish_rows = $this->registry->formatter->setFormatPubs( $rows, array( 'avatars' => true ) );
 		}
 		
-		$this->output = $this->registry->getClass('output')->getTemplate('portal')->showStatus( $publish_rows );
+		
+		foreach( $publish_rows as $prow )
+		{
+    		$this->output .= $this->registry->getClass('output')->getTemplate( 'portal' )->$prow[ 'template' ]( $prow );
+		}
 		
         return $this->registry->output->getTemplate('portal')->poststatusShow( $this->output );
     }

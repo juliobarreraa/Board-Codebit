@@ -48,7 +48,7 @@ class formatter
                                                        (
                                                             array
                                                             (
-                                                                    'select'        => 'pg.field_date, pg.field_author_id, pg.parents',
+                                                                    'select'        => 'pg.id as st_id, pg.field_date, pg.field_author_id, pg.parents',
                                                                     'from'          => array( 'publish_general_configuration' => 'pg' ),
                                                                     'where'         => 'pg.enabled = 1 and pf.configuration_id = pg.id',
                                                                     'type'          => 'inner',
@@ -123,14 +123,14 @@ class formatter
             $parent = unserialize( $pub[ 'parents' ] ); //Arreglo con el conjunto de tablas padre para armar la consulta
             
             //Elementos que necesitan agregarse a la consulta de la base de datos.
-            array_push( $parent[0], $this->__autocompleteJoins( array( 'members' ), $pub[ 'field_author_id' ] ) ); 
-            array_push( $parent[0], $this->__autocompleteJoins( array( 'profile_portal' ) ) );
+            array_push( $parent, $this->__autocompleteJoins( array( 'members' ), $pub[ 'field_author_id' ] ) ); 
+            array_push( $parent, $this->__autocompleteJoins( array( 'profile_portal' ) ) );
             
             $add_joins = array(); //Variable que contiene un arreglo de los elementos que haran la construcción del build para pasar a SQL
             
             $pre_formatted = array(); //Elemento a retornar con el formato para parse en la vista
             
-            foreach( $parent[0] as $index => $inner )
+            foreach( $parent as $index => $inner )
             {
                  //Solo al elemento 1 se le permite no tener el campo de fromId ya que ya se conoce y es parent_id
                  if( ! $index == 0 )
@@ -147,7 +147,12 @@ class formatter
                  }
                  
                  //Generamos un LastTableName si no es el primer index para poder consultar la tabla anterior
-                 $inner[ 'lastTableName' ] = $parent[0][ ( $index - 1 ) ][ 'tableName' ];
+                 if( array_key_exists( 'isRoot', $inner ) )
+                 {
+                        $inner[ 'lastTableName' ] = $parent[ 0 ][ 'tableName' ];
+                 }else {
+                     $inner[ 'lastTableName' ] = $parent[ ( $index - 1 ) ][ 'tableName' ];
+                 }
                  
                  
                  if( ! ( $add_joins[] = $this->__getJoin( $inner ) ) ) //Comprobamos que el arreglo join se haya construido correctamente
@@ -171,6 +176,21 @@ class formatter
             if( array_key_exists( 'avatars', $formatters ) )
             {
                 $pre_formatted = $this->__setAvatar( $pre_formatted );
+            }
+            
+            //Set template
+            switch( intval( $pub['st_id'] ) )
+            {
+                case 1:
+                     $pre_formatted[ 'template' ] = 'statusUpdates';
+                     break;
+                case 2:
+                     $pre_formatted[ 'template' ] = 'showPhoto';
+                     break;
+                default:
+                     $pre_formatted[ 'template' ] = 'statusUpdates';
+                     break;
+                     
             }
             
             return $pre_formatted;
@@ -240,7 +260,7 @@ class formatter
                 switch( $type )
                 {
                     case 'members':
-                       $add_joins = array( 'tableName' => 'members', 'fromId' => $fromId, 'toId' => 'member_id', 'fieldsCollection' => array( 'member_id', 'members_seo_name', 'members_display_name' ) );
+                       $add_joins = array( 'tableName' => 'members', 'fromId' => $fromId, 'toId' => 'member_id', 'fieldsCollection' => array( 'member_id', 'members_seo_name', 'members_display_name' ), 'isRoot' => true );
                     break;
                     case 'profile_portal':
                        $add_joins = array( 'tableName' => 'profile_portal', 'fromId' => 'member_id', 'toId' => 'pp_member_id', 'fieldsCollection' => array( 'pp_thumb_photo' ) );

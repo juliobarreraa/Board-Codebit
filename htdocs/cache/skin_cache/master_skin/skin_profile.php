@@ -1,7 +1,7 @@
 <?php
 /**
  * Master skin file
- * Written: Mon, 09 Jul 2012 18:16:42 +0000
+ * Written: Fri, 13 Jul 2012 19:04:19 +0000
  */
 class skin_global_1 extends output {
 //===========================================================================
@@ -1132,7 +1132,6 @@ $IPBHTML .= <<<EOF
 <script type='text/javascript'>
 	$("profile_content").setStyle( { minHeight: $('profile_tabs').measure('margin-box-height') + 138 + "px" } );
 </script>
-
 <!-- ******************************************************************************************* -->
 {parse template="include_highlighter" group="global" params=""}
 EOF;

@@ -447,6 +447,7 @@ ipb.lang['post_empty_post']	= "Sorry, you can't submit a blank post. Please ente
 ipb.lang['post_empty_title']	= "You must enter a topic title!";
 ipb.lang['post_empty_username']	= "You must enter a username";
 ipb.lang['post_hide_reason_default']	= "Enter a reason...";
+ipb.lang['post_too_short']	= "Your post is too short";
 ipb.lang['prof_comment_empty']	= "You must enter a comment";
 ipb.lang['prof_comment_mod']	= "Your comment was added, but requires approval by this member before it will be displayed";
 ipb.lang['prof_comment_perm']	= "You do not have permission to post comments on this profile";

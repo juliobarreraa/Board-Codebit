@@ -9,7 +9,7 @@
 </div>]]></template_content>
       <template_name>affiliates</template_name>
       <template_data><![CDATA[$links=""]]></template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -62,7 +62,7 @@
 </div><br class='clearfix' />]]></template_content>
       <template_name>articles</template_name>
       <template_data>$articles</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -89,7 +89,7 @@
 </div>]]></template_content>
       <template_name>latestPosts</template_name>
       <template_data>$topics=array()</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -107,7 +107,7 @@
 </div>]]></template_content>
       <template_name>onlineUsers</template_name>
       <template_data>$active</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -121,7 +121,7 @@
 </if>]]></template_content>
       <template_name>pluginPostStatus</template_name>
       <template_data>$active = false</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -137,7 +137,7 @@
 </div>]]></template_content>
       <template_name>pollWrapper</template_name>
       <template_data><![CDATA[$content='',$topic=array()]]></template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -163,7 +163,7 @@
 {$statuses_output}]]></template_content>
       <template_name>poststatusShow</template_name>
       <template_data>$statuses_output</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -180,7 +180,29 @@
 </if>]]></template_content>
       <template_name>showBlocks</template_name>
       <template_data>$blocks=array()</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<div id='status_standalone_page'>
+	<div id="status_wrapper" class='ipsBox'>
+		<if test="hasUpdates:|:count( $publish )">
+			{parse template="statusUpdates" group="portal" params="$publish"}
+		<else />
+			<p class='no-status'>{$this->lang->words['status_updates_none']}</p>
+		</if>
+	</div>
+	<div class='topic_controls clearfix'>
+		{$pages}
+	</div>
+</div>]]></template_content>
+      <template_name>showStatus</template_name>
+      <template_data>$publish</template_data>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -198,7 +220,7 @@
 </div>]]></template_content>
       <template_name>siteNavigation</template_name>
       <template_data>$links=array()</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -225,7 +247,98 @@
 {parse template="include_highlighter" group="global" params="1"}]]></template_content>
       <template_name>skeletonTemplate</template_name>
       <template_data>$leftBlocks, $mainBlocks, $rightBlocks</template_data>
-      <template_updated>1342070872</template_updated>
+      <template_updated>1342205816</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<foreach loop="outerLoop:$updates as $id => $status">
+	<if test="$this->memberData['member_id'] AND $latestOnly AND $status['member_id'] == $this->memberData['member_id']">
+	<script type="text/javascript">
+		ipb.status.myLatest = {$status['id']};
+	</script>
+	</if>
+	<div class='ipsBox_container ipsPad' id='statusWrap-{$status['id']}'>
+		<a href='{parse url="showuser={$status['member_id']}" seotitle="{$status['members_seo_name']}" template="showuser" base="public"}' title='{$this->lang->words['view_profile']}' class='ipsUserPhotoLink left'>
+			<img src='{$status['pp_small_photo']}' alt="{parse expression="sprintf($this->lang->words['users_photo'],$status['members_display_name'])"}" class='ipsUserPhoto ipsUserPhoto_medium' />
+		</a>	
+		<div class="ipsBox_withphoto status_content">
+			<div id="statusContent-{$status['id']}">
+				<h4>
+					{parse template="userHoverCard" group="global" params="$status"}
+					<if test="forSomeoneElse:|:$status['status_member_id'] != $status['status_author_id']">
+						&rarr;
+						{parse template="userHoverCard" group="global" params="$status['owner']"}
+					</if>
+				</h4>
+				<div class='status_status'>
+					{$status['status_content']}
+				</div>
+				<span class='desc lighter blend_links'>
+					<img src="{$this->settings['img_url']}/icon_lock.png" id='statusLockImg-{$status['status_id']}' alt="{$this->lang->words['status__locked']}" <if test="noLocked:|:!$status['status_is_locked']">style='display: none'</if> />
+					<if test="cImg:|:! $smallSpace AND $status['_creatorImg']"><img src="{$status['_creatorImg']}" alt='' /></if>
+					<a href='{parse url="app=members&amp;module=profile&amp;section=status&amp;type=single&amp;status_id={$status['status_id']}" seotitle="true" template="members_status_single" base="public"}'>{$status['status_date_formatted_short']}</a><if test="creatorText:|:$smallSpace AND $status['_creatorText'] AND $status['status_creator'] AND $status['status_creator'] != 'ipb'"> {$this->lang->words['su_via']} {$status['_creatorText']}</if>
+				</span>
+				<span class='mod_links'>
+					<if test="canDelete:|:$status['_canDelete']"> &middot; <a rel="nofollow" href="{$this->settings['base_url']}app=members&amp;module=profile&amp;section=status&amp;do=deleteStatus&amp;status_id={$status['status_id']}&amp;k={$this->member->form_hash}" id="statusDelete-{$status['status_id']}" class="__sD __d{$status['status_id']}">{$this->lang->words['status_delete_link']}</a></if>
+					<span id='statusUnlock-{$status['status_id']}' <if test="isLocked:|:$status['_isLocked'] AND $status['_canUnlock']">style='display:inline'<else />style='display:none'</if>> &middot; <a rel="nofollow"  href="{$this->settings['base_url']}app=members&amp;module=profile&amp;section=status&amp;do=unlockStatus&amp;status_id={$status['status_id']}&amp;k={$this->member->form_hash}" id="statusUnlockLink-{$status['status_id']}" class="__sU __u{$status['status_id']}">{$this->lang->words['status_unlock_link']}</a></span>
+					<span id='statusLock-{$status['status_id']}' <if test="canLock:|:$status['_canLock'] AND ! $status['_isLocked']">style='display:inline'<else />style='display:none'</if>> &middot; <a rel="nofollow"  href="{$this->settings['base_url']}app=members&amp;module=profile&amp;section=status&amp;do=lockStatus&amp;status_id={$status['status_id']}&amp;k={$this->member->form_hash}" id="statusLockLink-{$status['status_id']}" class="__sL __l{$status['status_id']}">{$this->lang->words['status_lock_link']}</a></span>
+				</span>
+			</div>
+			<div id="statusFeedback-{$status['status_id']}" class='status_feedback'>
+				<if test="$status['status_replies'] AND count( $status['replies'] )">
+					<if test="hasMore:|:$status['status_replies'] > 3">
+						<div class='status_mini_wrap row2 altrow' id='statusMoreWrap-{$status['status_id']}'>
+							<img src="{$this->settings['img_url']}/comments.png" alt="" /> &nbsp;<a href="#" id="statusMore-{$status['status_id']}" class='__showAll __x{$status['status_id']}'>{parse expression="sprintf( $this->lang->words['status_show_all_x'], $status['status_replies'] )"}</a>
+						</div>
+					</if>
+					<ul id='statusReplies-{$status['id']}' class='ipsList_withtinyphoto clear'>
+						{parse template="statusReplies" group="profile" params="$status['replies'], 1"}
+					</ul>
+				</if>
+				<div id='statusReplyBlank-{$status['id']}'></div>
+				<div id='statusReply-{$status['id']}'>
+				<if test="$status['_userCanReply']">
+					<ul class='ipsList_withtinyphoto reply row2 ipsPad'>
+						<li>
+							<form id='statusReplyForm-{$status['status_id']}' action='{$this->settings['base_url']}app=members&amp;module=profile&amp;section=status&amp;do=reply&amp;status_id={$status['status_id']}&amp;k={$this->member->form_hash}&amp;id={$this->memberData['member_id']}' method='post'>
+								<a href='{parse url="showuser={$this->memberData['member_id']}" seotitle="{$this->memberData['members_seo_name']}" template="showuser" base="public"}' title='{$this->lang->words['view_profile']}' class='ipsUserPhotoLink left'><img src='{$this->memberData['pp_mini_photo']}' alt="{parse expression="sprintf($this->lang->words['users_photo'],$this->memberData['members_display_name'])"}" class='ipsUserPhoto ipsUserPhoto_tiny' /></a>
+								<div class='list_content'>
+									<div class="status_mini_content">
+										<textarea class='status_textarea input_text' rows='3' cols='50' name='comment-{$status['status_id']}' id='statusText-{$status['status_id']}'></textarea>
+										<div class="status_submit"><input type='submit' class='__submit input_submit' id='statusSubmit-{$status['status_id']}' value='{$this->lang->words['status__dfcomment']}' /></div>
+									</div>									
+								</div>
+							</form>
+							<a href='#' class='__showform' id='statusReplyFormShow-{$status['status_id']}' style='display: none'>{$this->lang->words['status__addcomment']}</a>
+						</li>
+					</ul>
+					<script type='text/javascript'>
+						if( $('statusReplyForm-{$status['status_id']}') )
+						{
+							$('statusReplyForm-{$status['status_id']}').hide();
+						}
+						
+						if( $('statusReplyFormShow-{$status['status_id']}') )
+						{
+							$('statusReplyFormShow-{$status['status_id']}').show();
+						}
+					</script>
+				</if>
+				</div>
+				<div class='status_mini_wrap row2 altrow' id='statusMaxWrap-{$status['status_id']}' <if test="maxReplies:|:$status['status_replies'] < $this->settings['su_max_replies']">style='display:none'</if>>
+					<img src="{$this->settings['img_url']}/locked_replies.png" title="{$this->lang->words['status_too_many_replies']}" alt='x' /> {$this->lang->words['status_too_many_replies']}
+				</div>
+			</div>
+		</div>
+	</div>
+</foreach>]]></template_content>
+      <template_name>statusUpdates</template_name>
+      <template_data>$updates=array(), $smallSpace=0, $latestOnly=0</template_data>
+      <template_updated>1342205816</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>

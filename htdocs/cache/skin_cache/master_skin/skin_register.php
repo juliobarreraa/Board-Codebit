@@ -1,7 +1,7 @@
 <?php
 /**
  * Master skin file
- * Written: Mon, 09 Jul 2012 18:16:42 +0000
+ * Written: Fri, 13 Jul 2012 19:04:19 +0000
  */
 class skin_global_1 extends output {
 //===========================================================================
@@ -251,7 +251,6 @@ $IPBHTML .= <<<EOF
 	</p>
 	<br />
 </if>
-
 <form action="{parse url="app=core&module=global&section=lostpass" base="public"}" method="post">
 <input type="hidden" name="do" value="11" />
 <h2 class='maintitle'>{$this->lang->words['recover_password']}</h2>

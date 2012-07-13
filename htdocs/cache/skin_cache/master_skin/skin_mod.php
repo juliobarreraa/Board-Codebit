@@ -1,7 +1,7 @@
 <?php
 /**
  * Master skin file
- * Written: Mon, 09 Jul 2012 18:16:42 +0000
+ * Written: Fri, 13 Jul 2012 19:04:19 +0000
  */
 class skin_global_1 extends output {
 //===========================================================================
@@ -312,7 +312,6 @@ $IPBHTML .= <<<EOF
 <input type='hidden' name='t' value='{$topic['tid']}' />
 <input type='hidden' name='f' value='{$forum['id']}' />
 <input type='hidden' name='st' value='{$this->request['st']}' />
-
 <p class='message'>{$this->lang->words['move_exp']}</p>
 <br />
 <h2 class='maintitle'>{$this->lang->words['top_move']}: {$forum['name']} &gt; {$topic['title']}</h2>

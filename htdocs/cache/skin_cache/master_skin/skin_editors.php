@@ -1,7 +1,7 @@
 <?php
 /**
  * Master skin file
- * Written: Mon, 09 Jul 2012 18:16:42 +0000
+ * Written: Fri, 13 Jul 2012 19:04:19 +0000
  */
 class skin_global_1 extends output {
 //===========================================================================
@@ -121,7 +121,6 @@ ipb.editor_values.get('templates')['menu_item'] = new Template("<li id='#{id}_cm
 ipb.editor_values.get('templates')['togglesource'] = new Template("<fieldset id='#{id}_ts_controls' class='submit' style='text-align: left'><input type='button' class='input_submit' value='{$this->lang->words['js_template_update']}' id='#{id}_ts_update' />&nbsp;&nbsp;&nbsp; <a href='#' id='#{id}_ts_cancel' class='cancel'>{$this->lang->words['js_template_cancel_source']}</a></fieldset>");
 ipb.editor_values.get('templates')['emoticons_showall'] = new Template("<input class='input_submit emoticons' type='button' id='#{id}_all_emoticons' value='{$this->lang->words['show_all_emoticons']}' />");
 ipb.editor_values.get('templates')['emoticon_wrapper'] = new Template("<h4><span>{$this->lang->words['emoticons_template_title']}</span></h4><div id='#{id}_emoticon_holder' class='emoticon_holder'></div>");
-
 // Add smilies into the mix
 ipb.editor_values.set( 'show_emoticon_link', false );
 <if test="hasemoticons:|:$emoticons != ''">

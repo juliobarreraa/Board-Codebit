@@ -1,7 +1,7 @@
 <?php
 /**
  * Master skin file
- * Written: Mon, 09 Jul 2012 18:16:42 +0000
+ * Written: Fri, 13 Jul 2012 19:04:19 +0000
  */
 class skin_global_1 extends output {
 //===========================================================================
@@ -107,7 +107,6 @@ $IPBHTML .= <<<EOF
 	ipb.templates['poll_choice'] = 		new Template("<li id='poll_#{qid}_#{cid}_wrap' style='display: none'><input type='text' id='poll_#{qid}_#{cid}' name='choice[#{qid}_#{cid}]' class='input_text' value='#{choice}' size='66' maxlength='254' /> <input type='text' id='poll_#{qid}_#{cid}_votes' name='votes[#{qid}_#{cid}]' value='#{votes}' class='input_text' size='5' title='{$this->lang->words['poll_votes_desc']}' /> <a href='#' id='remove_#{qid}_#{cid}' title='{$this->lang->words['remove_choice']}'>{parse replacement="remove_poll_choice"}</a></li>");
 //]]>
 </script>
-
 <div class='post_form poll_form' id='poll_form'>
 	<a href='#' id='add_poll' class='ipsType_small'><img src='{$this->settings['img_url']}/bullet_toggle_plus.png' /> {$this->lang->words['poll_manage_link']}</a>
 	
