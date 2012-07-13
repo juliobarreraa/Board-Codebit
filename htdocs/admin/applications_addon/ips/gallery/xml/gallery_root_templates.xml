@@ -103,7 +103,7 @@
 <br />]]></template_content>
       <template_name>albumFeatureView</template_name>
       <template_data><![CDATA[$feature, $recents, $album, $children, $childrenTitle, $sideblocks=array(), $comments='', $childrenRootCount=0, $isUserView=false, $subAlbums=array()]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -139,7 +139,7 @@
 </div>]]></template_content>
       <template_name>albumSelector</template_name>
       <template_data>$albums, $recents, $albumData=array()</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -249,7 +249,7 @@
 </script>]]></template_content>
       <template_name>albumSelectorPanel</template_name>
       <template_data>$albums, $filters, $navAlbums, $albumData</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -423,7 +423,7 @@
 </if>]]></template_content>
       <template_name>albumView</template_name>
       <template_data><![CDATA[$cover, $images, $album, $children, $parents, $follow='', $subAlbums='', $childrenRootCount]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -597,7 +597,7 @@
 </if>]]></template_content>
       <template_name>albumViewDetail</template_name>
       <template_data><![CDATA[$cover, $images, $album, $children, $parents, $follow='', $subAlbums='', $childrenRootCount]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -654,7 +654,7 @@
 </tr>]]></template_content>
       <template_name>boardIndexEntry</template_name>
       <template_data>$album</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -695,7 +695,7 @@
 </if>]]></template_content>
       <template_name>deleteAlbumDialogue</template_name>
       <template_data>$data=array(), $hasKids=false</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -716,7 +716,7 @@
 	</fieldset>]]></template_content>
       <template_name>galleryPhotoAlbum</template_name>
       <template_data>$albumImages, $albumID</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -731,7 +731,7 @@
 </script>]]></template_content>
       <template_name>inlineAlbumModeration</template_name>
       <template_data/>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -792,7 +792,7 @@
 </div>]]></template_content>
       <template_name>miniAlbumStripHorizontal</template_name>
       <template_data><![CDATA[$albums, $title='', $parent=array(), $beforeTrimCount=0]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -823,7 +823,7 @@ $this->_lastId = array_pop( $ids );
 </ol>]]></template_content>
       <template_name>miniAlbumStripSubAlbums</template_name>
       <template_data>$albums, $parent</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -855,7 +855,7 @@ $this->_lastId = array_pop( $ids );
 </div>]]></template_content>
       <template_name>miniLatestCommentBlock</template_name>
       <template_data><![CDATA[$images, $title='']]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -936,7 +936,7 @@ $this->_lastId = array_pop( $ids );
 </form>]]></template_content>
       <template_name>newAlbumDialogue</template_name>
       <template_data>$data=array()</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1011,7 +1011,7 @@ $this->_lastId = array_pop( $ids );
 </div>]]></template_content>
       <template_name>slideShow</template_name>
       <template_data>$album, $imageIds, $imageData, $lastID</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1079,7 +1079,7 @@ $this->_lastId = array_pop( $ids );
 </fieldset>]]></template_content>
       <template_name>userCpAlbumIndexView</template_name>
       <template_data><![CDATA[$rows=""]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1102,7 +1102,7 @@ $this->_lastId = array_pop( $ids );
 <br />]]></template_content>
       <template_name>bbCodeAlbum</template_name>
       <template_data>$album</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1126,7 +1126,7 @@ $this->_lastId = array_pop( $ids );
 <br />]]></template_content>
       <template_name>bbCodeImage</template_name>
       <template_data><![CDATA[$image="", $album=""]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1137,7 +1137,7 @@ $this->_lastId = array_pop( $ids );
       <template_content><![CDATA[<link rel="stylesheet" type="text/css" media="screen" href="{$this->settings['public_dir']}style_css/{$this->registry->output->skin['_csscacheid']}/ipgallery.css" />]]></template_content>
       <template_name>galleryCss</template_name>
       <template_data/>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1152,7 +1152,7 @@ $this->_lastId = array_pop( $ids );
 </div>]]></template_content>
       <template_name>general_warning</template_name>
       <template_data><![CDATA[$data='']]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1167,7 +1167,7 @@ $this->_lastId = array_pop( $ids );
 {parse template="include_highlighter" group="global" params="1"}]]></template_content>
       <template_name>globals</template_name>
       <template_data><![CDATA[$data='']]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1208,7 +1208,7 @@ $this->_lastId = array_pop( $ids );
 <br />]]></template_content>
       <template_name>hookRecentGalleryImages</template_name>
       <template_data>$rows</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1225,7 +1225,7 @@ $this->_lastId = array_pop( $ids );
 </script>]]></template_content>
       <template_name>likeSummary</template_name>
       <template_data>$data, $relId, $opts</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1239,7 +1239,7 @@ $this->_lastId = array_pop( $ids );
 </if>]]></template_content>
       <template_name>likeSummaryContents</template_name>
       <template_data>$data, $relId, $opts=array()</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1256,7 +1256,7 @@ $this->_lastId = array_pop( $ids );
 </div>]]></template_content>
       <template_name>profileWrapper</template_name>
       <template_data><![CDATA[$member,$data='']]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1403,7 +1403,7 @@ $this->_lastId = array_pop( $ids );
 <br />]]></template_content>
       <template_name>browse</template_name>
       <template_data>$children, $album, $pages, $stats</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1545,7 +1545,7 @@ $this->_lastId = array_pop( $ids );
 <br />]]></template_content>
       <template_name>home</template_name>
       <template_data><![CDATA[$feature, $sidebars, $albums, $pages='', $stats]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1586,7 +1586,6 @@ $this->_lastId = array_pop( $ids );
 		</div>
 		<br />
 		</if>
-
 		<if test="hasAlreadyCoverUpload:|:$album['_hasCoverSet'] == 'elsewhere'">
 			{$album['cover']['tag']}
 			<div class='ipsBox_withphoto'>
@@ -1789,7 +1788,7 @@ $this->_lastId = array_pop( $ids );
 </script>]]></template_content>
       <template_name>review</template_name>
       <template_data>$images, $album, $type, $sessionKey</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1810,7 +1809,7 @@ $this->_lastId = array_pop( $ids );
 <div>]]></template_content>
       <template_name>ajaxDetail</template_name>
       <template_data><![CDATA[$image, $album=""]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1821,7 +1820,7 @@ $this->_lastId = array_pop( $ids );
       <template_content><![CDATA[<embed autoplay="true" showcontrols="true" showstatusbar="true" showtracker="true" src="{$file}" width="640" height="480">]]></template_content>
       <template_name>mediaEmbedPlayer</template_name>
       <template_data>$file, $playerOptions=array()</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1836,7 +1835,7 @@ $this->_lastId = array_pop( $ids );
 </script>]]></template_content>
       <template_name>mediaFlashPlayer</template_name>
       <template_data>$file, $playerOptions=array()</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1860,7 +1859,7 @@ $this->_lastId = array_pop( $ids );
 </div>]]></template_content>
       <template_name>meta_html</template_name>
       <template_data><![CDATA[$content=""]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1880,7 +1879,7 @@ $this->_lastId = array_pop( $ids );
 </form>]]></template_content>
       <template_name>moveDialogue</template_name>
       <template_data>$image, $album</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1891,7 +1890,7 @@ $this->_lastId = array_pop( $ids );
       <template_content><![CDATA[<div class="img_new_sticker_{$size}"></div>]]></template_content>
       <template_name>newSticker</template_name>
       <template_data>$size=24</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1921,7 +1920,7 @@ $this->_lastId = array_pop( $ids );
 </script>]]></template_content>
       <template_name>photostrip</template_name>
       <template_data>$album, $images=array()</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2014,7 +2013,6 @@ $this->_lastId = array_pop( $ids );
 	</if>
 	<li><a href='#shareLinks' data-clicklaunch="showShareLinks" data-scope="gallery">{$this->lang->words['gallery_share_links']}</a></li>
 </ul>
-
 <br class='clear' />
 <div class='ipsLayout ipsLayout_withright ipsLayout_hugeright'>
 	<div class='ipsLayout_right'>
@@ -2232,7 +2230,7 @@ $this->_lastId = array_pop( $ids );
 <div id="ips_lightbox" style='display:none' setup="false" available="true" dimensions="{$info['_data']['sizes']['full'][0]}-{$info['_data']['sizes']['full'][1]}" caption="{$info['caption']}" fullimage="{$info['image_url-full']}"></div>]]></template_content>
       <template_name>show_image</template_name>
       <template_data>$info=array(), $author=array(), $can_do_avatar=0, $photostrip, $comments, $nextPrev=array(), $follow, $album</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2268,7 +2266,7 @@ $this->_lastId = array_pop( $ids );
 </div>]]></template_content>
       <template_name>sizes</template_name>
       <template_data><![CDATA[$image, $album="", $size=""]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2290,7 +2288,7 @@ $this->_lastId = array_pop( $ids );
 </html>]]></template_content>
       <template_name>attachiFrameMediaThumb</template_name>
       <template_data><![CDATA[$id, $JSON='{}']]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2331,7 +2329,7 @@ $this->_lastId = array_pop( $ids );
 </html>]]></template_content>
       <template_name>attachiFrameUpload</template_name>
       <template_data><![CDATA[$id, $JSON='{}']]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2418,7 +2416,7 @@ $this->_lastId = array_pop( $ids );
 </form>]]></template_content>
       <template_name>editImageForm</template_name>
       <template_data><![CDATA[$image=array(), $album=array(), $errors=array(), $preview='']]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2437,7 +2435,6 @@ $this->_lastId = array_pop( $ids );
 </script>
 {parse js_module="gallery_uploader"}
 {parse js_module="gallery_albumchooser"}
-
 <h1 class='ipsType_pagetitle'>{$this->lang->words['upload_ucfirst']}</h1>
 <br />
 <div class='ipsSteps clearfix'>
@@ -2559,7 +2556,7 @@ $this->_lastId = array_pop( $ids );
 </script>]]></template_content>
       <template_name>uploadForm</template_name>
       <template_data><![CDATA[$sessionKey='', $album=array(), $stats=array(), $allowed_file_types]]></template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2593,7 +2590,7 @@ $this->_lastId = array_pop( $ids );
 <br />]]></template_content>
       <template_name>galleryAdvancedSearchFilters</template_name>
       <template_data>$options</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2655,7 +2652,7 @@ $this->_lastId = array_pop( $ids );
 </tr>]]></template_content>
       <template_name>galleryAlbumSearchResult</template_name>
       <template_data>$data, $resultAsTitle=false</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2698,7 +2695,7 @@ $this->_lastId = array_pop( $ids );
 </tr>]]></template_content>
       <template_name>galleryCommentSearchResult</template_name>
       <template_data>$data, $resultAsTitle=false</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2755,7 +2752,7 @@ $this->_lastId = array_pop( $ids );
 </tr>]]></template_content>
       <template_name>galleryImageSearchResult</template_name>
       <template_data>$data, $resultAsTitle=false</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2804,7 +2801,7 @@ $this->_lastId = array_pop( $ids );
 </if>]]></template_content>
       <template_name>profileBlock</template_name>
       <template_data>$member, $albums=array(), $images=array(), $hasMore=false</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2822,7 +2819,7 @@ $this->_lastId = array_pop( $ids );
 </if>]]></template_content>
       <template_name>searchResultsAsGallery</template_name>
       <template_data>$results, $titlesOnly=false</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2886,7 +2883,7 @@ $this->_lastId = array_pop( $ids );
 </div>]]></template_content>
       <template_name>unapprovedComments</template_name>
       <template_data>$comments</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2960,7 +2957,7 @@ function deletePopUp(e, elem)
 </script>]]></template_content>
       <template_name>unapprovedImages</template_name>
       <template_data>$images</template_data>
-      <template_updated>1324415215</template_updated>
+      <template_updated>1342214242</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
