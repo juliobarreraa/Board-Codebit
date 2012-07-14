@@ -27,8 +27,8 @@ class public_portal_portal_status extends public_members_profile_status
 		/* Load status class */
 		if ( ! $this->registry->isClassLoaded( 'memberStatus' ) )
 		{
-			$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir( 'portal' ) . '/sources/classes/member/status.php', 'portalMemberStatus' );
-			$this->registry->setClass( 'portalMemberStatus', new $classToLoad( ipsRegistry::instance() ) );
+			$classToLoad = IPSLib::loadLibrary( IPS_ROOT_PATH . 'sources/classes/member/status.php', 'memberStatus' );
+			$this->registry->setClass( 'memberStatus', new $classToLoad( ipsRegistry::instance() ) );
 		}
 		
 		/* WHAT R WE DOING? */
@@ -52,13 +52,13 @@ class public_portal_portal_status extends public_members_profile_status
 		$forMemberId = intval( $this->request['forMemberId'] );
 		
 		/* Set Author */
-		$this->registry->getClass('portalMemberStatus')->setAuthor( $this->memberData );
+		$this->registry->getClass('memberStatus')->setAuthor( $this->memberData );
 		
 		/* Set Content */
-		$this->registry->getClass('portalMemberStatus')->setContent( trim( $this->request['content'] ) );
+		$this->registry->getClass('memberStatus')->setContent( trim( $this->request['content'] ) );
 		
 		/* Can we reply? */
-		if ( ! $this->registry->getClass('portalMemberStatus')->canCreate() )
+		if ( ! $this->registry->getClass('memberStatus')->canCreate() )
  		{
 			$this->registry->output->showError( 'status_off', 10268, null, null, 403 );
 		}
@@ -73,17 +73,17 @@ class public_portal_portal_status extends public_members_profile_status
 	    		$this->registry->output->showError( 'status_off', 10268, null, null, 403 );
 	    	}
 			/* Set owner */
-			$this->registry->getClass('portalMemberStatus')->setStatusOwner( $owner );
+			$this->registry->getClass('memberStatus')->setStatusOwner( $owner );
 		}
 		else
 		{
-		    $this->registry->getClass('portalMemberStatus')->setCreator( 'portal' ); //Set creator
+		    $this->registry->getClass('memberStatus')->setCreator( 'portal' ); //Set creator
 			/* Set post outs */
-			$this->registry->getClass('portalMemberStatus')->setExternalUpdates( array( 'twitter' => $su_Twitter, 'facebook' => $su_Facebook ) );
+			$this->registry->getClass('memberStatus')->setExternalUpdates( array( 'twitter' => $su_Twitter, 'facebook' => $su_Facebook ) );
 		}
 
 		/* Update */
-		$this->registry->getClass('portalMemberStatus')->create();
+		$this->registry->getClass('memberStatus')->create();
 		
 		/* Got a return URL? */
 		if ( $this->request['rurl'] )

@@ -34,10 +34,10 @@ class public_portal_ajax_status extends public_members_ajax_status {
         
 		
 		/* Load status class */
-		if ( ! $this->registry->isClassLoaded( 'portalMemberStatus' ) )
+		if ( ! $this->registry->isClassLoaded( 'memberStatus' ) )
 		{
-			$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir( 'portal' ) . '/sources/classes/member/status.php', 'portalMemberStatus' );
-			$this->registry->setClass( 'portalMemberStatus', new $classToLoad( ipsRegistry::instance() ) );
+			$classToLoad = IPSLib::loadLibrary( IPS_ROOT_PATH . 'sources/classes/member/status.php', 'memberStatus' );
+			$this->registry->setClass( 'memberStatus', new $classToLoad( ipsRegistry::instance() ) );
 		}
         
 		switch($this->request['do']) {
@@ -65,7 +65,7 @@ class public_portal_ajax_status extends public_members_ajax_status {
 	 */
 	protected function _new()
 	{
-	    $this->registry->getClass('portalMemberStatus')->su_Tags = json_decode(str_replace(array('&quot;'), '"', $this->request['su_Tags']));
+	    $this->registry->getClass('memberStatus')->su_Tags = json_decode(str_replace(array('&quot;'), '"', $this->request['su_Tags']));
 		IPSDebug::fireBug( 'info', array( 'Status content: ' . $_POST['content'] ) );
 		IPSDebug::fireBug( 'info', array( 'Cleaned status: ' . trim( $this->convertAndMakeSafe( $_POST['content'] ) ) ) );
 		
@@ -83,13 +83,13 @@ class public_portal_ajax_status extends public_members_ajax_status {
 		}
 		
 		/* Set Author */
-		$this->registry->getClass('portalMemberStatus')->setAuthor( $this->memberData );
+		$this->registry->getClass('memberStatus')->setAuthor( $this->memberData );
 		
 		/* Set Content */
-		$this->registry->getClass('portalMemberStatus')->setContent( trim( $this->convertAndMakeSafe( $_POST['content'] ) ) );
+		$this->registry->getClass('memberStatus')->setContent( trim( $this->convertAndMakeSafe( $_POST['content'] ) ) );
 		
 		/* Can we create? */
-		if ( ! $this->registry->getClass('portalMemberStatus')->canCreate() )
+		if ( ! $this->registry->getClass('memberStatus')->canCreate() )
  		{
 			$this->returnJsonError( $this->lang->words['status_off'] );
 		}
@@ -105,20 +105,20 @@ class public_portal_ajax_status extends public_members_ajax_status {
 	    	}
 	
 			/* Set owner */
-			$this->registry->getClass('portalMemberStatus')->setStatusOwner( $owner );
+			$this->registry->getClass('memberStatus')->setStatusOwner( $owner );
 		}
 		else
 		{
 			/* Set post outs */
-			$this->registry->getClass('portalMemberStatus')->setExternalUpdates( array( 'twitter' => $su_Twitter, 'facebook' => $su_Facebook ) );
-			$this->registry->getClass('portalMemberStatus')->setCreator( 'portal' );
+			$this->registry->getClass('memberStatus')->setExternalUpdates( array( 'twitter' => $su_Twitter, 'facebook' => $su_Facebook ) );
+			$this->registry->getClass('memberStatus')->setCreator( 'portal' );
 		}
 
 		/* Update */
-		$newStatus = $this->registry->getClass('portalMemberStatus')->create();
+		$newStatus = $this->registry->getClass('memberStatus')->create();
 		
 		/* Now grab the reply and return it */
-		$new = $this->registry->getClass('output')->getTemplate( $skin_group )->statusUpdates( $this->registry->getClass('portalMemberStatus')->fetch( $this->memberData['member_id'], array( 'relatedTo' => $forMemberId, 'isApproved' => true, 'sort_dir' => 'desc', 'limit' => 1 ) ), $smallSpace );
+		$new = $this->registry->getClass('output')->getTemplate( $skin_group )->statusUpdates( $this->registry->getClass('memberStatus')->fetch( $this->memberData['member_id'], array( 'relatedTo' => $forMemberId, 'isApproved' => true, 'sort_dir' => 'desc', 'limit' => 1 ) ), $smallSpace );
 		
 		$this->returnJsonArray( array( 'status' => 'success', 'html' => $this->cleanOutput( $new ) ) );
 	}
