@@ -35,7 +35,6 @@ class formatter
             $this->DB              = ipsRegistry::DB();
             /* Init some data */
             require_once( IPS_ROOT_PATH . 'sources/classes/comments/bootstrap.php' );
-            $this->_comments = classes_comments_bootstrap::controller( 'portal-status' );
         }
         
         function get_l_publish()
@@ -189,14 +188,12 @@ class formatter
             //Set template
             switch( intval( $pub['st_id'] ) )
             {
+                default:
                 case 1:
                      $pre_formatted[ 'template' ] = 'statusUpdates';
                      break;
                 case 2:
                      $pre_formatted[ 'template' ] = 'showPhoto';
-                     break;
-                default:
-                     $pre_formatted[ 'template' ] = 'statusUpdates';
                      break;
                      
             }
@@ -295,6 +292,21 @@ class formatter
         
         private function __setComments( array $pub )
         {
+            //Set template comments
+            switch( intval( $pub['st_id'] ) )
+            {
+                default:
+                case 1:
+                     $portal_type = 'portal-status';
+                     break;
+                case 2:
+                     $portal_type = 'gallery-images';
+                     break;
+            }
+            
+            $this->_comments = classes_comments_bootstrap::controller( $portal_type );
+            
+            
     		$comment = $this->DB->buildAndFetch(array
     		                                    (
     		                                      'select' => 'status_id, status_member_id, status_date, status_content, status_replies, status_last_ids, status_is_latest, status_is_locked, status_hash, status_imported, status_creator, status_author_id, status_author_ip, status_approved',
@@ -303,6 +315,7 @@ class formatter
     		                                      'limit' => array(0, 1),
     		                                     )
     		);
+    		
     		
             $pub[ 'status_replies' ] = $this->_comments->fetchFormatted( $pub );
             
