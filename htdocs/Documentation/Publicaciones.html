@@ -148,24 +148,21 @@ A las publicaciones les falta poder tener un where para poder determnar condicio
 				                ),
 				         );
 				         
-Array
-(
-    [0] => Array
-        (
-            [0] => Array
-                (
-                    [tableName] => member_status_updates
-                    [toId] => status_id
-                    [fieldsCollection] => Array
+               $array = array
                         (
-                            [0] => status_content
-                        )
+                                array
+                                (
+                                      'tableName'               => 'member_status_updates',
+                                      'toId'                    => 'status_id',
+                                      'fieldsCollection'        => array
+                                                                   (
+                                                                        'status_content',
+                                                                        'status_id',
+                                                                   ),
+                                ),
 
-                )
+                        );
 
-        )
-
-)
 
 
 --

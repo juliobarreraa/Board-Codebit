@@ -26,14 +26,16 @@
 class pubstatus {
     //Protected
     protected $registry;
+    protected $DB;
     
     //Public
     public $lang;
     
     public function __construct() {
-        $this->registry = ipsRegistry::instance();
-        $this->lang = $this->registry->getClass('class_localization');
+        $this->registry     = ipsRegistry::instance();
+        $this->lang         = $this->registry->getClass('class_localization');
         $this->memberData	=& $this->registry->member()->fetchMemberData();
+        $this->DB           = ipsRegistry::DB();
     }
     
     public function getOutput() {
@@ -52,7 +54,7 @@ class pubstatus {
 		
 		if( ( $rows = $this->registry->formatter->get_l_publish() ) )
 		{
-		      $publish_rows = $this->registry->formatter->setFormatPubs( $rows, array( 'avatars' => true ) );
+		      $publish_rows = $this->registry->formatter->setFormatPubs( $rows, array( 'avatars' => true, 'comments' => true ) );
 		}
 		
 		

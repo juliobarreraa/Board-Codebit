@@ -521,6 +521,6 @@ class portalBlockGateway
  		{
  			return;
  		} 
- 	}    
+ 	}
 }
 ?>

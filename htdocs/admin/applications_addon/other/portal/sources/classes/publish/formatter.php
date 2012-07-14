@@ -33,6 +33,9 @@ class formatter
         {
             $this->registry        =  $registry;
             $this->DB              = ipsRegistry::DB();
+            /* Init some data */
+            require_once( IPS_ROOT_PATH . 'sources/classes/comments/bootstrap.php' );
+            $this->_comments = classes_comments_bootstrap::controller( 'portal-status' );
         }
         
         function get_l_publish()
@@ -178,6 +181,11 @@ class formatter
                 $pre_formatted = $this->__setAvatar( $pre_formatted );
             }
             
+            if( array_key_exists( 'comments', $formatters ) )
+            {
+                $pre_formatted = $this->__setComments( $pre_formatted );
+            }
+            
             //Set template
             switch( intval( $pub['st_id'] ) )
             {
@@ -277,11 +285,27 @@ class formatter
          * @param $member_id ID del usuario que se devolverá la información de la foto de perfil en caso de no pasarse se tomará de $pub
          *
         **/
-        private function __setAvatar( $pub, $member_id = 0 )
+        private function __setAvatar( array $pub, $member_id = 0 )
         {
              if( ! $member_id )
                   $member_id = (int)$pub[ 'member_id' ];
                   
              return ( $pub + IPSMember::buildProfilePhoto( $member_id ) );
+        }
+        
+        private function __setComments( array $pub )
+        {
+    		$comment = $this->DB->buildAndFetch(array
+    		                                    (
+    		                                      'select' => 'status_id, status_member_id, status_date, status_content, status_replies, status_last_ids, status_is_latest, status_is_locked, status_hash, status_imported, status_creator, status_author_id, status_author_ip, status_approved',
+    		                                      'from' => 'member_status_updates',
+    		                                      'order' => 'status_id DESC',
+    		                                      'limit' => array(0, 1),
+    		                                     )
+    		);
+    		
+            $pub[ 'status_replies' ] = $this->_comments->fetchFormatted( $pub );
+            
+            return $pub;
         }
 }

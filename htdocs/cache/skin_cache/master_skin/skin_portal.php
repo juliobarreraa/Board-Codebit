@@ -324,15 +324,15 @@ $IPBHTML .= <<<EOF
 				<span id='statusLock-{$status['status_id']}' <if test="canLock:|:$status['_canLock'] AND ! $status['_isLocked']">style='display:inline'<else />style='display:none'</if>> &middot; <a rel="nofollow"  href="{$this->settings['base_url']}app=members&amp;module=profile&amp;section=status&amp;do=lockStatus&amp;status_id={$status['status_id']}&amp;k={$this->member->form_hash}" id="statusLockLink-{$status['status_id']}" class="__sL __l{$status['status_id']}">{$this->lang->words['status_lock_link']}</a></span>
 			</span>
 		</div>
-		<div id="statusFeedback-{$status['status_id']}" class='status_feedback'>
-			<if test="$status['status_replies'] AND count( $status['replies'] )">
+		<div id="statusFeedback-{$status['status_id']}" class='status_feedback' style='margin-left: -65px;'>
+			<if test="$status['status_replies']">
 				<if test="hasMore:|:$status['status_replies'] > 3">
 					<div class='status_mini_wrap row2 altrow' id='statusMoreWrap-{$status['status_id']}'>
 						<img src="{$this->settings['img_url']}/comments.png" alt="" /> &nbsp;<a href="#" id="statusMore-{$status['status_id']}" class='__showAll __x{$status['status_id']}'>{parse expression="sprintf( $this->lang->words['status_show_all_x'], $status['status_replies'] )"}</a>
 					</div>
 				</if>
 				<ul id='statusReplies-{$status['id']}' class='ipsList_withtinyphoto clear'>
-					{parse template="statusReplies" group="profile" params="$status['replies'], 1"}
+					{$status['status_replies']}
 				</ul>
 			</if>
 			<div id='statusReplyBlank-{$status['id']}'></div>
