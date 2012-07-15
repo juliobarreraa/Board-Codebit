@@ -219,7 +219,7 @@ class reputationCache extends classReputationCache
                                       'parent_id'              =>    intval( $r[ 'id' ] ),
                                 );
                                 
-                //Configuramos los datos e insertamos
+                //Configuramos los datos y eliminamos
                 $this->registry->publish->setDataPublish( $pformat_data )->do_delete();
 			}
 		}

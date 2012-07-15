@@ -185,19 +185,6 @@ A las publicaciones les falta poder tener un where para poder determnar condicio
 				                                                            '_reputation_index_fields',
 				                                                   ),
 				                       'isCallback'             => true,
-				                       'tag'                    => 'pid',
-				                ),
-				                array
-				                (
-				                       'tableName'              => '_link_reputation_index',
-				                       'fromId'                 => '_reputation_index_id',
-				                       'toId'                   => '_link_reputation_index_id',
-				                       'fieldsCollection'       => array
-				                                                   (
-				                                                            '_link_reputation_index_fields',
-				                                                   ),
-				                       'isCallback'             => true,
-				                       'tag'                    => 'id',
 				                ),
 				         );
 				         echo serialize($array);exit;

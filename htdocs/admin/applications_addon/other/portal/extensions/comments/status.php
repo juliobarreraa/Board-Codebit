@@ -94,6 +94,7 @@ class comments_portal_status extends classes_comments_renderer
 		return 'comments_portal';
 	}
 	
+    
 	/**
 	 * Fetch parent
 	 *
@@ -101,7 +102,13 @@ class comments_portal_status extends classes_comments_renderer
 	 */
 	public function fetchParent( $id )
 	{
-		return array();
+		return $this->DB->buildAndFetch(array 
+		                            (
+		                                 'select'    => '*',
+		                                 'from'      => 'member_status_updates',
+		                                 'where'     => 'status_id = ' . $id,
+		                            )
+		                      );
 	}
 	
 	/**

@@ -691,6 +691,10 @@ jQuery.noConflict();
 
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.textEditor.js'>
 </script>
+<script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.comments.js'>
+</script>
+<script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/3rd_party/ips.portal.js'>
+</script>
 <!-- End Include JS Portal -->
 EOF;
 //--endhtml--//
