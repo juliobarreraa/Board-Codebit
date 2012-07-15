@@ -413,14 +413,14 @@ $IPBHTML .= <<<EOF
 		</div>
      </div>
 		<div id="statusFeedback-{$status['status_id']}" class='status_feedback'>
-			<if test="$status['status_replies'] AND count( $status['replies'] )">
+			<if test="$status['status_replies']">
 				<if test="hasMore:|:$status['status_replies'] > 3">
 					<div class='status_mini_wrap row2 altrow' id='statusMoreWrap-{$status['status_id']}'>
 						<img src="{$this->settings['img_url']}/comments.png" alt="" /> &nbsp;<a href="#" id="statusMore-{$status['status_id']}" class='__showAll __x{$status['status_id']}'>{parse expression="sprintf( $this->lang->words['status_show_all_x'], $status['status_replies'] )"}</a>
 					</div>
 				</if>
 				<ul id='statusReplies-{$status['id']}' class='ipsList_withtinyphoto clear'>
-					{parse template="statusReplies" group="profile" params="$status['replies'], 1"}
+					{$status['status_replies']}
 				</ul>
 			</if>
 			<div id='statusReplyBlank-{$status['id']}'></div>

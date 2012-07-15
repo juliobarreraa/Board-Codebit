@@ -182,7 +182,7 @@ class formatter
             
             if( array_key_exists( 'comments', $formatters ) )
             {
-                $pre_formatted = $this->__setComments( $pre_formatted );
+                $pre_formatted = $this->__setComments( $pre_formatted, intval( $pub['st_id'] ) );
             }
             
             //Set template
@@ -290,10 +290,10 @@ class formatter
              return ( $pub + IPSMember::buildProfilePhoto( $member_id ) );
         }
         
-        private function __setComments( array $pub )
+        private function __setComments( array $pub, $st_id )
         {
             //Set template comments
-            switch( intval( $pub['st_id'] ) )
+            switch( intval( $st_id ) )
             {
                 default:
                 case 1:
@@ -303,20 +303,8 @@ class formatter
                      $portal_type = 'gallery-images';
                      break;
             }
-            
             $this->_comments = classes_comments_bootstrap::controller( $portal_type );
             
-            
-    		$comment = $this->DB->buildAndFetch(array
-    		                                    (
-    		                                      'select' => 'status_id, status_member_id, status_date, status_content, status_replies, status_last_ids, status_is_latest, status_is_locked, status_hash, status_imported, status_creator, status_author_id, status_author_ip, status_approved',
-    		                                      'from' => 'member_status_updates',
-    		                                      'order' => 'status_id DESC',
-    		                                      'limit' => array(0, 1),
-    		                                     )
-    		);
-    		
-    		
             $pub[ 'status_replies' ] = $this->_comments->fetchFormatted( $pub );
             
             return $pub;
