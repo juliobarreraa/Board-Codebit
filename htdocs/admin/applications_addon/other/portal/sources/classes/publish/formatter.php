@@ -195,6 +195,8 @@ class formatter
                 case 2:
                      $pre_formatted[ 'template' ] = 'showPhoto';
                      break;
+                case 3:
+                     $pre_formatted[ 'template' ] = 'showLike';
                      
             }
             
@@ -295,7 +297,6 @@ class formatter
             //Set template comments
             switch( intval( $st_id ) )
             {
-                default:
                 case 1:
                      $portal_type = 'portal-status';
                      break;
@@ -303,9 +304,13 @@ class formatter
                      $portal_type = 'gallery-images';
                      break;
             }
-            $this->_comments = classes_comments_bootstrap::controller( $portal_type );
             
-            $pub[ 'status_replies' ] = $this->_comments->fetchFormatted( $pub );
+            if( $portal_type )
+            {
+                $this->_comments = classes_comments_bootstrap::controller( $portal_type );
+                $pub[ 'status_replies' ] = $this->_comments->fetchFormatted( $pub );
+            }
+            
             
             return $pub;
         }

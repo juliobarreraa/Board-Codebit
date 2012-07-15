@@ -26,7 +26,7 @@ if ( ! defined( 'IN_IPB' ) )
 
 define( 'STATUS_UPDATES', 1 );
 define( 'GALLERY_UPDATES', 2);
-
+define( 'STATUS_LIKEIT', 3);
 class publish
 {
         protected $registry;
@@ -60,6 +60,7 @@ class publish
         
         function getDataPublish()
         {
+            
             if( ! $this->__exist_list_keys( $this->_data, array( 'configuration_id', 'parent_id', 'member_id', 'status_date' ) ) )
             {
                 return false;
@@ -77,6 +78,17 @@ class publish
             $this->DB->insert( 'publish_format_data', $this->_data );
             
             return $this->DB->getInsertId();
+        }
+        
+        function do_delete()
+        {
+            if( ! $this->getDataPublish() ) {
+                return false;
+            }
+            
+            $this->DB->delete( 'publish_format_data', 'configuration_id = ' . $this->_data[ 'configuration_id' ] . ' and parent_id = ' . $this->_data[ 'parent_id' ] );
+            
+            return true;
         }
         
         private function __exist_list_keys( array $data, array $list )
