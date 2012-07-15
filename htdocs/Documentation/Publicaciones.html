@@ -175,12 +175,39 @@ A las publicaciones les falta poder tener un where para poder determnar condicio
 				                                                            'type_id',
 				                                                   ),
 				                ),
+				                array
+				                (
+				                       'tableName'              => '_reputation_index',
+				                       'fromId'                 => 'type_id',
+				                       'toId'                   => '_reputation_index_id',
+				                       'fieldsCollection'       => array
+				                                                   (
+				                                                            '_reputation_index_fields',
+				                                                   ),
+				                       'isCallback'             => true,
+				                       'tag'                    => 'pid',
+				                ),
+				                array
+				                (
+				                       'tableName'              => '_link_reputation_index',
+				                       'fromId'                 => '_reputation_index_id',
+				                       'toId'                   => '_link_reputation_index_id',
+				                       'fieldsCollection'       => array
+				                                                   (
+				                                                            '_link_reputation_index_fields',
+				                                                   ),
+				                       'isCallback'             => true,
+				                       'tag'                    => 'id',
+				                ),
 				         );
+				         echo serialize($array);exit;
 
+Pese a que existen tablas dinámicas de donde se extrae la información, deberemos decirle al sistema cuales son los querys que hacen uso de dichas tablas con el fin de poder armar correctamente la consulta, para ello se agregara un nuevo campo en la estructura del arreglo que se llamara isCallback el cual a true nos permitirá saber si el contenido de tableName se trata de una función para extraer información en base a la tabla que contiene la consulta.
 
 
 --
 
 INSERT INTO `adpjWzk92y_publish_general_configuration` (`id`, `field_date`, `field_author_id`, `parents`, `enabled`) VALUES
-(1, 'status_date', 'status_author_id', 'a:1:{i:0;a:3:{s:9:"tableName";s:21:"member_status_updates";s:4:"toId";s:9:"status_id";s:16:"fieldsCollection";a:1:{i:0;s:14:"status_content";}}}a:1:{i:0;a:3:{s:9:"tableName";s:21:"member_status_updates";s:4:"toId";s:9:"status_id";s:16:"fieldsCollection";a:1:{i:0;s:14:"status_content";}}}', 1),
-(2, 'idate', 'member_id', 'a:2:{i:0;a:3:{s:9:"tableName";s:14:"gallery_images";s:4:"toId";s:2:"id";s:16:"fieldsCollection";a:7:{i:0;s:7:"caption";i:1;s:11:"description";i:2;s:9:"directory";i:3;s:16:"masked_file_name";i:4;s:16:"medium_file_name";i:5;s:9:"file_type";i:6;s:11:"caption_seo";}}i:1;a:4:{s:9:"tableName";s:19:"gallery_albums_main";s:6:"fromId";s:12:"img_album_id";s:4:"toId";s:8:"album_id";s:16:"fieldsCollection";a:3:{i:0;s:10:"album_name";i:1;s:14:"album_name_seo";i:2;s:17:"album_description";}}}', 1);
+(1, 'status_date', 'status_author_id', 'a:1:{i:0;a:3:{s:9:"tableName";s:21:"member_status_updates";s:4:"toId";s:9:"status_id";s:16:"fieldsCollection";a:2:{i:0;s:14:"status_content";i:1;s:9:"status_id";}}}', 1),
+(3, 'rep_date', 'member_id', 'a:1:{i:0;a:3:{s:9:"tableName";s:16:"reputation_index";s:4:"toId";s:2:"id";s:16:"fieldsCollection";a:1:{i:0;s:7:"type_id";}}}', 1),
+(2, 'idate', 'member_id', 'a:2:{i:0;a:3:{s:9:"tableName";s:14:"gallery_images";s:4:"toId";s:2:"id";s:16:"fieldsCollection";a:7:{i:0;s:11:"id, caption";i:1;s:11:"description";i:2;s:9:"directory";i:3;s:16:"masked_file_name";i:4;s:16:"medium_file_name";i:5;s:9:"file_type";i:6;s:11:"caption_seo";}}i:1;a:4:{s:9:"tableName";s:19:"gallery_albums_main";s:6:"fromId";s:12:"img_album_id";s:4:"toId";s:8:"album_id";s:16:"fieldsCollection";a:3:{i:0;s:10:"album_name";i:1;s:14:"album_name_seo";i:2;s:17:"album_description";}}}', 1);

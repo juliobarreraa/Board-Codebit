@@ -42,7 +42,7 @@ class formatter
             //Regresara cada una de las publicaciones que se han dado de alta en la tabla publish_format_data
             $this->DB->build( array
                               (
-                                    'select'        => 'pf.id, pf.member_id, pf.status_date',
+                                    'select'        => 'pf.id, pf.parent_id, pf.member_id, pf.status_date',
                                     'from'          => array( 'publish_format_data' => 'pf' ),
                                     'limit'         => array (0, 10 ),
                                     'order'         => 'id DESC',
@@ -148,6 +148,19 @@ class formatter
                      }
                  }
                  
+                 if( array_key_exists( 'isCallback', $inner ) )
+                 {
+                     //Si existe entonces debemos averiguar los campos, tabla y el campo destino clave para poder realizar el join
+                     $_data = $this->__getTableName( $inner, $pub );
+                     
+                     if( $_data )
+                     {
+                         $inner[ 'toId' ]                      = $_data[ 'toId' ];
+                         $inner[ 'fieldsCollection' ]          = $_data[ 'fieldsCollection' ];
+                         $inner[ 'tableName' ]                 = $_data[ 'tableName' ];
+                     }
+                 }
+                 
                  //Generamos un LastTableName si no es el primer index para poder consultar la tabla anterior
                  if( array_key_exists( 'isRoot', $inner ) )
                  {
@@ -232,7 +245,7 @@ class formatter
             $add_join = array();
             
             //Si existe fieldsCollection entonces lo añadimos a select
-            if( array_key_exists( 'fieldsCollection', $inner ) )
+            if( array_key_exists( 'fieldsCollection', $inner ) && count( $inner[ 'fieldsCollection' ] ) > 0 )
             {
                 $add_join[ 'select' ] = sprintf( '%s.%s ', $inner[ 'tableName' ], join( ', ', $inner[ 'fieldsCollection' ] ) );
             }
@@ -313,5 +326,58 @@ class formatter
             
             
             return $pub;
+        }
+        
+        
+        /**
+         * @description Obtiene el conjunto de campos, nombre de la tabla y destino del where
+         * @param $pub, arreglo que contiene la información preparseada
+         *
+        **/
+        private function __getTableName( array $inner, array $pub )
+        {
+            switch( $inner[ 'tableName' ] )
+            {
+                case '_reputation_index':
+                    return $this->__reputation_index( $pub );
+                break;
+            }
+        }
+        
+        private function __reputation_index( array $pub )
+        {
+            $like = $this->DB->buildAndFetch( array
+                                      (
+                                              'select'         => 'app, type',
+                                              'from'           => 'reputation_index',
+                                              'where'          => 'id = '. intval($pub[ 'parent_id' ]),
+                                      )
+                       );
+                       
+            
+			/* Reputation Config */
+			if( is_file( IPSLib::getAppDir( $like[ 'app' ] ) . '/extensions/reputation.php' ) )
+			{
+				$rep_author_config = array();
+				require( IPSLib::getAppDir( $like[ 'app' ] ) . '/extensions/reputation.php' );/*maybeLibHook*/
+			}
+			else
+			{
+				$this->error_message = $this->lang->words['reputation_config'];
+				return false;
+			}
+
+			foreach( $rep_author_config as $key => $rep_config )
+			{
+			    //TODO: corregir para que no se tenga que rellenar por un foreach que puede dar lugar a un error
+    			$itable[ 'tableName' ]    = $rep_author_config[ $key ]['table'];
+    			break;
+			}
+			
+			$itable[ 'toId' ]             = 'pid';
+			$itable[ 'fieldsCollection' ] = array();
+			
+			
+            return $itable;
         }
 }
