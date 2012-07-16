@@ -72,7 +72,7 @@ class suggest
 
             if( is_array( $rows ) )
             {
-                $this->myfriends = sprintf('%d, %s', $this->memberData[ 'member_id' ], join( ', ', $rows ) );
+                $this->myfriends = sprintf('%s', join( ', ', $rows ) );
             }
 
             return $rows[ intval( count( $rows ) - 1 ) ];
@@ -83,11 +83,13 @@ class suggest
         **/
         function __getfriendsHe( $friend_id )
         {
+                $notInfriends = trim( $this->myfriends ) == '' ? $this->memberData[ 'member_id' ] : $this->memberData[ 'member_id' ] . ', ' . $this->myfriends;
+                
                 $this->DB->build( array
                                   (
                                         'select'        => 'pf.friends_member_id, pf.friends_friend_id',
                                         'from'          => array( 'profile_friends' => 'pf' ),
-                                        'where'         => 'pf.friends_member_id = ' . intval( $friend_id ) . " and pf.friends_friend_id not in ( {$this->myfriends} )",
+                                        'where'         => 'pf.friends_member_id = ' . intval( $friend_id ) . " and pf.friends_friend_id not in ( {$notInfriends} )",
                                         'order'         => 'rand()',
                                         'limit'         => array( 0, 5 ),
                                         'add_join' => array(
@@ -123,13 +125,14 @@ class suggest
         
         function __getCountCommon( $friend_id )
         {
+                
                 $count = $this->DB->buildAndFetch( array
                                           (
                                                 'select'        => 'count( pf.friends_friend_id ) as count',
                                                 'from'          => array( 'profile_friends' => 'pf' ),
-                                                'where'         => 'pf.friends_member_id = ' . intval( $friend_id ) . " and pf.friends_friend_id not in ( {$this->myfriends} )",
+                                                'where'         => 'pf.friends_member_id = ' . intval( $friend_id ) . " and pf.friends_friend_id in ( {$this->myfriends} )",
                                           )
                         );
-                return intval( $count[ 'count' ] + 1 );
+                return intval( $count[ 'count' ] );
         }
 }
