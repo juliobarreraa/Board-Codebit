@@ -48,6 +48,11 @@ class OpenGraph implements Iterator
    */
 	public function fetch( $URI )
 	{
+	    if( ! $this->isValidUrl( $URI ) )
+	    {
+    	    return false;
+	    }
+	    
 		return $this->_parse( file_get_contents( $URI ) );
 	}
 
@@ -62,7 +67,7 @@ class OpenGraph implements Iterator
 		$old_libxml_error = libxml_use_internal_errors( true );
 
 		$doc = new DOMDocument();
-		$doc->loadHTML( $HTML );
+		$doc->loadHTML( '<?xml encoding="UTF-8">' . $HTML );
 		
 		libxml_use_internal_errors( $old_libxml_error );
 
@@ -153,6 +158,11 @@ class OpenGraph implements Iterator
 			$valid_address = ( $valid_address && array_key_exists( $key, $this->_values ) );
 		}
 		return $valid_address;
+	}
+	
+	public function isValidUrl( $URI )
+	{
+    	return preg_match('/^(ht|f)tps?:\/\/\w+([\.\-\w]+)?\.([a-z]{2,4}|travel)(:\d{2,5})?(\/.*)?$/i', $URI);
 	}
 
   /**

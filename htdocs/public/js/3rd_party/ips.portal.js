@@ -10,6 +10,17 @@
 var _comments     = window.IPBoard;
 var _comments_id  = 0;
 
+jQuery.fn.pasteEvents = function( delay ) {
+    if (delay == undefined) delay = 20;
+    return jQuery(this).each(function() {
+        var $el = jQuery(this);
+        $el.on("paste", function() {
+            $el.trigger("prepaste");
+            setTimeout(function() { $el.trigger("postpaste"); }, delay);
+        });
+    });
+};
+
 ipb.comments.add = function(e)
 {
 	Event.stop(e);
@@ -129,13 +140,14 @@ _urlParser.prototype.urlparser = (function() {
             initEvents: function() {
                 jQuery().ready( function()
                 {
-                     jQuery( '#attach' ).click( function() 
+                     jQuery( '#attach' ).click( function(e, urlStrip) 
                      {
                             new Ajax.Request( ipb.vars['base_url'] + options.url + '&md5check=' + ipb.vars['secure_hash'],
                             {
                             	method: 'post',
                             	evalJSON: 'force',
                             	parameters: {
+                            	   getInfoUrl: urlStrip
                             	},
                             	onSuccess: function(t)
                             	{
@@ -154,6 +166,7 @@ _urlParser.prototype.urlparser = (function() {
                             			try {
                             			    jQuery( '#statusContent' ).after( t.responseJSON[ 'html' ] );
                             				/* Re-init events */
+                            				
                             				ipb.urlparser.init().initEvents();
                             			}
                             			catch(err)
@@ -167,7 +180,49 @@ _urlParser.prototype.urlparser = (function() {
                 });
             },
         	setup: function() {
-        	}
+        	       jQuery().ready( function() {
+            	       jQuery( '.textParseUrl' ).keyup( function( e ) 
+            	       {
+            	             if( e.which == 32 )
+            	             {
+                	             ipb.urlparser.init().checkurl( e.target );
+            	             }
+            	       }).on("postpaste", function( e ) {
+                             ipb.urlparser.init().checkurl( e.currentTarget );
+                       }).pasteEvents();
+            	   });
+        	},
+        	//Cortara desde el último carácter -1 hasta la primera aparición de e.wich == 32
+            checkurl: function( target )
+            {
+                var textValue   = jQuery( target ).val();
+                
+                if( textValue.lastIndexOf( ' ' ) != -1 ) //Si tiene un espacio al final es que el evento se provoco por presionar espacio
+                {
+                    textValue       = textValue.substr( 0, ( parseInt( target.selectionEnd  ) - 1 ) );
+                }else {
+                    textValue       = textValue.substr( 0, ( parseInt( target.selectionEnd  ) ) );
+                }
+                
+                
+                var pos         = textValue.lastIndexOf( ' ' ); //Desde la posición pos hasta textValue.length se corta la cadena para analizarla si es una url mediante una expresión regular
+                
+                //Cuando la cadena tiene el mismo tamaño donde se encuentra el ultimo carácter e.wich=32 entonces significa que es la url lo primero que se ha escrito
+                
+                
+                var urlStrip    = textValue.substr( ( parseInt( pos ) + 1 ), parseInt( textValue.length ) );
+                
+                var regExUrl    = /^(ht|f)tps?:\/\/\w+([\.\-\w]+)?\.([a-z]{2,4}|travel)(:\d{2,5})?(\/.*)?$/i;
+                
+                var isUrl       = urlStrip.match(regExUrl);
+                console.log(urlStrip);                
+                if( isUrl )
+                {
+                    //Si es una url entonces se desata el trigger para poder adjuntar el url
+                    jQuery( '#attach' ).trigger( 'click', [urlStrip] ); //Se envia la url a consultar
+                    jQuery( target ).unbind();
+                }
+            }
         }
     }
         

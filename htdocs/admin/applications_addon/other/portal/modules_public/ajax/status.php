@@ -135,12 +135,16 @@ class public_portal_ajax_status extends public_members_ajax_status {
 	
 	protected function __getURIParser()
 	{
-		$graph = $this->registry->opengraph->fetch('http://www.rottentomatoes.com/m/10011268-oceans/');
-		
+	    //TODO: Verificar con expresión regular que efectivamente corresponde a una url
+	    $getInfoUrl = $this->request[ 'getInfoUrl' ];
+	    
 		$propertys = array();
-        foreach ($graph as $key => $value) {
-            $propertys[ $key ] = $value;
-        }
+		if( ( $graph = $this->registry->opengraph->fetch($getInfoUrl) ) )
+		{
+            foreach ($graph as $key => $value) {
+                $propertys[ $key ] = IPSText::utf8ToEntities($value);
+            }
+		}
         
         
         $this->output = $this->registry->getClass('output')->getTemplate( 'portal' )->attachLink( $propertys );

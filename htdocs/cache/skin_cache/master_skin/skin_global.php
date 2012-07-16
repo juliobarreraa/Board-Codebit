@@ -686,8 +686,6 @@ jQuery.noConflict();
 </script>
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.status.js'>
 </script>
-<script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.profile.js'>
-</script>
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/3rd_party/jquery_mentions/mentions.js'>
 </script>
 
@@ -696,6 +694,8 @@ jQuery.noConflict();
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.comments.js'>
 </script>
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/3rd_party/ips.portal.js'>
+</script>
+<script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.profile.js'>
 </script>
 <!-- End Include JS Portal -->
 EOF;

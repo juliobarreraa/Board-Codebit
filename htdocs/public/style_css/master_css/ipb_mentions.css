@@ -271,3 +271,12 @@ DO NOT REMOVE OR ALTER THIS PLEASE. IT IS REMOVED AUTOMATICALLY BY THE IMPORT RO
     margin-left: 17px;
     vertical-align: baseline;
 }
+
+.uiVideoThumb i {
+    background: url("https://s-static.ak.fbcdn.net/rsrc.php/v2/yG/r/Gj2ad6O09TZ.png") no-repeat scroll 0 0 transparent;
+    bottom: 5px;
+    height: 26px;
+    left: 5px;
+    position: absolute;
+    width: 35px;
+}
