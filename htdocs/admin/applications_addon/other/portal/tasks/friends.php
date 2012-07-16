@@ -84,7 +84,6 @@ class task_item
 		
 		$rows = $this->registry->members->getOnlineUsers();
 		
-		
 		foreach($rows as $member) {
    			$portalCache->setFriends( (int)$member['member_id'] );
         }
