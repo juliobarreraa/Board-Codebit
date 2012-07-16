@@ -115,3 +115,77 @@ ipb.comments.add = function(e)
 					);
 }
 
+
+var _urlParser = window.IPBoard;
+
+_urlParser.prototype.urlparser = (function() {
+    // Construct
+    function Parser( options )  {
+        // set options to the options supplied or an empty object if none are 
+        // provided
+        options = options || {};
+        options.url =  options.url || 'app=portal&module=ajax&section=status&do=urlParser';
+        return {
+            initEvents: function() {
+                jQuery().ready( function()
+                {
+                     jQuery( '#attach' ).click( function() 
+                     {
+                            new Ajax.Request( ipb.vars['base_url'] + options.url + '&md5check=' + ipb.vars['secure_hash'],
+                            {
+                            	method: 'post',
+                            	evalJSON: 'force',
+                            	parameters: {
+                            	},
+                            	onSuccess: function(t)
+                            	{
+                            		if( Object.isUndefined( t.responseJSON ) )
+                            		{
+                            			alert( ipb.lang['action_failed'] );
+                            			return;
+                            		}
+                            		
+                            		if( t.responseJSON['error'] )
+                            		{
+                            			alert( t.responseJSON['error'] );
+                            		}
+                            		else
+                            		{
+                            			try {
+                            			    jQuery( '#statusContent' ).after( t.responseJSON[ 'html' ] );
+                            				/* Re-init events */
+                            				ipb.urlparser.init().initEvents();
+                            			}
+                            			catch(err)
+                            			{
+                            				Debug.error( 'Logging error: ' + err );
+                            			}
+                            		}
+                            	}
+                            });
+                     });
+                });
+            },
+        	setup: function() {
+        	}
+        }
+    }
+        
+	var instance;
+	var _static = {
+	    // This is a method for getting an instance
+	    // It returns a singleton instance of a singleton object
+	    init: function(options) {
+	        if(instance === undefined) {
+		        instance = new Parser( options );
+    	        instance.setup();
+    	        instance.initEvents();
+	        }
+	        
+	        return instance;
+	    }
+	};
+	return _static;
+})();
+
+ipb.urlparser.init();

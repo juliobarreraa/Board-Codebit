@@ -686,6 +686,8 @@ jQuery.noConflict();
 </script>
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.status.js'>
 </script>
+<script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.profile.js'>
+</script>
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/3rd_party/jquery_mentions/mentions.js'>
 </script>
 

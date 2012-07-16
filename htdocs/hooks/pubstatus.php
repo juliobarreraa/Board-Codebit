@@ -50,6 +50,8 @@ class pubstatus {
 			$this->registry->setClass( 'formatter', new $classToLoad( ipsRegistry::instance() ) );
 		}
 		
+		
+		
 		$publish_rows = array();
 		
 		if( ( $rows = $this->registry->formatter->get_l_publish() ) )

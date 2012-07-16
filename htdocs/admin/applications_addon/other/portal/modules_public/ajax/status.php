@@ -39,11 +39,21 @@ class public_portal_ajax_status extends public_members_ajax_status {
 			$classToLoad = IPSLib::loadLibrary( IPS_ROOT_PATH . 'sources/classes/member/status.php', 'memberStatus' );
 			$this->registry->setClass( 'memberStatus', new $classToLoad( ipsRegistry::instance() ) );
 		}
-        
-		switch($this->request['do']) {
+		
+		if ( ! $this->registry->isClassLoaded( 'opengraph' ) )
+		{
+			$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir( 'portal' ) . '/sources/classes/opengraph/opengraph.php', 'opengraph' );
+			$this->registry->setClass( 'opengraph', new $classToLoad( ipsRegistry::instance() ) );
+		}
+		
+		switch($this->request['do']) 
+		{
 			case 'getfriends':
 				$this->__getfriends();
 			break;
+			case 'urlParser':
+			    $this->__getURIParser();
+            break;
 		}
 		
 		parent::doExecute( $ipsRegistry );
@@ -121,6 +131,21 @@ class public_portal_ajax_status extends public_members_ajax_status {
 		$new = $this->registry->getClass('output')->getTemplate( $skin_group )->statusUpdates( $this->registry->getClass('memberStatus')->fetch( $this->memberData['member_id'], array( 'relatedTo' => $forMemberId, 'isApproved' => true, 'sort_dir' => 'desc', 'limit' => 1 ) ), $smallSpace );
 		
 		$this->returnJsonArray( array( 'status' => 'success', 'html' => $this->cleanOutput( $new ) ) );
+	}
+	
+	protected function __getURIParser()
+	{
+		$graph = $this->registry->opengraph->fetch('http://www.rottentomatoes.com/m/10011268-oceans/');
+		
+		$propertys = array();
+        foreach ($graph as $key => $value) {
+            $propertys[ $key ] = $value;
+        }
+        
+        
+        $this->output = $this->registry->getClass('output')->getTemplate( 'portal' )->attachLink( $propertys );
+        
+		$this->returnJsonArray( array( 'status' => 'success', 'html' => $this->cleanOutput( $this->output ) ) ); 
 	}
 	
 }

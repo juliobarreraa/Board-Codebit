@@ -1,0 +1,1 @@
+Permitirá detectar espacios con el fin de saber cuando se a escrito una url.

@@ -307,6 +307,60 @@ EOF;
 return $IPBHTML;
 }
 
+
+//===========================================================================
+// Name: attachLink
+//===========================================================================
+function attachLink( $propertys ) {
+$IPBHTML = "";
+//--starthtml--//
+$IPBHTML .= <<<EOF
+<div class="attachmentMetaArea">
+    <div class="clearfix pvm phs composerShareStageWrapper">
+         <div>
+                <div class="UIShareStage clearfix UIShareStage_HasImage" id="stage50044f0ae376f0115951929">
+                        <div class="UIShareStage_Image">
+                                <div id="c50044f0ae39859383299776" class="UIShareStage_ThumbPager UIThumbPager">
+                                        <div class="UIThumbPager_Thumbs">
+                                            <img alt="" src="{$propertys['image']}" class="img" style="width: 100px;">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="UIShareStage_ShareContent">
+                                <div class="UIShareStage_Title">
+                                    <span><a class="UIShareStage_InlineEdit inline_edit" onclick="new InlineEditor(this, &quot;attachment[params][title]&quot;, $(&quot;stage50044f0ae376f0115951929&quot;), null, false); return false;">{$propertys['title']}</a>
+                                    </span>
+                                </div>
+                                <div class="UIShareStage_Subtitle">{$propertys['url']}</div>
+                                <div class="UIShareStage_Summary">
+                                        <p class="UIShareStage_BottomMargin">
+                                            <a class="UIShareStage_InlineEdit inline_edit" onclick="new InlineEditor(this, &quot;attachment[params][summary]&quot;, $(&quot;stage50044f0ae376f0115951929&quot;), null, true); return false;">{$propertys['description']}</a>
+                                        </p>
+                                        <div id="c50044f0ae40af8677756064" class="UIShareStage_ThumbPagerControl UIThumbPagerControl UIThumbPagerControl_First UIThumbPagerControl_Last">
+                                            <div class="UIThumbPagerControl_Buttons">
+                                                <a class="UIThumbPagerControl_Button UIThumbPagerControl_Button_Left"></a><a class="UIThumbPagerControl_Button UIThumbPagerControl_Button_Right"></a>
+                                            </div>
+                                            <div class="UIThumbPagerControl_Text">
+                                                    <span class="UIThumbPagerControl_PageNumber">
+                                                        <span class="UIThumbPagerControl_PageNumber_Current">1</span> de <span class="UIThumbPagerControl_PageNumber_Total">1</span>
+                                                    </span>Elegir imagen en miniatura
+                                            </div>
+                                            <div class="uiInputLabel clearfix mts">
+                                                    <input type="checkbox" id="utti9i_1" name="no_picture" value="true" class="UIThumbPagerControl_NoPicture uiInputLabelCheckbox">
+                                                    <label for="utti9i_1">Sin imagen en miniatura</label>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+         </div>
+    </div>
+</div>
+EOF;
+//--endhtml--//
+return $IPBHTML;
+}
+
 //===========================================================================
 // Name: siteNavigation
 //===========================================================================
