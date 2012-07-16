@@ -9,7 +9,7 @@
 </div>]]></template_content>
       <template_name>affiliates</template_name>
       <template_data><![CDATA[$links=""]]></template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -55,7 +55,7 @@
 </div><br class='clearfix' />]]></template_content>
       <template_name>articles</template_name>
       <template_data>$articles</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -82,7 +82,7 @@
 </div>]]></template_content>
       <template_name>latestPosts</template_name>
       <template_data>$topics=array()</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -100,7 +100,7 @@
 </div>]]></template_content>
       <template_name>onlineUsers</template_name>
       <template_data>$active</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -111,11 +111,22 @@
       <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
       <template_name>pluginPostStatus</template_name>
       <template_data>$active = false</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
       <template_master_key>xmlskin</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>pluginSuggest</template_name>
+      <template_data>$active = false</template_data>
+      <template_updated>1342408390</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
     </template>
     <template>
       <template_group>skin_portal</template_group>
@@ -127,7 +138,7 @@
 </div>]]></template_content>
       <template_name>pollWrapper</template_name>
       <template_data><![CDATA[$content='',$topic=array()]]></template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -138,7 +149,7 @@
       <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
       <template_name>poststatusShow</template_name>
       <template_data>$statuses_output</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -155,7 +166,7 @@
 </if>]]></template_content>
       <template_name>showBlocks</template_name>
       <template_data>$blocks=array()</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -164,9 +175,20 @@
     <template>
       <template_group>skin_portal</template_group>
       <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>showLike</template_name>
+      <template_data>$status=array(), $smallSpace=0, $latestOnly=0</template_data>
+      <template_updated>1342408390</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
       <template_name>showPhoto</template_name>
       <template_data>$status=array(), $smallSpace=0, $latestOnly=0</template_data>
-      <template_updated>1342214242</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -177,7 +199,7 @@
       <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
       <template_name>showStatus</template_name>
       <template_data>$publish</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -195,7 +217,7 @@
 </div>]]></template_content>
       <template_name>siteNavigation</template_name>
       <template_data>$links=array()</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -220,7 +242,7 @@
 {parse template="include_highlighter" group="global" params="1"}]]></template_content>
       <template_name>skeletonTemplate</template_name>
       <template_data>$leftBlocks, $mainBlocks, $rightBlocks</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -231,7 +253,7 @@
       <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
       <template_name>statusUpdates</template_name>
       <template_data>$updates=array(), $smallSpace=0, $latestOnly=0</template_data>
-      <template_updated>1342214243</template_updated>
+      <template_updated>1342408390</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>

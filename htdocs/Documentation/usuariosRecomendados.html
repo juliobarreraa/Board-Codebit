@@ -1,0 +1,44 @@
+Los usuarios recomendados se realizan en base a los usuarios que no tenemos como amigos pero son amigos de nuestros amigos.
+Esto se irá a cache por cada usuario.
+
+Ejemplo:
+
+Si Raul es amigo de
+- Pedro
+- Paco
+- Andrés
+
+Y Raul es mi amigo, entonces el sitio podrá recomendarme a Pedro Paco o Andrés como amigos.
+
+Las tablas involucradas son:
+
+- profile_friends
+
+Donde friends_member_id es mi id y friends_friend_id es el id de mi amigo
+
+Por lo cual obtendremos un listado de mis amigos y a la vez un listado de los amigos de mis amigos.
+
+$this->DB->build( array
+                  (
+                        'select'        => 'pf.friends_friend_id',
+                        'from'          => array( 'profile_friends' => 'pf' ),
+                        'where'         => 'pf.friends_member_id = ' . $this->memberData[ 'member_id' ],
+                  )
+           );
+           
+           
+El listado que nos devuelve nos permitirá que por cada uno de nuestros amigos nos regrese sus amigos los cuales no son nuestros amigos, para ello seleccionaremos mis amigos primeramente y posterior los amigos de cada uno de mis amigos.
+
+$this->DB->build( array
+                  (
+                        'select'        => 'friends_friend_id',
+                        'from'          => array( 'profile_friends' => 'pf' ),
+                        'where'         => 'friends_member_id = ' . intval( $row[ 'friends_friend_id' ] ),
+                  )
+           );
+           
+De esta manera obtenemos los amigos de mi amigo.
+
+Este arreglo no deberia existir en mi arreglo, aquellos que existan deberán ser expulsados.
+
+El arreglo resultado deberia ser mostrado.

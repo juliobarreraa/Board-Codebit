@@ -141,6 +141,22 @@ return $IPBHTML;
 }
 
 //===========================================================================
+// Name: pluginSuggest
+//===========================================================================
+function pluginSuggest($active = false) {
+$IPBHTML = "";
+//--starthtml--//
+$IPBHTML .= <<<EOF
+<if test="loadPluginSuggest:|:$active">
+<!-- Load Plugin Post Status -->
+<!-- End Load Plugin Post Status -->
+</if>
+EOF;
+//--endhtml--//
+return $IPBHTML;
+}
+
+//===========================================================================
 // Name: pollWrapper
 //===========================================================================
 function pollWrapper($content='',$topic=array()) {
@@ -188,6 +204,61 @@ $IPBHTML .= <<<EOF
 		{$pages}
 	</div>
 </div>
+EOF;
+//--endhtml--//
+return $IPBHTML;
+}
+
+//===========================================================================
+// Name: suggestShow
+//===========================================================================
+function suggestShow( array $members ) {
+$IPBHTML = "";
+//--starthtml--//
+$IPBHTML .= <<<EOF
+<if test="isArraySuggest:|:is_array($members) && count($members) > 0">
+    <div class="clearfix" id="suggestfriends">
+        <h3>
+            {$this->lang->words['mightknow']}
+        </h3>
+        <ul class="activity-feed">
+	        <foreach loop="$members as $member">
+						<script type='text/javascript'>
+						//<![CDATA[
+							ipb.profile.viewingProfile = parseInt( {$member['member_id']} );
+							<if test="$this->memberData['member_id']">
+								ipb.templates['add_friend'] = "";
+							</if>
+							ipb.templates['edit_status'] = "<span id='edit_status'><input type='text' class='input_text' style='width: 60%' id='updated_status' maxlength='150' /> <input type='submit' value='{$this->lang->words['save']}' class='input_submit' id='save_status' /> &nbsp;<a href='#' id='cancel_status' class='cancel' title='{$this->lang->words['cancel']}'>{$this->lang->words['cancel']}</a></span>";
+							<if test="friendsEnabled:|:$this->settings['friends_enabled'] AND $this->memberData['g_can_add_friends']">
+								<if test="jsIsFriend:|:IPSMember::checkFriendStatus( $member['member_id'] )">
+									ipb.profile.isFriend = true;
+								<else />
+									ipb.profile.isFriend = false;
+								</if>
+							</if>
+						//]]>
+						</script>
+	                    <li class="clearfix">
+	                        <a href='{parse url="showuser={$member['member_id']}" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}' class='ipsUserPhotoLink'>
+	                           <img src='{$member['pp_thumb_photo']}' alt='{$this->lang->words['photo']}' class='ipsUserPhoto_mini' />
+	                        </a>
+	                        <div class="activity" style="margin-left: 4px !important; display:inline-block;">
+	                            {parse template="userHoverCard" group="global" params="$member"}
+	                            <a href="" class="friends">{$member['common']} amigos en com&uacute;n</a>
+	                        </div>
+	                        <if test="noFriendYourself:|:$this->memberData['member_id'] AND $this->memberData['member_id'] != $member['member_id'] && $this->settings['friends_enabled'] AND $this->memberData['g_can_add_friends']">
+	                            <div class="friend_toggle_suggest">
+	                            	<if test="isFriend:|:!IPSMember::checkFriendStatus( $member['member_id'] )">
+				                        <a class="add-friend" href='{parse url="app=members&amp;section=friends&amp;module=profile&amp;do=add&amp;member_id={$member['member_id']}&amp;secure_key={$this->member->form_hash}" base="public"}' title='{$this->lang->words['add_friend']}'>Agregar a mis amigos</a>
+	                            	</if>
+	                            </div>
+	                        </if>
+	                    </li>
+	        </foreach>
+      </ul>
+    </div>
+</if>
 EOF;
 //--endhtml--//
 return $IPBHTML;
