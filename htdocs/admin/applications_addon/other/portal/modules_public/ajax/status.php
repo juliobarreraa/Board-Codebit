@@ -76,6 +76,15 @@ class public_portal_ajax_status extends public_members_ajax_status {
 	protected function _new()
 	{
 	    $this->registry->getClass('memberStatus')->su_Tags = json_decode(str_replace(array('&quot;'), '"', $this->request['su_Tags']));
+	    
+	    $this->request[ 'attachments' ] = str_replace('&amp;', '&', urldecode($this->request[ 'attachments' ]) );
+	    parse_str(urldecode($this->request[ 'attachments' ]), $this->request['attachments']);
+	    
+	    if( array_key_exists( 'attachments', $this->request ) )
+	    {
+    	    $this->registry->getClass('memberStatus')->su_attachment = $this->request['attachments']; //Almacenados el arreglo con los datos de parseo del link dado de alta.
+	    }
+	    
 		IPSDebug::fireBug( 'info', array( 'Status content: ' . $_POST['content'] ) );
 		IPSDebug::fireBug( 'info', array( 'Cleaned status: ' . trim( $this->convertAndMakeSafe( $_POST['content'] ) ) ) );
 		
@@ -135,7 +144,7 @@ class public_portal_ajax_status extends public_members_ajax_status {
 	
 	protected function __getURIParser()
 	{
-	    //TODO: Verificar con expresión regular que efectivamente corresponde a una url
+	    //TODO: Verificar con expresiÃ³n regular que efectivamente corresponde a una url
 	    $getInfoUrl = $this->request[ 'getInfoUrl' ];
 	    
 		$propertys = array();

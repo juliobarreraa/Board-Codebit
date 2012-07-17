@@ -74,6 +74,13 @@ class portalMemberStatus extends memberStatus
 			}
 		}
 		
+		/* Auto parse tags */
+		if ( $this->settings['su_parse_url'] )
+		{
+		print_r($content);exit;
+			$content = preg_replace_callback( '#(^|\s|\(|>|\](?<!\[url\]))((?:http|https|news|ftp)://\w+[^\),\s\<\[]+)#is', array( $this, '_autoParseUrls' ), $content );
+		}
+		
 		return $content;
 	}
 	
@@ -117,21 +124,165 @@ class portalMemberStatus extends memberStatus
 	
     public function create( $author=null, $owner=null )
     {
-        $data = parent::create( $author, $owner );
-        
-        /** 
-         * Data contiene los datos que insertaremos en la base de datos de bitácora
-         * Si status_member_id es identico a status_author_id es una publicación realizada al público/amigos en otro caso es realizada a status_member_id desde status_author_id
-         * El ID de la tabla de configuración estará dado por la Clave STATUS_UPDATE
-        **/
-        
-        $pformat_data = array
-                        (
-                              'configuration_id'       =>    STATUS_UPDATES,
-                              'parent_id'              =>    $data[ 'status_id' ],
-                        );
-                        
-        //Configuramos los datos e insertamos
-        $this->registry->publish->setDataPublish( $pformat_data )->do_insert();
+    	$author = ( $author === null ) ? $this->getAuthor() : $author;
+    	$_owner = $this->getStatusOwner();
+    	$owner  = ( $owner  === null ) ? ( ! empty( $_owner['member_id'] ) ? $_owner : $author ) : $owner;
+    	$data	= array();
+    	
+    	if ( $this->canCreate( $author, $owner ) )
+    	{
+    		if ( $this->getContent() )
+    		{
+    			$content = $this->_cleanContent( $this->getContent() );
+    			$hash    = IPSText::contentToMd5( $content );
+    			
+    			/* Check for this status update already created */
+    			$test = $this->fetchByHash( $owner['member_id'], $hash );
+    			
+    			if ( $test['status_id'] )
+    			{
+    				/* Already imported this one */
+    				return FALSE;
+    			}
+    			
+    			$dataAttach = array();
+        		if( is_array( $this->su_attachment ) )
+        		{
+        			list( $image, $title, $url, $description ) = $this->su_attachment[ 'attachment' ][ 'params' ][ 'metaTagMap' ];
+        			$dataAttach = array
+        			              (
+        			                     'image'         => $image,
+        			                     'title'         => $title,
+        			                     'url'           => $url,
+        			                     'description'   => $description
+        			              );
+        		}
+    			
+    			$data = array( 'status_member_id' => $owner['member_id'],
+    						   'status_author_id' => $author['member_id'],
+							   'status_date'	  => time(),
+							   'status_content'   => $this->_parseContent( $content, $this->_internalData['Creator'] ),
+							   'status_hash'      => $hash,
+							   'status_replies'	  => 0,
+    						   'status_author_ip' => $this->member->ip_address,
+    						   'status_approved'  => $this->getIsApproved(),
+							   'status_imported'  => intval( $this->_internalData['IsImport'] ),
+							   'status_creator'   => trim( addslashes( $this->_internalData['Creator'] ) ),
+							   'status_last_ids'  => '',
+							   'status_cache'     => serialize( $dataAttach ) );
+
+				/* Data Hook Location */
+				IPSLib::doDataHooks( $data, 'statusUpdateNew' );
+		
+    			$this->DB->insert( 'member_status_updates', $data );
+    			
+    			$status_id = $this->DB->getInsertId();
+    			
+    			$data['status_id']	= $status_id;
+    			 
+    			if ( $owner['member_id'] != $author['member_id'] )
+    			{
+    				$this->_sendCommentNotification( $author, $owner, $data );
+    			}
+    			else
+    			{
+	    			$this->_recordAction( 'new', $author, $data );
+	    			
+	    			$this->rebuildOwnerLatest( $owner );
+	    			
+	    			/* Fire off external updates */
+	    			$eU = $this->getExternalUpdates();
+	    			
+	    			if ( ! $this->_internalData['IsImport'] AND is_array( $eU ) )
+	    			{
+	    				$this->_triggerExternalUpdates( $eU, $status_id, $owner, $content );
+	    			}
+	    			
+	    			//-----------------------------------------
+	    			// Notify owner's friends as configured
+	    			//-----------------------------------------
+	    			
+	    			$friends	= array();
+	    			
+	    			if ( $this->settings['friends_enabled'] AND $author['member_id'] == $owner['member_id'] )
+	    			{
+		    			$this->DB->build( array( 'select' => 'friends_member_id, friends_approved', 'from' => 'profile_friends', 'where' => 'friends_friend_id=' . $owner['member_id'] ) );
+		    			$this->DB->execute();
+		    			
+		    			while( $_friend = $this->DB->fetch() )
+		    			{
+		    				if ( $_friend['friends_approved'] )
+		    				{
+		    					$friends[ $_friend['friends_member_id'] ] = $_friend['friends_member_id'];
+		    				}
+		    			}
+					}
+					
+					if( count($friends) )
+					{
+						//-----------------------------------------
+						// Notifications library
+						//-----------------------------------------
+						
+						$classToLoad	= IPSLib::loadLibrary( IPS_ROOT_PATH . '/sources/classes/member/notifications.php', 'notifications' );
+						$notifyLibrary	= new $classToLoad( $this->registry );
+						
+		    			$friends = IPSMember::load( $friends );
+		    			
+		    			$statusUrl = $this->registry->output->buildSEOUrl( 'app=members&amp;module=profile&amp;section=status&amp;type=single&amp;status_id=' . $status_id, 'publicNoSession', 'true', 'members_status_single' );
+		    			
+		    			foreach( $friends as $friend )
+		    			{
+		    				$ndata = array( 'NAME'		=> $friend['members_display_name'],
+				    						'OWNER'		=> $owner['members_display_name'],
+											'STATUS'	=> $data['status_content'],
+											'URL'		=> $this->registry->output->buildSEOUrl( 'app=core&amp;module=usercp&amp;tab=core&amp;area=notifications', 'publicNoSession' ) );
+							
+							IPSText::getTextClass('email')->getTemplate( 'new_status', $friend['language'] );
+							IPSText::getTextClass('email')->buildMessage( $ndata );
+							
+							IPSText::getTextClass('email')->subject	= sprintf( 
+																				IPSText::getTextClass('email')->subject, 
+																				$this->registry->output->buildSEOUrl( 'showuser=' . $owner['member_id'], 'publicNoSession', $owner['members_seo_name'], 'showuser' ),
+																				$owner['members_display_name'],
+																				$statusUrl
+																			);
+			
+							$notifyLibrary->setMember( $friend );
+							$notifyLibrary->setFrom( $author );
+							$notifyLibrary->setNotificationKey( 'friend_status_update' );
+							$notifyLibrary->setNotificationUrl( $statusUrl );
+							$notifyLibrary->setNotificationText( IPSText::getTextClass('email')->message );
+							$notifyLibrary->setNotificationTitle( IPSText::getTextClass('email')->subject );
+							
+							try
+							{
+								$notifyLibrary->sendNotification();
+							}
+							catch( Exception $e ){}
+						}
+					}
+	    		}
+    		}
+    		
+            /** 
+             * Data contiene los datos que insertaremos en la base de datos de bitácora
+             * Si status_member_id es identico a status_author_id es una publicación realizada al público/amigos en otro caso es realizada a status_member_id desde status_author_id
+             * El ID de la tabla de configuración estará dado por la Clave STATUS_UPDATE
+            **/
+            
+            $pformat_data = array
+                            (
+                                  'configuration_id'       =>    STATUS_UPDATES,
+                                  'parent_id'              =>    $data[ 'status_id' ],
+                            );
+                            
+            //Configuramos los datos e insertamos
+            $this->registry->publish->setDataPublish( $pformat_data )->do_insert();
+    		
+    		return $data;
+    	}
+    	
+    	return FALSE;
     }
 }

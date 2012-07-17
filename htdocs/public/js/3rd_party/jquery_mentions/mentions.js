@@ -84,6 +84,7 @@ _mentions.prototype.mentions = (function() {
         		jQuery('#statusContent').mentionsInput('getMentions', function(data) {
         		          su_Tags = JSON.stringify(data);
         		});
+        		var formHidden = jQuery( '#statusContent' ).parents( 'form' ).find( 'input:hidden[name^=attachment]' ).serialize();
         		new Ajax.Request( ipb.vars['base_url'] + "app=portal&section=status&module=ajax&do=new&md5check=" + ipb.vars['secure_hash'] + '&smallSpace=' + ipb.status.smallSpace + '&skin_group=' + ipb.status.skin_group + '&forMemberId=' + ipb.status.forMemberId,
         						{
         							method: 'post',
@@ -92,7 +93,8 @@ _mentions.prototype.mentions = (function() {
         								content: $( field ).value.encodeParam(),
         								su_Twitter: su_Twitter,
         								su_Facebook: su_Facebook,
-        								su_Tags: su_Tags
+        								su_Tags: su_Tags,
+        								attachments: formHidden
         							},
         							onSuccess: function(t)
         							{

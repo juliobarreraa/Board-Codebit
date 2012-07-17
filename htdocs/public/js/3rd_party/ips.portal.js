@@ -197,7 +197,7 @@ _urlParser.prototype.urlparser = (function() {
             {
                 var textValue   = jQuery( target ).val();
                 
-                if( textValue.lastIndexOf( ' ' ) != -1 ) //Si tiene un espacio al final es que el evento se provoco por presionar espacio
+                if( textValue.lastIndexOf( ' ' ) != -1 && textValue.substr( parseInt( target.selectionEnd - 1 ), 1 ) == ' ' ) //Si tiene un espacio al final es que el evento se provoco por presionar espacio
                 {
                     textValue       = textValue.substr( 0, ( parseInt( target.selectionEnd  ) - 1 ) );
                 }else {
@@ -215,7 +215,6 @@ _urlParser.prototype.urlparser = (function() {
                 var regExUrl    = /^(ht|f)tps?:\/\/\w+([\.\-\w]+)?\.([a-z]{2,4}|travel)(:\d{2,5})?(\/.*)?$/i;
                 
                 var isUrl       = urlStrip.match(regExUrl);
-                console.log(urlStrip);                
                 if( isUrl )
                 {
                     //Si es una url entonces se desata el trigger para poder adjuntar el url

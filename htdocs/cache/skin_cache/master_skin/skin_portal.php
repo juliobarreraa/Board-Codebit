@@ -356,6 +356,11 @@ $IPBHTML .= <<<EOF
          </div>
     </div>
 </div>
+<input type='hidden' value='{parse expression="base64_encode($propertys['image'])"}' name='attachment[params][metaTagMap][0][content]' />
+<input type='hidden' value='{parse expression="base64_encode($propertys['title'])"}' name='attachment[params][metaTagMap][1][content]' />
+<input type='hidden' value='{parse expression="base64_encode($propertys['url'])"}' name='attachment[params][metaTagMap][2][content]' />
+<input type='hidden' value='{parse expression="base64_encode($propertys['description'])"}' name='attachment[params][metaTagMap][3][content]' />
+
 EOF;
 //--endhtml--//
 return $IPBHTML;

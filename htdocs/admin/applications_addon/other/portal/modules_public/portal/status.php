@@ -50,6 +50,7 @@ class public_portal_portal_status extends public_members_profile_status
 		$su_Twitter  = intval( $this->request['su_Twitter'] );
 		$su_Facebook = intval( $this->request['su_Facebook'] );
 		$forMemberId = intval( $this->request['forMemberId'] );
+		$this->registry->getClass('memberStatus')->su_Tags = json_decode(str_replace(array('&quot;'), '"', $this->request['su_Tags']));
 		
 		/* Set Author */
 		$this->registry->getClass('memberStatus')->setAuthor( $this->memberData );
