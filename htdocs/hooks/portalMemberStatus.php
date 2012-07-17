@@ -77,7 +77,6 @@ class portalMemberStatus extends memberStatus
 		/* Auto parse tags */
 		if ( $this->settings['su_parse_url'] )
 		{
-		print_r($content);exit;
 			$content = preg_replace_callback( '#(^|\s|\(|>|\](?<!\[url\]))((?:http|https|news|ftp)://\w+[^\),\s\<\[]+)#is', array( $this, '_autoParseUrls' ), $content );
 		}
 		
