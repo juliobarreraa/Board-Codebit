@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name>Sugerir amigos</hook_name>
+      <hook_desc>Sugerir amigos en base a los amigos de los amigos</hook_desc>
+      <hook_author>@codebit_org</hook_author>
+      <hook_email>juliobarreraa@gmail.com</hook_email>
+      <hook_website>http://www.codebit.org</hook_website>
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:3:{s:21:"required_applications";a:0:{}s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+      <hook_version_human>1.0</hook_version_human>
+      <hook_version_long>1000</hook_version_long>
+      <hook_extra_data><![CDATA[a:2:{s:7:"display";a:1:{s:9:"templates";s:44:"From skin_portal: pluginSuggest, suggestShow";}s:9:"templates";a:1:{s:11:"skin_portal";a:2:{i:0;s:13:"pluginSuggest";i:1;s:11:"suggestShow";}}}]]></hook_extra_data>
+      <hook_key>suggestfriends</hook_key>
+      <hook_global_caches/>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>suggest.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>suggestfriends</hook_classname>
+      <hook_data><![CDATA[a:8:{s:12:"dataLocation";s:0:"";s:14:"libApplication";s:0:"";s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_portal";s:12:"skinFunction";s:13:"pluginSuggest";s:4:"type";s:2:"if";s:2:"id";s:17:"loadPluginSuggest";s:8:"position";s:12:"post.startif";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+/**
+ * <pre>
+ * Codebit.org
+ * IP.Board v3.3.0
+ * @description
+ * Last Updated: $Date: 10-may-2012 -006  $
+ * </pre>
+ * @filename            labelfriends.php
+ * @author 		$Author: juliobarreraa@gmail.com $
+ * @package		PRI
+ * @subpackage	        
+ * @link		http://www.codebit.org
+ * @since		10-may-2012
+ * @timestamp           17:56:10
+ * @version		$Rev:  $
+ *
+ */
+
+/**
+ * Description of labelfriends
+ *
+ * @author juliobarreraa@gmail.com
+ */
+class suggestfriends
+{
+    //Protected
+    protected $registry;
+    protected $DB;
+    
+    //Public
+    public $lang;
+    
+    public function __construct() {
+        $this->registry     = ipsRegistry::instance();
+        $this->lang         = $this->registry->getClass('class_localization');
+        $this->memberData	=& $this->registry->member()->fetchMemberData();
+        $this->DB           = ipsRegistry::DB();
+    }
+    
+    public function getOutput() {
+    	$this->registry->class_localization->loadLanguageFile( array( 'public_profile' ), 'members' );
+    	
+		/* Load status class */
+		if ( ! $this->registry->isClassLoaded( 'suggest' ) )
+		{
+			$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir( 'portal' ) . '/sources/classes/member/suggest.php', 'suggest' );
+			$this->registry->setClass( 'suggest', new $classToLoad( $this->registry ) );
+		}
+		
+		$friends = array();
+		
+		$rows = $this->registry->suggest->getfriends();
+		
+		if( ! is_array( $rows ) )
+		{
+    		$rows = array();
+		}
+		
+        return $this->registry->output->getTemplate('portal')->suggestShow( $rows );
+    }
+}]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings/>
+  <hookextras_language/>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates>
+    <templates>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<if test="loadPluginSuggest:|:$active">
+<!-- Load Plugin Post Status -->
+<!-- End Load Plugin Post Status -->
+</if>]]></template_content>
+      <template_name>pluginSuggest</template_name>
+      <template_data>$active = false</template_data>
+      <template_updated>1342538423</template_updated>
+      <template_removable>0</template_removable>
+      <template_added_to>0</template_added_to>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </templates>
+    <templates>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<if test="isArraySuggest:|:is_array($members) && count($members) > 0">
+    <div class="clearfix" id="suggestfriends">
+        <h3>
+            {$this->lang->words['mightknow']}
+        </h3>
+        <ul class="activity-feed">
+	        <foreach loop="$members as $member">
+						<script type='text/javascript'>
+						//<!#^#|CDATA|
+							ipb.profile.viewingProfile = parseInt( {$member['member_id']} );
+							<if test="$this->memberData['member_id']">
+								ipb.templates['add_friend'] = "";
+							</if>
+							ipb.templates['edit_status'] = "<span id='edit_status'><input type='text' class='input_text' style='width: 60%' id='updated_status' maxlength='150' /> <input type='submit' value='{$this->lang->words['save']}' class='input_submit' id='save_status' /> &nbsp;<a href='#' id='cancel_status' class='cancel' title='{$this->lang->words['cancel']}'>{$this->lang->words['cancel']}</a></span>";
+							<if test="friendsEnabled:|:$this->settings['friends_enabled'] AND $this->memberData['g_can_add_friends']">
+								<if test="jsIsFriend:|:IPSMember::checkFriendStatus( $member['member_id'] )">
+									ipb.profile.isFriend = true;
+								<else />
+									ipb.profile.isFriend = false;
+								</if>
+							</if>
+						//|#^#]>
+						</script>
+	                    <li class="clearfix">
+	                        <a href='{parse url="showuser={$member['member_id']}" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}' class='ipsUserPhotoLink'>
+	                           <img src='{$member['pp_thumb_photo']}' alt='{$this->lang->words['photo']}' class='ipsUserPhoto_mini' />
+	                        </a>
+	                        <div class="activity" style="margin-left: 4px !important; display:inline-block;">
+	                            {parse template="userHoverCard" group="global" params="$member"}
+	                            <a href="" class="friends">{$member['common']} amigos en com&uacute;n</a>
+	                        </div>
+	                        <if test="noFriendYourself:|:$this->memberData['member_id'] AND $this->memberData['member_id'] != $member['member_id'] && $this->settings['friends_enabled'] AND $this->memberData['g_can_add_friends']">
+	                            <div class="friend_toggle_suggest">
+	                            	<if test="isFriend:|:!IPSMember::checkFriendStatus( $member['member_id'] )">
+				                        <a class="add-friend" href='{parse url="app=members&amp;section=friends&amp;module=profile&amp;do=add&amp;member_id={$member['member_id']}&amp;secure_key={$this->member->form_hash}" base="public"}' title='{$this->lang->words['add_friend']}'>Agregar a mis amigos</a>
+	                            	</if>
+	                            </div>
+	                        </if>
+	                    </li>
+	        </foreach>
+      </ul>
+    </div>
+</if>]]></template_content>
+      <template_name>suggestShow</template_name>
+      <template_data>array $members</template_data>
+      <template_updated>1342538423</template_updated>
+      <template_removable>0</template_removable>
+      <template_added_to>0</template_added_to>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </templates>
+  </hookextras_templates>
+  <hookextras_css/>
+  <hookextras_replacements/>
+  <hookextras_tasks/>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert/>
+</hookexport>

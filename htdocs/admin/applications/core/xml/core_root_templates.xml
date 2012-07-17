@@ -46,7 +46,7 @@
 </div>]]></template_content>
       <template_name>ajaxEditBox</template_name>
       <template_data><![CDATA[$post="", $pid=0, $error_msg="", $extraData]]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -88,7 +88,7 @@
 </if>]]></template_content>
       <template_name>editor</template_name>
       <template_data><![CDATA[$formField='post', $content='', $options=array(), $autoSaveData=array(), $warningInfo='', $acknowledge=FALSE]]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -118,7 +118,7 @@ ipb.editor_values.set( 'bbcodes', \$H({IPSLib::fetchBbcodeAsJson()}) );
 	ipb.vars['emoticon_url'] = "{$this->settings['emoticons_url']}";]]></template_content>
       <template_name>editorJS</template_name>
       <template_data><![CDATA[$emoticons='']]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -158,7 +158,7 @@ ipb.editor_values.set( 'bbcodes', \$H({IPSLib::fetchBbcodeAsJson()}) );
 {parse expression="$this->registry->output->addToDocumentHead( 'importcss', "{$this->settings['css_base_url']}style_css/{$this->registry->output->skin['_csscacheid']}/ipb_ckeditor.css" )"}]]></template_content>
       <template_name>editorLoadJs</template_name>
       <template_data><![CDATA[$options='']]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -192,7 +192,7 @@ ipb.editor_values.set( 'bbcodes', \$H({IPSLib::fetchBbcodeAsJson()}) );
 </div>]]></template_content>
       <template_name>editorSettings</template_name>
       <template_data/>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -333,7 +333,7 @@ ipb.editor_values.set( 'bbcodes', \$H({IPSLib::fetchBbcodeAsJson()}) );
 	</script>]]></template_content>
       <template_name>editorShell</template_name>
       <template_data><![CDATA[$editor_id, $field='Post', $content='', $no_sidebar=1, $lightweight=0]]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -498,7 +498,7 @@ ipb.editors[ '{$editor_id}' ] = new ipb.editor( '{$editor_id}', USE_RTE );
 </script>]]></template_content>
       <template_name>ips_editor</template_name>
       <template_data><![CDATA[$form_field="",$initial_content="",$images_path="",$rte_mode=0,$editor_id='ed-0',$smilies='',$allow_sidebar=1]]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -536,7 +536,7 @@ ipb.editors[ '{$editor_id}' ] = new ipb.editor( '{$editor_id}', USE_RTE );
 </div>]]></template_content>
       <template_name>mediaGenericWrapper</template_name>
       <template_data>$rows, $pages, $app, $plugin</template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -576,7 +576,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 </script>]]></template_content>
       <template_name>sharedMedia</template_name>
       <template_data>$tabs</template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -588,7 +588,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 				<h2 class='ipsType_subtitle desc' style='text-align: center'>{$this->lang->words['shareable_media_warn']}</h2>]]></template_content>
       <template_name>sharedMediaDefault</template_name>
       <template_data/>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -605,7 +605,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 <br />]]></template_content>
       <template_name>boardRules</template_name>
       <template_data><![CDATA[$title="",$body=""]]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -685,7 +685,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 </form>]]></template_content>
       <template_name>forward_form</template_name>
       <template_data><![CDATA[$title="",$text="",$lang="", $captchaHTML='', $msg='']]></template_data>
-      <template_updated>1342408389</template_updated>
+      <template_updated>1342538422</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -698,7 +698,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
       <template_content><![CDATA[<a href='{$this->settings['board_url']}' title='{$this->lang->words['go_home']}' rel="home" accesskey='1'><img src='{parse replacement="logo_img"}' alt='{$this->lang->words['logo']}' /></a>]]></template_content>
       <template_name>defaultHeader</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -716,7 +716,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 }(document, 'script', 'facebook-jssdk'));</script>]]></template_content>
       <template_name>facebookShareButton</template_name>
       <template_data>$url, $title</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -738,7 +738,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 	</form>]]></template_content>
       <template_name>forum_jump</template_name>
       <template_data>$html</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1106,7 +1106,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 </html>]]></template_content>
       <template_name>globalTemplate</template_name>
       <template_data>$html, $documentHeadItems, $css, $jsModules, $metaTags, array $header_items, $items=array(), $footer_items=array(), $stats=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1122,7 +1122,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 <li><div class='googlePlusOne'><g:plusone count="false" size="small"></g:plusone></div></li>]]></template_content>
       <template_name>googlePlusOneButton</template_name>
       <template_data>$url, $title, $params</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1141,7 +1141,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
 	</script>]]></template_content>
       <template_name>include_highlighter</template_name>
       <template_data>$load_when_needed=0</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1152,7 +1152,7 @@ CKEDITOR.plugins.ipsmedia.searchinit();
       <template_content><![CDATA[<php>$this->settings['do_include_lightbox_real'] = 1;</php>]]></template_content>
       <template_name>include_lightbox</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1210,7 +1210,7 @@ function gbl_addDownloadButton()
 </script>]]></template_content>
       <template_name>include_lightbox_real</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1270,7 +1270,7 @@ function gbl_addDownloadButton()
 <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin' rel='stylesheet' type='text/css' />]]></template_content>
       <template_name>includeCSS</template_name>
       <template_data>$css</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1298,7 +1298,7 @@ function gbl_addDownloadButton()
 </if>]]></template_content>
       <template_name>includeFeeds</template_name>
       <template_data>$documentHeadItems</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1358,10 +1358,12 @@ jQuery.noConflict();
 </script>
 <script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/3rd_party/ips.portal.js'>
 </script>
+<script language='javascript' type='text/javascript' src='{$this->settings['js_base_url']}js/ips.profile.js'>
+</script>
 <!-- End Include JS Portal -->]]></template_content>
       <template_name>includeJS</template_name>
       <template_data>$jsModules</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1386,7 +1388,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>includeMeta</template_name>
       <template_data>$metaTags</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1447,7 +1449,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>includeRTL</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1524,7 +1526,7 @@ jQuery.noConflict();
 	</script>]]></template_content>
       <template_name>includeVars</template_name>
       <template_data>$header_items=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1654,7 +1656,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>inlineLogin</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1677,7 +1679,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>liveEditJs</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1711,7 +1713,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>nextPreviousTemplate</template_name>
       <template_data>$data</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1768,7 +1770,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>paginationTemplate</template_name>
       <template_data>$work, $data</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1838,7 +1840,7 @@ jQuery.noConflict();
 </div>]]></template_content>
       <template_name>quickSearch</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1867,7 +1869,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>shareLinks</template_name>
       <template_data><![CDATA[$links, $title='', $url='', $cssClass='topic_share left']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1881,7 +1883,7 @@ jQuery.noConflict();
 </div>]]></template_content>
       <template_name>signature_separator</template_name>
       <template_data><![CDATA[$sig="", $author_id=0, $can_ignore=true]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1896,7 +1898,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>userHoverCard</template_name>
       <template_data>$member=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1973,7 +1975,7 @@ jQuery.noConflict();
 </div>]]></template_content>
       <template_name>userInfoPane</template_name>
       <template_data>$author, $contentid, $options</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -1998,7 +2000,7 @@ jQuery.noConflict();
 </if>]]></template_content>
       <template_name>userSmallPhoto</template_name>
       <template_data>$member=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2075,7 +2077,7 @@ jQuery.noConflict();
 </div>]]></template_content>
       <template_name>warnDetails</template_name>
       <template_data>$warning, $canSeeModNote</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2162,7 +2164,7 @@ if( empty($r['author']['member_id']) && !empty($r['author']['comment_author_name
 </if>]]></template_content>
       <template_name>comment</template_name>
       <template_data>$r, $parent, $settings</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2213,7 +2215,7 @@ if( empty($r['author']['member_id']) && !empty($r['author']['comment_author_name
 </div>]]></template_content>
       <template_name>commentHidden</template_name>
       <template_data>$r, $parent, $settings</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2297,7 +2299,7 @@ if( empty($r['author']['member_id']) && !empty($r['author']['comment_author_name
 </script>]]></template_content>
       <template_name>commentsList</template_name>
       <template_data><![CDATA[$comments, $settings, $pages, $parent, $preReply='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2348,7 +2350,7 @@ if( empty($r['author']['member_id']) && !empty($r['author']['comment_author_name
 </div>]]></template_content>
       <template_name>form</template_name>
       <template_data><![CDATA[$comment, $parent, $editor="", $settings, $errors="", $do='saveEdit']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2366,7 +2368,7 @@ $this->hasEditJs = true;
 {parse template="editorLoadJs" group="editors" params="array( 'bypassCKEditor' => $bypass, 'smilies' => $smilies )"}]]></template_content>
       <template_name>getEditJs</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2388,7 +2390,7 @@ $this->hasEditJs = true;
 </div>]]></template_content>
       <template_name>ajaxPopUpNoPermission</template_name>
       <template_data><![CDATA[$msg='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2417,7 +2419,7 @@ $this->hasEditJs = true;
 </script>]]></template_content>
       <template_name>captchaGD</template_name>
       <template_data>$captcha_unique_id</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2437,7 +2439,7 @@ $this->hasEditJs = true;
 </fieldset>]]></template_content>
       <template_name>captchaRecaptcha</template_name>
       <template_data><![CDATA[$html=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2457,7 +2459,7 @@ $this->hasEditJs = true;
 </p>]]></template_content>
       <template_name>displayBoardOffline</template_name>
       <template_data><![CDATA[$message=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2623,7 +2625,7 @@ $this->hasEditJs = true;
 </html>]]></template_content>
       <template_name>displayPopUpWindow</template_name>
       <template_data><![CDATA[$documentHeadItems, $css, $jsLoaderItems, $title="", $output=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2676,7 +2678,7 @@ function contact_admin() {
 </if>]]></template_content>
       <template_name>Error</template_name>
       <template_data><![CDATA[$message="",$code=0,$ad_email_one="",$ad_email_two="", $title=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2694,7 +2696,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>facebookDone</template_name>
       <template_data>$user</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2756,7 +2758,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>facebookPop</template_name>
       <template_data>$user=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2786,7 +2788,7 @@ function contact_admin() {
 </form>]]></template_content>
       <template_name>followUnsubscribe</template_name>
       <template_data>$data, $meta</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2812,7 +2814,7 @@ function contact_admin() {
 </if>]]></template_content>
       <template_name>generateTopicIcon</template_name>
       <template_data>$imgArray, $unreadUrl</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2883,7 +2885,7 @@ function contact_admin() {
 </html>]]></template_content>
       <template_name>globalTemplateMinimal</template_name>
       <template_data>$html, $documentHeadItems, $css, $jsModules, $metaTags, array $header_items, $items=array(), $footer_items=array(), $stats=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2912,7 +2914,7 @@ function contact_admin() {
 </ul>]]></template_content>
       <template_name>inboxList</template_name>
       <template_data>$topics</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2931,7 +2933,7 @@ function contact_admin() {
 </html>]]></template_content>
       <template_name>inlineUploaderComplete</template_name>
       <template_data>$json</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -2967,7 +2969,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>likeMoreDialogue</template_name>
       <template_data>$data, $relId, $cache</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3001,7 +3003,7 @@ function contact_admin() {
 </fieldset>]]></template_content>
       <template_name>likeSetDialogue</template_name>
       <template_data>$app, $area, $relid, $data</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3018,7 +3020,7 @@ function contact_admin() {
 </script>]]></template_content>
       <template_name>likeSummary</template_name>
       <template_data>$data, $relId, $opts</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3032,7 +3034,7 @@ function contact_admin() {
 </if>]]></template_content>
       <template_name>likeSummaryContents</template_name>
       <template_data>$data, $relId, $opts=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3070,7 +3072,7 @@ function contact_admin() {
 </ul>]]></template_content>
       <template_name>notificationsList</template_name>
       <template_data>$notifications</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3084,7 +3086,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>privacyPolicy</template_name>
       <template_data>$title, $text</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3107,7 +3109,7 @@ function contact_admin() {
 </fieldset>]]></template_content>
       <template_name>questionAndAnswer</template_name>
       <template_data>$data</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3121,7 +3123,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>quickNavigationOffline</template_name>
       <template_data>$message</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3143,7 +3145,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>quickNavigationPanel</template_name>
       <template_data><![CDATA[$data=array(), $currentApp='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3172,7 +3174,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>quickNavigationWrapper</template_name>
       <template_data><![CDATA[$tabs=array(), $data=array(), $currentApp='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3269,7 +3271,7 @@ function contact_admin() {
 </html>]]></template_content>
       <template_name>redirectTemplate</template_name>
       <template_data><![CDATA[$documentHeadItems, $css, $jsLoaderItems, $text="",$url="", $full=false]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3341,7 +3343,7 @@ function contact_admin() {
 </script>]]></template_content>
       <template_name>repButtons</template_name>
       <template_data>$member, $data=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3370,7 +3372,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>repMoreDialogue</template_name>
       <template_data>$data, $relId</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3397,7 +3399,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>reputationPopup</template_name>
       <template_data>$reps</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3442,7 +3444,7 @@ function contact_admin() {
 </if>]]></template_content>
       <template_name>socialSharePostStrip</template_name>
       <template_data>$id=null</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3462,7 +3464,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>tagCloud</template_name>
       <template_data>$tags</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3473,7 +3475,7 @@ function contact_admin() {
       <template_content><![CDATA[<a <if test="noClass:|:!$noClass">class='ipsTag'</if> href="{parse url="app=core&amp;module=search&amp;do=search&amp;search_tags={parse expression="IPSText::urlencode_furlSafe($tag)"}&amp;search_app=<if test="inSearch:|:isset($this->request['search_app']) AND $this->request['search_app']">{$this->request['search_app']}<else />{$app}</if><if test="hasSearchSection:|:$section">&amp;search_app_filters[<if test="inSearchSub:|:isset($this->request['search_app']) AND $this->request['search_app']">{$this->request['search_app']}<else />{$app}</if>][searchInKey]={$section}</if>" base="public" template="tags" seotitle="false"}" data-tooltip="{parse expression="sprintf( $this->lang->words['find_more_tags'], $tag )"}"><span>{$tag}</span></a>]]></template_content>
       <template_name>tagEntry</template_name>
       <template_data><![CDATA[$tag, $noClass=false, $app='all', $section='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3484,7 +3486,7 @@ function contact_admin() {
       <template_content><![CDATA[<a href="{parse url="app=core&amp;module=search&amp;do=search&amp;search_tags={parse expression="urlencode($tag)"}&amp;search_app=<if test="inSearch:|:isset($this->request['search_app']) AND $this->request['search_app']">{$this->request['search_app']}<else />{$app}</if><if test="hasSearchSection:|:$section">&amp;search_app_filters[<if test="inSearchSub:|:isset($this->request['search_app']) AND $this->request['search_app']">{$this->request['search_app']}<else />{$app}</if>][searchInKey]={$section}</if>" base="public" template="tags" seotitle="false"}" class='ipsBadge ipsBadge_lightgrey' data-tooltip="{parse expression="sprintf( $this->lang->words['find_more_tags'], $tag )"}">{$tag}</a>]]></template_content>
       <template_name>tagPrefix</template_name>
       <template_data><![CDATA[$tag, $app='', $section='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3499,7 +3501,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>tagsAsPopUp</template_name>
       <template_data>$tags</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3537,7 +3539,7 @@ function contact_admin() {
 </script>]]></template_content>
       <template_name>tagTextEntryBox</template_name>
       <template_data>$tags, $options, $where</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3554,7 +3556,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>twitterDone</template_name>
       <template_data>$user</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3581,7 +3583,7 @@ function contact_admin() {
 </div>]]></template_content>
       <template_name>twitterPop</template_name>
       <template_data>$user</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3613,7 +3615,7 @@ function contact_admin() {
 <br />]]></template_content>
       <template_name>helpShowSection</template_name>
       <template_data><![CDATA[$one_text="",$two_text="",$three_text="", $text]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3642,7 +3644,7 @@ function contact_admin() {
 </ol>]]></template_content>
       <template_name>helpShowTopics</template_name>
       <template_data><![CDATA[$one_text="",$two_text="",$three_text="",$rows]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3765,7 +3767,7 @@ window.location = '{$_redirect}';
 </if>]]></template_content>
       <template_name>ajax__inlineLogInForm</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3779,7 +3781,7 @@ window.location = '{$_redirect}';
 <br /><br />]]></template_content>
       <template_name>errors</template_name>
       <template_data><![CDATA[$data=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3883,7 +3885,7 @@ document.observe("dom:loaded", function(e){ ipb.signin.toggleLive(e); });
 </if>]]></template_content>
       <template_name>showLogInForm</template_name>
       <template_data><![CDATA[$message="",$referer="",$extra_form="", $login_methods=array()]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3922,7 +3924,7 @@ document.observe("dom:loaded", function(e){ ipb.signin.toggleLive(e); });
 </div>]]></template_content>
       <template_name>deletedPosts</template_name>
       <template_data><![CDATA[$posts, $other_data=array(), $pagelinks='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -3947,7 +3949,7 @@ document.observe("dom:loaded", function(e){ ipb.signin.toggleLive(e); });
 </div>]]></template_content>
       <template_name>deletedTopics</template_name>
       <template_data><![CDATA[$topics, $sdelete=array(), $pagelinks='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4046,7 +4048,7 @@ document.observe("dom:loaded", function(e){ ipb.signin.toggleLive(e); });
 </form>]]></template_content>
       <template_name>editUserForm</template_name>
       <template_data>$profile, $custom_fields=null</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4057,7 +4059,7 @@ document.observe("dom:loaded", function(e){ ipb.signin.toggleLive(e); });
       <template_content><![CDATA[<p class='message unspecific'>{$msg}</p>]]></template_content>
       <template_name>inlineModIPMessage</template_name>
       <template_data><![CDATA[$msg='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4095,7 +4097,7 @@ document.observe("dom:loaded", function(e){ ipb.signin.toggleLive(e); });
 </div>]]></template_content>
       <template_name>latestWarnLogs</template_name>
       <template_data>$warnings, $pagelinks</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4130,7 +4132,7 @@ ipb.modcp.initialtext = "{$this->lang->words['start_typing_lup']}";
 </if>]]></template_content>
       <template_name>memberLookup</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4202,7 +4204,7 @@ ipb.modcp.initialtext = "{$this->lang->words['start_typing_lup']}";
 	<div>{$pagelinks}</div>]]></template_content>
       <template_name>membersList</template_name>
       <template_data><![CDATA[$type, $members, $pagelinks='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4244,7 +4246,7 @@ ipb.modcp.initialtext = "{$this->lang->words['start_typing_lup']}";
 </div>]]></template_content>
       <template_name>membersModIPForm</template_name>
       <template_data><![CDATA[$ip="", $inlineMsg='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4287,7 +4289,7 @@ ipb.modcp.initialtext = "{$this->lang->words['start_typing_lup']}";
 </div>]]></template_content>
       <template_name>membersModIPFormMembers</template_name>
       <template_data><![CDATA[$pages="",$members]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4321,7 +4323,7 @@ ipb.modcp.initialtext = "{$this->lang->words['start_typing_lup']}";
 </div>]]></template_content>
       <template_name>membersModIPFormPosts</template_name>
       <template_data><![CDATA[$count=0, $pageLinks='', $results]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4400,7 +4402,7 @@ document.observe("dom:loaded", function() {
 </script>]]></template_content>
       <template_name>modAnnounceForm</template_name>
       <template_data><![CDATA[$announce,$forum_html,$type,$editor_html,$msg=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4480,7 +4482,7 @@ document.observe("dom:loaded", function() {
 </form>]]></template_content>
       <template_name>modAnnouncements</template_name>
       <template_data>$announcements</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4495,7 +4497,7 @@ document.observe("dom:loaded", function() {
 </div>]]></template_content>
       <template_name>modcpMessage</template_name>
       <template_data><![CDATA[$message='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4659,7 +4661,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>modCPpost</template_name>
       <template_data>$post, $displayData, $topic, $type</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4777,7 +4779,7 @@ if ( pid > ipb.topic.topPid ){
 </foreach>]]></template_content>
       <template_name>modCPtopic</template_name>
       <template_data>$topics, $pagelinks, $type, $sdelete=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4818,7 +4820,7 @@ if ( pid > ipb.topic.topPid ){
 </script>]]></template_content>
       <template_name>portalPage</template_name>
       <template_data>$output, $tabs=array(), $_activeNav=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4844,7 +4846,7 @@ if ( pid > ipb.topic.topPid ){
 </foreach>]]></template_content>
       <template_name>subTabLoop</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4880,7 +4882,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>unapprovedPosts</template_name>
       <template_data>$posts, $pagelinks</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -4905,7 +4907,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>unapprovedTopics</template_name>
       <template_data>$topics, $pagelinks</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5133,7 +5135,7 @@ if ( pid > ipb.topic.topPid ){
 </script>]]></template_content>
       <template_name>completePartialLogin</template_name>
       <template_data><![CDATA[$mid="",$key="",$custom_fields="",$errors="", $reg="", $userFromService=array()]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5183,7 +5185,7 @@ if ( pid > ipb.topic.topPid ){
 </form>]]></template_content>
       <template_name>lostPasswordForm</template_name>
       <template_data><![CDATA[$errors=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5198,7 +5200,7 @@ if ( pid > ipb.topic.topPid ){
 </p>]]></template_content>
       <template_name>lostPasswordWait</template_name>
       <template_data><![CDATA[$member=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5304,7 +5306,7 @@ if ( pid > ipb.topic.topPid ){
 </html>]]></template_content>
       <template_name>registerCoppaForm</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5386,7 +5388,7 @@ if ( pid > ipb.topic.topPid ){
 </if>]]></template_content>
       <template_name>registerCoppaStart</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5415,7 +5417,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>registerCoppaTwo</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5692,7 +5694,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>registerForm</template_name>
       <template_data>$general_errors=array(), $data=array(), $inline_errors=array(), $time_select=array(), $custom_fields=array(), $nexusFields=array(), $nexusStates=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5729,7 +5731,7 @@ if ( pid > ipb.topic.topPid ){
 <br />]]></template_content>
       <template_name>registerStepBar</template_name>
       <template_data>$step</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5741,7 +5743,7 @@ if ( pid > ipb.topic.topPid ){
 <input type="hidden" name="aid" value="{$aid}" />]]></template_content>
       <template_name>show_lostpass_form_auto</template_name>
       <template_data><![CDATA[$aid="",$uid=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5762,7 +5764,7 @@ if ( pid > ipb.topic.topPid ){
 	</ul>]]></template_content>
       <template_name>show_lostpass_form_manual</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5781,7 +5783,7 @@ if ( pid > ipb.topic.topPid ){
 </div>]]></template_content>
       <template_name>showAuthorize</template_name>
       <template_data><![CDATA[$member=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5831,7 +5833,7 @@ if ( pid > ipb.topic.topPid ){
 </form>]]></template_content>
       <template_name>showLostpassForm</template_name>
       <template_data>$error</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5846,7 +5848,7 @@ if ( pid > ipb.topic.topPid ){
 </p>]]></template_content>
       <template_name>showLostPassWaitRandom</template_name>
       <template_data><![CDATA[$member=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5891,7 +5893,7 @@ if ( pid > ipb.topic.topPid ){
 </form>]]></template_content>
       <template_name>showManualForm</template_name>
       <template_data><![CDATA[$type="reg"]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5906,7 +5908,7 @@ if ( pid > ipb.topic.topPid ){
 </p>]]></template_content>
       <template_name>showPreview</template_name>
       <template_data><![CDATA[$member=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5922,7 +5924,7 @@ if ( pid > ipb.topic.topPid ){
 </p>]]></template_content>
       <template_name>showRevalidated</template_name>
       <template_data/>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5955,7 +5957,7 @@ if ( pid > ipb.topic.topPid ){
 </form>]]></template_content>
       <template_name>showRevalidateForm</template_name>
       <template_data><![CDATA[$name="",$error=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -5990,7 +5992,7 @@ if ( pid > ipb.topic.topPid ){
 </form>]]></template_content>
       <template_name>basicReportForm</template_name>
       <template_data><![CDATA[$name="", $url="", $extra_data=""]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6132,7 +6134,7 @@ if ( pid > ipb.topic.topPid ){
 </script>]]></template_content>
       <template_name>reportsIndex</template_name>
       <template_data><![CDATA[$reports=array(), $acts="", $pages="", $statuses=array()]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6143,7 +6145,7 @@ if ( pid > ipb.topic.topPid ){
       <template_content><![CDATA[<img src='{$this->settings['public_dir']}{$img}' alt='{$this->lang->words['status']}' />]]></template_content>
       <template_name>statusIcon</template_name>
       <template_data>$img, $width, $height</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6215,7 +6217,7 @@ if ( pid > ipb.topic.topPid ){
 {parse template="include_highlighter" group="global" params="1"}]]></template_content>
       <template_name>viewReport</template_name>
       <template_data>$options=array(), $reports=array(), $comments=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6265,7 +6267,7 @@ if ( pid > ipb.topic.topPid ){
 <br />]]></template_content>
       <template_name>asForumPosts</template_name>
       <template_data>$data</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6365,7 +6367,7 @@ ipb.global.searchResults[ {$data['tid']} ] = { pid: {parse expression="intval($d
 </if>]]></template_content>
       <template_name>asForumTopics</template_name>
       <template_data>$data</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6389,7 +6391,7 @@ ipb.global.searchResults[ {$data['tid']} ] = { pid: {parse expression="intval($d
 </p>]]></template_content>
       <template_name>followData</template_name>
       <template_data>$followData</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6408,7 +6410,7 @@ ipb.global.searchResults[ {$data['tid']} ] = { pid: {parse expression="intval($d
 </table>]]></template_content>
       <template_name>followedContentForumsWrapper</template_name>
       <template_data>$results</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6498,7 +6500,7 @@ ipb.global.searchResults[ {$data['tid']} ] = { pid: {parse expression="intval($d
 </table>]]></template_content>
       <template_name>followedContentForumsWrapperForums</template_name>
       <template_data>$results</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6618,7 +6620,7 @@ ipb.global.searchResults[ {$data['tid']} ] = { pid: {parse expression="intval($d
 </script>]]></template_content>
       <template_name>followedContentView</template_name>
       <template_data>$results, $pagination, $total, $error, $contentTypes</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6674,7 +6676,7 @@ ipb.global.searchResults[ {$data['tid']} ] = { pid: {parse expression="intval($d
 </fieldset>]]></template_content>
       <template_name>forumAdvancedSearchFilters</template_name>
       <template_data>$forums, $archivedPostCount=0, $topic</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6702,7 +6704,7 @@ ipb.global.searchResults[ {$data['tid']} ] = { pid: {parse expression="intval($d
 </div>]]></template_content>
       <template_name>forumsVncFilters</template_name>
       <template_data>$data, $currentPrefs</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6723,7 +6725,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>helpSearchResult</template_name>
       <template_data>$r, $resultAsTitle=false</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6765,7 +6767,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>memberCommentsSearchResult</template_name>
       <template_data>$r, $resultAsTitle=false</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6785,7 +6787,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>memberSearchResult</template_name>
       <template_data>$r, $resultAsTitle=false</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -6915,7 +6917,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 <br class='clear' />]]></template_content>
       <template_name>newContentView</template_name>
       <template_data>$results, $pagination, $total, $sortDropDown, $sortIn, $dateCutSet=0</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7089,7 +7091,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>searchAdvancedForm</template_name>
       <template_data><![CDATA[$filters='', $msg='', $current_app, $removed_search_terms=array(), $isFT=false, $canTag=array()]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7117,7 +7119,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>searchResults</template_name>
       <template_data>$results, $titlesOnly</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7221,7 +7223,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </if>]]></template_content>
       <template_name>searchResultsAsForum</template_name>
       <template_data>$results, $titlesOnly</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7384,7 +7386,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>searchResultsWrapper</template_name>
       <template_data>$results, $sortDropDown, $sortIn, $pagination, $total, $showing, $search_term, $url_string, $current_key, $removed_search_terms=array(), $limited=0, $wasLimited=false, $search_tags</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7414,7 +7416,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </if>]]></template_content>
       <template_name>searchRowGenericFormat</template_name>
       <template_data>$r, $resultAsTitle=false</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7429,7 +7431,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </if>]]></template_content>
       <template_name>topicPostSearchResultAsForum</template_name>
       <template_data>$data, $resultAsTitle=false</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7596,7 +7598,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>userPostsView</template_name>
       <template_data>$results, $pagination, $total, $member, $limited=0, $wasLimited=false, $beginTime=0, $sortIn=null, $sortDropDown=array()</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7684,7 +7686,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 <br class='clear' />]]></template_content>
       <template_name>group_strip</template_name>
       <template_data><![CDATA[$group="", $members=array(), $pagination='']]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7752,7 +7754,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </table>]]></template_content>
       <template_name>top_posters</template_name>
       <template_data>$rows</template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
@@ -7784,7 +7786,7 @@ $st = IPSSearchRegistry::get('in.search_higlight');
 </div>]]></template_content>
       <template_name>whoPosted</template_name>
       <template_data><![CDATA[$tid=0, $title="", $rows=array()]]></template_data>
-      <template_updated>1342408390</template_updated>
+      <template_updated>1342538423</template_updated>
       <template_removable>0</template_removable>
       <template_user_added>0</template_user_added>
       <template_user_edited>0</template_user_edited>
